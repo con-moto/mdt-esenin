@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Вишнёвый сад — МДТ имени Сергея Есенина</title>
+
+  <link
+    rel="icon"
+    type="image/avif"
+    href="../assets/images/main-logo.avif"
+  >
+
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="../styles/root.css">
+  <link rel="stylesheet" href="../styles/breadcrumb.css">
+  <link rel="stylesheet" href="../styles/header-event.css">
+  <link rel="stylesheet" href="../styles/navigation.css">
+  <link rel="stylesheet" href="../styles/footer.css">
+  <link rel="stylesheet" href="../styles/event-page.css">
+  <link rel="stylesheet" href="../styles/event-sections.css">
+</head>
+
+<body
+  data-root="../"
+  data-header="header-event"
+  data-event="cherry-orchard"
+  data-page="repertoire"
+>
+  <div id="common-header"></div>
+
+  <main>
+    <section class="event-page" data-event-content>
+      <nav class="breadcrumb" aria-label="Хлебные крошки">
+        <div class="breadcrumb__inner">
+          <a
+            class="breadcrumb__link"
+            href="#"
+            data-root-path="index.html"
+          >
+            Главная
+          </a>
+
+          <span class="breadcrumb__separator">/</span>
+
+          <a
+            class="breadcrumb__link"
+            href="#"
+            data-root-path="repertoire.html"
+          >
+            Репертуар
+          </a>
+
+          <span class="breadcrumb__separator">/</span>
+
+          <span
+            class="breadcrumb__current"
+            data-event-breadcrumb-title
+          ></span>
+        </div>
+      </nav>
+
+      <div class="event-page__overview">
+        <div class="event-page__details">
+          <div class="event-page__details-grid">
+            <div class="event-page__detail">
+              <img
+                src=""
+                alt=""
+                data-root-path="assets/icons/duration.avif"
+                data-root-attribute="src"
+              >
+
+              <p>
+                <span class="event-page__detail-label">
+                  Продолжительность:
+                </span>
+
+                <strong data-event-duration></strong>
+
+                <small data-event-duration-note></small>
+              </p>
+            </div>
+
+            <div class="event-page__detail">
+              <img
+                src=""
+                alt=""
+                data-root-path="assets/icons/age.avif"
+                data-root-attribute="src"
+              >
+
+              <p>
+                <span class="event-page__detail-label">
+                  Возраст:
+                </span>
+
+                <strong data-event-age></strong>
+              </p>
+            </div>
+
+            <div class="event-page__detail event-page__detail--source">
+              <img
+                src=""
+                alt=""
+                data-root-path="assets/icons/source.avif"
+                data-root-attribute="src"
+              >
+
+              <p>
+                <span class="event-page__detail-label">
+                  По пьесе А. П. Чехова
+                </span>
+
+                <strong data-event-source></strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <aside
+          class="event-page__poster"
+          data-event-poster
+          aria-label="Ближайшие спектакли"
+        ></aside>
+      </div>
+
+      <div
+        class="event-page__description"
+        data-event-description
+      ></div>
+    </section>
+
+    <section class="cast-section">
+      <div class="section-title-bar">
+        Действующие лица и исполнители:
+      </div>
+
+      <div
+        class="cast-grid"
+        data-cast-grid
+      ></div>
+    </section>
+
+    <section
+      class="creators-section"
+      data-creators-section
+    >
+      <div
+        class="creators-grid"
+        data-creators-grid
+      ></div>
+    </section>
+
+    <section
+      class="gallery-section"
+      data-gallery-section
+    >
+      <div class="section-title-bar section-title-bar--photos">
+        Фотографии
+      </div>
+
+      <div
+        class="gallery-grid"
+        data-gallery-grid
+      ></div>
+    </section>
+
+    <section
+      class="event-ticket-section"
+      data-event-ticket-section
+    >
+      <a
+        class="event-ticket-section__button"
+        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+        data-event-ticket-button
+      >
+        Купить билеты
+      </a>
+    </section>
+  </main>
+
+  <div id="common-footer"></div>
+
+  <script src="../scripts/layout.js"></script>
+  <script src="../scripts/afisha.js"></script>
+  <script src="../scripts/people-data.js"></script>
+  <script src="../scripts/event-data.js"></script>
+  <script src="../scripts/event-header.js"></script>
+  <script src="../scripts/event-content.js"></script>
+  <script src="../scripts/event-sections.js"></script>
+</body>
+</html>

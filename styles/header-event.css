@@ -1,0 +1,746 @@
+.event-header {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  overflow: visible;
+  background-color: var(--white);
+}
+
+
+
+.event-header__spacer {
+  display: block;
+  width: 100%;
+  height: clamp(1rem, 2vw, 2rem);
+  background-color: var(--white);
+}
+
+
+
+.event-hero {
+  position: relative;
+  width: 100%;
+  min-height: 115svh;
+  overflow: hidden;
+  color: var(--white);
+  background-color: #111;
+}
+
+
+
+.event-hero__slides {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+
+
+.event-hero__slide {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+
+
+.event-hero__slide--active {
+  z-index: 2;
+  opacity: 1;
+}
+
+
+
+.event-hero__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+
+.event-hero__content {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+
+
+.event-hero__copy {
+  position: absolute;
+  top: 67%;
+  left: clamp(2rem, 16.5vw, 20rem);
+  max-width: min(48rem, 55vw);
+  pointer-events: auto;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+}
+
+
+
+.event-hero__genre {
+  margin: 0 0 1rem;
+  color: var(--white);
+  font-family: var(--font-serif);
+  font-size: clamp(0.95rem, 1.45vw, 1.45rem);
+  font-weight: 300;
+  letter-spacing: 0.19em;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+
+
+.event-hero__title {
+  margin: 0 0 2rem;
+  white-space: pre-line;
+  color: var(--white);
+  font-family: var(--font-serif);
+  font-size: clamp(2.7rem, 4.15vw, 5rem);
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+
+
+.event-hero__ticket-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: clamp(14rem, 19vw, 23rem);
+  min-height: clamp(3.25rem, 4vw, 4.5rem);
+  padding: 0.75rem 2rem;
+  color: var(--white);
+  background-color: var(--button-green);
+  border: 2px solid var(--white);
+  font-family: var(--font-serif);
+  font-size: clamp(0.9rem, 1.3vw, 1.35rem);
+  letter-spacing: 0.08em;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+
+
+.event-hero__ticket-button:hover {
+  color: var(--button-green);
+  background-color: var(--white);
+}
+
+
+
+.event-hero__socials {
+  position: absolute;
+  right: clamp(4rem, 16vw, 20rem);
+  bottom: 35%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  pointer-events: auto;
+}
+
+
+
+.event-hero__social {
+  display: block;
+  width: clamp(1.6rem, 2vw, 2rem);
+  height: clamp(1.6rem, 2vw, 2rem);
+}
+
+
+
+.event-hero__social img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+
+.event-hero__logo {
+  position: absolute;
+  top: 1%;
+  left: 22%;
+  z-index: 3;
+  display: block;
+  width: 5%;
+  height: auto;
+}
+
+
+
+.event-hero__logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+
+.event-hero__quote {
+  position: absolute;
+  right: clamp(2rem, 13vw, 16rem);
+  bottom: 10%;
+  max-width: clamp(18rem, 28vw, 34rem);
+  margin: 0;
+  color: var(--white);
+  font-family: var(--font-serif);
+  font-size: clamp(0.9rem, 1.3vw, 1.4rem);
+  font-style: italic;
+  line-height: 1.45;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.55);
+  opacity: 0;
+  transform: translateX(6rem);
+}
+
+
+
+.event-hero__quote-inner {
+  display: block;
+  font-weight: 300;
+  white-space: pre-line;
+}
+
+
+
+.event-hero__quote--visible {
+  opacity: 1;
+  transform: translateX(0);
+  transition:
+    opacity 1.8s ease,
+    transform 1.8s ease;
+}
+
+
+
+.event-hero__menu-toggle {
+  display: none;
+  pointer-events: auto;
+}
+
+
+
+/*
+  Compact-режим для длинных названий.
+  Он применяется на desktop, tablet и mobile.
+  Иконки соцсетей и burger здесь специально не меняются.
+*/
+.event-hero--compact .event-hero__copy {
+  top: 61%;
+  max-width: min(30rem, 45vw);
+}
+
+
+
+.event-hero--compact .event-hero__genre {
+  margin-bottom: 0.8rem;
+  font-size: clamp(0.6rem, 3vw, 1.2rem);
+  letter-spacing: 0.13em;
+  line-height: 1.15;
+}
+
+
+
+.event-hero--compact .event-hero__title {
+  margin-bottom: 2rem;
+  font-size: clamp(1.6rem, 3vw, 3rem);
+  letter-spacing: 0.045em;
+  line-height: 0.95;
+}
+
+
+
+.event-hero--compact .event-hero__ticket-button {
+  min-width: clamp(10rem, 13vw, 13rem);
+  min-height: 2.45rem;
+  padding: 0.7rem 1rem;
+  border-width: 1px;
+  font-size: clamp(0.62rem, 1.8vw, 1.4rem);
+  letter-spacing: 0.055em;
+}
+
+
+
+.event-hero--compact .event-hero__quote {
+  right: clamp(4rem, 13vw, 15rem);
+  bottom: 15%;
+  max-width: min(25rem, 32vw);
+  font-size: clamp(0.68rem, 2vw, 1rem);
+  line-height: 1.28;
+}
+
+@media (max-width: 1600px) {
+  .event-hero__logo {
+    top: 3%;
+    left: 22%;
+    z-index: 3;
+    display: block;
+    width: 5%;
+    height: auto;
+  }
+}
+
+
+
+/* ===== TABLET ===== */
+@media (max-width: 1200px) {
+  .event-hero__copy {
+    left: clamp(2rem, 12vw, 10rem);
+  }
+
+
+
+  .event-hero__socials {
+    right: clamp(2rem, 10vw, 8rem);
+    bottom: clamp(6rem, 12vw, 11rem);
+  }
+
+
+
+  .event-hero__quote {
+    right: clamp(2rem, 8vw, 7rem);
+    bottom: 8%;
+  }
+
+
+
+  .event-hero--compact .event-hero__copy {
+    top: 61%;
+    max-width: min(27rem, 46vw);
+  }
+
+
+
+  .event-hero--compact .event-hero__quote {
+    right: clamp(2rem, 8vw, 7rem);
+    bottom: 15%;
+    max-width: min(22rem, 34vw);
+  }
+}
+
+
+
+/* С 1400px и ниже — иконки в правом нижнем углу */
+@media (max-width: 1400px) {
+  .event-hero__socials {
+    right: clamp(2rem, 4vw, 6rem);
+    bottom: clamp(1rem, 3vw, 3rem);
+  }
+
+
+
+  .event-hero__quote {
+    right: clamp(4rem, 10vw, 12rem);
+    bottom: 12%;
+    max-width: clamp(22rem, 35vw, 42rem);
+  }
+
+
+  .event-hero__image {
+    object-position: center;
+    object-fit: cover;
+  }
+
+
+
+  .event-hero--compact .event-hero__quote {
+    bottom: 15%;
+    max-width: min(22rem, 34vw);
+  }
+
+  .event-hero__logo {
+    top: 5%;
+    left: 22%;
+    z-index: 3;
+    display: block;
+    width: 5%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1250px) {
+  .event-hero__logo {
+    top: 3%;
+    left: 17%;
+    z-index: 3;
+    display: block;
+    width: 8%;
+    height: auto;
+  }
+}
+
+/* С 900px левая сторона картинки видна, уезжает правая */
+@media (max-width: 900px) {
+  .event-hero__image {
+    object-position: center center;
+  }
+
+  .event-hero__logo {
+    top: 5%;
+    left: 13%;
+    z-index: 3;
+    display: block;
+    width: 10%;
+    height: auto;
+  }
+}
+
+
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .event-hero {
+    min-height: 115svh;
+  }
+
+
+
+  .event-hero__copy {
+    top: 67%;
+    right: 1rem;
+    left: clamp(1.5rem, 6vw, 3rem);
+    max-width: none;
+  }
+
+
+
+  .event-hero__genre {
+    margin-bottom: 0.75rem;
+    font-size: clamp(0.6rem, 2.8vw, 0.85rem);
+    letter-spacing: 0.1em;
+  }
+
+
+
+  .event-hero__title {
+    margin-bottom: 1.5rem;
+    font-size: clamp(1.7rem, 8vw, 3rem);
+    letter-spacing: 0.04em;
+  }
+
+
+
+  .event-hero__ticket-button {
+    min-width: min(12rem, 58vw);
+    min-height: 2.45rem;
+    padding: 0.55rem 0.85rem;
+    font-size: clamp(0.65rem, 2.7vw, 0.85rem);
+    border-width: 1px;
+  }
+
+
+
+  .event-hero__social {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+
+
+  .event-hero__quote {
+    right: 1rem;
+    bottom: 15%;
+    max-width: 47%;
+    font-size: clamp(0.55rem, 2.55vw, 0.79rem);
+    line-height: 1.3;
+    transform: translateX(3rem);
+  }
+
+
+
+  .event-hero__quote--visible {
+    transform: translateX(0);
+  }
+
+
+
+  .event-header .event-hero__socials {
+    right: 4.8rem;
+    bottom: 0.8rem;
+    gap: 1rem;
+  }
+
+
+
+  .event-header .event-hero__menu-toggle {
+    position: absolute;
+    right: 0.9rem;
+    bottom: 0.3rem;
+    z-index: 50;
+    display: grid;
+    gap: 0.3rem;
+    width: 2.6rem;
+    height: 2.6rem;
+    padding: 0.55rem;
+    color: #000;
+    background-color: transparent;
+    border: 1px solid #000;
+    cursor: pointer;
+  }
+
+
+
+  .event-header .event-hero__menu-toggle .menu-toggle__line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+  }
+
+
+
+  .event-header #common-navigation .main-navigation {
+    position: static;
+    z-index: auto;
+    display: none;
+    width: 100%;
+    max-height: none;
+    overflow: visible;
+  }
+
+
+
+  .event-header #common-navigation .main-navigation.main-navigation--open {
+    display: block;
+  }
+
+
+
+  .event-hero--compact .event-hero__copy {
+    top: 61%;
+    right: 1rem;
+    left: clamp(1.5rem, 6vw, 3rem);
+    max-width: min(20rem, 65vw);
+  }
+
+
+
+  .event-hero--compact .event-hero__genre {
+    margin-bottom: 1rem;
+    font-size: clamp(0.45rem, 2.4vw, 1.5rem);
+    letter-spacing: 0.08em;
+  }
+
+
+
+  .event-hero--compact .event-hero__title {
+    margin-bottom: 1rem;
+    font-size: clamp(1.3rem, 4vw, 2rem);
+    letter-spacing: 0.03em;
+    line-height: 0.98;
+  }
+
+
+
+  .event-hero--compact .event-hero__ticket-button {
+    min-width: min(8.5rem, 45vw);
+    min-height: 2rem;
+    padding: 0.7rem 1rem;
+    font-size: clamp(0.5rem, 2.5vw, 1rem);
+    letter-spacing: 0.035em;
+  }
+
+
+
+  .event-hero--compact .event-hero__quote {
+    right: 2rem;
+    bottom: 17%;
+    max-width: 42%;
+    font-size: clamp(1rem, 1.65vw, 2rem);
+    line-height: 1.22;
+  }
+}
+
+
+
+/* С 600px показываем логотип */
+@media (max-width: 650px) {
+  .event-hero__image {
+    object-position: center center;
+  }
+}
+
+
+
+/* С 580px хедер 100vh–105vh */
+@media (max-width: 580px) {
+  .event-hero {
+    min-height: 100svh;
+  }
+
+
+  .event-hero__copy {
+    top: 62%;
+  }
+
+
+  .event-hero__quote {
+    right: 2rem;
+    bottom: 11%;
+    max-width: 47%;
+    font-size: clamp(0.55rem, 2.55vw, 0.79rem);
+    line-height: 1.3;
+    transform: translateX(3rem);
+  }
+
+  .event-hero__logo {
+    top: 3%;
+    left: 10%;
+    z-index: 3;
+    display: block;
+    width: 14%;
+    height: auto;
+  }
+
+  .event-hero--compact .event-hero__copy {
+    top: 64%;
+    max-width: min(18rem, 65vw);
+  }
+
+
+
+  .event-hero--compact .event-hero__quote {
+    right: 4rem;
+    bottom: 10%;
+    max-width: 43%;
+    font-size: clamp(1rem, 1.8vw, 1.5rem);
+  }
+}
+
+
+
+@media (max-width: 500px) {
+  .event-hero__image {
+    object-position: center center;
+  }
+
+
+
+  .event-hero__quote {
+    right: 4rem;
+    bottom: 9%;
+    max-width: 47%;
+    font-size: clamp(0.75rem, 2.7vw, 0.9rem);
+    line-height: 1.3;
+    transform: translateX(3rem);
+  }
+
+
+
+  .event-header .event-hero__socials {
+    bottom: 0.6rem;
+  }
+
+
+
+  .event-header .event-hero__menu-toggle {
+    bottom: 0;
+  }
+
+
+
+  .event-hero--compact .event-hero__quote {
+    bottom: 8%;
+    max-width: 43%;
+    font-size: clamp(0.7rem, 2.5vw, 1.7rem);
+  }
+}
+
+
+
+@media (prefers-reduced-motion: reduce) {
+  .event-hero__slide {
+    transition: none;
+  }
+
+
+
+  .event-hero__quote {
+    transition: none;
+  }
+}
+
+
+
+/* ===== MANSION: персональный compact на любой ширине ===== */
+
+
+
+/* Compact-стили для hero на любой ширине */
+body[data-event="mansion"] .event-hero__copy {
+  top: 70%;
+  max-width: min(38rem, 65vw);
+}
+
+
+
+body[data-event="mansion"] .event-hero__genre {
+  margin-bottom: 0.55rem;
+  font-size: clamp(0.6rem, 0.85vw, 0.85rem);
+  letter-spacing: 0.13em;
+  line-height: 1.15;
+}
+
+
+
+body[data-event="mansion"] .event-hero__title {
+  margin-bottom: 0.9rem;
+  font-size: clamp(1.6rem, 2.45vw, 2.65rem);
+  letter-spacing: 0.045em;
+  line-height: 0.95;
+}
+
+
+
+body[data-event="mansion"] .event-hero__ticket-button {
+  min-width: clamp(10rem, 13vw, 13rem);
+  min-height: 2.45rem;
+  padding: 0.5rem 0.9rem;
+  border-width: 1px;
+  font-size: clamp(0.62rem, 0.82vw, 0.82rem);
+  letter-spacing: 0.055em;
+}
+
+
+
+body[data-event="mansion"] .event-hero__quote {
+  right: clamp(4rem, 13vw, 15rem);
+  bottom: 15%;
+  max-width: min(25rem, 32vw);
+  font-size: clamp(0.68rem, 0.9vw, 0.9rem);
+  line-height: 1.28;
+}
+
+
+
+/* Контент ниже и шире на любой ширине */
+body[data-event="mansion"] .event-page__overview {
+  padding-top: 8rem;
+}
+
+
+
+body[data-event="mansion"] .event-page__details-grid {
+  max-width: 150%;
+}
+
+
+
+body[data-event="mansion"] .event-page__description {
+  max-width: 150%;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,51 @@
+.posters {
+  background-color: var(--dark);
+}
+
+.posters__line {
+  width: 100%;
+  height: 6px;
+  background-color: var(--burgundy);
+}
+
+.month {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 130px;
+}
+
+.month__title {
+  color: var(--off-white);
+  font-family: var(--font-serif);
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1100px) {
+  .posters__line {
+    height: 0.25rem;
+  }
+
+  .month {
+    height: clamp(7rem, 12vw, 8.125rem);
+  }
+
+  .month__title {
+    font-size: clamp(2rem, 3.8vw, 2.5rem);
+  }
+}
+
+@media (max-width: 760px) {
+  .month {
+    height: 6.5rem;
+  }
+
+  .month__title {
+    font-size: clamp(1.65rem, 8vw, 2rem);
+    letter-spacing: 0.07em;
+  }
+}

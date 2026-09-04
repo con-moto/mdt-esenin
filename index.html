@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>МДТ имени Сергея Есенина — иммерсивный театр в Москве</title>
+
+  <link
+    rel="icon"
+    type="image/avif"
+    href="./assets/images/main-logo.avif"
+  >
+
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/root.css">
+  <link rel="stylesheet" href="./styles/header-home.css">
+  <link rel="stylesheet" href="./styles/navigation.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+  <link rel="stylesheet" href="./styles/breadcrumb.css">
+  <link rel="stylesheet" href="./styles/home.css">
+</head>
+
+<body data-root="./" data-header="header-home" data-page="home">
+  <div id="common-header"></div>
+
+  <main>
+    <section class="hero" aria-label="Спектакли театра">
+      <ul class="hero__list"></ul>
+
+      <button
+        class="hero__arrow hero__arrow--prev"
+        aria-label="Предыдущий слайд"
+      >
+        &lt;
+      </button>
+
+      <button
+        class="hero__arrow hero__arrow--next"
+        aria-label="Следующий слайд"
+      >
+        &gt;
+      </button>
+
+      <div class="hero__pagination" aria-label="Пагинация слайдов"></div>
+    </section>
+
+    <section class="about-section">
+      <div class="about-section__container">
+        <nav class="breadcrumb">
+          <div class="breadcrumb__inner">
+            <a class="breadcrumb__link" href="index.html">Главная</a>
+            <span class="breadcrumb__separator">/</span>
+            <span class="breadcrumb__current">О театре</span>
+          </div>
+        </nav>
+
+        <h1 class="about-section__title">О НАС</h1>
+
+        <div class="about-section__text">
+          <p>
+            Московский Драматический Театр имени Сергея Есенина» был создан в 2017 году под руководством режиссера Ярослава Шевалдова и актрисы Анны Сардановской, а также группы единомышленников совместно с Арт-пространством «Усадьба Струйских» («Музей Русского Искусства»).
+          </p>
+
+          <p>
+            Особенностью театра является многообразие жанров и форм. Наряду со сценическими в репертуаре театра есть иммерсивные спектакли, в которых действие движется по интерьерам и пространствам исторической усадьбы. Зачастую разрушается «четвертая стена» и идет прямое взаимодействие со зрителем. Попадая в наш театр, зритель буквально от входных дверей начинает погружаться в атмосферу предстоящего спектакля.
+          </p>
+
+          <p>
+            На данный момент в репертуаре театра 13 спектаклей по русской и зарубежной классике. Переосмысление и сопоставление великих текстов с сегодняшним днем является главной целью театра.
+          </p>
+
+          <p>
+            В 2021 году театр утратил своë постоянное здание. На данный момент,
+            спектакли театра проходят на нескольких площадках, а именно:<br>
+            «Библиотека—читальня им. А.С. Пушкина» (усадьба Мухиных XVIII века);<br>
+            ДК «Гайдаровец» (особняк Толстых-Борисовских XVIII века);<br>
+            Арт-кластер «Творческие Люди» (Особняк В. А. Лемана);<br>
+            «Московский Дом Достоевского»<br>
+            и других.
+          </p>
+        </div>
+
+        <div class="about-section__decor">
+          <img
+            class="about-section__decor-image"
+            src="./assets/images/decour.png"
+            alt=""
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="video-section">
+      <div class="video-section__container">
+        <div class="video-section__player">
+          <button
+            class="video-section__cover"
+            type="button"
+            aria-label="Воспроизвести видео"
+          >
+            <picture>
+              <source
+                type="image/webp"
+                srcset="./assets/images/optimized/cover.webp"
+              >
+              <img
+                class="video-section__cover-image"
+                src="./assets/images/cover.jpg"
+                alt="МДТ имени Сергея Есенина"
+                loading="lazy"
+              >
+            </picture>
+          </button>
+
+
+          <video
+            class="video-section__video"
+            controls
+            preload="metadata"
+          >
+            <source
+              src="https://video.wixstatic.com/video/0ec44b_14bc429d03294d4baf366dd807eff078/1080p/mp4/file.mp4"
+              type="video/mp4"
+            >
+            Ваш браузер не поддерживает видео.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- Секция со спектаклями -->
+    <section class="performances">
+      <div class="performances__grid">
+        <article class="performance-card" data-link="./repertoire/idiot.html">
+          <img
+            class="performance-card__image"
+            src="./assets/images/1.avif"
+            alt="Спектакль «Идиот»"
+          >
+          <div class="performance-card__content">
+            <h3 class="performance-card__title">Идиот</h3>
+            <p class="performance-card__description">Иммерсивная драма</p>
+            <a class="performance-card__link" href="./repertoire/idiot.html">
+              <span>Смотреть</span>
+              <span class="performance-card__arrow">→</span>
+            </a>
+          </div>
+          <div class="performance-card__progress"></div>
+        </article>
+
+        <article class="performance-card" data-link="./repertoire/karamazovy.html">
+          <img
+            class="performance-card__image"
+            src="./assets/images/2.avif"
+            alt="Спектакль «Карамазовы»"
+          >
+          <div class="performance-card__content">
+            <h3 class="performance-card__title">Карамазовы</h3>
+            <p class="performance-card__description">Иммерсивная драма в двух линиях</p>
+            <a class="performance-card__link" href="./repertoire/karamazovy.html">
+              <span>Смотреть</span>
+              <span class="performance-card__arrow">→</span>
+            </a>
+          </div>
+          <div class="performance-card__progress"></div>
+        </article>
+
+        <article class="performance-card" data-link="./repertoire/evenings-dikanka.html">
+          <img
+            class="performance-card__image"
+            src="./assets/images/3.avif"
+            alt="Спектакль «Вечера на хуторе близ Диканьки»"
+          >
+          <div class="performance-card__content">
+            <h3 class="performance-card__title">Вечера на хуторе близ Диканьки</h3>
+            <p class="performance-card__description">Комедия с элементами фантастики</p>
+            <a class="performance-card__link" href="./repertoire/evenings-dikanka.html">
+              <span>Смотреть</span>
+              <span class="performance-card__arrow">→</span>
+            </a>
+          </div>
+          <div class="performance-card__progress"></div>
+        </article>
+
+        <article class="performance-card" data-link="./repertoire/hero.html">
+          <img
+            class="performance-card__image"
+            src="./assets/images/4.avif"
+            alt="Спектакль «Герой нашего времени»"
+          >
+          <div class="performance-card__content">
+            <h3 class="performance-card__title">Герой нашего времени?</h3>
+            <p class="performance-card__description">Мистическая драма</p>
+            <a class="performance-card__link" href="./repertoire/hero.html">
+              <span>Смотреть</span>
+              <span class="performance-card__arrow">→</span>
+            </a>
+          </div>
+          <div class="performance-card__progress"></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Секция с отзывами -->
+    <section class="reviews">
+      <div class="reviews__container">
+        <div class="reviews__line"></div>
+
+        <div class="review-slider">
+          <button class="review-slider__arrow review-slider__arrow--prev" aria-label="Предыдущий отзыв">
+            ‹
+          </button>
+
+          <div class="review-slide review-slide--active">
+            <p class="review__text">
+              «Это был мой первый опыт и мне невероятно понравилось! Камерная обстановка усадьбы, в которой была постановка, минимальное количество зрителей, полностью погружают тебя в происходящее. Местами было ощущение, что я подглядываю за чьей-то жизнью. Переживания за героев становятся более острыми, когда все происходит в шаге от тебя! Игра актеров - выше всяких похвал!»
+            </p>
+            <p class="review__author">— Ольга Ульянова (зритель)</p>
+          </div>
+
+          <div class="review-slide review-slide--hidden">
+            <p class="review__text">
+              «Спектакль – погружение, путешествие. Диалоги автора бережно сохранены, они звучат, поражая своей актуальностью, современностью. Костюмы выдержаны во вневременной классике, что убирает дистанцию между нами – сегодня и героями 19го века. А найденные параллели с библейскими сюжетами, аккуратно воплощенные в мизансценах и декорациях, создают ощущение отсутствия времени.»
+            </p>
+            <p class="review__author">— А.Г. Чернышева (газета «Москва. Северо-Запад»)</p>
+          </div>
+
+          <div class="review-slide review-slide--hidden">
+            <p class="review__text">
+              «Спектакль-полифония в одном действии по мотивам повести "Отец Сергий" за полтора часа не отпускает ни на минуту. Режиссёр-постановщик Ярослав Шевалдов затронул, на мой взгляд, актуальные темы поиска себя, любви, соблазнов, религиозности, предназначения человека. Ты не просто смотришь, ты участвуешь! Захватывающее зрелище, эмоционально! Отличная игра актёров, световые эффекты, звук, атмосфера, всё на высоте!»
+            </p>
+            <p class="review__author">— Анатолий Цымбалюк (фотограф и журналист)</p>
+          </div>
+
+          <div class="review-slide review-slide--hidden">
+            <p class="review__text">
+              «Интереснее сидеть в первом ряду. Элементы взаимодействия по ходу действия актеров со зрителями погружают в постановку. Оригинальное музыкальное сопровождение! Ощущение попадания в приключение начинается при встрече гостей: под звуки пения птиц, петухов, мычания коров угощают хлебом и молоком. Рекомендую посетить театр и ощутить всю атмосферу!»
+            </p>
+            <p class="review__author">— Татьяна Филер (блоггер)</p>
+          </div>
+
+          <div class="review-slide review-slide--hidden">
+            <p class="review__text">
+              «Как дань памяти в усадьбе Н.Е. Струйского 10 февраля показали спектакль «Дети Дон Кихота», спектакль-посвящение Владимиру Зельдину. Это не просто спектакль, это целая жизнь…одного человека, одного актёра, который играл много ролей, который прожил много жизней, снимаясь в различных фильмах и играя в спектаклях. В театре затронута самое главное – жизнь, жизнь актёра…»
+            </p>
+            <p class="review__author">— писатель, Юлия Володина</p>
+          </div>
+
+          <button class="review-slider__arrow review-slider__arrow--next" aria-label="Следующий отзыв">
+            ›
+          </button>
+        </div>
+
+        <div class="review-slider__dots"></div>
+
+        <a href="./about/reviews.html" class="reviews__all-link">
+          Смотреть все отзывы
+        </a>
+      </div>
+    </section>
+
+    <!-- Секция с контактами -->
+    <section class="contacts-section" id="contacts">
+      <div class="contacts-section__container">
+        <div class="contacts-section__layout">
+          <div class="contacts-section__form-column">
+            <address class="contacts-info">
+              <div class="contacts-info__row">
+                <span class="contacts-info__label">Электронная почта:</span>
+                <a class="contacts-info__value" href="mailto:mdtesenina@inbox.ru">
+                  mdtesenina@inbox.ru
+                </a>
+              </div>
+
+              <div class="contacts-info__row">
+                <span class="contacts-info__label">Телефон:</span>
+                <a class="contacts-info__value" href="tel:+79052069783">
+                  +7 905 206-97-83
+                </a>
+              </div>
+            </address>
+
+            <form id="contact-form" class="contact-form" method="post" action="/api/contact">
+              <div class="contact-form__name-row">
+                <div class="form-field">
+                  <label class="visually-hidden" for="first-name">Имя</label>
+                  <input
+                    id="first-name"
+                    name="firstName"
+                    type="text"
+                    placeholder="Имя"
+                    autocomplete="given-name"
+                    required
+                  >
+                </div>
+
+                <div class="form-field">
+                  <label class="visually-hidden" for="last-name">Фамилия</label>
+                  <input
+                    id="last-name"
+                    name="lastName"
+                    type="text"
+                    placeholder="Фамилия"
+                    autocomplete="family-name"
+                    required
+                  >
+                </div>
+              </div>
+
+              <div class="form-field form-field--message">
+                <label class="visually-hidden" for="message">Сообщение</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Добавьте сообщение..."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="form-field form-field--extra">
+                <label class="visually-hidden" for="email">Электронная почта</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="Эл. почта"
+                  autocomplete="email"
+                  required
+                >
+              </div>
+
+              <div class="form-field form-field--extra">
+                <label class="visually-hidden" for="phone">Телефон</label>
+                <input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  placeholder="Телефон"
+                  autocomplete="tel"
+                  required
+                >
+              </div>
+
+              <button type="submit" class="contact-form__submit">
+                Отправить
+              </button>
+            </form>
+          </div>
+
+          <div class="contacts-section__map-column">
+            <div class="map-wrapper">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.5!2d37.671902!3d55.772051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x0!2zNTXCsDQ2JzE5LjQiTiAzN8KwNDAnMTguOCJF!5e0!3m2!1sru!2sru!4v1234567890"
+                width="100%"
+                height="100%"
+                frameborder="0"
+                style="border:0"
+                allowfullscreen="true"
+                loading="lazy"
+                title="Карта — Особняк Мухиных, Москва, ул. Спартаковская, д. 9, стр.3"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="common-footer"></div>
+
+  <script src="./scripts/layout.js"></script>
+  <script src="./scripts/slider.js"></script>
+  <script src="./scripts/reviews-slider.js"></script>
+  <script src="./scripts/contact-form.js"></script>
+  <script src="./scripts/home-video-cover.js"></script>
+</body>
+</html>

@@ -1,0 +1,429 @@
+.events {
+  padding: 38px 0 50px;
+}
+
+.events__list {
+  display: grid;
+  gap: 28px;
+}
+
+.event-card {
+  display: grid;
+  grid-template-columns: 188px minmax(0, 1fr) 245px;
+  width: min(var(--content-width), calc(100% - 40px));
+  min-height: 430px;
+  margin: 0 auto;
+  background-color: var(--dark);
+  border: 1px solid var(--border-color);
+}
+
+.event-card__date {
+  padding: 82px 35px;
+  border-right: 2px solid #999999;
+}
+
+.event-card__day,
+.event-card__weekday,
+.event-card__time {
+  display: block;
+  color: var(--white);
+  font-family: var(--font-serif);
+  font-weight: 700;
+}
+
+.event-card__day {
+  font-size: 80px;
+  line-height: 1;
+}
+
+.event-card__weekday {
+  margin-top: 28px;
+  font-size: 36px;
+  line-height: 1;
+}
+
+.event-card__info {
+  padding: 91px 30px 45px;
+}
+
+.event-card__title {
+  color: #fafafa;
+  font-family: var(--font-serif);
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: underline;
+}
+
+.event-card__description,
+.event-card__venue,
+.event-card__address,
+.event-card__age,
+.event-card__contact {
+  color: var(--white);
+  font-family: var(--font-serif);
+  font-size: 18px;
+  line-height: 1.45;
+}
+
+.event-card__description {
+  margin-top: 30px;
+  font-style: italic;
+}
+
+.event-card__venue {
+  margin-top: 32px;
+}
+
+.event-card__address {
+  margin-top: 4px;
+}
+
+.event-card__contact {
+  margin-top: 32px;
+  color: var(--green);
+}
+
+.event-card__contact a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.event-card__action {
+  position: relative;
+  padding: 88px 31px 50px;
+  border-left: 2px solid #999999;
+}
+
+.event-card__time {
+  font-size: 50px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.ticket-button {
+  position: absolute;
+  bottom: 50px;
+  left: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 169px;
+  height: 42px;
+  color: var(--white);
+  background-color: var(--button-green);
+  border: 0;
+  border-radius: 0;
+  font-family: var(--font-serif);
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease;
+}
+
+.ticket-button:hover {
+  background-color: #0b6a54;
+}
+
+.event-card__address a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.event-card__address a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.event-card__additional-text {
+  margin-top: 28px;
+  color: var(--white);
+  font-family: var(--font-serif);
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.event-card--open-date .event-card__date,
+.event-card--open-date .event-card__action {
+  min-height: 430px;
+}
+
+/* Карточка премьеры */
+.event-card--premiere .event-card__day,
+.event-card--premiere .event-card__weekday,
+.event-card--premiere .event-card__time,
+.event-card--premiere .event-card__title {
+  color: #c90151;
+}
+
+.event-card__premiere-label {
+  margin: 0 0 0.8rem;
+  color: #c90151;
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.21em;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.event-card__tour-label {
+  margin: 0 0 0.8rem;
+  color: inherit;
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.21em;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1200px) {
+  .events {
+    padding: 2.25rem 0 3.25rem;
+  }
+
+  .events__list {
+    gap: 1.5rem;
+  }
+
+  .event-card {
+    grid-template-columns: 16% minmax(0, 1fr) 21%;
+    width: calc(100% - 5rem);
+    min-height: 0;
+  }
+
+  .event-card__date {
+    padding: clamp(2.75rem, 6vw, 5rem) clamp(1.25rem, 2.5vw, 2rem);
+  }
+
+  .event-card__day {
+    font-size: clamp(3.5rem, 6vw, 5rem);
+  }
+
+  .event-card__weekday {
+    margin-top: clamp(1rem, 2vw, 1.75rem);
+    font-size: clamp(1.75rem, 3vw, 2.25rem);
+  }
+
+  .event-card__info {
+    padding: clamp(2.75rem, 6.5vw, 5.5rem) clamp(1.25rem, 2.5vw, 1.875rem) 2.5rem;
+  }
+
+  .event-card__title {
+    font-size: clamp(1.3rem, 2vw, 1.5625rem);
+  }
+
+  .event-card__description,
+  .event-card__address,
+  .event-card__contact,
+  .event-card__additional-text {
+    font-size: clamp(1rem, 1.5vw, 1.125rem);
+  }
+
+  .event-card__action {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-end; /* прижимаем содержимое вниз */
+    padding: clamp(2.75rem, 6.5vw, 5.5rem) clamp(1rem, 2.2vw, 1.75rem) 2.5rem;
+    min-height: 0; /* не даём колонке растягиваться на всю высоту */
+  }
+
+  .event-card__time {
+    font-size: clamp(2.25rem, 4vw, 3.125rem);
+    margin-bottom: auto; /* время уходит вверх, кнопка остаётся внизу */
+  }
+
+  .ticket-button {
+    position: static;
+    width: 100%;
+    height: auto;
+    min-height: 2.8rem;
+    margin-top: 1.5rem; /* чуть меньше, чтобы кнопка была ближе к низу */
+    padding: 0.6rem 0.5rem;
+    font-size: clamp(0.85rem, 1.4vw, 1rem);
+  }
+}
+
+/* Планшет: всё ещё 3 колонки, дата существенно меньше */
+@media (max-width: 900px) {
+  .event-card {
+    grid-template-columns: 7.25rem minmax(0, 1fr) 9.5rem;
+    width: calc(100% - 3rem);
+  }
+
+  .event-card__date {
+    padding: 2rem 0.8rem;
+  }
+
+  .event-card__day {
+    font-size: 3rem;
+  }
+
+  .event-card__weekday {
+    margin-top: 0.75rem;
+    font-size: 1.45rem;
+  }
+
+  .event-card__info {
+    padding: 2rem 1rem;
+  }
+
+  .event-card__title {
+    font-size: 1.1rem;
+  }
+
+  .event-card__description,
+  .event-card__address,
+  .event-card__contact,
+  .event-card__additional-text {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .event-card__description {
+    margin-top: 1rem;
+  }
+
+  .event-card__contact {
+    margin-top: 1.25rem;
+  }
+
+  .event-card__action {
+    padding: 2rem 0.75rem;
+  }
+
+  .event-card__time {
+    font-size: 2rem;
+  }
+
+  .ticket-button {
+    min-height: 3rem;
+    margin-top: 2rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Телефон: один столбец; дата компактна, кнопка крупнее */
+@media (max-width: 680px) {
+  .events {
+    padding: 2rem 0 3rem;
+  }
+
+  .events__list {
+    gap: 2rem;
+  }
+
+  .event-card {
+    display: block;
+    width: calc(100% - 2rem);
+  }
+
+  /* Первый ряд: число + день недели + время справа */
+  .event-card__date {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 1.25rem 1.25rem;
+    border-right: 0;
+    border-bottom: 2px solid #999999;
+  }
+
+  .event-card__day {
+    font-size: clamp(2rem, 9vw, 2.75rem);
+  }
+
+  .event-card__weekday {
+    margin-top: 0;
+    font-size: clamp(1rem, 4.5vw, 1.35rem);
+  }
+
+  .event-card__time {
+    display: block;
+    margin-left: auto;
+    font-size: clamp(1.6rem, 7.5vw, 2.2rem);
+    white-space: nowrap;
+  }
+
+  /* Второй ряд: основная информация */
+  .event-card__info {
+    padding: 1.5rem 1.25rem 1.75rem;
+  }
+
+  .event-card__title {
+    font-size: clamp(1.1rem, 5vw, 1.35rem);
+  }
+
+  .event-card__description,
+  .event-card__address,
+  .event-card__contact,
+  .event-card__additional-text {
+    font-size: clamp(0.9rem, 4vw, 1rem);
+  }
+
+  .event-card__description {
+    margin-top: 1rem;
+  }
+
+  .event-card__address {
+    margin-top: 0.5rem;
+  }
+
+  .event-card__contact {
+    margin-top: 1.25rem;
+  }
+
+  .event-card__additional-text {
+    margin-top: 1.25rem;
+  }
+
+  /* Третий ряд: полоска + кнопка справа */
+  .event-card__action {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding: 1.25rem 1.25rem;
+    border-top: 2px solid #999999;
+    border-left: 0;
+    min-height: 0;
+  }
+
+  .ticket-button {
+    width: auto;
+    min-width: 10rem;
+    min-height: 3rem;
+    margin-top: 0;
+    padding: 0.65rem 0.9rem;
+    font-size: clamp(0.85rem, 3.5vw, 0.95rem);
+  }
+
+  .event-card--open-date .event-card__date {
+    display: none;
+  }
+
+  .event-card--open-date .event-card__time {
+    display: none;
+  }
+
+  .event-card--open-date .event-card__action {
+    justify-content: flex-end;
+    min-height: 0;
+  }
+
+  .event-card--open-date .ticket-button {
+    width: auto;
+    min-width: 10rem;
+  }
+
+  .event-card__premiere-label {
+    margin-bottom: 0.65rem;
+    font-size: clamp(1rem, 4.5vw, 1.2rem);
+    letter-spacing: 0.14em;
+  }
+}

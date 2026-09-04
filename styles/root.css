@@ -1,0 +1,16 @@
+:root {
+  --burgundy: #94062a;
+  --dark: #242323;
+  --white: #ffffff;
+  --off-white: #ebebe8;
+  --green: #30a884;
+  --button-green: #014938;
+  --border-color: #888888;
+
+  --header-container-width: 1200px;
+  --content-width: 1185px;
+
+  --font-serif: Georgia, "Times New Roman", serif;
+  --font-sans: Arial, Helvetica, sans-serif;
+  --page-padding: clamp(1rem, 3vw, 2.5rem);
+}
