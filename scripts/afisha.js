@@ -102,7 +102,7 @@ const performancesOctober = [
     mapUrl:
       "https://yandex.ru/maps/org/usadba_vorontsovoy_mukhinoy/198224388711/?ll=37.672063%2C55.772380&z=19.2",
     ticketUrl: "https://iframeab-pre6144.intickets.ru/seance/75148084/",
-    pageUrl: "repertoire/karamazovs.html",
+    pageUrl: "repertoire/karamazovy.html",
   },
 
   {
