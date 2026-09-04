@@ -215,7 +215,7 @@ const performancesOctober = [
       "https://yandex.ru/maps/org/glavny_dom_usadby_tolstogo_borisovskikh/197433904501/?ll=37.658903%2C55.759100&z=15",
     ticketUrl: "https://iframeab-pre6144.intickets.ru/seance/75253546/",
     pageUrl: "",
-  },
+  }
 ];
 
 
