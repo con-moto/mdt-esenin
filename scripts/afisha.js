@@ -102,7 +102,7 @@ const performancesOctober = [
     mapUrl:
       "https://yandex.ru/maps/org/usadba_vorontsovoy_mukhinoy/198224388711/?ll=37.672063%2C55.772380&z=19.2",
     ticketUrl: "https://iframeab-pre6144.intickets.ru/seance/75148084/",
-    pageUrl: "",
+    pageUrl: "repertoire/karamazovs.html",
   },
 
   {
@@ -117,7 +117,7 @@ const performancesOctober = [
     mapUrl:
       "https://yandex.ru/maps/org/osobnyak_v_a_lemana/206225152580/?filter=alternate_vertical%3ARequestWindow&ll=37.667986%2C55.765837&mode=search&sctx=ZAAAAAgBEAAaKAoSCY9WtaSjUD5AEQgB%2BRIq%2BE1AEhIJDJQUWABT5j8Rixu3mJ8byj8iBgABAgMEBSgKOABAAkgBagJydZ0BzczMPaABAKgBAL0BSBx6QcIBBsS06J%2BABoICXCjQntGB0L7QsdC90Y%2FQuiDQki7QkC4g0JvQtdC80LDQvdCwLCDQvC4g0JrRg9GA0YHQutCw0Y8sINC%2F0LXRgC4g0JPQvtGA0L7RhdC%2B0LLRgdC60LjQuSwgMTkpigIAkgIDMjEzmgIMZGVza3RvcC1tYXBz&sll=37.667986%2C55.765837&sspn=0.021801%2C0.007162&text=%28%D0%9E%D1%81%D0%BE%D0%B1%D0%BD%D1%8F%D0%BA%20%D0%92.%D0%90.%20%D0%9B%D0%B5%D0%BC%D0%B0%D0%BD%D0%B0%2C%20%D0%BC.%20%D0%9A%D1%83%D1%80%D1%81%D0%BA%D0%B0%D1%8F%2C%20%D0%BF%D0%B5%D1%80.%20%D0%93%D0%BE%D1%80%D0%BE%D1%85%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%2C%2019%29&z=16",
     ticketUrl: "https://iframeab-pre6144.intickets.ru/seance/75159386/",
-    pageUrl: "",
+    pageUrl: "repertoire/hamlet-illusions.html",
   },
 
   {
@@ -166,7 +166,7 @@ const performancesOctober = [
     mapUrl:
       "https://yandex.ru/maps/org/usadba_vorontsovoy_mukhinoy/198224388711/?ll=37.672063%2C55.772380&z=19.2",
     ticketUrl: "https://iframeab-pre6144.intickets.ru/seance/75159801/",
-    pageUrl: "",
+    pageUrl: "repertoire/pushkin-tragedies.html",
   },
 
   {
