@@ -4,14 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>МДТ имени Сергея Есенина — иммерсивный театр в Москве</title>
+  <!-- ===== SEO: Title & Description ===== -->
+  <title>МДТ Есенина — иммерсивный театр в Москве | Спектакли, афиша, билеты</title>
 
-  <link
-    rel="icon"
-    type="image/avif"
-    href="./assets/images/main-logo.avif"
-  >
+  <meta name="description" content="Московский Драматический Театр имени Сергея Есенина — иммерсивный театр в Москве. Спектакли по классике в исторических усадьбах. Афиша, билеты, отзывы.">
 
+  <meta name="keywords" content="иммерсивный театр москва, театр есенина, мдт есенина, московский драматический театр есенина, спектакли москва, купить билеты театр, иммерсивные спектакли, театр в усадьбе, есенин театр москва">
+
+  <meta name="author" content="МДТ имени Сергея Есенина">
+
+  <meta name="robots" content="index, follow">
+
+  <!-- ===== Canonical ===== -->
+  <link rel="canonical" href="https://mdt-esenin.ru/">
+
+  <!-- ===== Open Graph / Facebook / ВКонтакте ===== -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="МДТ имени Сергея Есенина">
+  <meta property="og:url" content="https://mdt-esenin.ru/">
+  <meta property="og:title" content="МДТ Есенина — иммерсивный театр в Москве">
+  <meta property="og:description" content="Спектакли по классике в исторических усадьбах Москвы. Погружение в атмосферу с первых минут. Афиша и билеты онлайн.">
+  <meta property="og:image" content="https://mdt-esenin.ru/assets/images/og-cover.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="ru_RU">
+
+  <!-- ===== Twitter Card ===== -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="МДТ Есенина — иммерсивный театр в Москве">
+  <meta name="twitter:description" content="Спектакли по классике в исторических усадьбах Москвы. Погружение в атмосферу с первых минут.">
+  <meta name="twitter:image" content="https://mdt-esenin.ru/assets/images/og-cover.jpg">
+
+  <!-- ===== Favicon ===== -->
+  <link rel="icon" type="image/avif" href="./assets/images/main-logo.avif">
+  <link rel="icon" type="image/png" href="./assets/images/main-logo.png">
+
+  <!-- ===== Styles ===== -->
   <link rel="stylesheet" href="./styles/reset.css">
   <link rel="stylesheet" href="./styles/root.css">
   <link rel="stylesheet" href="./styles/header-home.css">
@@ -19,6 +47,29 @@
   <link rel="stylesheet" href="./styles/footer.css">
   <link rel="stylesheet" href="./styles/breadcrumb.css">
   <link rel="stylesheet" href="./styles/home.css">
+
+  <!-- ===== Schema.org (JSON-LD) ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TheaterGroup",
+    "name": "Московский Драматический Театр имени Сергея Есенина",
+    "alternateName": ["МДТ Есенина", "Театр Есенина", "Иммерсивный театр Есенина"],
+    "url": "https://mdt-esenin.ru",
+    "logo": "https://mdt-esenin.ru/assets/images/main-logo.avif",
+    "description": "Иммерсивный театр в Москве. Спектакли по русской и зарубежной классике в исторических усадьбах.",
+    "telephone": "+7-905-206-97-83",
+    "email": "mdtesenina@inbox.ru",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Москва",
+      "addressCountry": "RU"
+    },
+    "sameAs": [
+      "https://github.com/con-moto/mdt-esenin"
+    ]
+  }
+  </script>
 </head>
 
 <body data-root="./" data-header="header-home" data-page="home">
@@ -112,7 +163,6 @@
               >
             </picture>
           </button>
-
 
           <video
             class="video-section__video"
