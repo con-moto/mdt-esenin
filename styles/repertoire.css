@@ -1,0 +1,257 @@
+body {
+  background: var(--white);
+  color: #111;
+}
+
+/* ===== INTRO ===== */
+
+.repertoire-page {
+  overflow: hidden;
+  background: var(--white);
+}
+
+.repertoire-page__intro {
+  padding-bottom: clamp(4rem, 8vw, 8rem);
+  background: var(--dark);
+}
+
+/*
+  На этой странице breadcrumb находится внутри тёмной intro-секции.
+  Отступы и общий вид остаются теми же, что на главной.
+*/
+.repertoire-page__intro .breadcrumb {
+  margin-bottom: 0;
+}
+
+.repertoire-page__decor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min(var(--content-width), calc(100% - 40px));
+  margin: 0 auto;
+  padding-top: clamp(3.5rem, 7vw, 6.5rem);
+}
+
+.repertoire-page__decor-image {
+  display: block;
+  width: min(34rem, 66vw);
+  height: auto;
+}
+
+/* ===== REPERTOIRE LIST ===== */
+
+.repertoire-list {
+  padding: clamp(4.5rem, 9vw, 8rem) 0 clamp(5rem, 10vw, 9rem);
+  background: var(--white);
+}
+
+.repertoire-list__container {
+  width: min(var(--content-width), calc(100% - 40px));
+  margin: 0 auto;
+}
+
+/* ===== CARD ===== */
+
+/*
+  34rem — единая высота всех десктопных карточек.
+  Она рассчитана под самый длинный из добавленных текстов.
+*/
+.repertoire-card {
+  display: grid;
+  grid-template-columns: minmax(15rem, 25rem) minmax(0, 1fr);
+  column-gap: clamp(2rem, 5vw, 5.5rem);
+  height: 34rem;
+  padding: 0 0 clamp(2.25rem, 4vw, 3.5rem);
+  margin: 0 0 clamp(2.25rem, 4vw, 3.5rem);
+  border-bottom: 1px solid rgba(0, 77, 69, 0.55);
+}
+
+.repertoire-card:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+.repertoire-card__image-link {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  background: #171717;
+}
+
+.repertoire-card__image-link:focus-visible {
+  outline: 3px solid var(--burgundy);
+  outline-offset: 4px;
+}
+
+.repertoire-card__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.45s ease;
+}
+
+.repertoire-card__image-link:hover .repertoire-card__image,
+.repertoire-card__image-link:focus-visible .repertoire-card__image {
+  transform: scale(1.035);
+}
+
+.repertoire-card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  padding: clamp(0.25rem, 1vw, 1rem) 0;
+}
+
+.repertoire-card__title {
+  margin: 0 0 clamp(1.25rem, 2vw, 1.9rem);
+  font-family: var(--font-serif);
+  font-size: clamp(1.75rem, 3.2vw, 3.25rem);
+  font-weight: 400;
+  line-height: 0.98;
+  text-transform: uppercase;
+}
+
+.repertoire-card__title-link {
+  color: var(--burgundy);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  transition: color 0.2s ease;
+}
+
+.repertoire-card__title-link:hover,
+.repertoire-card__title-link:focus-visible {
+  color: #751c27;
+}
+
+.repertoire-card__title-link:focus-visible {
+  outline: 2px solid var(--burgundy);
+  outline-offset: 4px;
+}
+
+.repertoire-card__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.22rem;
+  margin: 0 0 clamp(1.5rem, 2.7vw, 2.5rem);
+  color: #3d3d3d;
+  font-family: var(--font-serif);
+  font-size: clamp(1rem, 1.45vw, 1.28rem);
+  font-style: italic;
+  line-height: 1.32;
+}
+
+.repertoire-card__meta-item {
+  margin: 0;
+}
+
+.repertoire-card__description {
+  margin: 0;
+  color: #202020;
+  font-family: var(--font-serif);
+  font-size: clamp(1rem, 1.35vw, 1.2rem);
+  font-weight: 400;
+  line-height: 1.47;
+}
+
+/* ===== TABLET ===== */
+
+@media (max-width: 900px) {
+  .repertoire-card {
+    grid-template-columns: minmax(13rem, 18rem) minmax(0, 1fr);
+    column-gap: 2.25rem;
+    height: 32rem;
+  }
+
+  .repertoire-card__title {
+    font-size: clamp(1.55rem, 4vw, 2.35rem);
+  }
+
+  .repertoire-card__meta {
+    margin-bottom: 1.25rem;
+    font-size: 1rem;
+  }
+
+  .repertoire-card__description {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 650px) {
+  .repertoire-page__intro {
+    padding-bottom: 4rem;
+  }
+
+  .repertoire-page__decor {
+    padding-top: 3.5rem;
+  }
+
+  .repertoire-page__decor-image {
+    width: min(26rem, 78vw);
+  }
+
+  .repertoire-list {
+    padding: 4rem 0 5rem;
+  }
+
+  .repertoire-card {
+    grid-template-columns: 1fr;
+    height: auto;
+    row-gap: 2rem;
+    padding-bottom: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .repertoire-card__image-link {
+    width: min(100%, 28rem);
+    height: auto;
+    aspect-ratio: 3 / 4;
+  }
+
+  .repertoire-card__content {
+    display: block;
+    padding: 0;
+  }
+
+  .repertoire-card__title {
+    margin-bottom: 1.25rem;
+    font-size: clamp(1.7rem, 8vw, 2.4rem);
+    line-height: 1;
+  }
+
+  .repertoire-card__meta {
+    margin-bottom: 1.4rem;
+    font-size: 1rem;
+    line-height: 1.35;
+  }
+
+  .repertoire-card__description {
+    font-size: 1rem;
+    line-height: 1.48;
+  }
+}
+
+@media (max-width: 420px) {
+  .repertoire-page__decor {
+    width: calc(100% - 32px);
+  }
+
+  .repertoire-list__container {
+    width: calc(100% - 32px);
+  }
+
+  .repertoire-card {
+    row-gap: 1.5rem;
+  }
+
+  .repertoire-card__title {
+    font-size: 1.65rem;
+  }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Репертуар — МДТ имени Сергея Есенина</title>
+
+  <meta
+    name="description"
+    content="Репертуар Московского Драматического Театра имени Сергея Есенина: иммерсивные спектакли по русской и зарубежной классике."
+  >
+
+  <link
+    rel="icon"
+    type="image/avif"
+    href="../assets/images/main-logo.avif"
+  >
+
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="../styles/root.css">
+  <link rel="stylesheet" href="../styles/header-season.css">
+  <link rel="stylesheet" href="../styles/header-repertoire.css">
+  <link rel="stylesheet" href="../styles/navigation.css">
+  <link rel="stylesheet" href="../styles/footer.css">
+  <link rel="stylesheet" href="../styles/breadcrumb.css">
+  <link rel="stylesheet" href="../styles/repertoire.css">
+</head>
+
+<body
+  data-root="../"
+  data-header="header-repertoire"
+  data-page="repertoire-index"
+>
+  <div id="common-header"></div>
+
+  <main class="repertoire-page">
+    <section class="repertoire-page__intro">
+      <nav class="breadcrumb" aria-label="Хлебные крошки">
+        <div class="breadcrumb__inner">
+          <a
+            class="breadcrumb__link"
+            href="#"
+            data-root-path="index.html"
+          >
+            Главная
+          </a>
+
+          <span class="breadcrumb__separator" aria-hidden="true">/</span>
+
+          <a
+            class="breadcrumb__link"
+            href="#"
+            data-root-path="repertoire/index.html"
+          >
+            Репертуар
+          </a>
+        </div>
+      </nav>
+
+      <div class="repertoire-page__decor">
+        <img
+          class="repertoire-page__decor-image"
+          src="../assets/images/decour.png"
+          alt=""
+          aria-hidden="true"
+        >
+      </div>
+    </section>
+
+    <section
+      class="repertoire-list"
+      aria-label="Спектакли репертуара"
+    >
+      <div
+        class="repertoire-list__container"
+        data-repertoire-list
+      ></div>
+    </section>
+  </main>
+
+  <div id="common-footer"></div>
+
+  <script src="../scripts/layout.js" defer></script>
+  <script src="../scripts/event-data.js" defer></script>
+  <script src="../scripts/repertoire.js" defer></script>
+</body>
+</html>

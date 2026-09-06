@@ -1,0 +1,51 @@
+.repertoire-header__tickets {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 176px;
+  min-height: 42px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  color: var(--white);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.repertoire-header__tickets:hover,
+.repertoire-header__tickets:focus-visible {
+  color: var(--burgundy);
+  background-color: var(--white);
+}
+
+.repertoire-header__tickets:focus-visible {
+  outline: 2px solid var(--white);
+  outline-offset: 3px;
+}
+
+@media (max-width: 768px) {
+  .repertoire-header__tickets {
+    top: 50%;
+    left: 0;
+    min-width: auto;
+    min-height: 38px;
+    padding: 0 12px;
+    font-size: 0.72rem;
+    transform: translateY(-50%);
+  }
+
+  .repertoire-header__tickets + .socials {
+    display: none;
+  }
+}
