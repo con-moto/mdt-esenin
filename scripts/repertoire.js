@@ -1,6 +1,7 @@
 function getRepertoireRootPath(path) {
-  // Всегда от корня проекта, без data-root
-  return `/mdt-esenin/${path}`;
+  const root = document.body.dataset.root || "";
+
+  return `${root}${path}`;
 }
 
 function getEventPageUrl(eventKey) {
@@ -17,8 +18,10 @@ function getCardImagePaths(eventKey) {
 
   return {
     jpg: `${basePath}.jpg`,
-    webp: `assets/images/optimized/repertoire/${eventKey}/for-card.webp`,
-    avif: `assets/images/optimized/repertoire/${eventKey}/for-card.avif`
+    webp:
+      `assets/images/optimized/repertoire/${eventKey}/for-card.webp`,
+    avif:
+      `assets/images/optimized/repertoire/${eventKey}/for-card.avif`
   };
 }
 
@@ -36,13 +39,14 @@ function createRepertoireCard(eventKey, event) {
 
   const eventPageUrl = getEventPageUrl(eventKey);
   const imagePaths = getCardImagePaths(eventKey);
+  const eventTitle = event.title.replace(/\n/g, " ");
 
   const imageLink = document.createElement("a");
   imageLink.className = "repertoire-card__image-link";
   imageLink.href = eventPageUrl;
   imageLink.setAttribute(
     "aria-label",
-    `Открыть страницу спектакля «${event.title.replace(/\n/g, " ")}»`
+    `Открыть страницу спектакля «${eventTitle}»`
   );
 
   const picture = document.createElement("picture");
@@ -58,7 +62,7 @@ function createRepertoireCard(eventKey, event) {
   const image = document.createElement("img");
   image.className = "repertoire-card__image";
   image.src = getRepertoireRootPath(imagePaths.jpg);
-  image.alt = `Спектакль «${event.title.replace(/\n/g, " ")}»`;
+  image.alt = `Спектакль «${eventTitle}»`;
   image.loading = "lazy";
   image.decoding = "async";
 
@@ -80,7 +84,7 @@ function createRepertoireCard(eventKey, event) {
   const titleLink = document.createElement("a");
   titleLink.className = "repertoire-card__title-link";
   titleLink.href = eventPageUrl;
-  titleLink.textContent = event.title.replace(/\n/g, " ");
+  titleLink.textContent = eventTitle;
 
   title.append(titleLink);
 
@@ -95,12 +99,12 @@ function createRepertoireCard(eventKey, event) {
     meta.append(createMetaItem(event.genre));
   }
 
-  const durationParts = [event.duration, event.durationNote]
+  const duration = [event.duration, event.durationNote]
     .filter(Boolean)
     .join(" ");
 
-  if (durationParts) {
-    meta.append(createMetaItem(durationParts));
+  if (duration) {
+    meta.append(createMetaItem(duration));
   }
 
   const description = document.createElement("p");
