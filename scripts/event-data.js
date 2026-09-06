@@ -171,6 +171,7 @@ window.EVENTS_DATA = {
     sliderCount: 4,
     galleryCount: 20,
     hasTrailer: true,
+    trailerUrl: "https://video.wixstatic.com/video/0ec44b_5eab0be22e1f4cffb8607ab325c1f773/360p/mp4/file.mp4",
     description: `
       <p>
         Вы станете посетителем кабинета великого сыщика на «Бейкер-стрит»,
@@ -291,7 +292,7 @@ window.EVENTS_DATA = {
     ]
   },
 
-    "12-chairs": {
+  "12-chairs": {
     title: "12 СТУЛЬЕВ",
     breadcrumbTitle: "12 стульев",
     genre: "ИММЕРСИВНАЯ МУЗЫКАЛЬНАЯ КОМЕДИЯ",
@@ -304,6 +305,7 @@ window.EVENTS_DATA = {
     sliderCount: 4,
     galleryCount: 20,
     hasTrailer: true,
+    trailerUrl: "https://video.wixstatic.com/video/0ec44b_72a971138d134de288e8945e683b09f0/720p/mp4/file.mp4",
     description: `
       <p>
         Поиск счастья — каждый человек озабочен им на протяжении всей своей
@@ -561,6 +563,7 @@ window.EVENTS_DATA = {
     sliderCount: 3,
     galleryCount: 20,
     hasTrailer: true,
+    trailerUrl: "https://video.wixstatic.com/video/0ec44b_e0e598733024407481de54ecd50c15bc/1080p/mp4/file.mp4",
     description: `
       <p>
         Нас всегда захватывает что-то диковинное, что-то уходящее за рамки
@@ -635,7 +638,7 @@ window.EVENTS_DATA = {
     ]
   },
 
-    "hero-of-our-time": {
+  "hero-of-our-time": {
     title: "ГЕРОЙ НАШЕГО ВРЕМЕНИ?",
     heroCompact: true,
     breadcrumbTitle: "Герой нашего времени",
@@ -649,6 +652,7 @@ window.EVENTS_DATA = {
     sliderCount: 4,
     galleryCount: 20,
     hasTrailer: true,
+    trailerUrl: "https://video.wixstatic.com/video/0ec44b_4bad4f70e6ca4ee2b6435de3805d909d/1080p/mp4/file.mp4",
     description: `
       <p>
         «Герой Нашего Времени?» – знак вопроса в названии спектакля по одноименному роману М.Ю. Лермонтова является чуть ли не главным действующим лицом. Герой? Нашего? Времени? В чем загадка этих заданных автором категорий? Печорин ли главное действующее лицо, либо кто-то или что-то другое руководит этим пространством? Что несет в себе понятие «времени»? Не оно ли всем движет, играет в свою игру? И как человек может бороться с ним? Чтобы попытаться найти ответы, за основу спектакля взят основной триптих из романа: «Бэла», «Княжна Мери», «Фаталист».
@@ -916,7 +920,7 @@ window.EVENTS_DATA = {
     ]
   },
 
-    "queens-gambit": {
+  "queens-gambit": {
     title: "КОРОЛЕВСКИЙ ГАМБИТ\nГЕНРИХ VI vs РИЧАРД III",
     breadcrumbTitle: "Королевский Гамбит",
     heroCompact: true,
@@ -930,6 +934,7 @@ window.EVENTS_DATA = {
     sliderCount: 4,
     galleryCount: 20,
     hasTrailer: true,
+    trailerUrl: "https://video.wixstatic.com/video/0ec44b_225e48c65ee74f5ab21d5c5cc679d58f/1080p/mp4/file.mp4",
     description: `
       <p>
         Вся наша жизнь - игра. Игра в дружбу, любовь, шахматы, азартные игры, игра на выживание. Но есть и те, кому этого мало. Те, кто играет судьбами людей не считаясь с ними, хотя их прямой долг делать всё во имя народа. Кто это? Короли. Они возвышаются и нисходят. Король умер, да здравствует король. Меняется ли что-то или же герои находятся в замкнутом круге и выхода из него нет?
@@ -1025,6 +1030,7 @@ window.EVENTS_DATA = {
     sliderCount: 3,
     galleryCount: 20,
     hasTrailer: true,
+    trailerUrl: "https://video.wixstatic.com/video/0ec44b_f0b23a6b00cd41e5a17a108667ee1f29/1080p/mp4/file.mp4",
     description: `
       <p>
         КараМазовы… Карой мазаны… В игру слов превращается название спектакля по великому роману Фёдора Михайловича Достоевского, в котором сошлись все основные линии его творчества, все идеи и мысли. Карамазовы — фамилия, которая стала нарицательной. Карамазовщина есть практически в каждом человеке — это страсти, низменные желания, страхи и слабости, все люди этим мазаны. Но каждый ли заслуживает кары? Как на этом пути не дойти до последней ступени? Можно ли вовремя остановиться?
@@ -1121,7 +1127,7 @@ window.EVENTS_DATA = {
     ]
   },
 
-    "raskolnikov": {
+  "raskolnikov": {
     title: "РАСКОЛЬНИКОВ\nМЕЖДУ ТЬМОЙ И СВЕТОМ",
     breadcrumbTitle: "Раскольников",
     genre: "ПСИХОЛОГИЧЕСКАЯ ДРАМА",
@@ -1134,6 +1140,7 @@ window.EVENTS_DATA = {
     sliderCount: 4,
     galleryCount: 20,
     hasTrailer: true,
+    trailerUrl: "https://video.wixstatic.com/video/0ec44b_6ad59480cf124d30bfbb0d52867dda22/1080p/mp4/file.mp4",
     description: `
       <p>
         Каждый несет ответ за свои деяния. Физически или духовно расплата начинает поглощать человека. Грех не может оставить душу чистой, он укореняется в ней, либо продолжает выбиваться на свободу и тянуть за собой. Он преследует человека, захватывает его мысли и чувства. Реальность теряет свои границы.
@@ -1249,6 +1256,7 @@ window.EVENTS_DATA = {
     sliderCount: 4,
     galleryCount: 20,
     hasTrailer: true,
+    trailerUrl: "https://video.wixstatic.com/video/0ec44b_d2ad08f1c60c47c49345a2c183c764ef/1080p/mp4/file.mp4",
     description: `
       <p>
         Все готово к празднику… Стол накрыт. Слышны затягивающие знакомую песню голоса. Похрюкивают копошащиеся в хлеву свиньи. Зажигаются окна покосившихся хат. Но всё это мирное затишье легко может быть испорчено появившейся в округе нечистой силой! Ведь Чёрту последний день остался бродить по земле, ему как никогда нужно заполучить чью-нибудь душу, чтобы продолжить свои бесчинства! Да и добродетельной Солохе никак не сидится на месте, а ведь многие бабы ни раз замечали её летящей по небу на метле!
@@ -1347,7 +1355,7 @@ window.EVENTS_DATA = {
     ]
   },
 
-    "lev-tolstoy": {
+  "lev-tolstoy": {
     title: "ЛЕВ ТОЛСТОЙ. ПОВЕСТЬ",
     breadcrumbTitle: "Лев Толстой",
     genre: "СПЕКТАКЛЬ-ПОЛИФОНИЯ",
@@ -1360,6 +1368,7 @@ window.EVENTS_DATA = {
     sliderCount: 3,
     galleryCount: 20,
     hasTrailer: true,
+    trailerUrl: "https://video.wixstatic.com/video/0ec44b_87d1c68cc90f43b9bfe872fdfe3d7dd4/1080p/mp4/file.mp4",
     description: `
       <p>
         Из плавного погружения зрителей в атмосферу русской жизни: заунывной песни нищенки, завывания вьюги, звуков деревни, чириканья птиц, созданных с помощью голоса и необычных музыкальных инструментов – вырисовывается тонкая ткань спектакля-полифонии по повести Льва Толстого «Отец Сергий».
@@ -1449,6 +1458,7 @@ window.EVENTS_DATA = {
     sliderCount: 5,
     galleryCount: 29,
     hasTrailer: true,
+    trailerUrl: "https://video.wixstatic.com/video/0ec44b_cb41e00ae123431c8e7c4ada32e03205/720p/mp4/file.mp4",
     description: `
       <p>
         «Идиот» - это спектакль-путешествие по роману Ф.М. Достоевского. Здесь нет «четвёртой стены». Здесь герои и зрители наравне. Действие спектакля движется по интерьерам и пространствам исторической усадьбы Белавиных-Струйских, погружая всех в атмосферу дворянской эпохи. Публика вместе с актерами совершает крестный ход вокруг судьбы одного из самых загадочных и необыкновенных персонажей русской литературы — Князя Льва Николаевича Мышкина.
@@ -1549,7 +1559,7 @@ window.EVENTS_DATA = {
     ]
   },
 
-    "pushkin-tragedies": {
+  "pushkin-tragedies": {
     title: "НеМАЛЕНЬКИЕ ТРАГЕДИИ ПУШКИНА",
     breadcrumbTitle: "НеМаленькие Трагедии Пушкина",
     heroCompact: true,
@@ -1768,6 +1778,7 @@ window.EVENTS_DATA = {
     sliderCount: 4,
     galleryCount: 20,
     hasTrailer: true,
+    trailerUrl: "https://video.wixstatic.com/video/0ec44b_ac5b18cb4c744c9393fc871e586178fd/1080p/mp4/file.mp4",
     description: `
       <p>
         Эпохи. Столетия. Время проносится неумолимо и назад вернуться нельзя. Или можно?

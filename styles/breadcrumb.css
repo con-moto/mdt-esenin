@@ -37,3 +37,20 @@
 .breadcrumb__current {
   color: var(--white);
 }
+
+body[data-page="repertoire"] {
+  overflow-x: hidden;
+}
+
+body[data-page="repertoire"] .breadcrumb {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  max-width: none;
+}
+
+body[data-page="repertoire"] .breadcrumb__inner {
+  width: min(var(--content-width), calc(100% - 40px));
+  margin: 0 auto;
+}

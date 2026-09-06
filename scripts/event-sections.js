@@ -472,41 +472,32 @@ function renderGallery(photos, root, section) {
 
 
 function createTrailer(eventKey, event, root, section) {
-  if (!event.hasTrailer) {
+  if (!event.hasTrailer || !event.trailerUrl) {
     section.hidden = true;
     return;
   }
 
-
   section.hidden = false;
   root.innerHTML = "";
 
-
   const wrapper = createElement("div", "event-trailer__inner");
   const player = createElement("div", "event-trailer__player");
-
 
   const video = createElement("video", "event-trailer__video");
   video.controls = true;
   video.preload = "metadata";
   video.playsInline = true;
 
-
   const source = document.createElement("source");
-  source.src = resolveRootPath(
-    `assets/images/repertoire/${eventKey}/trailer.mp4`
-  );
+  source.src = event.trailerUrl;
   source.type = "video/mp4";
 
-
   video.append(source);
-
 
   const coverButton = createElement(
     "button",
     "event-trailer__cover"
   );
-
 
   coverButton.type = "button";
   coverButton.setAttribute(
@@ -514,73 +505,62 @@ function createTrailer(eventKey, event, root, section) {
     "Воспроизвести трейлер"
   );
 
-
   const picture = document.createElement("picture");
 
+  const coverAvif =
+    `assets/images/optimized/repertoire/${eventKey}/cover.avif`;
 
-  const coverAvif = `assets/images/optimized/repertoire/${eventKey}/cover.avif`;
-  const coverWebp = `assets/images/optimized/repertoire/${eventKey}/cover.webp`;
-
+  const coverWebp =
+    `assets/images/optimized/repertoire/${eventKey}/cover.webp`;
 
   const sourceAvif = document.createElement("source");
   sourceAvif.type = "image/avif";
   sourceAvif.srcset = resolveRootPath(coverAvif);
 
-
   const sourceWebp = document.createElement("source");
   sourceWebp.type = "image/webp";
   sourceWebp.srcset = resolveRootPath(coverWebp);
 
-
   const coverImage = document.createElement("img");
   coverImage.className = "event-trailer__cover-image";
-  coverImage.src = resolveRootPath(`assets/images/repertoire/${eventKey}/cover.jpg`);
-  coverImage.alt = `Трейлер спектакля «${event.title.replace(/\n/g, " ")}»`;
+  coverImage.src = resolveRootPath(
+    `assets/images/repertoire/${eventKey}/cover.jpg`
+  );
+  coverImage.alt =
+    `Трейлер спектакля «${event.title.replace(/\n/g, " ")}»`;
   coverImage.loading = "lazy";
   coverImage.decoding = "async";
-
-
-  coverImage.addEventListener("error", () => {
-    console.error(`Не удалось загрузить обложку трейлера: ${coverImage.src}`);
-  });
-
 
   const playIcon = createElement(
     "span",
     "event-trailer__play-icon"
   );
 
-
   playIcon.setAttribute("aria-hidden", "true");
-
 
   picture.append(sourceAvif, sourceWebp, coverImage);
 
-
-  const coverWrapper = document.createElement("div");
-  coverWrapper.append(picture, playIcon);
-  coverButton.append(coverWrapper);
-
+  coverButton.append(picture, playIcon);
 
   coverButton.addEventListener("click", () => {
-    player.classList.add("event-trailer__player--playing");
-
-
-    video.play().catch(() => {
-      player.classList.remove("event-trailer__player--playing");
+    video.play().catch((error) => {
+      console.error("Не удалось запустить трейлер:", error);
     });
   });
 
-
   video.addEventListener("play", () => {
-    player.classList.add('event-trailer__player--playing');
+    player.classList.add("event-trailer__player--playing");
   });
-
 
   video.addEventListener("ended", () => {
-    player.classList.remove('event-trailer__player--playing');
+    video.currentTime = 0;
+    player.classList.remove("event-trailer__player--playing");
   });
 
+  video.addEventListener("error", () => {
+    console.error(`Не удалось загрузить трейлер: ${event.trailerUrl}`);
+    player.classList.remove("event-trailer__player--playing");
+  });
 
   player.append(video, coverButton);
   wrapper.append(player);
