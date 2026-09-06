@@ -11,7 +11,7 @@ body {
 }
 
 .repertoire-page__intro {
-  padding-top: clamp(4rem, 8vw, 8rem);
+  padding-top: clamp(3rem, 7vw, 5rem);
 }
 
 /*
