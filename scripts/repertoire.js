@@ -1,7 +1,6 @@
 function getRepertoireRootPath(path) {
-  const root = document.body.dataset.root || "";
-
-  return `${root}${path}`;
+  // Всегда от корня проекта, без data-root
+  return `/mdt-esenin/${path}`;
 }
 
 function getEventPageUrl(eventKey) {
