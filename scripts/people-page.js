@@ -109,10 +109,7 @@ function createPersonCard(person, variant, page) {
 
   content.append(name);
 
-  if (
-    variant !== "troupe" &&
-    person.jobTitle
-  ) {
+  if (variant !== "troupe" && person.jobTitle) {
     const job = document.createElement("p");
     job.className = "people-card__job";
     job.textContent = person.jobTitle;
@@ -138,12 +135,20 @@ function createPeopleGrid(people, variant, page) {
   return grid;
 }
 
-function createSectionTitle(title) {
+function createPeopleHeader(title, modifier = "") {
+  const section = document.createElement("section");
+
+  section.className = modifier
+    ? `people-header ${modifier}`
+    : "people-header";
+
   const titleElement = document.createElement("h2");
-  titleElement.className = "people-section-title";
+  titleElement.className = "people-header__title";
   titleElement.textContent = title;
 
-  return titleElement;
+  section.append(titleElement);
+
+  return section;
 }
 
 function renderAlphabet(people, container, activeLetter) {
@@ -238,10 +243,41 @@ function renderAlphabet(people, container, activeLetter) {
   container.append(list);
 }
 
+function renderGuestSection(guestPeople, guestsContainer) {
+  if (!guestsContainer) {
+    return;
+  }
+
+  guestsContainer.innerHTML = "";
+
+  if (!guestPeople.length) {
+    return;
+  }
+
+  const header = createPeopleHeader(
+    "ПРИГЛАШЁННЫЕ АРТИСТЫ",
+    "people-header--guests"
+  );
+
+  const list = document.createElement("section");
+  list.className = "people-list people-list--guests";
+
+  const grid = createPeopleGrid(
+    guestPeople,
+    "troupe",
+    "people-troupe"
+  );
+
+  list.append(grid);
+
+  guestsContainer.append(header, list);
+}
+
 function renderTroupePage(
   allPeople,
   listContainer,
-  alphabetContainer
+  alphabetContainer,
+  guestsContainer
 ) {
   const params = new URLSearchParams(window.location.search);
   const selectedLetter = params.get("letter") || "";
@@ -283,27 +319,27 @@ function renderTroupePage(
     );
   }
 
-  if (!selectedLetter && guestPeople.length) {
-    listContainer.append(
-      createSectionTitle("ПРИГЛАШЁННЫЕ АРТИСТЫ")
+  if (!selectedLetter) {
+    renderGuestSection(
+      guestPeople,
+      guestsContainer
     );
-
-    listContainer.append(
-      createPeopleGrid(
-        guestPeople,
-        "troupe",
-        "people-troupe"
-      )
-    );
+  } else if (guestsContainer) {
+    guestsContainer.innerHTML = "";
   }
 }
 
 function renderManagementPage(allPeople, listContainer) {
-  const managementPeople = sortPeopleByLastName(
-    allPeople.filter((person) =>
-      hasGroup(person, "management")
-    )
-  );
+  const managementOrder = [
+    "yaroslav-shevaldov",
+    "anna-sardanovskaya"
+  ];
+
+  const managementPeople = managementOrder
+    .map((personId) => allPeople.find(
+      (person) => person.id === personId
+    ))
+    .filter(Boolean);
 
   listContainer.innerHTML = "";
 
@@ -349,6 +385,10 @@ function initPeoplePage() {
     "[data-people-alphabet]"
   );
 
+  const guestsContainer = document.querySelector(
+    "[data-people-guests]"
+  );
+
   if (!listContainer || !allPeople.length) {
     return;
   }
@@ -360,7 +400,8 @@ function initPeoplePage() {
     renderTroupePage(
       allPeople,
       listContainer,
-      alphabetContainer
+      alphabetContainer,
+      guestsContainer
     );
 
     return;

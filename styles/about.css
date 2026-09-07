@@ -1,0 +1,408 @@
+/* =========================================================
+   ABOUT PAGE
+   ========================================================= */
+
+.about-page {
+  min-height: 100vh;
+  overflow: hidden;
+  background: var(--white);
+  color: #111111;
+}
+
+/* =========================================================
+   INTRO: BREADCRUMBS + DECOR
+   Breadcrumb styles remain in breadcrumb.css
+   ========================================================= */
+
+.about-page__intro {
+  padding-top: clamp(1.5rem, 3vw, 3rem);
+}
+
+.about-page__decor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min(1324px, calc(100% - 40px));
+  margin: clamp(2.25rem, 4vw, 4rem) auto;
+}
+
+.about-page__decor-image {
+  display: block;
+  width: min(100%, 235px);
+  height: auto;
+}
+
+/* =========================================================
+   SHARED TWO-COLUMN LAYOUTS
+   ========================================================= */
+
+.about-leader__inner,
+.about-library__inner {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(2rem, 5vw, 6rem);
+  align-items: start;
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+/* =========================================================
+   YAROSLAV SHEVALDOV
+   ========================================================= */
+
+.about-leader {
+  padding-bottom: clamp(3rem, 7vw, 7rem);
+}
+
+.about-leader__photo-wrap {
+  width: 100%;
+  overflow: hidden;
+  background: #e7e7e7;
+}
+
+.about-leader__photo-wrap picture {
+  display: block;
+  width: 100%;
+}
+
+.about-leader__photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.about-leader__content,
+.about-library__content {
+  color: #202020;
+  font-family: var(--font-serif);
+  font-size: clamp(1rem, 1.35vw, 1.18rem);
+  font-weight: 400;
+  line-height: 1.52;
+}
+
+.about-leader__content p,
+.about-library__content p {
+  margin: 0;
+}
+
+.about-leader__content p + p,
+.about-library__content p + p {
+  margin-top: 1.35em;
+}
+
+.about-leader__link {
+  color: var(--burgundy);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+  transition: color 0.2s ease;
+}
+
+.about-leader__link:hover,
+.about-leader__link:focus-visible {
+  color: var(--button-green);
+}
+
+.about-leader__link:focus-visible {
+  outline: 2px solid var(--button-green);
+  outline-offset: 3px;
+}
+
+/* =========================================================
+   ABOUT THE THEATRE
+   ========================================================= */
+
+.about-theatre {
+  width: 100%;
+}
+
+.about-theatre__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 82px;
+  padding: 16px 24px;
+  background: var(--burgundy);
+}
+
+.about-theatre__title {
+  margin: 0;
+  color: var(--white);
+  font-family: var(--font-serif);
+  font-size: clamp(1.45rem, 2vw, 2rem);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: 0.01em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about-theatre__background {
+  --about-background-fade: 0;
+
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background-color: #2f2e2e;
+  background-image: url("../assets/images/about.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.about-theatre__background::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: #2f2e2e;
+  opacity: calc(var(--about-background-fade) * 0.72);
+  pointer-events: none;
+  content: "";
+}
+
+.about-theatre__overlay {
+  width: 100%;
+  min-height: 100%;
+  padding: clamp(3rem, 7vw, 7rem) 0;
+  background: rgba(47, 46, 46, 0.24);
+}
+
+.about-theatre__content {
+  width: min(980px, calc(100% - 40px));
+  margin: 0 auto;
+  color: var(--white);
+  font-family: var(--font-serif);
+  font-size: clamp(1rem, 1.35vw, 1.18rem);
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+.about-theatre__content p {
+  margin: 0;
+}
+
+.about-theatre__content p + p {
+  margin-top: 1.35em;
+}
+
+.about-theatre__festivals-title {
+  color: #d3a0a0;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+}
+
+.about-theatre__festivals {
+  margin-top: 1.35em;
+}
+
+.about-theatre__festival + .about-theatre__festival {
+  margin-top: 1.35em;
+}
+
+.about-theatre__festival h2 {
+  margin: 0;
+  color: var(--white);
+  font: inherit;
+  font-weight: 700;
+}
+
+.about-theatre__festival p {
+  margin-top: 0.35em;
+}
+
+/* =========================================================
+   DIPLOMAS
+   ========================================================= */
+
+.about-diplomas {
+  width: 100%;
+  padding: clamp(3rem, 7vw, 7rem) 0;
+  background: var(--white);
+}
+
+.about-diplomas__inner {
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+  padding-top: clamp(2rem, 4vw, 4rem);
+  border-top: 1px solid rgba(0, 0, 0, 0.18);
+}
+
+.about-diplomas__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(1rem, 2.5vw, 2rem);
+}
+
+.about-diplomas__item {
+  min-width: 0;
+  overflow: hidden;
+  background: #eeeeee;
+}
+
+.about-diplomas__item picture {
+  display: block;
+  width: 100%;
+}
+
+.about-diplomas__image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1.4142;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.35s ease;
+}
+
+.about-diplomas__item:hover .about-diplomas__image {
+  transform: scale(1.02);
+}
+
+/* =========================================================
+   LIBRARY
+   ========================================================= */
+
+.about-library {
+  padding-bottom: clamp(4rem, 8vw, 8rem);
+}
+
+.about-library__photo-wrap {
+  width: 100%;
+  overflow: hidden;
+  background: #e7e7e7;
+}
+
+.about-library__photo-wrap picture {
+  display: block;
+  width: 100%;
+}
+
+.about-library__photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about-library__lead {
+  color: var(--burgundy);
+  font-weight: 700;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .about-leader__inner,
+  .about-library__inner {
+    grid-template-columns: minmax(220px, 0.8fr) minmax(0, 1.2fr);
+    gap: 2rem;
+  }
+
+  .about-diplomas__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .about-theatre__background {
+    background-attachment: scroll;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 680px) {
+  .about-page__intro {
+    padding-top: 1.5rem;
+  }
+
+  .about-page__decor {
+    width: calc(100% - 32px);
+    margin: 2.5rem auto;
+  }
+
+  .about-leader__inner,
+  .about-library__inner {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+    width: calc(100% - 32px);
+  }
+
+  .about-leader__photo-wrap {
+    width: min(78%, 280px);
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .about-library__photo-wrap {
+    width: min(100%, 420px);
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .about-leader__content,
+  .about-library__content,
+  .about-theatre__content {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .about-theatre__header {
+    min-height: 68px;
+  }
+
+  .about-theatre__background {
+    background-position: center center;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+
+  .about-theatre__background::before {
+    opacity: calc(var(--about-background-fade) * 0.42);
+  }
+
+  .about-theatre__overlay {
+    padding: 3rem 0;
+    background: rgba(47, 46, 46, 0.36);
+  }
+
+  .about-theatre__content {
+    width: calc(100% - 32px);
+  }
+
+  .about-diplomas__inner {
+    width: calc(100% - 32px);
+  }
+
+  .about-diplomas__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 390px) {
+  .about-leader__photo-wrap {
+    width: min(82%, 250px);
+  }
+
+  .about-diplomas__inner {
+    width: calc(100% - 24px);
+  }
+
+  .about-diplomas__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+}

@@ -21,6 +21,19 @@ function getCardImagePaths(eventKey) {
   };
 }
 
+function formatGenre(genre) {
+  if (!genre) {
+    return "";
+  }
+
+  const normalizedGenre = genre.trim();
+
+  return (
+    normalizedGenre.charAt(0).toUpperCase() +
+    normalizedGenre.slice(1).toLowerCase()
+  );
+}
+
 function createMetaItem(text) {
   const item = document.createElement("p");
   item.className = "repertoire-card__meta-item";
@@ -101,7 +114,11 @@ function createRepertoireCard(eventKey, event) {
   }
 
   if (event.genre) {
-    meta.append(createMetaItem(event.genre));
+    meta.append(
+      createMetaItem(
+        formatGenre(event.genre)
+      )
+    );
   }
 
   const duration = [
@@ -148,12 +165,9 @@ function renderRepertoire() {
   root.innerHTML = "";
 
   Object.entries(events).forEach(([eventKey, event]) => {
-    const card = createRepertoireCard(
-      eventKey,
-      event
+    root.append(
+      createRepertoireCard(eventKey, event)
     );
-
-    root.append(card);
   });
 }
 
