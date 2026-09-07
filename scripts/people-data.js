@@ -195,7 +195,10 @@ window.PEOPLE_DATA = {
     name: "АННА САРДАНОВСКАЯ",
     photo: "assets/images/actors/anna-sardanovskaya.jpg",
     managementPhoto: "assets/images/actors/anna-sardanovskaya-boss.jpg",
+    managementFullPhoto:
+      "assets/images/actors/anna-sardanovskaya-boss-full.jpg",
     href: "../anna-sardanovskaya.html",
+    managementHref: "director.html",
     groups: ["troupe", "management"],
     jobTitle: "Директор театра"
   },
@@ -230,9 +233,13 @@ window.PEOPLE_DATA = {
     name: "ЯРОСЛАВ ШЕВАЛДОВ",
     photo: "assets/images/actors/yaroslav-shevaldov.jpg",
     managementPhoto: "assets/images/actors/yaroslav-shevaldov-boss.jpg",
+    managementFullPhoto:
+      "assets/images/actors/yaroslav-shevaldov-boss-full.jpg",
     href: "../yaroslav-shevaldov.html",
+    managementHref: "artistic-director.html",
     groups: ["troupe", "management"],
-    jobTitle: "Художественный руководитель и главный режиссер театра"
+    jobTitle:
+      "Художественный руководитель и главный режиссер театра"
   },
 
   "andrey-shuteev": {

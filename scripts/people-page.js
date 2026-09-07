@@ -4,7 +4,14 @@ function getRootPath(path) {
   return `${root}${path}`;
 }
 
-function getCardHref(person) {
+function getCardHref(person, page) {
+  if (
+    page === "people-management" &&
+    person.managementHref
+  ) {
+    return person.managementHref;
+  }
+
   return person.href || "";
 }
 
@@ -61,7 +68,7 @@ function getAvailableLetters(people) {
 }
 
 function createPersonCard(person, variant, page) {
-  const href = getCardHref(person);
+  const href = getCardHref(person, page);
   const photo = getPersonPhoto(person, page);
 
   const card = document.createElement("article");
@@ -336,9 +343,9 @@ function renderManagementPage(allPeople, listContainer) {
   ];
 
   const managementPeople = managementOrder
-    .map((personId) => allPeople.find(
-      (person) => person.id === personId
-    ))
+    .map((personId) =>
+      allPeople.find((person) => person.id === personId)
+    )
     .filter(Boolean);
 
   listContainer.innerHTML = "";

@@ -1,0 +1,345 @@
+.management-person-page {
+  min-height: 100vh;
+  overflow: hidden;
+  padding-top: clamp(2rem, 4vw, 4rem);
+  background: var(--white);
+  color: #111111;
+}
+
+.management-person {
+  padding-top: clamp(2rem, 4vw, 4rem);
+  padding-bottom: clamp(5rem, 9vw, 9rem);
+}
+
+.management-person__inner {
+  display: grid;
+  grid-template-columns: minmax(400px, 1.05fr) minmax(0, 1fr);
+  gap: clamp(3rem, 6vw, 7rem);
+  align-items: stretch;
+  width: min(1320px, calc(100% - 80px));
+  margin: 0 auto;
+}
+
+.management-person__photo-wrap {
+  width: 100%;
+  height: 100%;
+  min-height: 820px;
+  overflow: hidden;
+  background: #e5e5e5;
+}
+
+.management-person__photo-wrap picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.management-person__photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.management-person__content {
+  min-width: 0;
+  padding-top: 0.25rem;
+  color: #161616;
+  font-family: var(--font-serif);
+}
+
+.management-person__name {
+  margin: 0 0 clamp(2rem, 4vw, 3.5rem);
+  color: var(--burgundy);
+  font-family: var(--font-serif);
+  font-size: clamp(1.7rem, 2.65vw, 2.55rem);
+  font-weight: 700;
+  line-height: 1.05;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.management-person__facts {
+  display: grid;
+  gap: clamp(1.45rem, 2.35vw, 2rem);
+  margin: 0;
+}
+
+.management-person__fact {
+  margin: 0;
+}
+
+.management-person__fact-label {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0;
+  color: var(--button-green);
+  font-family: var(--font-serif);
+  font-size: clamp(1.2rem, 1.65vw, 1.55rem);
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.management-person__fact-icon {
+  display: block;
+  flex: 0 0 auto;
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+.management-person__fact-value {
+  margin: 0.65rem 0 0 58px;
+  color: #202020;
+  font-family: var(--font-serif);
+  font-size: clamp(1.1rem, 1.55vw, 1.4rem);
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+.management-person__divider {
+  width: 100%;
+  height: 1px;
+  margin: clamp(2.5rem, 4.5vw, 4rem) 0;
+  background: rgba(0, 0, 0, 0.28);
+}
+
+.management-person__timeline {
+  color: #202020;
+  font-family: var(--font-serif);
+  font-size: clamp(1.05rem, 1.4vw, 1.28rem);
+  font-weight: 400;
+  line-height: 1.48;
+}
+
+.management-person__timeline p {
+  margin: 0;
+}
+
+.management-person__timeline p + p {
+  margin-top: 1.45em;
+}
+
+.management-person__timeline a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.management-person__timeline a:hover,
+.management-person__timeline a:focus-visible {
+  color: var(--burgundy);
+}
+
+.management-person__timeline a:focus-visible {
+  outline: 2px solid var(--burgundy);
+  outline-offset: 3px;
+}
+
+.management-person__back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1.5rem, 2.8vw, 2.5rem);
+  width: min(1320px, calc(100% - 80px));
+  margin: clamp(3rem, 5vw, 5rem) auto 0;
+}
+
+.management-person__back-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 143px;
+  height: 143px;
+  border: 1px solid transparent;
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.management-person__back-icon img {
+  display: block;
+  width: 122px;
+  height: 122px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.management-person__back-icon:hover,
+.management-person__back-icon:focus-visible {
+  opacity: 0.9;
+  transform: translateX(-4px);
+}
+
+.management-person__back-icon:hover img {
+  transform: translateX(-8px);
+}
+
+.management-person__back-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 64px;
+  padding: 1rem 2.4rem;
+  background-color: rgb(96, 94, 94);
+  color: var(--white);
+  font-family: var(--font-serif);
+  font-size: clamp(1.1rem, 1.6vw, 1.45rem);
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+.management-person__back-button:hover,
+.management-person__back-button:focus-visible {
+  border-color: var(--burgundy);
+  background-color: var(--burgundy);
+  box-shadow: inset 0 -4px 0 rgba(255, 255, 255, 0.38);
+  transform: translateY(-3px);
+}
+
+.management-person__back-button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.management-person__back-button:focus-visible {
+  outline: 2px solid var(--burgundy);
+  outline-offset: 5px;
+}
+
+@media (max-width: 1000px) {
+  .management-person__inner {
+    grid-template-columns: minmax(330px, 1fr) minmax(0, 1fr);
+    gap: 3rem;
+    width: min(920px, calc(100% - 48px));
+  }
+
+  .management-person__photo-wrap {
+    min-height: 700px;
+  }
+
+  .management-person__name {
+    font-size: clamp(1.55rem, 3.2vw, 2.25rem);
+  }
+
+  .management-person__fact-label {
+    font-size: clamp(1.05rem, 2vw, 1.3rem);
+  }
+
+  .management-person__fact-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .management-person__fact-value {
+    margin-left: 52px;
+    font-size: 1.1rem;
+  }
+
+  .management-person__back {
+    width: min(920px, calc(100% - 48px));
+  }
+
+  .management-person__back-icon {
+    width: 118px;
+    height: 118px;
+  }
+
+  .management-person__back-icon img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 730px) {
+  .management-person {
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+  }
+
+  .management-person__inner {
+    grid-template-columns: 1fr;
+    width: calc(100% - 32px);
+    gap: 2rem;
+  }
+
+  .management-person__photo-wrap {
+    width: min(72%, 280px);
+    min-height: 0;
+    margin: 0 auto;
+  }
+
+  .management-person__photo-wrap picture {
+    height: auto;
+  }
+
+  .management-person__photo {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 4.1;
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  .management-person__name {
+    margin-bottom: 1.75rem;
+    font-size: clamp(1.45rem, 6vw, 2rem);
+    white-space: normal;
+  }
+
+  .management-person__fact-label {
+    gap: 12px;
+    font-size: 1.08rem;
+  }
+
+  .management-person__fact-icon {
+    width: 31px;
+    height: 31px;
+  }
+
+  .management-person__fact-value {
+    margin-left: 43px;
+    font-size: 1.03rem;
+  }
+
+  .management-person__timeline {
+    font-size: 1rem;
+    line-height: 1.48;
+  }
+
+  .management-person__back {
+    width: calc(100% - 32px);
+    margin-top: 3rem;
+    gap: 1rem;
+  }
+
+  .management-person__back-icon {
+    width: 92px;
+    height: 92px;
+  }
+
+  .management-person__back-icon img {
+    width: 78px;
+    height: 78px;
+  }
+
+  .management-person__back-button {
+    min-height: 54px;
+    padding-right: 1.35rem;
+    padding-left: 1.35rem;
+    font-size: 1rem;
+  }
+}
