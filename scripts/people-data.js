@@ -6,8 +6,8 @@ window.PEOPLE_DATA = {
     lastName: "АЛАЕВ",
     name: "ИЛЬЯ АЛАЕВ",
     photo: "assets/images/actors/ilya-alaev.jpg",
-    href: "https://www.mdtesenin.com/alaev",
-    group: "troupe"
+    href: "../ilya-alaev.html",
+    groups: ["troupe"]
   },
 
   "ildar-allabirdin": {
@@ -17,8 +17,8 @@ window.PEOPLE_DATA = {
     lastName: "АЛЛАБИРДИН",
     name: "ИЛЬДАР АЛЛАБИРДИН",
     photo: "assets/images/actors/ildar-allabirdin.jpg",
-    href: "https://www.mdtesenin.com/allabirdin",
-    group: "troupe"
+    href: "../ildar-allabirdin.html",
+    groups: ["troupe"]
   },
 
   "andrey-balakhnin": {
@@ -28,53 +28,8 @@ window.PEOPLE_DATA = {
     lastName: "БАЛАХНИН",
     name: "АНДРЕЙ БАЛАХНИН",
     photo: "assets/images/actors/andrey-balakhnin.jpg",
-    href: "https://www.mdtesenin.com/balahnin",
-    group: "troupe"
-  },
-
-  "mikhail-vechikul": {
-    id: "mikhail-vechikul",
-    slug: "mikhail-vechikul",
-    firstName: "МИХАИЛ",
-    lastName: "ВЕЧИКУЛ",
-    name: "МИХАИЛ ВЕЧИКУЛ",
-    photo: "assets/images/actors/mikhail-vechikul.jpg",
-    href: "https://www.mdtesenin.com/vechikul",
-    group: "troupe"
-  },
-
-  "olga-goncharova": {
-    id: "olga-goncharova",
-    slug: "olga-goncharova",
-    firstName: "ОЛЬГА",
-    lastName: "ГОНЧАРОВА",
-    name: "ОЛЬГА ГОНЧАРОВА",
-    photo: "assets/images/actors/olga-goncharova.jpg",
-    href: "https://www.mdtesenin.com/goncharova",
-    creatorHref: "https://www.mdtesenin.com/goncharova2",
-    group: "troupe"
-  },
-
-  "sergey-zaitsev": {
-    id: "sergey-zaitsev",
-    slug: "sergey-zaitsev",
-    firstName: "СЕРГЕЙ",
-    lastName: "ЗАЙЦЕВ",
-    name: "СЕРГЕЙ ЗАЙЦЕВ",
-    photo: "assets/images/actors/sergey-zaitsev.jpg",
-    href: "https://www.mdtesenin.com/sergey",
-    group: "troupe"
-  },
-
-  "svyatoslav-ivanov": {
-    id: "svyatoslav-ivanov",
-    slug: "svyatoslav-ivanov",
-    firstName: "СВЯТОСЛАВ",
-    lastName: "ИВАНОВ",
-    name: "СВЯТОСЛАВ ИВАНОВ",
-    photo: "assets/images/actors/svyatoslav-ivanov.jpg",
-    href: "",
-    group: "troupe"
+    href: "../andrey-balakhnin.html",
+    groups: ["troupe"]
   },
 
   "timur-burin": {
@@ -84,108 +39,53 @@ window.PEOPLE_DATA = {
     lastName: "БУРИН",
     name: "ТИМУР БУРИН",
     photo: "assets/images/actors/timur-burin.jpg",
-    href: "https://www.mdtesenin.com/burin",
-    group: "troupe"
+    href: "../timur-burin.html",
+    groups: ["troupe"]
   },
 
-  "vera-klyayn": {
-    id: "vera-klyayn",
-    slug: "vera-klyayn",
-    firstName: "ВЕРА",
-    lastName: "КЛЯЙН",
-    name: "ВЕРА КЛЯЙН",
-    photo: "assets/images/actors/vera-klyayn.jpg",
-    href: "https://www.mdtesenin.com/vera",
-    group: "troupe"
+  "mikhail-vechikul": {
+    id: "mikhail-vechikul",
+    slug: "mikhail-vechikul",
+    firstName: "МИХАИЛ",
+    lastName: "ВЕЧИКУЛ",
+    name: "МИХАИЛ ВЕЧИКУЛ",
+    photo: "assets/images/actors/mikhail-vechikul.jpg",
+    href: "../mikhail-vechikul.html",
+    groups: ["troupe"]
   },
 
-  "katya-kovalevskaya": {
-    id: "katya-kovalevskaya",
-    slug: "katya-kovalevskaya",
-    firstName: "КАТЕРИНА",
-    lastName: "КОВАЛЁВСКАЯ",
-    name: "КАТЕРИНА КОВАЛЁВСКАЯ",
-    photo: "assets/images/actors/katya-kovalevskaya.jpg",
-    href: "",
-    group: "troupe"
+  "olga-goncharova": {
+    id: "olga-goncharova",
+    slug: "olga-goncharova",
+    firstName: "ОЛЬГА",
+    lastName: "ГОНЧАРОВА",
+    name: "ОЛЬГА ГОНЧАРОВА",
+    photo: "assets/images/actors/olga-goncharova.jpg",
+    href: "../olga-goncharova.html",
+    groups: ["troupe", "production"],
+    jobTitle: "Муз. руководитель"
   },
 
-  "irina-krasovskaya": {
-    id: "irina-krasovskaya",
-    slug: "irina-krasovskaya",
-    firstName: "ИРИНА",
-    lastName: "КРАСОВСКАЯ",
-    name: "ИРИНА КРАСОВСКАЯ",
-    photo: "assets/images/actors/irina-krasovskaya.jpg",
-    href: "",
-    group: "troupe"
+  "sergey-zaitsev": {
+    id: "sergey-zaitsev",
+    slug: "sergey-zaitsev",
+    firstName: "СЕРГЕЙ",
+    lastName: "ЗАЙЦЕВ",
+    name: "СЕРГЕЙ ЗАЙЦЕВ",
+    photo: "assets/images/actors/sergey-zaitsev.jpg",
+    href: "../sergey-zaitsev.html",
+    groups: ["troupe"]
   },
 
-  "andrey-lushnikov": {
-    id: "andrey-lushnikov",
-    slug: "andrey-lushnikov",
-    firstName: "АНДРЕЙ",
-    lastName: "ЛУШНИКОВ",
-    name: "АНДРЕЙ ЛУШНИКОВ",
-    photo: "assets/images/actors/andrey-lushnikov.jpg",
-    href: "https://www.mdtesenin.com/lushnikov",
-    group: "troupe"
-  },
-
-  "dmitriy-matsko": {
-    id: "dmitriy-matsko",
-    slug: "dmitriy-matsko",
-    firstName: "ДМИТРИЙ",
-    lastName: "МАЦКО",
-    name: "ДМИТРИЙ МАЦКО",
-    photo: "assets/images/actors/dmitriy-matsko.jpg",
-    href: "",
-    group: "troupe"
-  },
-
-  "andrey-perov": {
-    id: "andrey-perov",
-    slug: "andrey-perov",
-    firstName: "АНДРЕЙ",
-    lastName: "ПЕРОВ",
-    name: "АНДРЕЙ ПЕРОВ",
-    photo: "assets/images/actors/andrey-perov.jpg",
-    href: "https://www.mdtesenin.com/perov",
-    group: "troupe"
-  },
-
-  "ilya-rogovin": {
-    id: "ilya-rogovin",
-    slug: "ilya-rogovin",
-    firstName: "ИЛЬЯ",
-    lastName: "РОГОВИН",
-    name: "ИЛЬЯ РОГОВИН",
-    photo: "assets/images/actors/ilya-rogovin.jpg",
-    href: "https://www.mdtesenin.com/rogovin",
-    group: "troupe"
-  },
-
-  "anna-sardanovskaya": {
-    id: "anna-sardanovskaya",
-    slug: "anna-sardanovskaya",
-    firstName: "АННА",
-    lastName: "САРДАНОВСКАЯ",
-    name: "АННА САРДАНОВСКАЯ",
-    photo: "assets/images/actors/anna-sardanovskaya.jpg",
-    href: "https://www.mdtesenin.com/anna",
-    creatorHref: "https://www.mdtesenin.com/director",
-    group: "troupe"
-  },
-
-  "svetlana-sudomir": {
-    id: "svetlana-sudomir",
-    slug: "svetlana-sudomir",
-    firstName: "СВЕТЛАНА",
-    lastName: "СУДОМИР",
-    name: "СВЕТЛАНА СУДОМИР",
-    photo: "assets/images/actors/svetlana-sudomir.jpg",
-    href: "https://www.mdtesenin.com/sudomir",
-    group: "troupe"
+  "svyatoslav-ivanov": {
+    id: "svyatoslav-ivanov",
+    slug: "svyatoslav-ivanov",
+    firstName: "СВЯТОСЛАВ",
+    lastName: "ИВАНОВ",
+    name: "СВЯТОСЛАВ ИВАНОВ",
+    photo: "assets/images/actors/svyatoslav-ivanov.jpg",
+    href: "../svyatoslav-ivanov.html",
+    groups: ["troupe"]
   },
 
   "taya-kapitalova": {
@@ -195,53 +95,120 @@ window.PEOPLE_DATA = {
     lastName: "КАПИТАЛОВА",
     name: "ТАЯ КАПИТАЛОВА",
     photo: "assets/images/actors/taya-kapitalova.jpg",
-    href: "https://www.mdtesenin.com/kapitalova",
-    group: "troupe"
+    href: "../taya-kapitalova.html",
+    groups: ["troupe"]
   },
 
-  "yaroslav-shevaldov": {
-    id: "yaroslav-shevaldov",
-    slug: "yaroslav-shevaldov",
-    firstName: "ЯРОСЛАВ",
-    lastName: "ШЕВАЛДОВ",
-    name: "ЯРОСЛАВ ШЕВАЛДОВ",
-    photo: "assets/images/actors/yaroslav-shevaldov.jpg",
-    href: "https://www.mdtesenin.com/shevaldov",
-    creatorHref: "https://www.mdtesenin.com/artisticdirector",
-    group: "troupe"
+  "vera-klyayn": {
+    id: "vera-klyayn",
+    slug: "vera-klyayn",
+    firstName: "ВЕРА",
+    lastName: "КЛЯЙН",
+    name: "ВЕРА КЛЯЙН",
+    photo: "assets/images/actors/vera-klyayn.jpg",
+    href: "../vera-klyayn.html",
+    groups: ["troupe"]
   },
 
-  "andrey-shuteev": {
-    id: "andrey-shuteev",
-    slug: "andrey-shuteev",
+  "katya-kovalevskaya": {
+    id: "katya-kovalevskaya",
+    slug: "katya-kovalevskaya",
+    firstName: "КАТЯ",
+    lastName: "КОВАЛЁВСКАЯ",
+    name: "КАТЯ КОВАЛЁВСКАЯ",
+    photo: "assets/images/actors/katya-kovalevskaya.jpg",
+    href: "../katya-kovalevskaya.html",
+    groups: ["troupe"]
+  },
+
+  "irina-krasovskaya": {
+    id: "irina-krasovskaya",
+    slug: "irina-krasovskaya",
+    firstName: "ИРИНА",
+    lastName: "КРАСОВСКАЯ",
+    name: "ИРИНА КРАСОВСКАЯ",
+    photo: "assets/images/actors/irina-krasovskaya.jpg",
+    href: "../irina-krasovskaya.html",
+    groups: ["troupe"]
+  },
+
+  "andrey-lushnikov": {
+    id: "andrey-lushnikov",
+    slug: "andrey-lushnikov",
     firstName: "АНДРЕЙ",
-    lastName: "ШУТЕЕВ",
-    name: "АНДРЕЙ ШУТЕЕВ",
-    photo: "assets/images/actors/andrey-shuteev.jpg",
-    href: "https://www.mdtesenin.com/andrey1",
-    group: "troupe"
+    lastName: "ЛУШНИКОВ",
+    name: "АНДРЕЙ ЛУШНИКОВ",
+    photo: "assets/images/actors/andrey-lushnikov.jpg",
+    href: "../andrey-lushnikov.html",
+    groups: ["troupe"]
   },
 
-  "nadezhda-elpis": {
-    id: "nadezhda-elpis",
-    slug: "nadezhda-elpis",
-    firstName: "НАДЕЖДА",
-    lastName: "ЭЛПИС",
-    name: "НАДЕЖДА ЭЛПИС",
-    photo: "assets/images/actors/nadezhda-elpis.jpg",
-    href: "https://www.mdtesenin.com/elpis",
-    group: "troupe"
+  "dmitriy-matsko": {
+    id: "dmitriy-matsko",
+    slug: "dmitriy-matsko",
+    firstName: "ДМИТРИЙ",
+    lastName: "МАЦКО",
+    name: "ДМИТРИЙ МАЦКО",
+    photo: "assets/images/actors/dmitriy-matsko.jpg",
+    href: "../dmitriy-matsko.html",
+    groups: ["troupe"]
+  },
+
+  "andrey-perov": {
+    id: "andrey-perov",
+    slug: "andrey-perov",
+    firstName: "АНДРЕЙ",
+    lastName: "ПЕРОВ",
+    name: "АНДРЕЙ ПЕРОВ",
+    photo: "assets/images/actors/andrey-perov.jpg",
+    href: "../andrey-perov.html",
+    groups: ["troupe"]
+  },
+
+  "ilya-rogovin": {
+    id: "ilya-rogovin",
+    slug: "ilya-rogovin",
+    firstName: "ИЛЬЯ",
+    lastName: "РОГОВИН",
+    name: "ИЛЬЯ РОГОВИН",
+    photo: "assets/images/actors/ilya-rogovin.jpg",
+    href: "../ilya-rogovin.html",
+    groups: ["troupe"]
   },
 
   "nastya-ryzhynskaya": {
     id: "nastya-ryzhynskaya",
     slug: "nastya-ryzhynskaya",
-    firstName: "АНАСТАСИЯ",
+    firstName: "НАСТЯ",
     lastName: "РЫЖИНСКАЯ",
-    name: "АНАСТАСИЯ РЫЖИНСКАЯ",
+    name: "НАСТЯ РЫЖИНСКАЯ",
     photo: "assets/images/actors/nastya-ryzhynskaya.jpg",
-    href: "https://www.mdtesenin.com/anastasia",
-    group: "troupe"
+    href: "../nastya-ryzhynskaya.html",
+    groups: ["troupe"]
+  },
+
+  "anna-sardanovskaya": {
+    id: "anna-sardanovskaya",
+    slug: "anna-sardanovskaya",
+    firstName: "АННА",
+    lastName: "САРДАНОВСКАЯ",
+    name: "АННА САРДАНОВСКАЯ",
+    photo: "assets/images/actors/anna-sardanovskaya.jpg",
+    managementPhoto: "assets/images/actors/anna-sardanovskaya-boss.jpg",
+    href: "../anna-sardanovskaya.html",
+    groups: ["troupe", "management"],
+    jobTitle: "Директор театра"
+  },
+
+  "svetlana-sudomir": {
+    id: "svetlana-sudomir",
+    slug: "svetlana-sudomir",
+    firstName: "СВЕТЛАНА",
+    lastName: "СУДОМИР",
+    name: "СВЕТЛАНА СУДОМИР",
+    photo: "assets/images/actors/svetlana-sudomir.jpg",
+    href: "../svetlana-sudomir.html",
+    groups: ["troupe"]
   },
 
   "sergey-khachaturov": {
@@ -251,30 +218,43 @@ window.PEOPLE_DATA = {
     lastName: "ХАЧАТУРОВ",
     name: "СЕРГЕЙ ХАЧАТУРОВ",
     photo: "assets/images/actors/sergey-khachaturov.jpg",
-    href: "https://www.mdtesenin.com/hachaturov",
-    group: "troupe"
+    href: "../sergey-khachaturov.html",
+    groups: ["troupe"]
   },
 
-  "elisey-smolin": {
-    id: "elisey-smolin",
-    slug: "elisey-smolin",
-    firstName: "ЕЛИСЕЙ",
-    lastName: "СМОЛИН",
-    name: "ЕЛИСЕЙ СМОЛИН",
-    photo: "assets/images/actors/elisey-smolin.jpg",
-    href: "https://www.mdtesenin.com/smolin",
-    group: "guest"
+  "yaroslav-shevaldov": {
+    id: "yaroslav-shevaldov",
+    slug: "yaroslav-shevaldov",
+    firstName: "ЯРОСЛАВ",
+    lastName: "ШЕВАЛДОВ",
+    name: "ЯРОСЛАВ ШЕВАЛДОВ",
+    photo: "assets/images/actors/yaroslav-shevaldov.jpg",
+    managementPhoto: "assets/images/actors/yaroslav-shevaldov-boss.jpg",
+    href: "../yaroslav-shevaldov.html",
+    groups: ["troupe", "management"],
+    jobTitle: "Художественный руководитель и главный режиссер театра"
   },
 
-  "anatoliy-chistov": {
-    id: "anatoliy-chistov",
-    slug: "anatoliy-chistov",
-    firstName: "АНАТОЛИЙ",
-    lastName: "ЧИСТОВ",
-    name: "АНАТОЛИЙ ЧИСТОВ",
-    photo: "assets/images/actors/anatoliy-chistov.jpg",
-    href: "",
-    group: "guest"
+  "andrey-shuteev": {
+    id: "andrey-shuteev",
+    slug: "andrey-shuteev",
+    firstName: "АНДРЕЙ",
+    lastName: "ШУТЕЕВ",
+    name: "АНДРЕЙ ШУТЕЕВ",
+    photo: "assets/images/actors/andrey-shuteev.jpg",
+    href: "../andrey-shuteev.html",
+    groups: ["troupe"]
+  },
+
+  "nadezhda-elpis": {
+    id: "nadezhda-elpis",
+    slug: "nadezhda-elpis",
+    firstName: "НАДЕЖДА",
+    lastName: "ЭЛПИС",
+    name: "НАДЕЖДА ЭЛПИС",
+    photo: "assets/images/actors/nadezhda-elpis.jpg",
+    href: "../nadezhda-elpis.html",
+    groups: ["troupe"]
   },
 
   "vitaliy-kalashnikov": {
@@ -285,87 +265,125 @@ window.PEOPLE_DATA = {
     name: "ВИТАЛИЙ КАЛАШНИКОВ",
     photo: "assets/images/actors/vitaliy-kalashnikov.jpg",
     href: "",
-    group: "guest"
+    groups: ["guest"]
   },
 
-  "vera-novikova": {
-    id: "vera-novikova",
-    slug: "vera-novikova",
-    name: "ВЕРА НОВИКОВА",
-    href: "https://www.mdtesenin.com/novikova",
-    group: "creator"
+  "elisey-smolin": {
+    id: "elisey-smolin",
+    slug: "elisey-smolin",
+    firstName: "ЕЛИСЕЙ",
+    lastName: "СМОЛИН",
+    name: "ЕЛИСЕЙ СМОЛИН",
+    photo: "assets/images/actors/elisey-smolin.jpg",
+    href: "../elisey-smolin.html",
+    groups: ["guest"]
   },
 
-  "boris-barsukov": {
-    id: "boris-barsukov",
-    slug: "boris-barsukov",
-    name: "БОРИС БАРСУКОВ",
-    href: "",
-    group: "creator"
-  },
-
-  "evgeniy-nikonorov": {
-    id: "evgeniy-nikonorov",
-    slug: "evgeniy-nikonorov",
-    name: "ЕВГЕНИЙ НИКОНОРОВ",
-    href: "",
-    group: "creator"
-  },
-
-  "ilya-sharov": {
-    id: "ilya-sharov",
-    slug: "ilya-sharov",
-    name: "ИЛЬЯ ШАРОВ",
-    href: "",
-    group: "creator"
-  },
-
-  "fedor-rutskiy": {
-    id: "fedor-rutskiy",
-    slug: "fedor-rutskiy",
-    name: "ФЁДОР РУЦКИЙ",
-    href: "https://www.mdtesenin.com/fedor",
-    group: "creator"
-  },
-
-  "ekaterina-demenina": {
-    id: "ekaterina-demenina",
-    slug: "ekaterina-demenina",
-    name: "ЕКАТЕРИНА ДЕМЕНИНА",
-    href: "https://www.mdtesenin.com/demenina",
-    group: "creator"
-  },
-
-  "yaroslav-stolbov": {
-    id: "yaroslav-stolbov",
-    slug: "yaroslav-stolbov",
-    name: "ЯРОСЛАВ СТОЛБОВ",
-    href: "",
-    group: "creator"
+  "anatoliy-chistov": {
+    id: "anatoliy-chistov",
+    slug: "anatoliy-chistov",
+    firstName: "АНАТОЛИЙ",
+    lastName: "ЧИСТОВ",
+    name: "АНАТОЛИЙ ЧИСТОВ",
+    photo: "assets/images/actors/anatoliy-chistov.jpg",
+    href: "../anatoliy-chistov.html",
+    groups: ["guest"]
   },
 
   "daniil-borzenko": {
     id: "daniil-borzenko",
     slug: "daniil-borzenko",
+    firstName: "ДАНИИЛ",
+    lastName: "БОРЗЕНКО",
     name: "ДАНИИЛ БОРЗЕНКО",
-    href: "https://www.mdtesenin.com/borzenko",
-    group: "creator"
+    photo: "assets/images/actors/daniil-borzenko.jpg",
+    href: "../daniil-borzenko.html",
+    groups: ["production"],
+    jobTitle: "Композитор"
   },
 
-  "yuliya-gabriel-kadel": {
-    id: "yuliya-gabriel-kadel",
-    slug: "yuliya-gabriel-kadel",
-    name: "ЮЛИЯ-ГАБРИЭЛЬ КАДЕЛЬ",
-    href: "https://www.mdtesenin.com/kadel",
-    group: "creator"
+  "ekaterina-demenina": {
+    id: "ekaterina-demenina",
+    slug: "ekaterina-demenina",
+    firstName: "ЕКАТЕРИНА",
+    lastName: "ДЕМЕНИНА",
+    name: "ЕКАТЕРИНА ДЕМЕНИНА",
+    photo: "assets/images/actors/ekaterina-demenina.jpg",
+    href: "../ekaterina-demenina.html",
+    groups: ["production"],
+    jobTitle: "Хореограф-постановщик"
   },
 
-  "natalya-antonicheva": {
-    id: "natalya-antonicheva",
-    slug: "natalya-antonicheva",
-    name: "НАТАЛЬЯ АНТОНИЧЕВА",
+  "yuliya-zaykina": {
+    id: "yuliya-zaykina",
+    slug: "yuliya-zaykina",
+    firstName: "ЮЛИЯ",
+    lastName: "ЗАЙКИНА",
+    name: "ЮЛИЯ ЗАЙКИНА",
+    photo: "assets/images/actors/yuliya-zaykina.jpg",
     href: "",
-    group: "creator"
+    groups: ["production"],
+    jobTitle: "Фотограф"
+  },
+
+  "nyuta-lushnikova": {
+    id: "nyuta-lushnikova",
+    slug: "nyuta-lushnikova",
+    firstName: "НЮТА",
+    lastName: "ЛУШНИКОВА",
+    name: "НЮТА ЛУШНИКОВА",
+    photo: "assets/images/actors/nyuta-lushnikova.jpg",
+    href: "",
+    groups: ["production"],
+    jobTitle: "Фотограф"
+  },
+
+  "vasiliy-kostrikov": {
+    id: "vasiliy-kostrikov",
+    slug: "vasiliy-kostrikov",
+    firstName: "ВАСИЛИЙ",
+    lastName: "КОСТРИКОВ",
+    name: "ВАСИЛИЙ КОСТРИКОВ",
+    photo: "assets/images/actors/vasiliy-kostrikov.jpg",
+    href: "",
+    groups: ["production"],
+    jobTitle: "Фотограф"
+  },
+
+  "vera-novikova": {
+    id: "vera-novikova",
+    slug: "vera-novikova",
+    firstName: "ВЕРА",
+    lastName: "НОВИКОВА",
+    name: "ВЕРА НОВИКОВА",
+    photo: "assets/images/actors/vera-novikova.jpg",
+    href: "../vera-novikova.html",
+    groups: ["production"],
+    jobTitle: "Звукорежиссёр"
+  },
+
+  "natalia-ralko": {
+    id: "natalia-ralko",
+    slug: "natalia-ralko",
+    firstName: "НАТАЛИЯ",
+    lastName: "РАЛЬКО",
+    name: "НАТАЛИЯ РАЛЬКО",
+    photo: "assets/images/actors/natalia-ralko.jpg",
+    href: "../natalia-ralko.html",
+    groups: ["production"],
+    jobTitle: "Администратор / логист / специалист по закупкам"
+  },
+
+  "fedor-rutskiy": {
+    id: "fedor-rutskiy",
+    slug: "fedor-rutskiy",
+    firstName: "ФЁДОР",
+    lastName: "РУЦКИЙ",
+    name: "ФЁДОР РУЦКИЙ",
+    photo: "assets/images/actors/fedor-rutskiy.jpg",
+    href: "../fedor-rutskiy.html",
+    groups: ["production"],
+    jobTitle: "Звукорежиссёр"
   },
 
   "maksim-mazykin": {
@@ -375,8 +393,8 @@ window.PEOPLE_DATA = {
     lastName: "МАЗЫКИН",
     name: "МАКСИМ МАЗЫКИН",
     photo: "assets/images/actors/maksim-mazykin.jpg",
-    href: "",
-    group: "troupe"
+    href: "../maksim-mazykin.html",
+    groups: []
   },
 
   "katerina-semenova-neiman": {
@@ -386,40 +404,8 @@ window.PEOPLE_DATA = {
     lastName: "СЕМЁНОВА-НЕЙМАН",
     name: "КАТЕРИНА СЕМЁНОВА-НЕЙМАН",
     photo: "assets/images/actors/katerina-semenova-neiman.jpg",
-    href: "",
-    group: "troupe"
-  },
-
-  "kirill-kapustin": {
-    id: "kirill-kapustin",
-    slug: "kirill-kapustin",
-    name: "КИРИЛЛ КАПУСТИН",
-    href: "",
-    group: "creator"
-  },
-
-  "maria-galkina": {
-    id: "maria-galkina",
-    slug: "maria-galkina",
-    name: "МАРИЯ ГАЛКИНА",
-    href: "",
-    group: "creator"
-  },
-
-  "tatyana-makarova": {
-    id: "tatyana-makarova",
-    slug: "tatyana-makarova",
-    name: "ТАТЬЯНА МАКАРОВА",
-    href: "",
-    group: "creator"
-  },
-
-  "sergey-migorer": {
-    id: "sergey-migorer",
-    slug: "sergey-migorer",
-    name: "СЕРГЕЙ МИГОРЕР",
-    href: "",
-    group: "creator"
+    href: "../katerina-semenova-neiman.html",
+    groups: []
   },
 
   "edmon-saadyan": {
@@ -429,7 +415,107 @@ window.PEOPLE_DATA = {
     lastName: "СААДЯН",
     name: "ЭДМОН СААДЯН",
     photo: "assets/images/actors/edmon-saadyan.jpg",
-    href: "",
-    group: "troupe"
+    href: "../edmon-saadyan.html",
+    groups: []
+  },
+
+  "boris-barsukov": {
+    id: "boris-barsukov",
+    slug: "boris-barsukov",
+    firstName: "БОРИС",
+    lastName: "БАРСУКОВ",
+    name: "БОРИС БАРСУКОВ",
+    href: "../boris-barsukov.html",
+    groups: ["creator"]
+  },
+
+  "evgeniy-nikonorov": {
+    id: "evgeniy-nikonorov",
+    slug: "evgeniy-nikonorov",
+    firstName: "ЕВГЕНИЙ",
+    lastName: "НИКОНОРОВ",
+    name: "ЕВГЕНИЙ НИКОНОРОВ",
+    href: "../evgeniy-nikonorov.html",
+    groups: ["creator"]
+  },
+
+  "ilya-sharov": {
+    id: "ilya-sharov",
+    slug: "ilya-sharov",
+    firstName: "ИЛЬЯ",
+    lastName: "ШАРОВ",
+    name: "ИЛЬЯ ШАРОВ",
+    href: "../ilya-sharov.html",
+    groups: ["creator"]
+  },
+
+  "yaroslav-stolbov": {
+    id: "yaroslav-stolbov",
+    slug: "yaroslav-stolbov",
+    firstName: "ЯРОСЛАВ",
+    lastName: "СТОЛБОВ",
+    name: "ЯРОСЛАВ СТОЛБОВ",
+    href: "../yaroslav-stolbov.html",
+    groups: ["creator"]
+  },
+
+  "yuliya-gabriel-kadel": {
+    id: "yuliya-gabriel-kadel",
+    slug: "yuliya-gabriel-kadel",
+    firstName: "ЮЛИЯ-ГАБРИЭЛЬ",
+    lastName: "КАДЕЛЬ",
+    name: "ЮЛИЯ-ГАБРИЭЛЬ КАДЕЛЬ",
+    href: "../yuliya-gabriel-kadel.html",
+    groups: ["creator"]
+  },
+
+  "natalya-antonicheva": {
+    id: "natalya-antonicheva",
+    slug: "natalya-antonicheva",
+    firstName: "НАТАЛЬЯ",
+    lastName: "АНТОНИЧЕВА",
+    name: "НАТАЛЬЯ АНТОНИЧЕВА",
+    href: "../natalya-antonicheva.html",
+    groups: ["creator"]
+  },
+
+  "kirill-kapustin": {
+    id: "kirill-kapustin",
+    slug: "kirill-kapustin",
+    firstName: "КИРИЛЛ",
+    lastName: "КАПУСТИН",
+    name: "КИРИЛЛ КАПУСТИН",
+    href: "../kirill-kapustin.html",
+    groups: ["creator"]
+  },
+
+  "maria-galkina": {
+    id: "maria-galkina",
+    slug: "maria-galkina",
+    firstName: "МАРИЯ",
+    lastName: "ГАЛКИНА",
+    name: "МАРИЯ ГАЛКИНА",
+    href: "../maria-galkina.html",
+    groups: ["creator"]
+  },
+
+  "tatyana-makarova": {
+    id: "tatyana-makarova",
+    slug: "tatyana-makarova",
+    firstName: "ТАТЬЯНА",
+    lastName: "МАКАРОВА",
+    name: "ТАТЬЯНА МАКАРОВА",
+    href: "../tatyana-makarova.html",
+    groups: ["creator"]
+  },
+
+  "sergey-migorer": {
+    id: "sergey-migorer",
+    slug: "sergey-migorer",
+    firstName: "СЕРГЕЙ",
+    lastName: "МИГОРЕР",
+    name: "СЕРГЕЙ МИГОРЕР",
+    href: "../sergey-migorer.html",
+    groups: ["creator"]
   }
 };

@@ -5,11 +5,7 @@ function getRepertoireRootPath(path) {
 }
 
 function getEventPageUrl(eventKey) {
-  const pageNames = {
-    "hero-of-our-time": "hero.html"
-  };
-
-  return `${pageNames[eventKey] || eventKey}.html`;
+  return `${eventKey}.html`;
 }
 
 function getCardImagePaths(eventKey) {
@@ -53,11 +49,15 @@ function createRepertoireCard(eventKey, event) {
 
   const avifSource = document.createElement("source");
   avifSource.type = "image/avif";
-  avifSource.srcset = getRepertoireRootPath(imagePaths.avif);
+  avifSource.srcset = getRepertoireRootPath(
+    imagePaths.avif
+  );
 
   const webpSource = document.createElement("source");
   webpSource.type = "image/webp";
-  webpSource.srcset = getRepertoireRootPath(imagePaths.webp);
+  webpSource.srcset = getRepertoireRootPath(
+    imagePaths.webp
+  );
 
   const image = document.createElement("img");
   image.className = "repertoire-card__image";
@@ -72,7 +72,12 @@ function createRepertoireCard(eventKey, event) {
     );
   });
 
-  picture.append(avifSource, webpSource, image);
+  picture.append(
+    avifSource,
+    webpSource,
+    image
+  );
+
   imageLink.append(picture);
 
   const content = document.createElement("div");
@@ -99,7 +104,10 @@ function createRepertoireCard(eventKey, event) {
     meta.append(createMetaItem(event.genre));
   }
 
-  const duration = [event.duration, event.durationNote]
+  const duration = [
+    event.duration,
+    event.durationNote
+  ]
     .filter(Boolean)
     .join(" ");
 
@@ -109,16 +117,28 @@ function createRepertoireCard(eventKey, event) {
 
   const description = document.createElement("p");
   description.className = "repertoire-card__description";
-  description.textContent = event.repertoireDescription || "";
+  description.textContent =
+    event.repertoireDescription || "";
 
-  content.append(title, meta, description);
-  card.append(imageLink, content);
+  content.append(
+    title,
+    meta,
+    description
+  );
+
+  card.append(
+    imageLink,
+    content
+  );
 
   return card;
 }
 
 function renderRepertoire() {
-  const root = document.querySelector("[data-repertoire-list]");
+  const root = document.querySelector(
+    "[data-repertoire-list]"
+  );
+
   const events = window.EVENTS_DATA;
 
   if (!root || !events) {
@@ -128,8 +148,16 @@ function renderRepertoire() {
   root.innerHTML = "";
 
   Object.entries(events).forEach(([eventKey, event]) => {
-    root.append(createRepertoireCard(eventKey, event));
+    const card = createRepertoireCard(
+      eventKey,
+      event
+    );
+
+    root.append(card);
   });
 }
 
-document.addEventListener("layout:ready", renderRepertoire);
+document.addEventListener(
+  "layout:ready",
+  renderRepertoire
+);

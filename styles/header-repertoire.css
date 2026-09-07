@@ -5,28 +5,28 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 176px;
-  min-height: 42px;
-  padding: 0 20px;
-  box-sizing: border-box;
+  width: 100%;
+  max-width: 165px;
+  min-height: 2.625rem;
+  padding: 0.65rem 1rem;
   color: var(--white);
-  border: 1px solid rgba(255, 255, 255, 0.9);
+  background-color: var(--button-green);
+  border: 1px solid var(--button-green);
+  border-radius: 0;
   font-family: var(--font-serif);
-  font-size: 0.95rem;
-  letter-spacing: 0.08em;
+  font-size: 0.9rem;
   line-height: 1;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  transition:
-    color 0.2s ease,
-    background-color 0.2s ease;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
 }
 
 .repertoire-header__tickets:hover,
 .repertoire-header__tickets:focus-visible {
-  color: var(--burgundy);
-  background-color: var(--white);
+  background-color: #0b6a54;
+  border-color: #0b6a54;
 }
 
 .repertoire-header__tickets:focus-visible {
