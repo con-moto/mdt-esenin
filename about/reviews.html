@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Отзывы — МДТ имени Сергея Есенина</title>
+
+  <meta
+    name="description"
+    content="Отзывы о спектаклях Московского Драматического Театра имени Сергея Есенина"
+  >
+
+  <link rel="icon" type="image/avif" href="../assets/images/main-logo.avif">
+
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="../styles/root.css">
+  <link rel="stylesheet" href="../styles/header-season.css">
+  <link rel="stylesheet" href="../styles/header-repertoire.css">
+  <link rel="stylesheet" href="../styles/navigation.css">
+  <link rel="stylesheet" href="../styles/footer.css">
+  <link rel="stylesheet" href="../styles/breadcrumb.css">
+  <link rel="stylesheet" href="../styles/reviews.css">
+  <link rel="stylesheet" href="../styles/scroll-to-top.css">
+</head>
+
+<body
+  data-root="../"
+  data-header="header-repertoire"
+  data-page="reviews"
+>
+  <div id="common-header"></div>
+
+  <main class="reviews-page">
+    <nav class="breadcrumb" aria-label="Хлебные крошки">
+      <div class="breadcrumb__inner">
+        <a class="breadcrumb__link" href="#" data-root-path="index.html">
+          Главная
+        </a>
+
+        <span class="breadcrumb__separator" aria-hidden="true">/</span>
+
+        <a class="breadcrumb__link" href="#" data-root-path="about/reviews.html">
+          Отзывы
+        </a>
+      </div>
+    </nav>
+
+    <div class="reviews-page__decor" aria-hidden="true">
+      <img
+        class="reviews-page__decor-image"
+        src="../assets/images/decour.png"
+        alt=""
+      >
+    </div>
+
+    <section class="reviews-section" aria-label="Отзывы о спектаклях">
+      <div class="reviews-list" id="reviewsList"></div>
+    </section>
+  </main>
+
+  <div id="common-footer"></div>
+
+  <button class="scroll-to-top" id="scrollToTop" aria-label="Наверх">
+    ↑
+  </button>
+
+  <script src="../scripts/layout.js" defer></script>
+  <script src="../scripts/reviews-data.js" defer></script>
+  <script src="../scripts/reviews.js" defer></script>
+  <script src="../scripts/scroll-to-top.js" defer></script>
+</body>
+</html>

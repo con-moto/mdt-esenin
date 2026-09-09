@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Новости — МДТ имени Сергея Есенина</title>
+  <meta name="description" content="Новости Московского Драматического Театра имени Сергея Есенина">
+  <link rel="icon" type="image/avif" href="../assets/images/main-logo.avif">
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="../styles/root.css">
+  <link rel="stylesheet" href="../styles/header-season.css">
+  <link rel="stylesheet" href="../styles/header-repertoire.css">
+  <link rel="stylesheet" href="../styles/navigation.css">
+  <link rel="stylesheet" href="../styles/footer.css">
+  <link rel="stylesheet" href="../styles/breadcrumb.css">
+  <link rel="stylesheet" href="../styles/news.css">
+  <link rel="stylesheet" href="../styles/scroll-to-top.css">
+</head>
+<body
+  data-root="../"
+  data-header="header-repertoire"
+  data-page="news"
+>
+  <div id="common-header"></div>
+
+  <main class="news-page">
+    <nav class="breadcrumb" aria-label="Хлебные крошки">
+      <div class="breadcrumb__inner">
+        <a class="breadcrumb__link" href="#" data-root-path="index.html">Главная</a>
+        <span class="breadcrumb__separator" aria-hidden="true">/</span>
+        <a class="breadcrumb__link" href="#" data-root-path="about/news.html">Новости</a>
+      </div>
+    </nav>
+
+    <section class="news-section" aria-label="Новости театра">
+      <div class="news-list" id="newsList"></div>
+    </section>
+  </main>
+
+  <div id="common-footer"></div>
+
+  <button class="scroll-to-top" id="scrollToTop" aria-label="Наверх">↑</button>
+
+  <script src="../scripts/layout.js" defer></script>
+  <script src="../scripts/news-data.js" defer></script>
+  <script src="../scripts/news.js" defer></script>
+  <script src="../scripts/scroll-to-top.js" defer></script>
+</body>
+</html>

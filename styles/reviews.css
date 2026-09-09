@@ -1,0 +1,304 @@
+/* styles/reviews.css */
+
+.reviews-page {
+  padding: 2rem 0 5rem;
+  overflow-x: hidden;
+  background-color: var(--white);
+}
+
+.breadcrumb {
+  margin-bottom: 1.5rem;
+}
+
+/* ===== Декор ===== */
+
+.reviews-page__decor {
+  display: flex;
+  justify-content: center;
+  width: min(var(--content-width), calc(100% - 40px));
+  margin: 0 auto 2.5rem;
+}
+
+.reviews-page__decor-image {
+  display: block;
+  width: min(240px, 42vw);
+  height: auto;
+}
+
+/* ===== Основная секция ===== */
+
+.reviews-section {
+  padding: 0;
+  overflow-x: hidden;
+  background-color: var(--white);
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: min(var(--content-width), calc(100% - 40px));
+  margin: 0 auto;
+}
+
+/* ===== Меню спектаклей ===== */
+
+.reviews-nav {
+  width: 100%;
+  padding: 1rem 0 1.25rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.18);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+}
+
+.reviews-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reviews-nav__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0.3rem 0.9rem;
+  text-align: center;
+}
+
+/* Тонкая вертикальная линия между ссылками */
+.reviews-nav__item:not(:last-child)::after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 1px;
+  height: 1.1rem;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.2);
+  transform: translateY(-50%);
+}
+
+.reviews-nav__link {
+  display: inline-block;
+  color: var(--button-green);
+  font-family: var(--font-serif);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.reviews-nav__link::after {
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin-top: 0.2rem;
+  content: "";
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.2s ease;
+}
+
+.reviews-nav__link:hover,
+.reviews-nav__link:focus-visible {
+  color: var(--button-green);
+  opacity: 0.72;
+  transform: translateY(-1px);
+}
+
+.reviews-nav__link:hover::after,
+.reviews-nav__link:focus-visible::after {
+  transform: scaleX(1);
+}
+
+/* ===== Блок спектакля ===== */
+
+.reviews-section__item {
+  width: 100%;
+  scroll-margin-top: 2rem;
+}
+
+.reviews-section__title {
+  margin: 0;
+  color: var(--burgundy);
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.reviews-spacer {
+  display: none;
+}
+
+/* ===== Отзыв ===== */
+
+.review-card {
+  padding: 2.5rem 0 0;
+  text-align: center;
+}
+
+.review-card__author {
+  margin: 0 0 1.25rem;
+  color: #000;
+  font-family: var(--font-serif);
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.review-card__text {
+  max-width: 1080px;
+  margin: 0 auto;
+  color: #000;
+  font-family: var(--font-serif);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.55;
+  text-align: center;
+  white-space: pre-line;
+}
+
+/* Линия всегда находится после текста отзыва, включая последний отзыв. */
+.review-card__divider {
+  width: min(720px, 78%);
+  height: 1px;
+  margin: 2.5rem auto 0;
+  background-color: #000;
+  opacity: 0.45;
+}
+
+/* ===== Адаптив ===== */
+
+@media (max-width: 900px) {
+  .reviews-list {
+    gap: 3.5rem;
+  }
+
+  .reviews-nav__item {
+    padding-right: 0.65rem;
+    padding-left: 0.65rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .reviews-page {
+    padding: 1.5rem 0 4rem;
+  }
+
+  .reviews-list,
+  .reviews-page__decor {
+    width: min(var(--content-width), calc(100% - 32px));
+  }
+
+  .reviews-list {
+    gap: 3rem;
+  }
+
+  .reviews-page__decor {
+    margin-bottom: 2rem;
+  }
+
+  .reviews-page__decor-image {
+    width: min(210px, 52vw);
+  }
+
+  .reviews-section__title {
+    font-size: 22px;
+  }
+
+  .review-card {
+    padding-top: 2rem;
+  }
+
+  .review-card__author {
+    font-size: 17px;
+  }
+
+  .review-card__text {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  .review-card__divider {
+    width: min(620px, 88%);
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .breadcrumb {
+    margin-bottom: 1rem;
+  }
+
+  .reviews-page {
+    padding-bottom: 3rem;
+  }
+
+  .reviews-list,
+  .reviews-page__decor {
+    width: calc(100% - 28px);
+  }
+
+  .reviews-list {
+    gap: 2.5rem;
+  }
+
+  .reviews-page__decor {
+    margin-bottom: 1.75rem;
+  }
+
+  .reviews-page__decor-image {
+    width: min(180px, 58vw);
+  }
+
+  .reviews-nav {
+    padding: 0.75rem 0;
+  }
+
+  .reviews-nav__item {
+    padding: 0.3rem 0.45rem;
+  }
+
+  .reviews-nav__item:not(:last-child)::after {
+    height: 1rem;
+  }
+
+  .reviews-nav__link {
+    font-size: 13px;
+    line-height: 1.2;
+  }
+
+  .reviews-section__title {
+    font-size: 22px;
+  }
+
+  .review-card {
+    padding-top: 1.75rem;
+  }
+
+  .review-card__author {
+    margin-bottom: 1rem;
+    font-size: 17px;
+  }
+
+  .review-card__text {
+    font-size: 17px;
+    line-height: 1.55;
+  }
+
+  .review-card__divider {
+    width: 92%;
+    margin-top: 1.75rem;
+  }
+}

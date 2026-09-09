@@ -275,6 +275,17 @@ window.PEOPLE_DATA = {
     groups: ["guest"]
   },
 
+  "ksenia-kuznetsova": {
+  id: "ksenia-kuznetsova",
+  slug: "ksenia-kuznetsova",
+  firstName: "КСЕНИЯ",
+  lastName: "КУЗНЕЦОВА",
+  name: "КСЕНИЯ КУЗНЕЦОВА",
+  photo: "assets/images/actors/ksenia-kuznetsova.jpg",
+  href: "",
+  groups: ["guest"]
+},
+
   "elisey-smolin": {
     id: "elisey-smolin",
     slug: "elisey-smolin",
@@ -285,6 +296,17 @@ window.PEOPLE_DATA = {
     href: "../elisey-smolin.html",
     groups: ["guest"]
   },
+
+  "alexsandr-martynov": {
+  id: "alexsandr-martynov",
+  slug: "alexsandr-martynov",
+  firstName: "АЛЕКСАНДР",
+  lastName: "МАРТЫНОВ",
+  name: "АЛЕКСАНДР МАРТЫНОВ",
+  photo: "assets/images/actors/alexsandr-martynov.jpg",
+  href: "../alexsandr-martynov.html",
+  groups: ["guest"]
+},
 
   "anatoliy-chistov": {
     id: "anatoliy-chistov",
