@@ -1,42 +1,33 @@
 function createElement(tagName, className) {
   const element = document.createElement(tagName);
 
-
   if (className) {
     element.className = className;
   }
 
-
   return element;
 }
-
 
 function resolveRootPath(path) {
   const root = document.body.dataset.root || "";
 
-
   return `${root}${path}`;
 }
-
 
 function createActorCard(castItem) {
   const people = window.PEOPLE_DATA || {};
   const actor = people[castItem.actorId];
 
-
   if (!actor) {
     return null;
   }
 
-
   const isLink = Boolean(actor.href);
-
 
   const card = createElement(
     isLink ? "a" : "article",
     "actor-card"
   );
-
 
   if (isLink) {
     card.href = actor.href;
@@ -44,28 +35,29 @@ function createActorCard(castItem) {
     card.classList.add("actor-card--static");
   }
 
-
   const picture = document.createElement("picture");
 
-
   const actorAvif = actor.photo
-    .replace(/^assets\/images\/actors\//, 'assets/images/optimized/actors/')
-    .replace(/\.jpg$/i, '.avif');
+    .replace(
+      /^assets\/images\/actors\//,
+      "assets/images/optimized/actors/"
+    )
+    .replace(/\.jpg$/i, ".avif");
 
   const actorWebp = actor.photo
-    .replace(/^assets\/images\/actors\//, 'assets/images/optimized/actors/')
-    .replace(/\.jpg$/i, '.webp');
-
+    .replace(
+      /^assets\/images\/actors\//,
+      "assets/images/optimized/actors/"
+    )
+    .replace(/\.jpg$/i, ".webp");
 
   const sourceAvif = document.createElement("source");
   sourceAvif.type = "image/avif";
   sourceAvif.srcset = resolveRootPath(actorAvif);
 
-
   const sourceWebp = document.createElement("source");
   sourceWebp.type = "image/webp";
   sourceWebp.srcset = resolveRootPath(actorWebp);
-
 
   const img = document.createElement("img");
   img.className = "actor-card__image";
@@ -74,32 +66,24 @@ function createActorCard(castItem) {
   img.loading = "lazy";
   img.decoding = "async";
 
-
   picture.append(sourceAvif, sourceWebp, img);
 
-
   const info = createElement("div", "actor-card__info");
-
 
   const role = createElement("div", "actor-card__role");
   role.textContent = `${castItem.role} —`;
 
-
   const name = createElement("div", "actor-card__name");
   name.textContent = actor.name;
-
 
   const line = createElement("span", "actor-card__line");
   line.setAttribute("aria-hidden", "true");
 
-
   info.append(role, name);
   card.append(picture, info, line);
 
-
   return card;
 }
-
 
 function createGroupCastCard(castItem) {
   const card = createElement(
@@ -107,28 +91,29 @@ function createGroupCastCard(castItem) {
     "actor-card actor-card--static"
   );
 
-
   const picture = document.createElement("picture");
 
-
   const groupAvif = castItem.image
-    .replace(/^assets\/images\/repertoire\/([^/]+)\//, 'assets/images/optimized/repertoire/$1/')
-    .replace(/\.jpg$/i, '.avif');
+    .replace(
+      /^assets\/images\/repertoire\/([^/]+)\//,
+      "assets/images/optimized/repertoire/$1/"
+    )
+    .replace(/\.jpg$/i, ".avif");
 
   const groupWebp = castItem.image
-    .replace(/^assets\/images\/repertoire\/([^/]+)\//, 'assets/images/optimized/repertoire/$1/')
-    .replace(/\.jpg$/i, '.webp');
-
+    .replace(
+      /^assets\/images\/repertoire\/([^/]+)\//,
+      "assets/images/optimized/repertoire/$1/"
+    )
+    .replace(/\.jpg$/i, ".webp");
 
   const sourceAvif = document.createElement("source");
   sourceAvif.type = "image/avif";
   sourceAvif.srcset = resolveRootPath(groupAvif);
 
-
   const sourceWebp = document.createElement("source");
   sourceWebp.type = "image/webp";
   sourceWebp.srcset = resolveRootPath(groupWebp);
-
 
   const img = document.createElement("img");
   img.className = "actor-card__image";
@@ -137,41 +122,31 @@ function createGroupCastCard(castItem) {
   img.loading = "lazy";
   img.decoding = "async";
 
-
   picture.append(sourceAvif, sourceWebp, img);
-
 
   const info = createElement("div", "actor-card__info");
 
-
   const role = createElement("div", "actor-card__role");
   role.textContent = `${castItem.role} —`;
-
 
   const name = createElement(
     "div",
     "actor-card__name actor-card__name--static"
   );
 
-
   name.textContent = castItem.names.join(" / ");
-
 
   const line = createElement("span", "actor-card__line");
   line.setAttribute("aria-hidden", "true");
 
-
   info.append(role, name);
   card.append(picture, info, line);
-
 
   return card;
 }
 
-
 function renderActors(cast, root) {
   root.innerHTML = "";
-
 
   cast.forEach((castItem) => {
     const card =
@@ -179,19 +154,16 @@ function renderActors(cast, root) {
         ? createGroupCastCard(castItem)
         : createActorCard(castItem);
 
-
     if (card) {
       root.append(card);
     }
   });
 }
 
-
 function getCreatorPeople(item) {
   if (Array.isArray(item.people) && item.people.length) {
     return item.people;
   }
-
 
   if (item.personId) {
     return [
@@ -202,45 +174,35 @@ function getCreatorPeople(item) {
     ];
   }
 
-
   return [];
 }
-
 
 function createCreatorItem(item) {
   const people = window.PEOPLE_DATA || {};
   const creatorPeople = getCreatorPeople(item);
 
-
   if (!creatorPeople.length) {
     return null;
   }
 
-
   const article = createElement("article", "creator-item");
-
 
   const role = createElement("div", "creator-item__role");
   role.textContent = `${item.role} —`;
-
 
   const peopleLine = createElement(
     "div",
     "creator-item__people"
   );
 
-
   let renderedCount = 0;
-
 
   creatorPeople.forEach((creator) => {
     const person = people[creator.personId];
 
-
     if (!person) {
       return;
     }
-
 
     const personHref =
       creator.href ||
@@ -248,58 +210,45 @@ function createCreatorItem(item) {
       person.href ||
       "";
 
-
     if (renderedCount > 0) {
       peopleLine.append(document.createTextNode(", "));
     }
-
 
     const personName = createElement(
       personHref ? "a" : "span",
       "creator-item__person"
     );
 
-
     personName.textContent = person.name;
-
 
     if (personHref) {
       personName.href = personHref;
     }
 
-
     peopleLine.append(personName);
     renderedCount += 1;
   });
-
 
   if (!renderedCount) {
     return null;
   }
 
-
   article.append(role, peopleLine);
-
 
   return article;
 }
 
-
 function renderCreators(columns, root, section) {
   root.innerHTML = "";
 
-
   const hasCreators = columns.some((column) => column.length);
-
 
   if (!hasCreators) {
     section.hidden = true;
     return;
   }
 
-
   section.hidden = false;
-
 
   columns.forEach((column) => {
     const columnElement = createElement(
@@ -307,49 +256,50 @@ function renderCreators(columns, root, section) {
       "creators-column"
     );
 
-
     column.forEach((item) => {
       const creatorItem = createCreatorItem(item);
-
 
       if (creatorItem) {
         columnElement.append(creatorItem);
       }
     });
 
-
     root.append(columnElement);
   });
 }
-
 
 function createGalleryPhotos(eventKey, event) {
   if (Array.isArray(event.gallery) && event.gallery.length) {
     return event.gallery.map((photo) => ({
       ...photo,
       avif: photo.src
-        .replace(/^assets\/images\/repertoire\/([^/]+)\//, 'assets/images/optimized/repertoire/$1/')
-        .replace(/\.jpg$/i, '.avif'),
+        .replace(
+          /^assets\/images\/repertoire\/([^/]+)\//,
+          "assets/images/optimized/repertoire/$1/"
+        )
+        .replace(/\.jpg$/i, ".avif"),
       webp: photo.src
-        .replace(/^assets\/images\/repertoire\/([^/]+)\//, 'assets/images/optimized/repertoire/$1/')
-        .replace(/\.jpg$/i, '.webp')
+        .replace(
+          /^assets\/images\/repertoire\/([^/]+)\//,
+          "assets/images/optimized/repertoire/$1/"
+        )
+        .replace(/\.jpg$/i, ".webp")
     }));
   }
 
-
   const galleryCount = Number(event.galleryCount) || 0;
-
 
   return Array.from({ length: galleryCount }, (_, index) => {
     const photoNumber = String(index + 1).padStart(2, "0");
 
+    const src =
+      `assets/images/repertoire/${eventKey}/gallery/${photoNumber}.jpg`;
 
-    const src = `assets/images/repertoire/${eventKey}/gallery/${photoNumber}.jpg`;
+    const avif =
+      `assets/images/optimized/repertoire/${eventKey}/gallery/${photoNumber}.avif`;
 
-
-    const avif = `assets/images/optimized/repertoire/${eventKey}/gallery/${photoNumber}.avif`;
-    const webp = `assets/images/optimized/repertoire/${eventKey}/gallery/${photoNumber}.webp`;
-
+    const webp =
+      `assets/images/optimized/repertoire/${eventKey}/gallery/${photoNumber}.webp`;
 
     return {
       src,
@@ -360,37 +310,44 @@ function createGalleryPhotos(eventKey, event) {
   });
 }
 
+function applyGalleryLayout(item, index) {
+  const cycle = Math.floor(index / 5);
+  const positionInCycle = index % 5;
+  const firstRow = cycle * 2 + 1;
+  const secondRow = firstRow + 1;
 
-function applyGalleryLayout(item, index, total) {
-  const number = index + 1;
-  const positionInCycle = index % 8;
-
-
-  if (number === total && total % 2 !== 0) {
-    item.classList.add("gallery-item--wide");
+  if (positionInCycle === 0) {
+    item.style.gridColumn = "1";
+    item.style.gridRow = String(firstRow);
     return;
   }
 
-
-  if (positionInCycle === 1 || positionInCycle === 6) {
-    item.classList.add("gallery-item--large");
+  if (positionInCycle === 1) {
+    item.style.gridColumn = "1";
+    item.style.gridRow = String(secondRow);
     return;
   }
 
+  if (positionInCycle === 2) {
+    item.classList.add("gallery-item--feature");
+    item.style.gridColumn = "2";
+    item.style.gridRow = `${firstRow} / span 2`;
+    return;
+  }
 
   if (positionInCycle === 3) {
-    item.classList.add("gallery-item--wide");
+    item.style.gridColumn = "3";
+    item.style.gridRow = String(firstRow);
     return;
   }
 
-
-  if (positionInCycle === 5) {
-    item.classList.add("gallery-item--tall");
+  if (positionInCycle === 4) {
+    item.style.gridColumn = "3";
+    item.style.gridRow = String(secondRow);
   }
 }
 
-
-function createGalleryItem(photo, index, total) {
+function createGalleryItem(photo, index) {
   const button = createElement("button", "gallery-item");
   button.type = "button";
   button.dataset.galleryIndex = String(index);
@@ -399,35 +356,17 @@ function createGalleryItem(photo, index, total) {
     `Открыть фотографию ${index + 1}`
   );
 
-
-  if (photo.layout) {
-    const columnSpan = photo.layout.columnSpan || 1;
-    const rowSpan = photo.layout.rowSpan || 1;
-
-
-    button.style.gridColumn =
-      `${photo.layout.column} / span ${columnSpan}`;
-
-
-    button.style.gridRow =
-      `${photo.layout.row} / span ${rowSpan}`;
-  } else {
-    applyGalleryLayout(button, index, total);
-  }
-
+  applyGalleryLayout(button, index);
 
   const picture = document.createElement("picture");
-
 
   const sourceAvif = document.createElement("source");
   sourceAvif.type = "image/avif";
   sourceAvif.srcset = resolveRootPath(photo.avif);
 
-
   const sourceWebp = document.createElement("source");
   sourceWebp.type = "image/webp";
   sourceWebp.srcset = resolveRootPath(photo.webp);
-
 
   const img = document.createElement("img");
   img.src = resolveRootPath(photo.src);
@@ -435,41 +374,31 @@ function createGalleryItem(photo, index, total) {
   img.loading = "lazy";
   img.decoding = "async";
 
-
   img.addEventListener("error", () => {
     button.classList.add("gallery-item--missing");
     console.error(`Не удалось загрузить фото галереи: ${img.src}`);
   });
 
-
   picture.append(sourceAvif, sourceWebp, img);
   button.append(picture);
-
 
   return button;
 }
 
-
 function renderGallery(photos, root, section) {
   root.innerHTML = "";
-
 
   if (!photos.length) {
     section.hidden = true;
     return;
   }
 
-
   section.hidden = false;
 
-
   photos.forEach((photo, index) => {
-    root.append(
-      createGalleryItem(photo, index, photos.length)
-    );
+    root.append(createGalleryItem(photo, index));
   });
 }
-
 
 function createTrailer(eventKey, event, root, section) {
   if (!event.hasTrailer || !event.trailerUrl) {
@@ -539,7 +468,6 @@ function createTrailer(eventKey, event, root, section) {
   playIcon.setAttribute("aria-hidden", "true");
 
   picture.append(sourceAvif, sourceWebp, coverImage);
-
   coverButton.append(picture, playIcon);
 
   coverButton.addEventListener("click", () => {
@@ -567,19 +495,16 @@ function createTrailer(eventKey, event, root, section) {
   root.append(wrapper);
 }
 
-
 function createGalleryLightbox() {
   const dialog = createElement(
     "dialog",
     "gallery-lightbox"
   );
 
-
   dialog.setAttribute(
     "aria-label",
     "Просмотр фотографий спектакля"
   );
-
 
   dialog.innerHTML = `
     <div class="gallery-lightbox__content">
@@ -591,7 +516,6 @@ function createGalleryLightbox() {
         ×
       </button>
 
-
       <button
         class="gallery-lightbox__previous"
         type="button"
@@ -600,7 +524,6 @@ function createGalleryLightbox() {
         <span aria-hidden="true">‹</span>
       </button>
 
-
       <figure class="gallery-lightbox__figure">
         <img
           class="gallery-lightbox__image"
@@ -608,13 +531,11 @@ function createGalleryLightbox() {
           alt=""
         >
 
-
         <figcaption
           class="gallery-lightbox__counter"
           aria-live="polite"
         ></figcaption>
       </figure>
-
 
       <button
         class="gallery-lightbox__next"
@@ -626,117 +547,91 @@ function createGalleryLightbox() {
     </div>
   `;
 
-
   document.body.append(dialog);
-
 
   return dialog;
 }
-
 
 function initGalleryLightbox(photos, galleryRoot) {
   if (!photos.length || !galleryRoot) {
     return;
   }
 
-
   const dialog = createGalleryLightbox();
-
 
   const image = dialog.querySelector(
     ".gallery-lightbox__image"
   );
 
-
   const counter = dialog.querySelector(
     ".gallery-lightbox__counter"
   );
-
 
   const closeButton = dialog.querySelector(
     ".gallery-lightbox__close"
   );
 
-
   const previousButton = dialog.querySelector(
     ".gallery-lightbox__previous"
   );
-
 
   const nextButton = dialog.querySelector(
     ".gallery-lightbox__next"
   );
 
-
   let currentIndex = 0;
-
 
   function updateLightbox() {
     const photo = photos[currentIndex];
-
 
     image.src = resolveRootPath(photo.src);
     image.alt = photo.alt || "";
     counter.textContent = `${currentIndex + 1} / ${photos.length}`;
 
-
     const isOnePhoto = photos.length === 1;
-
 
     previousButton.hidden = isOnePhoto;
     nextButton.hidden = isOnePhoto;
   }
 
-
   function openLightbox(index) {
     currentIndex = index;
     updateLightbox();
-
 
     if (!dialog.open) {
       dialog.showModal();
     }
   }
 
-
   function showPreviousPhoto() {
     currentIndex =
       (currentIndex - 1 + photos.length) % photos.length;
 
-
     updateLightbox();
   }
-
 
   function showNextPhoto() {
     currentIndex = (currentIndex + 1) % photos.length;
 
-
     updateLightbox();
   }
 
-
   galleryRoot.addEventListener("click", (event) => {
     const button = event.target.closest("[data-gallery-index]");
-
 
     if (!button) {
       return;
     }
 
-
     openLightbox(Number(button.dataset.galleryIndex));
   });
-
 
   closeButton.addEventListener("click", () => {
     dialog.close();
   });
 
-
   previousButton.addEventListener("click", showPreviousPhoto);
   nextButton.addEventListener("click", showNextPhoto);
-
 
   dialog.addEventListener("click", (event) => {
     if (event.target === dialog) {
@@ -744,12 +639,10 @@ function initGalleryLightbox(photos, galleryRoot) {
     }
   });
 
-
   dialog.addEventListener("keydown", (event) => {
     if (event.key === "ArrowLeft") {
       showPreviousPhoto();
     }
-
 
     if (event.key === "ArrowRight") {
       showNextPhoto();
@@ -757,79 +650,64 @@ function initGalleryLightbox(photos, galleryRoot) {
   });
 }
 
-
 function renderEventTicketButton(event) {
   const section = document.querySelector(
     "[data-event-ticket-section]"
   );
 
-
   const button = document.querySelector(
     "[data-event-ticket-button]"
   );
 
-
   if (!section || !button) {
     return;
   }
-
 
   if (!event.ticketUrl || event.ticketUrl === "#") {
     section.hidden = true;
     return;
   }
 
-
   section.hidden = false;
   button.href = event.ticketUrl;
 }
-
 
 function initEventSections() {
   const eventKey = document.body.dataset.event;
   const event = window.EVENTS_DATA?.[eventKey];
 
-
   if (!event) {
     return;
   }
-
 
   const castRoot = document.querySelector("[data-cast-grid]");
   const creatorsRoot = document.querySelector(
     "[data-creators-grid]"
   );
 
-
   const trailerRoot = document.querySelector(
     "[data-event-trailer]"
   );
-
 
   const galleryRoot = document.querySelector(
     "[data-gallery-grid]"
   );
 
-
   const creatorsSection = document.querySelector(
     "[data-creators-section]"
   );
-
 
   const trailerSection = document.querySelector(
     "[data-trailer-section]"
   );
 
-
   const gallerySection = document.querySelector(
     "[data-gallery-section]"
   );
 
-
   if (castRoot && event.cast?.length) {
     renderActors(event.cast, castRoot);
   }
-
 
   if (creatorsRoot && creatorsSection) {
     renderCreators(
@@ -838,7 +716,6 @@ function initEventSections() {
       creatorsSection
     );
   }
-
 
   if (trailerRoot && trailerSection) {
     createTrailer(
@@ -849,10 +726,8 @@ function initEventSections() {
     );
   }
 
-
   if (galleryRoot && gallerySection) {
     const galleryPhotos = createGalleryPhotos(eventKey, event);
-
 
     renderGallery(
       galleryPhotos,
@@ -860,13 +735,10 @@ function initEventSections() {
       gallerySection
     );
 
-
     initGalleryLightbox(galleryPhotos, galleryRoot);
   }
 
-
   renderEventTicketButton(event);
 }
-
 
 document.addEventListener("layout:ready", initEventSections);
