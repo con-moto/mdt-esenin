@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Клуб друзей — МДТ имени Сергея Есенина</title>
+
+  <meta
+    name="description"
+    content="Клуб друзей МДТ имени Сергея Есенина: поддержка независимого театра и специальные привилегии для участников."
+  >
+
+  <link
+    rel="icon"
+    type="image/avif"
+    href="../assets/images/main-logo.avif"
+  >
+
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="../styles/root.css">
+  <link rel="stylesheet" href="../styles/header-club.css">
+  <link rel="stylesheet" href="../styles/navigation.css">
+  <link rel="stylesheet" href="../styles/club.css">
+</head>
+
+<body
+  data-root="../"
+  data-header="header-club"
+  data-page="club"
+>
+  <div id="common-header"></div>
+
+  <main class="club-page">
+    <section
+      class="club-hero"
+      data-club-slider
+      aria-label="Клуб друзей МДТ имени Сергея Есенина"
+    >
+      <div class="club-hero__navigation">
+        <div class="club-hero__navigation-inner">
+          <div id="common-navigation"></div>
+        </div>
+      </div>
+
+      <ul
+        class="club-hero__slides"
+        data-club-slides
+      ></ul>
+
+      <div class="club-hero__content">
+        <h1 class="club-hero__title">
+          КЛУБ<br>
+          ДРУЗЕЙ
+        </h1>
+
+        <div class="club-hero__intro">
+          <p>
+            Клуб Друзей МДТ им. Есенина — это не только
+            эксклюзивные привилегии, но и уникальное объединение
+            людей, понимающих силу искусства. Откройте для себя
+            таинственный мир театра изнутри!
+          </p>
+
+          <p>
+            МДТ им. Есенина — независимый театр, а потому Клуб
+            Друзей играет особую роль в его развитии. Членские
+            взносы направляются на сценические нужды, покрывают
+            арендные расходы, обеспечивают новые постановки.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="club-hero__dots"
+        data-club-dots
+        aria-label="Пагинация фотографий"
+      ></div>
+    </section>
+
+    <section
+      class="club-tariffs"
+      aria-label="Варианты участия в клубе"
+    >
+      <div
+        class="club-tariffs__tabs"
+        role="tablist"
+        aria-label="Варианты участия"
+      >
+        <button
+          class="club-tariffs__tab is-active"
+          type="button"
+          role="tab"
+          aria-selected="true"
+          data-club-tariff-tab="economy"
+        >
+          ЭКОНОМ
+        </button>
+
+        <button
+          class="club-tariffs__tab"
+          type="button"
+          role="tab"
+          aria-selected="false"
+          data-club-tariff-tab="middle"
+        >
+          СРЕДНИЙ
+        </button>
+
+        <button
+          class="club-tariffs__tab"
+          type="button"
+          role="tab"
+          aria-selected="false"
+          data-club-tariff-tab="lux"
+        >
+          ЛЮКС
+        </button>
+      </div>
+
+      <div class="club-tariffs__content">
+        <video
+          class="club-tariffs__video"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          aria-hidden="true"
+        >
+          <source
+            src="https://video.wixstatic.com/video/11062b_88a085bc8fd9484ba01f85a0b0285a48/1080p/mp4/file.mp4"
+            type="video/mp4"
+          >
+        </video>
+
+        <article
+          class="club-tariff is-active"
+          data-club-tariff="economy"
+        >
+          <p class="club-tariff__fee">
+            ВЗНОС — ОТ 25 000 ₽
+          </p>
+
+          <h2 class="club-tariff__title">
+            ПРИВИЛЕГИИ:
+          </h2>
+
+          <ol class="club-tariff__privileges">
+            <li data-number="1">
+              Неограниченный вход на любые спектакли МДТ им.
+              Есенина на одно лицо в течение текущего сезона
+              по предварительной записи.
+            </li>
+
+            <li data-number="2">
+              Подарочная футболка с логотипом МДТ им. Есенина.
+            </li>
+          </ol>
+
+          <p class="club-tariff__note">
+            По требованию билетного партнёра в билете будет
+            стоять фиктивная дата.<br>
+            По всем дополнительным вопросам свяжитесь с нами по
+            почте
+            <a href="mailto:mdtesenina@inbox.ru">
+              mdtesenina@inbox.ru
+            </a>
+            или по телефону
+            <a href="tel:+79052069783">
+              +7 905 206 97 83
+            </a>
+            (доступен WhatsApp).
+          </p>
+
+          <a
+            class="club-tariff__button"
+            href="https://iframeab-pre6144.intickets.ru/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            БИЛЕТ №1 ЗА 25 000 ₽
+          </a>
+        </article>
+
+        <article
+          class="club-tariff"
+          data-club-tariff="middle"
+          hidden
+        >
+          <p class="club-tariff__fee">
+            ВЗНОС — ОТ 50 000 ₽
+          </p>
+
+          <h2 class="club-tariff__title">
+            ПРИВИЛЕГИИ:
+          </h2>
+
+          <ol class="club-tariff__privileges">
+            <li data-number="1">
+              Неограниченный вход на любые спектакли МДТ им.
+              Есенина на два лица: Вы и Ваш гость — в течение
+              текущего сезона по предварительной записи.
+            </li>
+
+            <li data-number="2">
+              Подарочная футболка и шоппер с логотипом МДТ им.
+              Есенина.
+            </li>
+
+            <li data-number="3">
+              Индивидуальный мастер-класс по актёрскому
+              мастерству, ораторскому искусству или пластической
+              выразительности: 1 занятие на два лица от актёра или
+              актрисы нашей труппы, с которым или которой Вам
+              интереснее всего пообщаться, в удобное Вам время.
+            </li>
+
+            <li data-number="4">
+              Логотип Вашей компании на нашем сайте, рекламной
+              продукции и афишах.
+            </li>
+          </ol>
+
+          <p class="club-tariff__note">
+            По требованию билетного партнёра в билете будет
+            стоять фиктивная дата.<br>
+            По всем дополнительным вопросам свяжитесь с нами по
+            почте
+            <a href="mailto:mdtesenina@inbox.ru">
+              mdtesenina@inbox.ru
+            </a>
+            или по телефону
+            <a href="tel:+79052069783">
+              +7 905 206 97 83
+            </a>
+            (доступен WhatsApp).
+          </p>
+
+          <a
+            class="club-tariff__button"
+            href="https://iframeab-pre6144.intickets.ru/event/27598112/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            БИЛЕТ №1 ЗА 50 000 ₽
+          </a>
+        </article>
+
+        <article
+          class="club-tariff"
+          data-club-tariff="lux"
+          hidden
+        >
+          <p class="club-tariff__fee">
+            ВЗНОС — ОТ 80 000 ₽
+          </p>
+
+          <h2 class="club-tariff__title">
+            ПРИВИЛЕГИИ:
+          </h2>
+
+          <ol class="club-tariff__privileges">
+            <li data-number="1">
+              Неограниченный вход на любые спектакли МДТ им.
+              Есенина на два лица: Вы и Ваш гость — в течение
+              текущего сезона по предварительной записи.
+            </li>
+
+            <li data-number="2">
+              Подарочная футболка и шоппер с логотипом МДТ им.
+              Есенина.
+            </li>
+
+            <li data-number="3">
+              Индивидуальные мастер-классы по актёрскому
+              мастерству, ораторскому искусству или пластической
+              выразительности: 2 занятия на два лица от актёра или
+              актрисы нашей труппы, с которым или которой Вам
+              интереснее всего пообщаться, в удобное Вам время.
+            </li>
+
+            <li data-number="4">
+              Возможность погружения в театральную атмосферу
+              изнутри — присутствие на двух закрытых репетициях
+              театра.
+            </li>
+
+            <li data-number="5">
+              Логотип Вашей компании на нашем сайте, рекламной
+              продукции и афишах.
+            </li>
+
+            <li data-number="6">
+              Персональная встреча и гарантированные места в
+              первом ряду на каждый спектакль.
+            </li>
+          </ol>
+
+          <p class="club-tariff__note">
+            По требованию билетного партнёра в билете будет
+            стоять фиктивная дата.<br>
+            По всем дополнительным вопросам свяжитесь с нами по
+            почте
+            <a href="mailto:mdtesenina@inbox.ru">
+              mdtesenina@inbox.ru
+            </a>
+            или по телефону
+            <a href="tel:+79052069783">
+              +7 905 206 97 83
+            </a>
+            (доступен WhatsApp).
+          </p>
+
+          <a
+            class="club-tariff__button"
+            href="https://iframeab-pre6144.intickets.ru/event/27598765/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            БИЛЕТ №1 ЗА 80 000 ₽
+          </a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="../scripts/layout.js"></script>
+  <script src="../scripts/club.js"></script>
+</body>
+</html>

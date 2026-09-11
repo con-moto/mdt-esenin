@@ -1,0 +1,110 @@
+.site-header--club {
+  position: relative;
+  z-index: 50;
+  background: var(--white);
+}
+
+.club-header__logo-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 142px;
+  padding: 22px var(--page-padding);
+  background: var(--white);
+}
+
+.club-header__logo-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 118px;
+  height: 96px;
+}
+
+.club-header__logo {
+  display: block;
+  width: 118px;
+  height: 96px;
+  object-fit: contain;
+}
+
+.club-header__socials {
+  position: absolute;
+  top: 50%;
+  left: var(--page-padding);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transform: translateY(-50%);
+}
+
+.club-header__socials a,
+.club-header__socials img {
+  display: block;
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+/* Бургер всегда чёрный на странице клуба */
+.club-header__menu-toggle {
+  display: none;
+}
+
+.club-header__menu-toggle .menu-toggle__line {
+  background: #000;
+}
+
+@media (max-width: 768px) {
+  .club-header__logo-row {
+    min-height: 112px;
+    padding: 16px var(--page-padding);
+  }
+
+  .club-header__logo-link,
+  .club-header__logo {
+    width: 88px;
+    height: auto;
+  }
+
+  .club-header__socials {
+    left: var(--page-padding);
+    gap: 10px;
+  }
+
+  .club-header__socials a,
+  .club-header__socials img {
+    width: 26px;
+    height: 26px;
+  }
+
+  .club-header__menu-toggle {
+    position: absolute;
+    top: 50%;
+    right: var(--page-padding);
+    z-index: 60;
+    display: flex;
+    transform: translateY(-50%);
+  }
+}
+
+@media (max-width: 430px) {
+  .club-header__socials {
+    gap: 7px;
+  }
+
+  .club-header__socials a,
+  .club-header__socials img {
+    width: 23px;
+    height: 23px;
+  }
+
+  .club-header__logo-link,
+  .club-header__logo {
+    width: 76px;
+  }
+}

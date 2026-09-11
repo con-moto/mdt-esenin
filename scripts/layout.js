@@ -60,8 +60,42 @@ function setCurrentPage() {
     );
   }
 
-  const currentFileName =
-    window.location.pathname.split("/").pop() || "index.html";
+  const peopleItem = document.querySelector(
+    ".main-navigation__item--people"
+  );
+
+  const isPeoplePage =
+    currentPage === "people-troupe" ||
+    currentPage === "people-production" ||
+    currentPage === "people-management" ||
+    currentPage === "person-troupe" ||
+    currentPage === "person-production";
+
+  if (isPeoplePage && peopleItem) {
+    peopleItem.classList.add(
+      "main-navigation__item--active"
+    );
+  }
+
+  let activePeopleSubmenuPath = "";
+
+  if (
+    currentPage === "people-troupe" ||
+    currentPage === "person-troupe"
+  ) {
+    activePeopleSubmenuPath = "people/troupe/";
+  }
+
+  if (
+    currentPage === "people-production" ||
+    currentPage === "person-production"
+  ) {
+    activePeopleSubmenuPath = "people/production-team/";
+  }
+
+  if (currentPage === "people-management") {
+    activePeopleSubmenuPath = "people/management/";
+  }
 
   document.querySelectorAll(".submenu a").forEach((link) => {
     const dataRootPath = link.dataset.rootPath;
@@ -76,13 +110,23 @@ function setCurrentPage() {
       return;
     }
 
-    const linkFileName = dataRootPath
+    const isPeopleSubmenuLink =
+      dataRootPath === activePeopleSubmenuPath;
+
+    const cleanPath = dataRootPath.replace(/\/$/, "");
+
+    const linkFileName = cleanPath
       .split("/")
       .pop()
       .split("#")[0]
       .split("?")[0];
 
-    const isActive = linkFileName === currentFileName;
+    const currentFileName =
+      window.location.pathname.split("/").pop() || "index.html";
+
+    const isActive =
+      isPeopleSubmenuLink ||
+      linkFileName === currentFileName;
 
     link.classList.toggle("is-active", isActive);
 
