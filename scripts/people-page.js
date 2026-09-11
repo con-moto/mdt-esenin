@@ -12,6 +12,13 @@ function getCardHref(person, page) {
     return person.managementHref;
   }
 
+  if (
+    page === "people-production" &&
+    person.productionHref
+  ) {
+    return person.productionHref;
+  }
+
   return person.href || "";
 }
 

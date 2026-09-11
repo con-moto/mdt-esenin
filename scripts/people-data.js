@@ -62,6 +62,7 @@ window.PEOPLE_DATA = {
     name: "ОЛЬГА ГОНЧАРОВА",
     photo: "assets/images/actors/olga-goncharova.jpg",
     href: "../olga-goncharova.html",
+    productionHref: "../olga-goncharova-production.html",
     groups: ["troupe", "production"],
     jobTitle: "Муз. руководитель"
   },
@@ -113,9 +114,9 @@ window.PEOPLE_DATA = {
   "katya-kovalevskaya": {
     id: "katya-kovalevskaya",
     slug: "katya-kovalevskaya",
-    firstName: "КАТЯ",
+    firstName: "КАТЕРИНА",
     lastName: "КОВАЛЁВСКАЯ",
-    name: "КАТЯ КОВАЛЁВСКАЯ",
+    name: "КАТЕРИНА КОВАЛЁВСКАЯ",
     photo: "assets/images/actors/katya-kovalevskaya.jpg",
     href: "../katya-kovalevskaya.html",
     groups: ["troupe"]
@@ -179,9 +180,9 @@ window.PEOPLE_DATA = {
   "nastya-ryzhynskaya": {
     id: "nastya-ryzhynskaya",
     slug: "nastya-ryzhynskaya",
-    firstName: "НАСТЯ",
+    firstName: "АНАСТАСИЯ",
     lastName: "РЫЖИНСКАЯ",
-    name: "НАСТЯ РЫЖИНСКАЯ",
+    name: "АНАСТАСИЯ РЫЖИНСКАЯ",
     photo: "assets/images/actors/nastya-ryzhynskaya.jpg",
     href: "../nastya-ryzhynskaya.html",
     groups: ["troupe"]
@@ -276,15 +277,15 @@ window.PEOPLE_DATA = {
   },
 
   "ksenia-kuznetsova": {
-  id: "ksenia-kuznetsova",
-  slug: "ksenia-kuznetsova",
-  firstName: "КСЕНИЯ",
-  lastName: "КУЗНЕЦОВА",
-  name: "КСЕНИЯ КУЗНЕЦОВА",
-  photo: "assets/images/actors/ksenia-kuznetsova.jpg",
-  href: "",
-  groups: ["guest"]
-},
+    id: "ksenia-kuznetsova",
+    slug: "ksenia-kuznetsova",
+    firstName: "КСЕНИЯ",
+    lastName: "КУЗНЕЦОВА",
+    name: "КСЕНИЯ КУЗНЕЦОВА",
+    photo: "assets/images/actors/ksenia-kuznetsova.jpg",
+    href: "",
+    groups: [""]
+  },
 
   "elisey-smolin": {
     id: "elisey-smolin",
@@ -298,15 +299,15 @@ window.PEOPLE_DATA = {
   },
 
   "alexsandr-martynov": {
-  id: "alexsandr-martynov",
-  slug: "alexsandr-martynov",
-  firstName: "АЛЕКСАНДР",
-  lastName: "МАРТЫНОВ",
-  name: "АЛЕКСАНДР МАРТЫНОВ",
-  photo: "assets/images/actors/alexsandr-martynov.jpg",
-  href: "../alexsandr-martynov.html",
-  groups: ["guest"]
-},
+    id: "alexsandr-martynov",
+    slug: "alexsandr-martynov",
+    firstName: "АЛЕКСАНДР",
+    lastName: "МАРТЫНОВ",
+    name: "АЛЕКСАНДР МАРТЫНОВ",
+    photo: "assets/images/actors/alexsandr-martynov.jpg",
+    href: "../alexsandr-martynov.html",
+    groups: ["guest"]
+  },
 
   "anatoliy-chistov": {
     id: "anatoliy-chistov",
@@ -326,7 +327,7 @@ window.PEOPLE_DATA = {
     lastName: "БОРЗЕНКО",
     name: "ДАНИИЛ БОРЗЕНКО",
     photo: "assets/images/actors/daniil-borzenko.jpg",
-    href: "../daniil-borzenko.html",
+    href: "../daniil-borzenko-production.html",
     groups: ["production"],
     jobTitle: "Композитор"
   },
@@ -338,7 +339,7 @@ window.PEOPLE_DATA = {
     lastName: "ДЕМЕНИНА",
     name: "ЕКАТЕРИНА ДЕМЕНИНА",
     photo: "assets/images/actors/ekaterina-demenina.jpg",
-    href: "../ekaterina-demenina.html",
+    href: "../ekaterina-demenina-production.html",
     groups: ["production"],
     jobTitle: "Хореограф-постановщик"
   },
@@ -386,7 +387,7 @@ window.PEOPLE_DATA = {
     lastName: "НОВИКОВА",
     name: "ВЕРА НОВИКОВА",
     photo: "assets/images/actors/vera-novikova.jpg",
-    href: "../vera-novikova.html",
+    href: "../vera-novikova-production.html",
     groups: ["production"],
     jobTitle: "Звукорежиссёр"
   },
@@ -398,7 +399,7 @@ window.PEOPLE_DATA = {
     lastName: "РАЛЬКО",
     name: "НАТАЛИЯ РАЛЬКО",
     photo: "assets/images/actors/natalia-ralko.jpg",
-    href: "../natalia-ralko.html",
+    href: "../natalia-ralko-production.html",
     groups: ["production"],
     jobTitle: "Администратор / логист / специалист по закупкам"
   },
@@ -410,7 +411,7 @@ window.PEOPLE_DATA = {
     lastName: "РУЦКИЙ",
     name: "ФЁДОР РУЦКИЙ",
     photo: "assets/images/actors/fedor-rutskiy.jpg",
-    href: "../fedor-rutskiy.html",
+    href: "../fedor-rutskiy-production.html",
     groups: ["production"],
     jobTitle: "Звукорежиссёр"
   },

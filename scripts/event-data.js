@@ -961,31 +961,70 @@ window.EVENTS_DATA = {
       </p>
     `,
     cast: [
-      {
-        actorId: "yaroslav-shevaldov",
-        role: "Ричард III / Симпкокс"
-      },
-      {
-        actorId: "timur-burin",
-        role: "Герцог Хемфри Глостер, дядя короля / Эдуард / Дорсет"
-      },
-      {
-        actorId: "yaroslav-shevaldov",
-        role: "Герцог Хемфри Глостер, дядя короля / Эдуард / Дорсет"
-      },
-      {
-        actorId: "andrey-lushnikov",
-        role: "Ричард Плантагенет, затем герцог Йорк / Риверс / Ричмонд"
-      },
-      {
-        actorId: "svetlana-sudomir",
-        role: "Смерть / Сомерсет / Жена Симпкокса / Герцогиня Йоркская / Кетсби"
-      },
-      {
-        actorId: "andrey-perov",
-        role: "Генрих VI"
-      }
-    ],
+  {
+    actorId: "yaroslav-shevaldov",
+    role: "Ричард III / Симпкокс"
+  },
+
+  {
+    actorId: "timur-burin",
+    role:
+      "Герцог Хемфри Глостер, дядя короля / Эдуард / Дорсет"
+  },
+
+  {
+    actorId: "yaroslav-shevaldov",
+    role:
+      "Герцог Хемфри Глостер, дядя короля / Эдуард / Дорсет"
+  },
+
+  {
+    actorId: "andrey-lushnikov",
+    role:
+      "Ричард Плантагенет, затем герцог Йорк / Риверс / Ричмонд"
+  },
+
+  {
+    actorId: "svetlana-sudomir",
+    role:
+      "Смерть / Сомерсет / Жена Симпкокса / Герцогиня Йоркская / Кетсби"
+  },
+
+  {
+    actorId: "andrey-perov",
+    role: "Генрих VI"
+  },
+
+  {
+    actorId: "anna-sardanovskaya",
+    role:
+      "Уорик / Элеонора, жена Хемфри Глостера / Бекингем"
+  },
+
+  {
+    actorId: "andrey-balakhnin",
+    role:
+      "Граф Саффолк / Генрих V / Кларенс / Стенли"
+  },
+
+  {
+    actorId: "olga-goncharova",
+    role:
+      "Маргарита Анжуйская / Вернон / Леди Анна"
+  },
+
+  {
+    actorId: "taya-kapitalova",
+    role:
+      "Маргарита Анжуйская / Вернон / Леди Анна"
+  },
+
+  {
+    actorId: "taya-kapitalova",
+    role:
+      "Епископ (кардинал) Уинчестерский / Леди Грей (Елизавета)"
+  }
+],
     creatorsColumns: [
       [
         {

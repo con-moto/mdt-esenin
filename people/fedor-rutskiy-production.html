@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Фёдор Руцкий — МДТ имени Сергея Есенина</title>
+
+  <link
+    rel="icon"
+    type="image/avif"
+    href="../assets/images/main-logo.avif"
+  >
+
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="../styles/root.css">
+  <link rel="stylesheet" href="../styles/header-profile.css">
+  <link rel="stylesheet" href="../styles/navigation.css">
+  <link rel="stylesheet" href="../styles/footer.css">
+  <link rel="stylesheet" href="../styles/breadcrumb.css">
+  <link rel="stylesheet" href="../styles/person-profile.css">
+</head>
+
+<body
+  data-root="../"
+  data-header="header-profile"
+  data-page="people-production"
+  data-person="fedor-rutskiy"
+  data-person-type="production"
+>
+  <div id="common-header"></div>
+
+  <main class="person-profile-page">
+    <nav class="breadcrumb" aria-label="Хлебные крошки">
+      <div class="breadcrumb__inner">
+        <a
+          class="breadcrumb__link"
+          href="#"
+          data-root-path="index.html"
+        >
+          Главная
+        </a>
+
+        <span
+          class="breadcrumb__separator"
+          aria-hidden="true"
+        >
+          /
+        </span>
+
+        <span class="breadcrumb__current">
+          Люди театра
+        </span>
+
+        <span
+          class="breadcrumb__separator"
+          aria-hidden="true"
+        >
+          /
+        </span>
+
+        <a
+          class="breadcrumb__link"
+          href="production-team/index.html"
+        >
+          Постановочная часть
+        </a>
+
+        <span
+          class="breadcrumb__separator"
+          aria-hidden="true"
+        >
+          /
+        </span>
+
+        <span
+          class="breadcrumb__current"
+          data-person-breadcrumb
+        ></span>
+      </div>
+    </nav>
+
+    <section class="person-profile">
+      <div class="person-profile__inner">
+        <div
+          class="person-profile__portrait"
+          data-person-portrait
+        ></div>
+
+        <div class="person-profile__content">
+          <h1
+            class="person-profile__name"
+            data-person-name
+          ></h1>
+
+          <div
+            class="person-profile__facts"
+            data-person-facts
+          ></div>
+        </div>
+      </div>
+
+      <div class="person-profile__divider"></div>
+
+      <div
+        class="person-profile__description"
+        data-person-description
+      ></div>
+    </section>
+
+    <section
+      class="person-performances"
+      data-person-performances
+    ></section>
+
+    <section
+      class="person-gallery-section"
+      data-person-gallery
+    ></section>
+
+    <div
+      class="person-profile__back"
+      data-person-back
+    ></div>
+  </main>
+
+  <div id="common-footer"></div>
+
+  <script src="../scripts/layout.js" defer></script>
+  <script src="../scripts/people-data.js" defer></script>
+  <script src="../scripts/person-pages-data.js" defer></script>
+  <script src="../scripts/person-profile.js" defer></script>
+</body>
+</html>

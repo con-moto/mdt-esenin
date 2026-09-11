@@ -216,10 +216,11 @@
   margin: 4px 0 0;
   color: #111111;
   font-family: var(--font-serif);
-  font-size: clamp(1rem, 1.3vw, 1.32rem);
+  font-size: clamp(0.95rem, 1.14vw, 1.16rem);
   font-weight: 400;
   line-height: 1.15;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .people-card__name-link {
@@ -291,6 +292,7 @@
 .people-grid--management .people-card__name {
   margin-top: 3px;
   font-size: clamp(1.15rem, 1.55vw, 1.45rem);
+  white-space: normal;
 }
 
 .people-grid--management .people-card__job {
@@ -346,6 +348,10 @@
   .people-card__content::before {
     width: 30px;
   }
+
+  .people-card__name {
+    font-size: clamp(0.9rem, 1.25vw, 1.05rem);
+  }
 }
 
 /* =========================================================
@@ -381,8 +387,12 @@
   }
 
   .people-grid--management .people-card {
-    width: min(312px, calc((100% - 32px) / 2));
-    flex-basis: min(312px, calc((100% - 32px) / 2));
+    width: min(312px, 100%);
+    flex-basis: min(312px, 100%);
+  }
+
+  .people-card__name {
+    white-space: normal;
   }
 }
 
@@ -446,13 +456,13 @@
   }
 
   .people-grid--management {
-    gap: 30px 16px;
+    gap: 30px;
     padding-top: 0;
   }
 
   .people-grid--management .people-card {
-    width: calc((100% - 16px) / 2);
-    flex-basis: calc((100% - 16px) / 2);
+    width: min(312px, 100%);
+    flex-basis: min(312px, 100%);
   }
 
   .people-section-title {
@@ -477,6 +487,7 @@
     margin-top: 3px;
     font-size: clamp(0.8rem, 2.65vw, 1rem);
     line-height: 1.15;
+    white-space: normal;
   }
 
   .people-card__job {
