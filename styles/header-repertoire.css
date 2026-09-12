@@ -34,6 +34,11 @@
   outline-offset: 3px;
 }
 
+/* Чтобы кнопка начиналась по той же линии, что и контейнер хедера */
+.red-header__container {
+  position: relative;
+}
+
 @media (max-width: 768px) {
   .repertoire-header__tickets {
     top: 50%;

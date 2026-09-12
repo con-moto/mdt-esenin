@@ -29,7 +29,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     const title = document.createElement('h2');
     title.className = 'reviews-section__title';
-    title.textContent = `Отзывы о спектакле «${spectacle.title}»`;
+    // Перенос строки после «Отзывы о спектакле»
+    title.innerHTML = `Отзывы о спектакле<br>«${spectacle.title}»`;
     section.appendChild(title);
     
     const spacer = document.createElement('div');

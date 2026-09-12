@@ -2,20 +2,22 @@
   background-color: var(--white);
 }
 
+
 .profile-topbar {
   width: 100%;
   min-height: 180px;
   background-color: var(--white);
 }
 
+
 .profile-topbar__inner {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 140px minmax(0, 1fr);
   align-items: center;
-  width: min(1800px, calc(100% - 64px));
-  min-height: 180px;
+  width: min(var(--site-width), calc(100% - 40px));
   margin: 0 auto;
 }
+
 
 .profile-topbar__label {
   margin: 0;
@@ -30,13 +32,16 @@
   white-space: nowrap;
 }
 
+
 .profile-topbar__label--left {
   justify-self: center;
 }
 
+
 .profile-topbar__label--right {
   justify-self: center;
 }
+
 
 .profile-topbar__logo-link {
   display: flex;
@@ -47,6 +52,7 @@
   height: 89px;
 }
 
+
 .profile-topbar__logo {
   display: block;
   width: 110px;
@@ -54,12 +60,14 @@
   object-fit: contain;
 }
 
+
 .site-header--profile .red-header {
   position: relative;
   z-index: 10;
   height: 145px;
   background-color: var(--burgundy);
 }
+
 
 .site-header--profile .red-header__container {
   position: relative;
@@ -70,6 +78,7 @@
   height: 100%;
   margin: 0 auto;
 }
+
 
 .site-header--profile .socials {
   position: absolute;
@@ -82,11 +91,13 @@
   list-style: none;
 }
 
+
 .site-header--profile .socials a {
   display: block;
   width: 32px;
   height: 32px;
 }
+
 
 .site-header--profile .socials img {
   display: block;
@@ -94,6 +105,7 @@
   height: 32px;
   object-fit: contain;
 }
+
 
 @media (min-width: 769px) {
   .site-header--profile .red-header .main-navigation {
@@ -104,6 +116,7 @@
     width: 100%;
   }
 
+
   .site-header--profile .red-header .menu-toggle {
     position: absolute;
     right: var(--page-padding);
@@ -111,15 +124,18 @@
   }
 }
 
+
 @media (max-width: 1200px) {
   .profile-topbar__inner {
     grid-template-columns: minmax(0, 1fr) 115px minmax(0, 1fr);
-    width: calc(100% - 48px);
+    width: min(var(--site-width), calc(100% - 40px));
   }
+
 
   .profile-topbar__label {
     font-size: clamp(1.3rem, 2.6vw, 2.1rem);
   }
+
 
   .profile-topbar__logo-link,
   .profile-topbar__logo {
@@ -128,21 +144,25 @@
   }
 }
 
+
 @media (max-width: 900px) {
   .profile-topbar,
   .profile-topbar__inner {
     min-height: 145px;
   }
 
+
   .profile-topbar__inner {
     grid-template-columns: minmax(0, 1fr) 96px minmax(0, 1fr);
-    width: calc(100% - 32px);
+    width: min(var(--site-width), calc(100% - 40px));
   }
+
 
   .profile-topbar__label {
     font-size: clamp(1rem, 2.45vw, 1.45rem);
     letter-spacing: 0.04em;
   }
+
 
   .profile-topbar__logo-link,
   .profile-topbar__logo {
@@ -150,15 +170,18 @@
   }
 }
 
+
 @media (max-width: 768px) {
   .profile-topbar,
   .profile-topbar__inner {
     min-height: 0;
   }
 
+
   .profile-topbar {
     padding: 1.5rem 0;
   }
+
 
   .profile-topbar__inner {
     display: grid;
@@ -167,10 +190,12 @@
       "left"
       "logo"
       "right";
-    justify-items: center;
+    justify-items: flex-start;
     row-gap: 1.25rem;
-    width: calc(100% - 32px);
+    width: calc(100% - 40px);
+    margin: 0 auto;
   }
+
 
   .profile-topbar__label {
     display: block;
@@ -181,17 +206,23 @@
     white-space: normal;
   }
 
+
   .profile-topbar__label--left {
     grid-area: left;
+    justify-self: start;
   }
+
 
   .profile-topbar__label--right {
     grid-area: right;
+    justify-self: start;
   }
+
 
   .profile-topbar__logo-link {
     grid-area: logo;
   }
+
 
   .profile-topbar__logo-link,
   .profile-topbar__logo {
@@ -199,13 +230,16 @@
     height: auto;
   }
 
+
   .site-header--profile .red-header {
     height: 6.5rem;
   }
 
+
   .site-header--profile .red-header__container {
     width: min(100% - (var(--page-padding) * 2), 40rem);
   }
+
 
   .site-header--profile .socials {
     top: 50%;
@@ -214,12 +248,16 @@
     transform: translateY(-50%);
   }
 
+
+  /* Меню внизу, на всю ширину */
   .site-header--profile .red-header .main-navigation {
     position: absolute;
-    top: 0;
+    top: 100%;
     left: 0;
-    width: 100%;
+    width: calc(100% + 40px);
+    margin-left: -20px;
   }
+
 
   .site-header--profile .red-header .menu-toggle {
     position: absolute;
@@ -230,14 +268,17 @@
   }
 }
 
+
 @media (max-width: 430px) {
   .profile-topbar {
     padding: 1.25rem 0;
   }
 
+
   .profile-topbar__inner {
     row-gap: 1rem;
   }
+
 
   .profile-topbar__label {
     font-size: 1.3rem;

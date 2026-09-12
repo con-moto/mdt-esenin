@@ -2,6 +2,7 @@
    PEOPLE PAGES
    ========================================================= */
 
+
 .people-page {
   min-height: 100vh;
   padding-top: clamp(1.5rem, 3vw, 3rem);
@@ -10,9 +11,11 @@
   color: #111111;
 }
 
+
 /* =========================================================
    GREEN PAGE TITLE
    ========================================================= */
+
 
 .people-header {
   display: flex;
@@ -23,11 +26,12 @@
   background: var(--button-green);
 }
 
+
 .people-header__title {
   margin: 0;
   color: var(--white);
   font-family: var(--font-serif);
-  font-size: clamp(1.45rem, 2vw, 2rem);
+  font-size: var(--font-size-large);
   font-weight: 400;
   line-height: 1.15;
   letter-spacing: 0.01em;
@@ -35,9 +39,11 @@
   text-transform: uppercase;
 }
 
+
 /* =========================================================
    SHARED CONTENT WIDTH
    ========================================================= */
+
 
 .people-alphabet,
 .people-list {
@@ -46,18 +52,22 @@
   margin-left: auto;
 }
 
+
 /* =========================================================
    ALPHABET FILTER
    ========================================================= */
+
 
 .people-alphabet {
   padding: 54px 0 17px;
   border-bottom: 1px solid #dedede;
 }
 
+
 .people-alphabet:empty {
   display: none;
 }
+
 
 .people-alphabet__list {
   display: flex;
@@ -68,21 +78,24 @@
   list-style: none;
 }
 
+
 .people-alphabet__item {
   margin: 0;
   padding: 0;
 }
+
 
 .people-alphabet__link,
 .people-alphabet__letter {
   display: inline-block;
   padding: 0 3px;
   font-family: var(--font-serif);
-  font-size: clamp(1.1rem, 1.5vw, 1.45rem);
+  font-size: var(--font-size-large);
   font-weight: 400;
   line-height: 1;
   text-transform: uppercase;
 }
+
 
 .people-alphabet__link {
   color: var(--button-green);
@@ -92,21 +105,25 @@
   transition: color 0.2s ease;
 }
 
+
 .people-alphabet__link:hover,
 .people-alphabet__link:focus-visible,
 .people-alphabet__link--active {
   color: var(--burgundy);
 }
 
+
 .people-alphabet__link:focus-visible {
   outline: 2px solid var(--burgundy);
   outline-offset: 3px;
 }
 
+
 .people-alphabet__link--all {
   margin-right: 12px;
   font-size: 0.9em;
 }
+
 
 .people-alphabet__letter {
   color: var(--button-green);
@@ -114,14 +131,17 @@
   cursor: default;
 }
 
+
 /* =========================================================
    PEOPLE LIST
    ========================================================= */
+
 
 .people-list {
   padding-top: 56px;
   padding-bottom: 90px;
 }
+
 
 .people-grid {
   display: flex;
@@ -130,10 +150,12 @@
   gap: 31px 24px;
 }
 
+
 .people-grid--troupe,
 .people-grid--production {
   --people-card-width: calc((100% - 72px) / 4);
 }
+
 
 .people-grid--troupe .people-card,
 .people-grid--production .people-card {
@@ -141,26 +163,30 @@
   flex: 0 0 var(--people-card-width);
 }
 
+
 .people-section-title {
   margin: 78px 0 38px;
   color: #111111;
   font-family: var(--font-serif);
-  font-size: clamp(1.45rem, 2vw, 2rem);
+  font-size: var(--font-size-large);
   font-weight: 400;
   line-height: 1.15;
   text-align: center;
   text-transform: uppercase;
 }
 
+
 /* =========================================================
    PERSON CARD
    ========================================================= */
+
 
 .people-card {
   display: grid;
   grid-template-rows: auto auto;
   min-width: 0;
 }
+
 
 .people-card__image-link {
   display: block;
@@ -170,10 +196,12 @@
   background: #eeeeee;
 }
 
+
 .people-card__image-link:focus-visible {
   outline: 3px solid var(--burgundy);
   outline-offset: 3px;
 }
+
 
 .people-card__image {
   display: block;
@@ -184,14 +212,17 @@
   transition: transform 0.35s ease;
 }
 
+
 .people-card__image-link:hover .people-card__image,
 .people-card__image-link:focus-visible .people-card__image {
   transform: scale(1.025);
 }
 
+
 /* =========================================================
    CARD CAPTION
    ========================================================= */
+
 
 .people-card__content {
   display: grid;
@@ -200,6 +231,7 @@
   min-height: 35px;
   margin-top: 21px;
 }
+
 
 .people-card__content::before {
   display: block;
@@ -211,17 +243,19 @@
   content: "";
 }
 
+
 .people-card__name {
   grid-column: 2;
   margin: 4px 0 0;
   color: #111111;
   font-family: var(--font-serif);
-  font-size: clamp(0.95rem, 1.14vw, 1.16rem);
+  font-size: var(--font-size-text);
   font-weight: 400;
   line-height: 1.15;
   text-transform: uppercase;
   white-space: nowrap;
 }
+
 
 .people-card__name-link {
   color: inherit;
@@ -231,42 +265,50 @@
   transition: color 0.2s ease;
 }
 
+
 .people-card__name-link:hover,
 .people-card__name-link:focus-visible {
   color: var(--burgundy);
 }
+
 
 .people-card__name-link:focus-visible {
   outline: 2px solid var(--burgundy);
   outline-offset: 3px;
 }
 
+
 .people-card__job {
   grid-column: 2;
   margin: 7px 0 0;
   color: #111111;
-  font-family: var(--font-serif);
-  font-size: clamp(0.9rem, 1.14vw, 1.15rem);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-text);
   font-style: normal;
   font-weight: 400;
   line-height: 1.25;
 }
 
+
 /* =========================================================
    TROUPE
    ========================================================= */
+
 
 .people-grid--troupe .people-card__content {
   min-height: 35px;
 }
 
+
 .people-grid--troupe .people-card__content::before {
   min-height: 35px;
 }
 
+
 /* =========================================================
    MANAGEMENT
    ========================================================= */
+
 
 .people-grid--management {
   display: flex;
@@ -276,50 +318,61 @@
   padding-top: 30px;
 }
 
+
 .people-grid--management .people-card {
   width: 312px;
   flex: 0 1 312px;
 }
 
+
 .people-grid--management .people-card__content {
   min-height: 142px;
 }
+
 
 .people-grid--management .people-card__content::before {
   min-height: 142px;
 }
 
+
 .people-grid--management .people-card__name {
   margin-top: 3px;
-  font-size: clamp(1.15rem, 1.55vw, 1.45rem);
+  font-size: var(--font-size-large);
   white-space: normal;
 }
 
+
 .people-grid--management .people-card__job {
   max-width: 255px;
-  font-size: clamp(1rem, 1.34vw, 1.28rem);
+  font-size: var(--font-size-text);
   line-height: 1.28;
 }
+
 
 /* =========================================================
    PRODUCTION TEAM
    ========================================================= */
 
+
 .people-grid--production .people-card__content {
   min-height: 105px;
 }
+
 
 .people-grid--production .people-card__content::before {
   min-height: 105px;
 }
 
+
 .people-grid--production .people-card__job {
   max-width: 275px;
 }
 
+
 /* =========================================================
    LARGE TABLET
    ========================================================= */
+
 
 @media (max-width: 1200px) {
   .people-alphabet,
@@ -327,97 +380,112 @@
     width: min(1100px, calc(100% - 40px));
   }
 
+
   .people-grid {
     gap: 28px 20px;
   }
+
 
   .people-grid--troupe,
   .people-grid--production {
     --people-card-width: calc((100% - 60px) / 4);
   }
 
+
   .people-grid--management {
     gap: 45px 50px;
   }
+
 
   .people-card__content {
     grid-template-columns: 30px minmax(0, 1fr);
     column-gap: 12px;
   }
 
+
   .people-card__content::before {
     width: 30px;
   }
-
-  .people-card__name {
-    font-size: clamp(0.9rem, 1.25vw, 1.05rem);
-  }
 }
+
 
 /* =========================================================
    TABLET
    ========================================================= */
+
 
 @media (max-width: 920px) {
   .people-page {
     padding-top: 2rem;
   }
 
+
   .people-alphabet {
     padding-top: 38px;
   }
 
+
   .people-alphabet__link,
   .people-alphabet__letter {
     padding: 0 2px;
-    font-size: 1.15rem;
   }
+
 
   .people-grid {
     gap: 32px 18px;
   }
+
 
   .people-grid--troupe,
   .people-grid--production {
     --people-card-width: calc((100% - 36px) / 3);
   }
 
+
   .people-grid--management {
     gap: 32px;
   }
+
 
   .people-grid--management .people-card {
     width: min(312px, 100%);
     flex-basis: min(312px, 100%);
   }
 
+
   .people-card__name {
     white-space: normal;
   }
 }
 
+
 /* =========================================================
    MOBILE
    ========================================================= */
+
 
 @media (max-width: 640px) {
   .people-page {
     padding-top: 1.5rem;
   }
 
+
   .people-alphabet,
   .people-list {
     width: calc(100% - 32px);
   }
+
 
   .people-header {
     min-height: 68px;
     padding: 14px 16px;
   }
 
+
   .people-header__title {
-    font-size: 1.35rem;
+    font-size: var(--font-size-large);
   }
+
 
   .people-alphabet {
     padding-top: 30px;
@@ -425,51 +493,60 @@
     overflow-x: auto;
   }
 
+
   .people-alphabet__list {
     justify-content: flex-start;
     width: max-content;
     min-width: 100%;
   }
 
+
   .people-alphabet__link,
   .people-alphabet__letter {
     padding: 0 3px;
-    font-size: 1rem;
   }
+
 
   .people-alphabet__link--all {
     margin-right: 8px;
   }
+
 
   .people-list {
     padding-top: 32px;
     padding-bottom: 55px;
   }
 
+
   .people-grid {
     gap: 30px 16px;
   }
+
 
   .people-grid--troupe,
   .people-grid--production {
     --people-card-width: calc((100% - 16px) / 2);
   }
 
+
   .people-grid--management {
     gap: 30px;
     padding-top: 0;
   }
+
 
   .people-grid--management .people-card {
     width: min(312px, 100%);
     flex-basis: min(312px, 100%);
   }
 
+
   .people-section-title {
     margin-top: 55px;
     margin-bottom: 28px;
-    font-size: 1.35rem;
+    font-size: var(--font-size-large);
   }
+
 
   .people-card__content {
     grid-template-columns: 24px minmax(0, 1fr);
@@ -478,61 +555,62 @@
     margin-top: 13px;
   }
 
+
   .people-card__content::before {
     width: 24px;
     min-height: 29px;
   }
 
+
   .people-card__name {
     margin-top: 3px;
-    font-size: clamp(0.8rem, 2.65vw, 1rem);
     line-height: 1.15;
     white-space: normal;
   }
 
+
   .people-card__job {
     margin-top: 5px;
-    font-size: clamp(0.76rem, 2.35vw, 0.93rem);
     line-height: 1.2;
   }
+
 
   .people-grid--management .people-card__content {
     min-height: 105px;
   }
 
+
   .people-grid--management .people-card__content::before {
     min-height: 105px;
   }
 
-  .people-grid--management .people-card__name {
-    font-size: clamp(0.84rem, 2.8vw, 1.05rem);
-  }
-
-  .people-grid--management .people-card__job {
-    font-size: clamp(0.78rem, 2.45vw, 0.96rem);
-  }
 
   .people-grid--production .people-card__content {
     min-height: 80px;
   }
+
 
   .people-grid--production .people-card__content::before {
     min-height: 80px;
   }
 }
 
+
 /* =========================================================
    SMALL MOBILE
    ========================================================= */
+
 
 @media (max-width: 430px) {
   .people-page {
     padding-top: 1.25rem;
   }
 
+
   .people-list {
     width: calc(100% - 32px);
   }
+
 
   .people-grid,
   .people-grid--management {
@@ -540,10 +618,12 @@
     gap: 35px;
   }
 
+
   .people-grid--troupe,
   .people-grid--production {
     --people-card-width: min(300px, 100%);
   }
+
 
   .people-grid--troupe .people-card,
   .people-grid--production .people-card,
@@ -552,6 +632,7 @@
     flex-basis: min(300px, 100%);
   }
 
+
   .people-card__content {
     grid-template-columns: 30px minmax(0, 1fr);
     column-gap: 12px;
@@ -559,38 +640,27 @@
     margin-top: 15px;
   }
 
+
   .people-card__content::before {
     width: 30px;
     min-height: 34px;
   }
 
-  .people-card__name {
-    font-size: 1.08rem;
-  }
-
-  .people-card__job {
-    font-size: 0.96rem;
-  }
 
   .people-grid--management .people-card__content {
     min-height: 112px;
   }
 
+
   .people-grid--management .people-card__content::before {
     min-height: 112px;
   }
 
-  .people-grid--management .people-card__name {
-    font-size: 1.12rem;
-  }
-
-  .people-grid--management .people-card__job {
-    font-size: 0.98rem;
-  }
 
   .people-grid--production .people-card__content {
     min-height: 88px;
   }
+
 
   .people-grid--production .people-card__content::before {
     min-height: 88px;

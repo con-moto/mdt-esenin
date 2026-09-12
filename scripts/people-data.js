@@ -305,7 +305,7 @@ window.PEOPLE_DATA = {
     lastName: "МАРТЫНОВ",
     name: "АЛЕКСАНДР МАРТЫНОВ",
     photo: "assets/images/actors/alexsandr-martynov.jpg",
-    href: "../alexsandr-martynov.html",
+    href: "../people/alexsandr-martynov.html",
     groups: ["guest"]
   },
 

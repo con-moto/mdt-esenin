@@ -6,9 +6,11 @@
   color: #111111;
 }
 
+
 /* =========================================================
    SLIDER
    ========================================================= */
+
 
 .person-hero {
   position: relative;
@@ -17,6 +19,7 @@
   overflow: hidden;
   background-color: var(--dark);
 }
+
 
 .person-hero__list {
   position: relative;
@@ -27,6 +30,7 @@
   list-style: none;
 }
 
+
 .person-hero__slide {
   position: absolute;
   inset: 0;
@@ -34,16 +38,19 @@
   transition: opacity 0.6s ease;
 }
 
+
 .person-hero__slide--active {
   z-index: 2;
   opacity: 1;
 }
+
 
 .person-hero__slide picture {
   display: block;
   width: 100%;
   height: 100%;
 }
+
 
 .person-hero__image {
   display: block;
@@ -52,6 +59,7 @@
   object-fit: cover;
   object-position: center;
 }
+
 
 .person-hero__arrow {
   position: absolute;
@@ -73,23 +81,28 @@
   transition: background-color 0.2s ease;
 }
 
+
 .person-hero__arrow:hover,
 .person-hero__arrow:focus-visible {
   background-color: rgba(0, 0, 0, 0.7);
 }
+
 
 .person-hero__arrow:focus-visible {
   outline: 2px solid var(--white);
   outline-offset: 3px;
 }
 
+
 .person-hero__arrow--prev {
   left: 1rem;
 }
 
+
 .person-hero__arrow--next {
   right: 1rem;
 }
+
 
 .person-hero__pagination {
   position: absolute;
@@ -101,6 +114,7 @@
   gap: 0.5rem;
   transform: translateX(-50%);
 }
+
 
 .person-hero__dot {
   width: 0.55rem;
@@ -119,6 +133,7 @@
     opacity 0.2s ease;
 }
 
+
 .person-hero__dot--active {
   width: 0.85rem;
   height: 0.85rem;
@@ -127,33 +142,46 @@
   opacity: 1;
 }
 
+
 .person-hero__dot:hover,
 .person-hero__dot:focus-visible {
   opacity: 1;
 }
+
 
 .person-hero__dot:focus-visible {
   outline: 2px solid var(--white);
   outline-offset: 3px;
 }
 
+
 /* =========================================================
    BREADCRUMBS
-   Твой margin сохранён без изменений.
    ========================================================= */
+
 
 .person-profile-page > .breadcrumb {
   margin-top: clamp(1.25rem, 2.5vw, 2rem);
 }
 
+
+.breadcrumb__inner {
+  width: min(var(--site-width), calc(100% - 47px));
+  margin: 0 auto;
+  padding: 0;
+}
+
+
 /* =========================================================
    PROFILE
    ========================================================= */
+
 
 .person-profile {
   padding-top: clamp(2rem, 4vw, 4rem);
   padding-bottom: clamp(4rem, 7vw, 7rem);
 }
+
 
 .person-profile__inner {
   display: grid;
@@ -164,17 +192,20 @@
   margin: 0 auto;
 }
 
+
 .person-profile__portrait {
   width: 100%;
   overflow: hidden;
   background: #e5e5e5;
 }
 
+
 .person-profile__portrait picture {
   display: block;
   width: 100%;
   height: 100%;
 }
+
 
 .person-profile__portrait-image {
   display: block;
@@ -184,12 +215,14 @@
   object-position: center top;
 }
 
+
 .person-profile__content {
   min-width: 0;
   padding-top: 0.25rem;
   color: #161616;
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
 }
+
 
 .person-profile__name {
   margin: 0 0 clamp(1.5rem, 3vw, 2.5rem);
@@ -201,14 +234,17 @@
   text-transform: uppercase;
 }
 
+
 .person-profile__facts {
   display: grid;
   gap: clamp(2rem, 3.5vw, 3.25rem);
 }
 
+
 .person-profile__fact {
   margin: 0;
 }
+
 
 .person-profile__fact-label {
   display: flex;
@@ -216,12 +252,13 @@
   gap: 16px;
   margin: 0;
   color: var(--button-green);
-  font-family: var(--font-serif);
-  font-size: clamp(1.05rem, 1.45vw, 1.25rem);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-text);
   font-weight: 700;
   line-height: 1.1;
   text-transform: uppercase;
 }
+
 
 .person-profile__fact-icon {
   display: block;
@@ -231,14 +268,16 @@
   object-fit: contain;
 }
 
+
 .person-profile__fact-value {
   margin: 0.65rem 0 0 58px;
   color: #202020;
-  font-family: var(--font-serif);
-  font-size: clamp(1rem, 1.3vw, 1.0625rem);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-text);
   font-weight: 400;
   line-height: 1.35;
 }
+
 
 .person-profile__divider {
   width: min(1220px, calc(100% - 80px));
@@ -247,27 +286,32 @@
   background: rgba(0, 0, 0, 0.28);
 }
 
+
 .person-profile__description {
   width: min(1220px, calc(100% - 80px));
   margin: 0 auto;
   color: #202020;
-  font-family: var(--font-serif);
-  font-size: clamp(1rem, 1.3vw, 1.0625rem);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-text);
   font-weight: 400;
   line-height: 1.48;
 }
+
 
 .person-profile__description p {
   margin: 0;
 }
 
+
 .person-profile__description p + p {
   margin-top: 1.45em;
 }
 
+
 /* =========================================================
    SECTION TITLE
    ========================================================= */
+
 
 .section-title-bar {
   display: flex;
@@ -287,18 +331,22 @@
   text-transform: uppercase;
 }
 
+
 .section-title-bar--photos {
   background: #a90027;
 }
+
 
 /* =========================================================
    PERFORMANCES
    ========================================================= */
 
+
 .person-performances {
   padding: 0 0 clamp(4rem, 8vw, 8rem);
   background: var(--white);
 }
+
 
 .person-performances__grid {
   display: grid;
@@ -309,6 +357,7 @@
   margin: 0 auto;
   padding-top: clamp(2rem, 4vw, 3.25rem);
 }
+
 
 .person-performance-card {
   display: grid;
@@ -325,11 +374,13 @@
     transform 0.25s ease;
 }
 
+
 .person-performance-card:hover,
 .person-performance-card:focus-visible {
   border-bottom-color: var(--burgundy);
   transform: translateY(-2px);
 }
+
 
 .person-performance-card__image-wrap {
   width: 100%;
@@ -338,11 +389,13 @@
   background: #d9d9d9;
 }
 
+
 .person-performance-card__image-wrap picture {
   display: block;
   width: 100%;
   height: 100%;
 }
+
 
 .person-performance-card__image {
   display: block;
@@ -353,10 +406,12 @@
   transition: transform 0.4s ease;
 }
 
+
 .person-performance-card:hover .person-performance-card__image,
 .person-performance-card:focus-visible .person-performance-card__image {
   transform: scale(1.05);
 }
+
 
 .person-performance-card__content {
   display: block;
@@ -364,20 +419,22 @@
   margin: 0;
 }
 
+
 .person-performance-card__role {
   margin: 0;
   color: #111;
-  font-family: var(--font-serif);
-  font-size: clamp(1rem, 1.35vw, 1.0625rem);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-text);
   font-weight: 400;
   line-height: 1.3;
 }
 
+
 .person-performance-card__title {
   margin: 0.42rem 0 0;
   color: var(--burgundy);
-  font-family: var(--font-serif);
-  font-size: clamp(1rem, 1.3vw, 1.0625rem);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-text);
   font-weight: 400;
   line-height: 1.25;
   text-decoration: underline;
@@ -385,18 +442,22 @@
   text-underline-offset: 3px;
 }
 
+
 .person-performance-card:focus-visible {
   outline: 3px solid var(--burgundy);
   outline-offset: 5px;
 }
 
+
 /* =========================================================
    GALLERY
    ========================================================= */
 
+
 .person-gallery-section {
   background: var(--white);
 }
+
 
 .person-gallery-grid {
   display: grid;
@@ -406,6 +467,7 @@
   gap: 10px;
   padding: 26px 22px 0;
 }
+
 
 .person-gallery-item {
   position: relative;
@@ -419,11 +481,13 @@
   cursor: zoom-in;
 }
 
+
 .person-gallery-item picture {
   display: block;
   width: 100%;
   height: 100%;
 }
+
 
 .person-gallery-item__image {
   display: block;
@@ -433,10 +497,12 @@
   transition: transform 0.45s ease;
 }
 
+
 .person-gallery-item--feature {
   grid-column: 2;
   grid-row: span 2;
 }
+
 
 .person-gallery-item--missing {
   background:
@@ -452,6 +518,7 @@
   background-size: 30px 30px;
 }
 
+
 .person-gallery-item::after {
   position: absolute;
   inset: 0;
@@ -460,24 +527,29 @@
   transition: background-color 0.35s ease;
 }
 
+
 .person-gallery-item:hover::after,
 .person-gallery-item:focus-visible::after {
   background: rgba(0, 0, 0, 0.1);
 }
+
 
 .person-gallery-item:hover .person-gallery-item__image,
 .person-gallery-item:focus-visible .person-gallery-item__image {
   transform: scale(1.04);
 }
 
+
 .person-gallery-item:focus-visible {
   outline: 3px solid var(--burgundy);
   outline-offset: 3px;
 }
 
+
 /* =========================================================
    LIGHTBOX
    ========================================================= */
+
 
 .person-gallery-lightbox {
   width: 100vw;
@@ -491,9 +563,11 @@
   background: transparent;
 }
 
+
 .person-gallery-lightbox::backdrop {
   background: rgba(0, 0, 0, 0.9);
 }
+
 
 .person-gallery-lightbox__content {
   position: relative;
@@ -506,6 +580,7 @@
   box-sizing: border-box;
 }
 
+
 .person-gallery-lightbox__figure {
   display: flex;
   flex-direction: column;
@@ -515,6 +590,7 @@
   max-height: 100%;
   margin: 0;
 }
+
 
 .person-gallery-lightbox__image {
   display: block;
@@ -526,6 +602,7 @@
   user-select: none;
 }
 
+
 .person-gallery-lightbox__counter {
   margin-top: 0.9rem;
   color: var(--white);
@@ -534,6 +611,7 @@
   line-height: 1;
   letter-spacing: 0.08em;
 }
+
 
 .person-gallery-lightbox__close,
 .person-gallery-lightbox__previous,
@@ -551,6 +629,7 @@
     transform 0.2s ease;
 }
 
+
 .person-gallery-lightbox__close:hover,
 .person-gallery-lightbox__close:focus-visible,
 .person-gallery-lightbox__previous:hover,
@@ -561,12 +640,14 @@
   transform: scale(1.06);
 }
 
+
 .person-gallery-lightbox__close:focus-visible,
 .person-gallery-lightbox__previous:focus-visible,
 .person-gallery-lightbox__next:focus-visible {
   outline: 2px solid var(--white);
   outline-offset: 3px;
 }
+
 
 .person-gallery-lightbox__close {
   top: clamp(1rem, 2vw, 2rem);
@@ -578,6 +659,7 @@
   font-weight: 200;
   line-height: 1;
 }
+
 
 .person-gallery-lightbox__previous,
 .person-gallery-lightbox__next {
@@ -591,13 +673,16 @@
   transform: translateY(-50%);
 }
 
+
 .person-gallery-lightbox__previous {
   left: clamp(0.75rem, 2vw, 2rem);
 }
 
+
 .person-gallery-lightbox__next {
   right: clamp(0.75rem, 2vw, 2rem);
 }
+
 
 .person-gallery-lightbox__previous:hover,
 .person-gallery-lightbox__previous:focus-visible,
@@ -606,9 +691,11 @@
   transform: translateY(-50%) scale(1.06);
 }
 
+
 /* =========================================================
    BACK BUTTON
    ========================================================= */
+
 
 .person-profile__back {
   display: flex;
@@ -618,6 +705,7 @@
   width: min(1320px, calc(100% - 80px));
   margin: clamp(4rem, 7vw, 7rem) auto clamp(5rem, 9vw, 9rem);
 }
+
 
 .person-profile__back-icon {
   display: inline-flex;
@@ -632,6 +720,7 @@
     opacity 0.2s ease;
 }
 
+
 .person-profile__back-icon img {
   display: block;
   width: 122px;
@@ -640,15 +729,18 @@
   transition: transform 0.2s ease;
 }
 
+
 .person-profile__back-icon:hover,
 .person-profile__back-icon:focus-visible {
   opacity: 0.9;
   transform: translateX(-4px);
 }
 
+
 .person-profile__back-icon:hover img {
   transform: translateX(-8px);
 }
+
 
 .person-profile__back-button {
   display: inline-flex;
@@ -672,12 +764,14 @@
     transform 0.25s ease;
 }
 
+
 .person-profile__back-button:hover,
 .person-profile__back-button:focus-visible {
   background-color: var(--button-green);
   box-shadow: inset 0 -4px 0 rgba(255, 255, 255, 0.38);
   transform: translateY(-3px);
 }
+
 
 .person-profile__back-button:focus-visible {
   outline: 2px solid var(--button-green);
@@ -688,6 +782,7 @@
    TABLET
    ========================================================= */
 
+
 @media (max-width: 1000px) {
   .person-profile__inner {
     grid-template-columns: minmax(260px, 0.9fr) minmax(0, 1fr);
@@ -695,47 +790,57 @@
     width: min(920px, calc(100% - 48px));
   }
 
+
   .person-profile__divider,
   .person-profile__description,
   .person-performances__grid {
     width: min(920px, calc(100% - 48px));
   }
 
+
   .person-profile__name {
     font-size: clamp(1.5rem, 3vw, 2.1rem);
   }
 
+
   .person-profile__fact-label {
     font-size: 1.1rem;
   }
+
 
   .person-profile__fact-icon {
     width: 36px;
     height: 36px;
   }
 
+
   .person-profile__fact-value {
     margin-left: 52px;
     font-size: 1rem;
   }
 
+
   .person-performances__grid {
     column-gap: 2.5rem;
   }
 
+
   .person-profile__back {
     width: min(920px, calc(100% - 48px));
   }
+
 
   .person-profile__back-icon {
     width: 118px;
     height: 118px;
   }
 
+
   .person-profile__back-icon img {
     width: 100px;
     height: 100px;
   }
+
 
   .person-gallery-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -744,10 +849,12 @@
     padding-left: 20px;
   }
 
+
   .person-gallery-item--feature {
     grid-column: auto;
     grid-row: auto;
   }
+
 
   .person-gallery-item {
     grid-column: auto !important;
@@ -755,19 +862,24 @@
   }
 }
 
+
+
 /* =========================================================
    MOBILE
    ========================================================= */
+
 
 @media (max-width: 730px) {
   .person-hero {
     height: clamp(24rem, 95vw, 36rem);
   }
 
+
   .person-profile {
     padding-top: 2rem;
     padding-bottom: 4rem;
   }
+
 
   .person-profile__inner {
     grid-template-columns: 1fr;
@@ -775,34 +887,41 @@
     gap: 2rem;
   }
 
+
   .person-profile__portrait {
     width: min(72%, 280px);
-    margin: 0 auto;
+    margin: 0; /* фото по левому краю, без центрирования */
   }
+
 
   .person-profile__name {
     margin-bottom: 1.75rem;
     font-size: clamp(1.45rem, 6vw, 2rem);
   }
 
+
   .person-profile__facts {
     gap: 2rem;
   }
+
 
   .person-profile__fact-label {
     gap: 12px;
     font-size: 1.08rem;
   }
 
+
   .person-profile__fact-icon {
     width: 31px;
     height: 31px;
   }
 
+
   .person-profile__fact-value {
     margin-left: 43px;
     font-size: 1rem;
   }
+
 
   .person-profile__divider,
   .person-profile__description,
@@ -810,10 +929,12 @@
     width: calc(100% - 32px);
   }
 
+
   .person-profile__description {
     font-size: 1rem;
     line-height: 1.48;
   }
+
 
   .person-performances__grid {
     grid-template-columns: 1fr;
@@ -821,20 +942,24 @@
     padding-top: 2rem;
   }
 
+
   .person-performance-card {
     grid-template-columns: 105px minmax(0, 1fr);
     gap: 1rem;
     padding-bottom: 1.1rem;
   }
 
+
   .person-performance-card__role,
   .person-performance-card__title {
     font-size: 1rem;
   }
 
+
   .person-performance-card__title {
     margin-top: 0.3rem;
   }
+
 
   .person-profile__back {
     width: calc(100% - 32px);
@@ -843,15 +968,18 @@
     gap: 1rem;
   }
 
+
   .person-profile__back-icon {
     width: 92px;
     height: 92px;
   }
 
+
   .person-profile__back-icon img {
     width: 78px;
     height: 78px;
   }
+
 
   .person-profile__back-button {
     min-height: 54px;
@@ -861,6 +989,7 @@
   }
 }
 
+
 @media (max-width: 600px) {
   .person-hero__arrow {
     width: 2.5rem;
@@ -868,15 +997,18 @@
     font-size: 1.2rem;
   }
 
+
   .person-hero__dot {
     width: 0.45rem;
     height: 0.45rem;
   }
 
+
   .person-hero__dot--active {
     width: 0.65rem;
     height: 0.65rem;
   }
+
 
   .section-title-bar {
     min-height: 64px;
@@ -885,6 +1017,7 @@
     letter-spacing: 0.1em;
   }
 
+
   .person-gallery-grid {
     grid-template-columns: 1fr;
     grid-auto-rows: 270px;
@@ -892,20 +1025,24 @@
     padding: 12px 12px 0;
   }
 
+
   .person-gallery-item,
   .person-gallery-item--feature {
     grid-column: auto !important;
     grid-row: auto !important;
   }
 
+
   .person-gallery-lightbox__content {
     padding: 1rem 0.5rem;
   }
+
 
   .person-gallery-lightbox__image {
     max-width: 92vw;
     max-height: 76vh;
   }
+
 
   .person-gallery-lightbox__close {
     top: 0.75rem;
@@ -914,6 +1051,7 @@
     height: 2.75rem;
     font-size: 2rem;
   }
+
 
   .person-gallery-lightbox__previous,
   .person-gallery-lightbox__next {
@@ -925,13 +1063,16 @@
     transform: none;
   }
 
+
   .person-gallery-lightbox__previous {
     left: calc(50% - 3.5rem);
   }
 
+
   .person-gallery-lightbox__next {
     right: calc(50% - 3.5rem);
   }
+
 
   .person-gallery-lightbox__previous:hover,
   .person-gallery-lightbox__previous:focus-visible,
@@ -940,10 +1081,12 @@
     transform: scale(1.06);
   }
 
+
   .person-gallery-lightbox__counter {
     margin-top: 0.7rem;
   }
 }
+
 
 @media (max-width: 480px) {
   .person-hero__arrow {
@@ -952,23 +1095,28 @@
     font-size: 1rem;
   }
 
+
   .person-hero__arrow--prev {
     left: 0.5rem;
   }
 
+
   .person-hero__arrow--next {
     right: 0.5rem;
   }
+
 
   .person-hero__dot {
     width: 0.4rem;
     height: 0.4rem;
   }
 
+
   .person-hero__dot--active {
     width: 0.55rem;
     height: 0.55rem;
   }
+
 
   .person-profile__back-button {
     padding-right: 2.5rem;

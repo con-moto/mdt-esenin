@@ -3,7 +3,7 @@
   overflow: hidden;
   padding-top: clamp(2rem, 4vw, 4rem);
   background: var(--white);
-  color: #111111;
+  color: #111;
 }
 
 .management-person {
@@ -11,21 +11,20 @@
   padding-bottom: clamp(5rem, 9vw, 9rem);
 }
 
-.management-person__inner {
-  display: grid;
-  grid-template-columns: minmax(400px, 1.05fr) minmax(0, 1fr);
-  gap: clamp(3rem, 6vw, 7rem);
-  align-items: stretch;
-  width: min(1320px, calc(100% - 80px));
+.management-person__layout {
+  width: min(var(--site-width), calc(100% - 47px));
   margin: 0 auto;
 }
 
+.management-person__layout[hidden] {
+  display: none;
+}
+
+/* Общие стили */
+
 .management-person__photo-wrap {
-  width: 100%;
-  height: 100%;
-  min-height: 820px;
   overflow: hidden;
-  background: #e5e5e5;
+  background: transparent;
 }
 
 .management-person__photo-wrap picture {
@@ -38,31 +37,41 @@
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center top;
+  object-fit: contain;
+  object-position: left top;
 }
 
 .management-person__content {
   min-width: 0;
-  padding-top: 0.25rem;
   color: #161616;
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
 }
 
 .management-person__name {
-  margin: 0 0 clamp(2rem, 4vw, 3.5rem);
+  margin: 0;
   color: var(--burgundy);
   font-family: var(--font-serif);
-  font-size: clamp(1.7rem, 2.65vw, 2.55rem);
-  font-weight: 700;
-  line-height: 1.05;
+  font-size: var(--font-size-heading);
+  font-weight: 400;
+  line-height: 1.1;
   text-transform: uppercase;
   white-space: nowrap;
 }
 
+.management-person__name-divider,
+.management-person__divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.28);
+}
+
+.management-person__name-divider {
+  margin: 0.8rem 0 1.1rem;
+}
+
 .management-person__facts {
   display: grid;
-  gap: clamp(1.45rem, 2.35vw, 2rem);
+  gap: 1rem;
   margin: 0;
 }
 
@@ -73,46 +82,43 @@
 .management-person__fact-label {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 0.75rem;
   margin: 0;
   color: var(--button-green);
-  font-family: var(--font-serif);
-  font-size: clamp(1.2rem, 1.65vw, 1.55rem);
-  font-weight: 700;
-  line-height: 1.1;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-text);
+  font-weight: 400;
+  line-height: 1.3;
   text-transform: uppercase;
 }
 
 .management-person__fact-icon {
   display: block;
   flex: 0 0 auto;
-  width: 42px;
-  height: 42px;
+  width: 2.4rem;
+  height: 2.4rem;
   object-fit: contain;
 }
 
 .management-person__fact-value {
-  margin: 0.65rem 0 0 58px;
+  margin: 0.3rem 0 0 3.15rem;
   color: #202020;
-  font-family: var(--font-serif);
-  font-size: clamp(1.1rem, 1.55vw, 1.4rem);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-text);
   font-weight: 400;
   line-height: 1.35;
 }
 
 .management-person__divider {
-  width: 100%;
-  height: 1px;
-  margin: clamp(2.5rem, 4.5vw, 4rem) 0;
-  background: rgba(0, 0, 0, 0.28);
+  margin: 1rem 0;
 }
 
 .management-person__timeline {
   color: #202020;
-  font-family: var(--font-serif);
-  font-size: clamp(1.05rem, 1.4vw, 1.28rem);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-text);
   font-weight: 400;
-  line-height: 1.48;
+  line-height: 1.45;
 }
 
 .management-person__timeline p {
@@ -120,13 +126,12 @@
 }
 
 .management-person__timeline p + p {
-  margin-top: 1.45em;
+  margin-top: 1.2rem;
 }
 
 .management-person__timeline a {
   color: inherit;
   text-decoration: none;
-  transition: color 0.2s ease;
 }
 
 .management-person__timeline a:hover,
@@ -139,12 +144,105 @@
   outline-offset: 3px;
 }
 
+/* Десктоп: больше 900px */
+
+.management-person__layout--desktop {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(3rem, 6vw, 7rem);
+  align-items: stretch;
+}
+
+.management-person__layout--desktop .management-person__photo-wrap {
+  height: 100%;
+}
+
+.management-person__layout--desktop .management-person__content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.management-person__layout--desktop .management-person__timeline {
+  margin-top: auto;
+}
+
+/* Планшет: 900px–551px */
+
+.management-person__layout--tablet {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr);
+  column-gap: clamp(1.5rem, 4vw, 3rem);
+  row-gap: 2rem;
+  align-items: stretch;
+}
+
+.management-person__layout--tablet .management-person__photo-wrap {
+  grid-column: 1;
+  grid-row: 1;
+  height: 100%;
+}
+
+.management-person__layout--tablet .management-person__content {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.management-person__layout--tablet .management-person__divider {
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+.management-person__layout--tablet .management-person__timeline {
+  grid-column: 1 / -1;
+  grid-row: 2;
+}
+
+/* Мобильный: 550px и меньше */
+
+.management-person__layout--mobile {
+  display: block;
+}
+
+.management-person__layout--mobile .management-person__photo-wrap {
+  width: 100%;
+  margin: 0 0 2rem;
+}
+
+.management-person__layout--mobile .management-person__photo-wrap picture {
+  height: auto;
+}
+
+.management-person__layout--mobile .management-person__photo {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: left top;
+}
+
+.management-person__layout--mobile .management-person__content {
+  display: block;
+}
+
+.management-person__layout--mobile .management-person__name {
+  font-size: var(--font-size-large);
+  white-space: nowrap;
+}
+
+.management-person__layout--mobile .management-person__divider {
+  margin: 1rem 0 1.5rem;
+}
+
+/* Кнопка возврата */
+
 .management-person__back {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: clamp(1.5rem, 2.8vw, 2.5rem);
-  width: min(1320px, calc(100% - 80px));
+  width: min(var(--site-width), calc(100% - 47px));
   margin: clamp(3rem, 5vw, 5rem) auto 0;
 }
 
@@ -152,201 +250,67 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 143px;
-  height: 143px;
-  border: 1px solid transparent;
-  transition:
-    border-color 0.2s ease,
-    transform 0.2s ease,
-    opacity 0.2s ease;
+  width: 8.9rem;
+  height: 8.9rem;
 }
 
 .management-person__back-icon img {
   display: block;
-  width: 122px;
-  height: 122px;
+  width: 8rem;
+  height: 8rem;
   object-fit: contain;
-  transition: transform 0.2s ease;
-}
-
-.management-person__back-icon:hover,
-.management-person__back-icon:focus-visible {
-  opacity: 0.9;
-  transform: translateX(-4px);
-}
-
-.management-person__back-icon:hover img {
-  transform: translateX(-8px);
+  margin-right: 30%;
 }
 
 .management-person__back-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 64px;
+  min-height: 4rem;
   padding: 1rem 4.8rem;
-  background-color: rgb(96, 94, 94);
   color: var(--white);
+  background-color: rgb(96, 94, 94);
   font-family: var(--font-serif);
-  font-size: clamp(1.1rem, 1.6vw, 1.45rem);
+  font-size: var(--font-size-text);
   font-weight: 400;
   letter-spacing: 0.06em;
   line-height: 1;
   text-decoration: none;
   text-transform: uppercase;
-  transition:
-    background-color 0.25s ease,
-    border-color 0.25s ease,
-    box-shadow 0.25s ease,
-    transform 0.25s ease;
 }
 
 .management-person__back-button:hover,
 .management-person__back-button:focus-visible {
-  border-color: var(--button-green);
+  color: var(--white);
   background-color: var(--button-green);
-  box-shadow: inset 0 -4px 0 rgba(255, 255, 255, 0.38);
-  transform: translateY(-3px);
 }
 
-.management-person__back-button:active {
-  transform: translateY(0);
-  box-shadow: none;
-}
-
-.management-person__back-button:focus-visible {
-  outline: 2px solid var(--button-green);
-  outline-offset: 5px;
-}
-
-@media (max-width: 1000px) {
-  .management-person__inner {
-    grid-template-columns: minmax(330px, 1fr) minmax(0, 1fr);
-    gap: 3rem;
-    width: min(920px, calc(100% - 48px));
-  }
-
-  .management-person__photo-wrap {
-    min-height: 700px;
+@media (max-width: 550px) {
+  .management-person__layout,
+  .management-person__back {
+    width: calc(100% - 32px);
   }
 
   .management-person__name {
-    font-size: clamp(1.55rem, 3.2vw, 2.25rem);
-  }
-
-  .management-person__fact-label {
-    font-size: clamp(1.05rem, 2vw, 1.3rem);
-  }
-
-  .management-person__fact-icon {
-    width: 36px;
-    height: 36px;
-  }
-
-  .management-person__fact-value {
-    margin-left: 52px;
-    font-size: 1.1rem;
+    font-size: var(--font-size-text);
   }
 
   .management-person__back {
-    width: min(920px, calc(100% - 48px));
-  }
-
-  .management-person__back-icon {
-    width: 118px;
-    height: 118px;
-  }
-
-  .management-person__back-icon img {
-    width: 100px;
-    height: 100px;
-  }
-}
-
-@media (max-width: 730px) {
-  .management-person {
-    padding-top: 2rem;
-    padding-bottom: 5rem;
-  }
-
-  .management-person__inner {
-    grid-template-columns: 1fr;
-    width: calc(100% - 32px);
-    gap: 2rem;
-  }
-
-  .management-person__photo-wrap {
-    width: min(72%, 280px);
-    min-height: 0;
-    margin: 0 auto;
-  }
-
-  .management-person__photo-wrap picture {
-    height: auto;
-  }
-
-  .management-person__photo {
-    display: block;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 3 / 4.1;
-    object-fit: cover;
-    object-position: center top;
-  }
-
-  .management-person__name {
-    margin-bottom: 1.75rem;
-    font-size: clamp(1.45rem, 6vw, 2rem);
-    white-space: normal;
-  }
-
-  .management-person__fact-label {
-    gap: 12px;
-    font-size: 1.08rem;
-  }
-
-  .management-person__fact-icon {
-    width: 31px;
-    height: 31px;
-  }
-
-  .management-person__fact-value {
-    margin-left: 43px;
-    font-size: 1.03rem;
-  }
-
-  .management-person__timeline {
-    font-size: 1rem;
-    line-height: 1.48;
-  }
-
-  .management-person__back {
-    width: calc(100% - 32px);
-    margin-top: 3rem;
     gap: 1rem;
   }
 
   .management-person__back-icon {
-    width: 92px;
-    height: 92px;
+    width: 5.75rem;
+    height: 5.75rem;
   }
 
   .management-person__back-icon img {
-    width: 78px;
-    height: 78px;
+    width: 4.9rem;
+    height: 4.9rem;
   }
 
   .management-person__back-button {
-    min-height: 54px;
-    padding-right: 2.7rem;
-    padding-left: 2.7rem;
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 430px) {
-  .management-person__back-button {
-    padding-right: 2rem;
-    padding-left: 2rem;
+    min-height: 3.4rem;
+    padding: 0.85rem 2rem;
   }
 }

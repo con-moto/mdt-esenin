@@ -49,8 +49,8 @@
   width: min(720px, 100%);
   margin: 66px auto 0;
   color: var(--white);
-  font-family: var(--font-serif);
-  font-size: 18px;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-text);
   line-height: 1.5;
   text-align: center;
 }
@@ -110,7 +110,6 @@
 
   .site-footer__details {
     margin-top: clamp(3rem, 6vw, 4.125rem);
-    font-size: clamp(1rem, 1.7vw, 1.125rem);
   }
 }
 
@@ -153,14 +152,8 @@
   .site-footer__details {
     width: min(34rem, 100%);
     margin-top: 3rem;
-    font-size: clamp(0.85rem, 3.8vw, 1rem);
   }
 
-  .site-footer__contact-label,
-  .site-footer__contact-value,
-  .site-footer__venues p {
-    font-size: clamp(0.85rem, 3.8vw, 1rem);
-  }
 
   .site-footer__venues {
     gap: 0.5rem;

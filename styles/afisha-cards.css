@@ -61,7 +61,7 @@
 .event-card__age,
 .event-card__contact {
   color: var(--white);
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
   font-size: 18px;
   line-height: 1.45;
 }
@@ -140,7 +140,7 @@
 .event-card__additional-text {
   margin-top: 28px;
   color: var(--white);
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
   font-size: 16px;
   line-height: 1.45;
 }
@@ -161,7 +161,7 @@
 .event-card__premiere-label {
   margin: 0 0 0.8rem;
   color: #c90151;
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
   font-size: 1.5rem;
   font-weight: 400;
   letter-spacing: 0.21em;
@@ -172,7 +172,7 @@
 .event-card__tour-label {
   margin: 0 0 0.8rem;
   color: inherit;
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
   font-size: 1.5rem;
   font-weight: 400;
   letter-spacing: 0.21em;

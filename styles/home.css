@@ -164,7 +164,7 @@
 
 
 .about-section {
-  padding: 6rem 0 4rem;
+  padding: 6rem 0 2rem;
   background-color: var(--dark);
 }
 
@@ -178,7 +178,8 @@
 
 
 .about-section__title {
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
+  margin-top: 1.5rem;
   color: #c90151;
   font-family: var(--font-serif);
   font-size: 2.5rem;
@@ -207,8 +208,8 @@
   max-width: 950px;
   margin: 0 auto;
   color: var(--white);
-  font-family: var(--font-serif);
-  font-size: 17px;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-text);
   line-height: 1.8;
   text-align: center;
 }
@@ -230,7 +231,7 @@
 .about-section__decor {
   display: flex;
   justify-content: center;
-  margin: 5rem 0 6rem;
+  margin: 2rem 0 0.6rem;
 }
 
 
@@ -245,7 +246,7 @@
 
 /* ===== VIDEO SECTION ===== */
 .video-section {
-  padding: 0 0 6rem;
+  padding: 0 0 3rem;
   background-color: var(--dark);
 }
 
@@ -419,7 +420,7 @@
   margin: 0;
   color: #f4f0e9;
   font-family: var(--font-serif);
-  font-size: 23px;
+  font-size: var(--font-size-large);
   line-height: 1;
   font-weight: 400;
   text-transform: uppercase;
@@ -430,8 +431,8 @@
 .performance-card__description {
   margin-top: 25px;
   color: #e8e1d9;
-  font-family: var(--font-serif);
-  font-size: 18px;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-text);
   line-height: 1;
   font-style: italic;
 }
@@ -446,7 +447,7 @@
   color: #fff;
   text-decoration: none;
   font-family: var(--font-sans);
-  font-size: 18px;
+  font-size: var(--font-size-text);
   opacity: 0;
   transform: translateY(8px);
   transition:
@@ -502,7 +503,7 @@
 /* ===== REVIEWS ===== */
 .reviews {
   min-height: 415px;
-  padding: 75px 30px 30px;
+  padding: 0 30px 30px;
   background-color: #70021d;
   color: #eee7df;
   position: relative;
@@ -559,8 +560,8 @@
   max-width: 1080px;
   margin: 7% auto 0;
   color: #e4ddd6;
-  font-family: var(--font-serif);
-  font-size: 18px;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-text);
   line-height: 1.38;
   text-align: center;
   font-weight: 400;
@@ -571,11 +572,11 @@
 .review__author {
   margin-top: 4%;
   color: #f1ebe5;
-  font-family: var(--font-serif);
-  font-size: 17px;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-small);
   line-height: 1.3;
   font-style: italic;
-  font-weight: 700;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -629,8 +630,8 @@
 
 
 .review-slider__dot {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
   padding: 0;
   border: 0;
   border-radius: 50%;
@@ -650,10 +651,10 @@
 .reviews__all-link {
   display: block;
   width: fit-content;
-  margin: 40px auto 60px;
+  margin: 20px auto 20px;
   color: #f6f0eb;
-  font-family: var(--font-serif);
-  font-size: 18px;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-text);
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: underline;
@@ -672,7 +673,7 @@
 /* ===== CONTACTS ===== */
 .contacts-section {
   background-color: #fff;
-  padding: 92px 30px 65px;
+  padding: 50px 30px 65px;
   max-width: 100%;
 }
 
@@ -696,8 +697,8 @@
 
 .contacts-info {
   margin: 0 0 20px;
-  font-family: var(--font-serif);
-  font-size: 20px;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-large);
   line-height: 1.18;
   font-style: normal;
   color: #565656;
@@ -763,8 +764,8 @@
   border-radius: 0;
   background: #fff;
   color: #555;
-  font-family: var(--font-serif);
-  font-size: 18px;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-text);
   font-weight: 400;
   outline: none;
   transition: border-color 0.2s ease;
@@ -822,15 +823,15 @@
 
 .contact-form__submit {
   width: 150px;
-  height: 64px;
+  height: 55px;
   margin-top: 40px;
   border: none;
   border-radius: 0;
   background: rgb(0, 84, 70);
   color: #fff;
   font-family: var(--font-serif);
-  font-size: 15px;
-  font-weight: 700;
+  font-size: var(--font-size-small);
+  font-weight: 500;
   text-transform: uppercase;
   cursor: pointer;
   transition: background-color 0.25s ease;
@@ -905,16 +906,6 @@
   }
 
 
-  .performance-card__title {
-    font-size: 20px;
-  }
-
-
-  .performance-card__description {
-    font-size: 16px;
-  }
-
-
   /* 3 карточка — top, 4 карточка — 25% */
   .performance-card:nth-child(3) .performance-card__image {
     object-position: top;
@@ -938,11 +929,6 @@
 
   .about-section__title {
     font-size: clamp(1.8rem, 4vw, 2.5rem);
-  }
-
-
-  .about-section__text {
-    font-size: clamp(1rem, 2vw, 17px);
   }
 }
 
@@ -1009,7 +995,7 @@
 
   /* About — заголовок и шрифты меньше */
   .about-section {
-    padding: 2rem 0 4rem;
+    padding: 2rem 0 1.5rem;
   }
 
 
@@ -1020,7 +1006,6 @@
 
 
   .about-section__text {
-    font-size: clamp(0.95rem, 2vw, 16px);
     line-height: 1.7;
   }
 
@@ -1034,17 +1019,9 @@
     width: 30%;
   }
 
-
-  /* Reviews — шрифты и кнопки */
   .review__text {
-    font-size: clamp(0.95rem, 2vw, 16px);
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-
-
-  .review__author {
-    font-size: clamp(0.9rem, 2vw, 15px);
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
 
@@ -1065,25 +1042,12 @@
   }
 
 
-  /* Контакты — форма меньше */
-  .contacts-info {
-    font-size: 18px;
-  }
-
-
   .form-field input {
     height: 50px;
-    font-size: 16px;
-  }
-
-
-  .form-field textarea {
-    font-size: 16px;
   }
 
 
   .contact-form__submit {
-    font-size: 14px;
     height: 56px;
   }
 }
@@ -1175,11 +1139,6 @@
   }
 
 
-  .about-section__text {
-    font-size: 15px;
-  }
-
-
   .about-section__decor-image {
     width: 40%;
   }
@@ -1192,29 +1151,13 @@
 
 
   .performance-card {
-    height: 350px;
+    height: 400px;
   }
-
-
-  .performance-card__title {
-    font-size: 18px;
-  }
-
-
-  .performance-card__description {
-    font-size: 14px;
-  }
-
-
-  .performance-card__link {
-    font-size: 16px;
-  }
-
 
   /* Reviews */
   .reviews {
-    min-height: 500px;
-    padding: 75px 0 30px;
+    min-height: 450px;
+    padding: 30px 0 0;
   }
 
 
@@ -1226,7 +1169,7 @@
 
   .review-slider {
     position: relative;
-    min-height: 400px;
+    min-height: 250px;
   }
 
 
@@ -1246,16 +1189,9 @@
 
 
   .review__text {
-    font-size: 15px;
-    margin: 7% auto 0;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
     max-width: 100%;
-  }
-
-
-  .review__author {
-    font-size: 14px;
   }
 
 
@@ -1273,11 +1209,6 @@
 
   .review-slider__arrow--next {
     right: 0;
-  }
-
-
-  .reviews__all-link {
-    font-size: 14px;
   }
 
 
@@ -1342,19 +1273,20 @@
   .performance-card {
     height: 350px;
   }
+}
 
-
-  .performance-card__title {
-    font-size: 18px;
+/* 415px и ниже — текст отзыва не наезжает на точки и ссылку */
+@media (max-width: 415px) {
+  .review-slide {
+    padding-bottom: 60px;
+    padding-top: 35px;
   }
 
-
-  .performance-card__description {
-    font-size: 14px;
+  .review-slider__dots {
+    margin-top: 30px;
   }
 
-
-  .performance-card__link {
-    font-size: 16px;
+  .reviews__all-link {
+    margin: 30px auto 40px;
   }
 }

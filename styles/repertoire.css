@@ -11,13 +11,9 @@ body {
 }
 
 .repertoire-page__intro {
-  padding-top: clamp(3rem, 7vw, 5rem);
+  padding-top: clamp(1.5rem, 4vw, 2.5rem);
 }
 
-/*
-  На этой странице breadcrumb находится внутри тёмной intro-секции.
-  Отступы и общий вид остаются теми же, что на главной.
-*/
 .repertoire-page__intro .breadcrumb {
   margin-bottom: 0;
 }
@@ -26,26 +22,26 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: min(var(--content-width), calc(100% - 40px));
+  width: min(var(--site-width), calc(100% - 40px));
   margin: 0 auto;
-  padding-top: clamp(3.5rem, 7vw, 6.5rem);
+  padding-top: clamp(1.5rem, 4vw, 2.5rem);
 }
 
 .repertoire-page__decor-image {
   display: block;
-  width: min(34rem, 66vw);
+  width: min(180px, 35vw);
   height: auto;
 }
 
 /* ===== REPERTOIRE LIST ===== */
 
 .repertoire-list {
-  padding: clamp(4.5rem, 9vw, 8rem) 0 clamp(5rem, 10vw, 9rem);
+  padding: clamp(2.5rem, 6vw, 4rem) 0 clamp(3rem, 7vw, 5rem);
   background: var(--white);
 }
 
 .repertoire-list__container {
-  width: min(var(--content-width), calc(100% - 40px));
+  width: min(var(--site-width), calc(100% - 40px));
   margin: 0 auto;
 }
 
@@ -54,9 +50,9 @@ body {
 .repertoire-card {
   display: grid;
   grid-template-columns: minmax(18rem, 26rem) minmax(0, 1fr);
-  column-gap: clamp(2rem, 4vw, 3.5rem);
-  padding: 0 0 clamp(2rem, 3.5vw, 3rem);
-  margin: 0 0 clamp(2rem, 3.5vw, 3rem);
+  column-gap: clamp(1.5rem, 3vw, 2.5rem);
+  padding: 0 0 clamp(1.5rem, 2.5vw, 2rem);
+  margin: 0 0 clamp(1.5rem, 2.5vw, 2rem);
   border-bottom: 1px solid rgba(0, 77, 69, 0.55);
 }
 
@@ -102,9 +98,9 @@ body {
 }
 
 .repertoire-card__title {
-  margin: 0 0 clamp(0.75rem, 1.2vw, 1.1rem);
+  margin: 0 0 clamp(0.5rem, 1vw, 0.9rem);
   font-family: var(--font-serif);
-  font-size: clamp(1.25rem, 2.2vw, 1.85rem);
+  font-size: clamp(1.25rem, 2.2vw, 1.6rem);
   font-weight: 400;
   line-height: 1.1;
   text-transform: uppercase;
@@ -132,10 +128,10 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
-  margin: 0 0 clamp(1rem, 1.8vw, 1.6rem);
+  margin: 0 0 clamp(0.75rem, 1.2vw, 1.2rem);
   color: #3d3d3d;
-  font-family: var(--font-serif);
-  font-size: clamp(0.95rem, 1.35vw, 1.15rem);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-text);
   font-style: italic;
   line-height: 1.35;
 }
@@ -147,8 +143,8 @@ body {
 .repertoire-card__description {
   margin: 0;
   color: #202020;
-  font-family: var(--font-serif);
-  font-size: clamp(0.95rem, 1.25vw, 1.1rem);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-text);
   font-weight: 400;
   line-height: 1.5;
 }
@@ -158,20 +154,20 @@ body {
 @media (max-width: 900px) {
   .repertoire-card {
     grid-template-columns: minmax(14rem, 18rem) minmax(0, 1fr);
-    column-gap: 2rem;
+    column-gap: 1.5rem;
   }
 
   .repertoire-card__title {
-    font-size: clamp(1.15rem, 3vw, 1.55rem);
+    font-size: clamp(1.15rem, 3vw, 1.4rem);
   }
 
   .repertoire-card__meta {
-    margin-bottom: 1.1rem;
-    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    font-size: var(--font-size-text);
   }
 
   .repertoire-card__description {
-    font-size: 0.95rem;
+    font-size: var(--font-size-text);
     line-height: 1.45;
   }
 }
@@ -180,26 +176,26 @@ body {
 
 @media (max-width: 650px) {
   .repertoire-page__intro {
-    padding-bottom: 4rem;
+    padding-bottom: 0;
   }
 
   .repertoire-page__decor {
-    padding-top: 3.5rem;
+    padding-top: 1.5rem;
   }
 
   .repertoire-page__decor-image {
-    width: min(26rem, 78vw);
+    width: min(190px, 45vw);
   }
 
   .repertoire-list {
-    padding: 4rem 0 5rem;
+    padding: 1.5rem 0 3.5rem;
   }
 
   .repertoire-card {
     grid-template-columns: 1fr;
-    row-gap: 1.5rem;
-    padding-bottom: 2rem;
-    margin-bottom: 2rem;
+    row-gap: 1.25rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
     border-bottom: 1px solid rgba(0, 77, 69, 0.55);
   }
 
@@ -211,8 +207,6 @@ body {
 
   .repertoire-card__image-link {
     width: 100%;
-    max-width: 28rem;
-    aspect-ratio: 5 / 4;
     height: auto;
   }
 
@@ -222,41 +216,41 @@ body {
   }
 
   .repertoire-card__title {
-    margin-bottom: 0.75rem;
-    font-size: clamp(1.25rem, 5.5vw, 1.65rem);
+    margin-bottom: 0.6rem;
+    font-size: clamp(1.15rem, 5vw, 1.4rem);
     line-height: 1.1;
   }
 
   .repertoire-card__meta {
-    margin-bottom: 1rem;
-    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+    font-size: var(--font-size-text);
     line-height: 1.35;
   }
 
   .repertoire-card__description {
-    font-size: 0.95rem;
+    font-size: var(--font-size-text);
     line-height: 1.5;
   }
 }
 
 @media (max-width: 420px) {
   .repertoire-page__decor {
-    width: calc(100% - 32px);
+    width: min(var(--site-width), calc(100% - 32px));
   }
 
   .repertoire-list__container {
-    width: calc(100% - 32px);
+    width: min(var(--site-width), calc(100% - 32px));
   }
 
   .repertoire-card {
-    row-gap: 1.25rem;
+    row-gap: 1rem;
   }
 
   .repertoire-card__title {
-    font-size: 1.25rem;
+    font-size: clamp(1.1rem, 5vw, 1.3rem);
   }
 
   .repertoire-card__description {
-    font-size: 0.9rem;
+    font-size: var(--font-size-text);
   }
 }

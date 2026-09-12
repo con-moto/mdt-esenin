@@ -18,8 +18,8 @@
   margin-top: 1.5rem;
   margin-bottom: 1rem;
   color: #333;
-  font-family: var(--font-serif);
-  font-size: 1rem;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-small);
   text-decoration: underline;
   text-underline-offset: 3px;
 }
@@ -205,27 +205,16 @@
     padding-bottom: 1.25rem;
   }
 
-  /*
-    1. Ярослав Шевалдов:
-    центрируем, оставляем подчёркивание и добавляем воздух сверху.
-  */
   .site-header__director {
     display: block;
     width: 100%;
     margin: 0 0 1.25rem;
     color: #333;
-    font-size: 0.9rem;
     text-align: center;
     text-decoration: underline;
     text-underline-offset: 3px;
   }
 
-  /*
-    Мобильная сетка внутри main-row:
-    1-я строка — логотип;
-    2-я строка — соцсети слева и бургер справа;
-    3-я строка — две кнопки.
-  */
   .site-header__main-row {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
@@ -236,10 +225,6 @@
     min-height: 0;
   }
 
-  /*
-    2. Логотип:
-    остаётся прежнего размера, на отдельной строке, по центру.
-  */
   .site-header__logo-link {
     grid-column: 1 / -1;
     grid-row: 1;
@@ -256,19 +241,12 @@
     height: 176px;
   }
 
-  /*
-    Убираем внешние контейнеры только для mobile grid.
-    HTML не изменяется, десктопные правила не затрагиваются.
-  */
   .site-header__left-column,
   .site-header__right-column,
   .site-header__right-group {
     display: contents;
   }
 
-  /*
-    3. Соцсети слева в одном ряду с бургером.
-  */
   .site-header__socials {
     grid-column: 1;
     grid-row: 2;
@@ -284,10 +262,6 @@
     height: 28px;
   }
 
-  /*
-    3. Бургер справа.
-    Между левым и правым краем — резиновое пространство сетки.
-  */
   .site-header--home .menu-toggle {
     position: static;
     grid-column: 2;
@@ -311,9 +285,6 @@
     background-color: currentColor;
   }
 
-  /*
-    5. Кнопка «Купить билеты» — слева.
-  */
   .site-header__left-column .site-header__button {
     grid-column: 1;
     grid-row: 3;
@@ -327,10 +298,6 @@
     white-space: normal;
   }
 
-  /*
-    5. «Связаться с нами» — справа.
-    Это второй .site-header__button в HTML.
-  */
   .site-header__right-column .site-header__button {
     grid-column: 2;
     grid-row: 3;
@@ -345,18 +312,12 @@
     white-space: normal;
   }
 
-  /*
-    4. Разделитель расположен после ряда с соцсетями и бургером
-    и перед кнопками визуально не может оказаться без перестановки HTML.
-    Поэтому в текущей безопасной HTML-структуре он остаётся под main-row,
-    то есть после кнопок.
-  */
   .site-header__divider {
     margin: 1rem 0;
   }
 
   /*
-    Меню — под шапкой, на всю ширину, как в header-season.css.
+    Меню — под шапкой, на всю ширину.
   */
   .site-header--home .main-navigation {
     position: absolute;

@@ -3,20 +3,20 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-bottom: 4rem;
-  background-color: #919191;
+  margin: 0 0 0.75rem 0;
+  background-color: rgba(160, 160, 160, 0.75);
 }
 
 .breadcrumb__inner {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  width: min(var(--content-width), calc(100% - 40px));
-  padding: 1rem 0;
+  width: min(var(--site-width), calc(100% - 47px));
+  padding: 0.5rem 0;
   box-sizing: border-box;
   color: var(--white);
   font-family: var(--font-sans);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 .breadcrumb__link {
@@ -32,17 +32,20 @@
 
 .breadcrumb__separator {
   color: var(--white);
+  opacity: 0.7;
 }
 
 .breadcrumb__current {
   color: var(--white);
+  opacity: 0.9;
 }
 
-body[data-page="repertoire"] {
-  overflow-x: hidden;
-}
-
-body[data-page="repertoire"] .breadcrumb {
+/* Крошки на всю ширину, контент центрирован */
+body[data-page="repertoire"] .breadcrumb,
+body[data-page="about"] .breadcrumb,
+body[data-page="news"] .breadcrumb,
+body[data-page="reviews"] .breadcrumb,
+body[data-page="people"] .breadcrumb {
   position: relative;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
@@ -50,7 +53,17 @@ body[data-page="repertoire"] .breadcrumb {
   max-width: none;
 }
 
-body[data-page="repertoire"] .breadcrumb__inner {
-  width: min(var(--content-width), calc(100% - 40px));
+body[data-page="repertoire"] .breadcrumb__inner,
+body[data-page="about"] .breadcrumb__inner,
+body[data-page="news"] .breadcrumb__inner,
+body[data-page="reviews"] .breadcrumb__inner,
+body[data-page="people"] .breadcrumb__inner {
+  width: min(var(--site-width), calc(100% - 47px));
   margin: 0 auto;
+}
+
+/* Убираем дублирование margin-bottom из страниц */
+.repertoire-page__intro .breadcrumb,
+.about-page__intro .breadcrumb {
+  margin-bottom: 0;
 }

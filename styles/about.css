@@ -11,7 +11,6 @@
 
 /* =========================================================
    INTRO: BREADCRUMBS + DECOR
-   Breadcrumb styles remain in breadcrumb.css
    ========================================================= */
 
 .about-page__intro {
@@ -22,13 +21,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: min(1324px, calc(100% - 40px));
-  margin: clamp(2.25rem, 4vw, 4rem) auto;
+  width: 100%;
+  margin: clamp(2rem, 2.5vw, 3rem) 0;
 }
 
 .about-page__decor-image {
   display: block;
-  width: min(100%, 235px);
+  width: auto;
+  max-width: 200px;
   height: auto;
 }
 
@@ -42,7 +42,7 @@
   grid-template-columns: minmax(280px, 0.85fr) minmax(0, 1.15fr);
   gap: clamp(2rem, 5vw, 6rem);
   align-items: start;
-  width: min(1120px, calc(100% - 40px));
+  width: min(var(--site-width), calc(100% - 40px));
   margin: 0 auto;
 }
 
@@ -76,8 +76,8 @@
 .about-leader__content,
 .about-library__content {
   color: #202020;
-  font-family: var(--font-serif);
-  font-size: clamp(1rem, 1.35vw, 1.18rem);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-text);
   font-weight: 400;
   line-height: 1.52;
 }
@@ -132,7 +132,7 @@
   margin: 0;
   color: var(--white);
   font-family: var(--font-serif);
-  font-size: clamp(1.45rem, 2vw, 2rem);
+  font-size: var(--font-size-heading);
   font-weight: 400;
   line-height: 1.15;
   letter-spacing: 0.01em;
@@ -172,11 +172,11 @@
 }
 
 .about-theatre__content {
-  width: min(980px, calc(100% - 40px));
+  width: min(var(--site-width), calc(100% - 40px));
   margin: 0 auto;
   color: var(--white);
-  font-family: var(--font-serif);
-  font-size: clamp(1rem, 1.35vw, 1.18rem);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-text);
   font-weight: 400;
   line-height: 1.55;
 }
@@ -227,7 +227,7 @@
 }
 
 .about-diplomas__inner {
-  width: min(1120px, calc(100% - 40px));
+  width: min(var(--site-width), calc(100% - 40px));
   margin: 0 auto;
   padding-top: clamp(2rem, 4vw, 4rem);
   border-top: 1px solid rgba(0, 0, 0, 0.18);
@@ -319,39 +319,39 @@
    MOBILE
    ========================================================= */
 
-@media (max-width: 680px) {
+@media (max-width: 550px) {
   .about-page__intro {
     padding-top: 1.5rem;
   }
 
   .about-page__decor {
-    width: calc(100% - 32px);
-    margin: 2.5rem auto;
+    width: min(var(--site-width), calc(100% - 40px));
+    margin: 1rem auto 1.3rem;
+  }
+
+  .about-page__decor-image {
+    width: 100%;
   }
 
   .about-leader__inner,
   .about-library__inner {
     grid-template-columns: 1fr;
     gap: 1.75rem;
-    width: calc(100% - 32px);
+    width: min(var(--site-width), calc(100% - 40px));
   }
 
   .about-leader__photo-wrap {
-    width: min(78%, 280px);
-    margin-right: auto;
-    margin-left: auto;
+    width: 100%;
   }
 
   .about-library__photo-wrap {
-    width: min(100%, 420px);
-    margin-right: auto;
-    margin-left: auto;
+    width: 100%;
   }
 
   .about-leader__content,
   .about-library__content,
   .about-theatre__content {
-    font-size: 1rem;
+    font-size: var(--font-size-text);
     line-height: 1.5;
   }
 
@@ -375,11 +375,11 @@
   }
 
   .about-theatre__content {
-    width: calc(100% - 32px);
+    width: min(var(--site-width), calc(100% - 40px));
   }
 
   .about-diplomas__inner {
-    width: calc(100% - 32px);
+    width: min(var(--site-width), calc(100% - 40px));
   }
 
   .about-diplomas__grid {
@@ -394,11 +394,11 @@
 
 @media (max-width: 390px) {
   .about-leader__photo-wrap {
-    width: min(82%, 250px);
+    width: 100%;
   }
 
   .about-diplomas__inner {
-    width: calc(100% - 24px);
+    width: min(var(--site-width), calc(100% - 40px));
   }
 
   .about-diplomas__grid {
