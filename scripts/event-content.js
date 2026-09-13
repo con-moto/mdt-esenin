@@ -4,6 +4,7 @@ function formatPosterDate(dateString) {
   return `${day}.${month}`;
 }
 
+
 function formatPosterWeekday(dateString) {
   const date = new Date(`${dateString}T12:00:00`);
 
@@ -13,6 +14,7 @@ function formatPosterWeekday(dateString) {
     .format(date)
     .replace(".", "");
 }
+
 
 function initEventContent() {
   const content = document.querySelector("[data-event-content]");
@@ -79,6 +81,13 @@ function initEventContent() {
       <p class="event-page__poster-empty">
         Ближайшие показы скоро появятся.
       </p>
+
+      <a
+        class="event-page__poster-button"
+        href="/afisha.html"
+      >
+        Посмотреть афишу
+      </a>
     `;
 
     return;
@@ -138,5 +147,6 @@ function initEventContent() {
     </a>
   `;
 }
+
 
 document.addEventListener("layout:ready", initEventContent);
