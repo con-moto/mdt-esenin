@@ -133,7 +133,6 @@ function createGroupCastCard(castItem) {
     "div",
     "actor-card__name actor-card__name--static"
   );
-
   name.textContent = castItem.names.join(" / ");
 
   const line = createElement("span", "actor-card__line");
@@ -168,8 +167,7 @@ function getCreatorPeople(item) {
   if (item.personId) {
     return [
       {
-        personId: item.personId,
-        href: item.href || ""
+        personId: item.personId
       }
     ];
   }
@@ -204,11 +202,13 @@ function createCreatorItem(item) {
       return;
     }
 
-    const personHref =
-      creator.href ||
-      person.creatorHref ||
-      person.href ||
-      "";
+    /*
+      ВАЖНО:
+      Используется только person.href из PEOPLE_DATA.
+      creator.href и person.creatorHref намеренно не используются.
+      Если person.href пустой, имя остаётся обычным текстом.
+    */
+    const personHref = person.href || "";
 
     if (renderedCount > 0) {
       peopleLine.append(document.createTextNode(", "));
@@ -216,7 +216,9 @@ function createCreatorItem(item) {
 
     const personName = createElement(
       personHref ? "a" : "span",
-      "creator-item__person"
+      personHref
+        ? "creator-item__person"
+        : "creator-item__person creator-item__person--static"
     );
 
     personName.textContent = person.name;
@@ -310,11 +312,13 @@ function createGalleryPhotos(eventKey, event) {
   });
 }
 
-function applyGalleryLayout(item, index) {
+function setDesktopGalleryLayout(item, index) {
   const cycle = Math.floor(index / 5);
   const positionInCycle = index % 5;
   const firstRow = cycle * 2 + 1;
   const secondRow = firstRow + 1;
+
+  item.classList.remove("gallery-item--feature");
 
   if (positionInCycle === 0) {
     item.style.gridColumn = "1";
@@ -341,10 +345,32 @@ function applyGalleryLayout(item, index) {
     return;
   }
 
-  if (positionInCycle === 4) {
-    item.style.gridColumn = "3";
-    item.style.gridRow = String(secondRow);
+  item.style.gridColumn = "3";
+  item.style.gridRow = String(secondRow);
+}
+
+function clearGalleryLayout(item) {
+  item.classList.remove("gallery-item--feature");
+  item.style.removeProperty("grid-column");
+  item.style.removeProperty("grid-row");
+}
+
+function applyResponsiveGalleryLayout(root) {
+  if (!root) {
+    return;
   }
+
+  const items = root.querySelectorAll(".gallery-item");
+  const isDesktop = window.innerWidth > 768;
+
+  items.forEach((item, index) => {
+    if (isDesktop) {
+      setDesktopGalleryLayout(item, index);
+      return;
+    }
+
+    clearGalleryLayout(item);
+  });
 }
 
 function createGalleryItem(photo, index) {
@@ -355,8 +381,6 @@ function createGalleryItem(photo, index) {
     "aria-label",
     `Открыть фотографию ${index + 1}`
   );
-
-  applyGalleryLayout(button, index);
 
   const picture = document.createElement("picture");
 
@@ -397,6 +421,18 @@ function renderGallery(photos, root, section) {
 
   photos.forEach((photo, index) => {
     root.append(createGalleryItem(photo, index));
+  });
+
+  applyResponsiveGalleryLayout(root);
+
+  let resizeTimer;
+
+  window.addEventListener("resize", () => {
+    window.clearTimeout(resizeTimer);
+
+    resizeTimer = window.setTimeout(() => {
+      applyResponsiveGalleryLayout(root);
+    }, 100);
   });
 }
 

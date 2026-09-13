@@ -184,6 +184,10 @@
   text-underline-offset: 2px;
 }
 
+.creator-item__person--static {
+  text-decoration: none;
+}
+
 a.creator-item__person:hover,
 a.creator-item__person:focus-visible {
   color: #751c27;
@@ -543,6 +547,12 @@ a.creator-item__person:focus-visible {
   transform: translateY(-50%) scale(1.06);
 }
 
+/* Стихотворение в описании */
+.event-description__verse {
+  font-style: italic;
+  white-space: pre-line;
+}
+
 @media (max-width: 900px) {
   .cast-grid {
     column-gap: 35px;
@@ -561,24 +571,28 @@ a.creator-item__person:focus-visible {
   .creators-grid {
     column-gap: 25px;
   }
-
-  .gallery-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-auto-rows: 240px;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-
-  .gallery-item--feature {
-    grid-column: auto;
-    grid-row: auto;
-  }
 }
 
 @media (max-width: 800px) {
   .creators-grid {
     grid-template-columns: 1fr;
     row-gap: 20px;
+  }
+}
+
+/* 768px–551px: две ровные крупные колонки */
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-flow: row;
+    grid-auto-rows: 260px;
+    gap: 10px;
+    padding: 15px 15px 0;
+  }
+
+  .gallery-item--feature {
+    grid-column: auto;
+    grid-row: auto;
   }
 }
 
@@ -618,7 +632,8 @@ a.creator-item__person:focus-visible {
   }
 }
 
-@media (max-width: 600px) {
+/* 550px и меньше: одна ровная колонка */
+@media (max-width: 550px) {
   .section-title-bar {
     min-height: 50px;
     padding: 10px 15px;
@@ -628,7 +643,8 @@ a.creator-item__person:focus-visible {
 
   .gallery-grid {
     grid-template-columns: 1fr;
-    grid-auto-rows: 220px;
+    grid-auto-flow: row;
+    grid-auto-rows: 280px;
     gap: 10px;
     padding: 10px 10px 0;
   }
