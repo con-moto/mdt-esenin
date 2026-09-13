@@ -6,9 +6,10 @@ window.PEOPLE_DATA = {
     lastName: "АЛАЕВ",
     name: "ИЛЬЯ АЛАЕВ",
     photo: "assets/images/actors/ilya-alaev.jpg",
-    href: "../people/ilya-alaev.html",
+    href: "/people/ilya-alaev.html",
     groups: ["troupe"]
   },
+
 
   "ildar-allabirdin": {
     id: "ildar-allabirdin",
@@ -17,9 +18,10 @@ window.PEOPLE_DATA = {
     lastName: "АЛЛАБИРДИН",
     name: "ИЛЬДАР АЛЛАБИРДИН",
     photo: "assets/images/actors/ildar-allabirdin.jpg",
-    href: "../people/ildar-allabirdin.html",
+    href: "/people/ildar-allabirdin.html",
     groups: ["troupe"]
   },
+
 
   "andrey-balakhnin": {
     id: "andrey-balakhnin",
@@ -28,9 +30,10 @@ window.PEOPLE_DATA = {
     lastName: "БАЛАХНИН",
     name: "АНДРЕЙ БАЛАХНИН",
     photo: "assets/images/actors/andrey-balakhnin.jpg",
-    href: "../people/andrey-balakhnin.html",
+    href: "/people/andrey-balakhnin.html",
     groups: ["troupe"]
   },
+
 
   "timur-burin": {
     id: "timur-burin",
@@ -39,9 +42,10 @@ window.PEOPLE_DATA = {
     lastName: "БУРИН",
     name: "ТИМУР БУРИН",
     photo: "assets/images/actors/timur-burin.jpg",
-    href: "../people/timur-burin.html",
+    href: "/people/timur-burin.html",
     groups: ["troupe"]
   },
+
 
   "mikhail-vechikul": {
     id: "mikhail-vechikul",
@@ -50,9 +54,10 @@ window.PEOPLE_DATA = {
     lastName: "ВЕЧИКУЛ",
     name: "МИХАИЛ ВЕЧИКУЛ",
     photo: "assets/images/actors/mikhail-vechikul.jpg",
-    href: "../people/mikhail-vechikul.html",
+    href: "/people/mikhail-vechikul.html",
     groups: ["troupe"]
   },
+
 
   "olga-goncharova": {
     id: "olga-goncharova",
@@ -61,11 +66,12 @@ window.PEOPLE_DATA = {
     lastName: "ГОНЧАРОВА",
     name: "ОЛЬГА ГОНЧАРОВА",
     photo: "assets/images/actors/olga-goncharova.jpg",
-    href: "../people/olga-goncharova.html",
-    productionHref: "../people/olga-goncharova-production.html",
+    href: "/people/olga-goncharova.html",
+    productionHref: "/people/olga-goncharova-production.html",
     groups: ["troupe", "production"],
     jobTitle: "Муз. руководитель"
   },
+
 
   "sergey-zaitsev": {
     id: "sergey-zaitsev",
@@ -74,9 +80,10 @@ window.PEOPLE_DATA = {
     lastName: "ЗАЙЦЕВ",
     name: "СЕРГЕЙ ЗАЙЦЕВ",
     photo: "assets/images/actors/sergey-zaitsev.jpg",
-    href: "../people/sergey-zaitsev.html",
+    href: "/people/sergey-zaitsev.html",
     groups: ["troupe"]
   },
+
 
   "svyatoslav-ivanov": {
     id: "svyatoslav-ivanov",
@@ -85,9 +92,10 @@ window.PEOPLE_DATA = {
     lastName: "ИВАНОВ",
     name: "СВЯТОСЛАВ ИВАНОВ",
     photo: "assets/images/actors/svyatoslav-ivanov.jpg",
-    href: "../people/svyatoslav-ivanov.html",
+    href: "/people/svyatoslav-ivanov.html",
     groups: ["troupe"]
   },
+
 
   "taya-kapitalova": {
     id: "taya-kapitalova",
@@ -96,9 +104,10 @@ window.PEOPLE_DATA = {
     lastName: "КАПИТАЛОВА",
     name: "ТАЯ КАПИТАЛОВА",
     photo: "assets/images/actors/taya-kapitalova.jpg",
-    href: "../people/taya-kapitalova.html",
+    href: "/people/taya-kapitalova.html",
     groups: ["troupe"]
   },
+
 
   "vera-klyayn": {
     id: "vera-klyayn",
@@ -107,9 +116,10 @@ window.PEOPLE_DATA = {
     lastName: "КЛЯЙН",
     name: "ВЕРА КЛЯЙН",
     photo: "assets/images/actors/vera-klyayn.jpg",
-    href: "../people/vera-klyayn.html",
+    href: "/people/vera-klyayn.html",
     groups: ["troupe"]
   },
+
 
   "katya-kovalevskaya": {
     id: "katya-kovalevskaya",
@@ -118,9 +128,10 @@ window.PEOPLE_DATA = {
     lastName: "КОВАЛЁВСКАЯ",
     name: "КАТЕРИНА КОВАЛЁВСКАЯ",
     photo: "assets/images/actors/katya-kovalevskaya.jpg",
-    href: "../people/katya-kovalevskaya.html",
+    href: "/people/katya-kovalevskaya.html",
     groups: ["troupe"]
   },
+
 
   "irina-krasovskaya": {
     id: "irina-krasovskaya",
@@ -129,9 +140,10 @@ window.PEOPLE_DATA = {
     lastName: "КРАСОВСКАЯ",
     name: "ИРИНА КРАСОВСКАЯ",
     photo: "assets/images/actors/irina-krasovskaya.jpg",
-    href: "../people/irina-krasovskaya.html",
+    href: "/people/irina-krasovskaya.html",
     groups: ["troupe"]
   },
+
 
   "andrey-lushnikov": {
     id: "andrey-lushnikov",
@@ -140,9 +152,10 @@ window.PEOPLE_DATA = {
     lastName: "ЛУШНИКОВ",
     name: "АНДРЕЙ ЛУШНИКОВ",
     photo: "assets/images/actors/andrey-lushnikov.jpg",
-    href: "../people/andrey-lushnikov.html",
+    href: "/people/andrey-lushnikov.html",
     groups: ["troupe"]
   },
+
 
   "dmitriy-matsko": {
     id: "dmitriy-matsko",
@@ -151,9 +164,10 @@ window.PEOPLE_DATA = {
     lastName: "МАЦКО",
     name: "ДМИТРИЙ МАЦКО",
     photo: "assets/images/actors/dmitriy-matsko.jpg",
-    href: "../people/dmitriy-matsko.html",
+    href: "/people/dmitriy-matsko.html",
     groups: ["troupe"]
   },
+
 
   "andrey-perov": {
     id: "andrey-perov",
@@ -162,9 +176,10 @@ window.PEOPLE_DATA = {
     lastName: "ПЕРОВ",
     name: "АНДРЕЙ ПЕРОВ",
     photo: "assets/images/actors/andrey-perov.jpg",
-    href: "../people/andrey-perov.html",
+    href: "/people/andrey-perov.html",
     groups: ["troupe"]
   },
+
 
   "ilya-rogovin": {
     id: "ilya-rogovin",
@@ -173,9 +188,10 @@ window.PEOPLE_DATA = {
     lastName: "РОГОВИН",
     name: "ИЛЬЯ РОГОВИН",
     photo: "assets/images/actors/ilya-rogovin.jpg",
-    href: "../people/ilya-rogovin.html",
+    href: "/people/ilya-rogovin.html",
     groups: ["troupe"]
   },
+
 
   "nastya-ryzhynskaya": {
     id: "nastya-ryzhynskaya",
@@ -184,9 +200,10 @@ window.PEOPLE_DATA = {
     lastName: "РЫЖИНСКАЯ",
     name: "АНАСТАСИЯ РЫЖИНСКАЯ",
     photo: "assets/images/actors/nastya-ryzhynskaya.jpg",
-    href: "../people/nastya-ryzhynskaya.html",
+    href: "/people/nastya-ryzhynskaya.html",
     groups: ["troupe"]
   },
+
 
   "anna-sardanovskaya": {
     id: "anna-sardanovskaya",
@@ -198,11 +215,12 @@ window.PEOPLE_DATA = {
     managementPhoto: "assets/images/actors/anna-sardanovskaya-boss.jpg",
     managementFullPhoto:
       "assets/images/actors/anna-sardanovskaya-boss-full.jpg",
-    href: "../people/anna-sardanovskaya.html",
-    managementHref: "..people/management/director.html",
+    href: "/people/anna-sardanovskaya.html",
+    managementHref: "/people/management/director.html",
     groups: ["troupe", "management"],
     jobTitle: "Директор театра"
   },
+
 
   "svetlana-sudomir": {
     id: "svetlana-sudomir",
@@ -211,9 +229,10 @@ window.PEOPLE_DATA = {
     lastName: "СУДОМИР",
     name: "СВЕТЛАНА СУДОМИР",
     photo: "assets/images/actors/svetlana-sudomir.jpg",
-    href: "../people/svetlana-sudomir.html",
+    href: "/people/svetlana-sudomir.html",
     groups: ["troupe"]
   },
+
 
   "sergey-khachaturov": {
     id: "sergey-khachaturov",
@@ -222,9 +241,10 @@ window.PEOPLE_DATA = {
     lastName: "ХАЧАТУРОВ",
     name: "СЕРГЕЙ ХАЧАТУРОВ",
     photo: "assets/images/actors/sergey-khachaturov.jpg",
-    href: "../people/sergey-khachaturov.html",
+    href: "/people/sergey-khachaturov.html",
     groups: ["troupe"]
   },
+
 
   "yaroslav-shevaldov": {
     id: "yaroslav-shevaldov",
@@ -236,12 +256,13 @@ window.PEOPLE_DATA = {
     managementPhoto: "assets/images/actors/yaroslav-shevaldov-boss.jpg",
     managementFullPhoto:
       "assets/images/actors/yaroslav-shevaldov-boss-full.jpg",
-    href: "../people/yaroslav-shevaldov.html",
-    managementHref: "../people/management/artistic-director.html",
+    href: "/people/yaroslav-shevaldov.html",
+    managementHref: "/people/management/artistic-director.html",
     groups: ["troupe", "management"],
     jobTitle:
       "Художественный руководитель и главный режиссер театра"
   },
+
 
   "andrey-shuteev": {
     id: "andrey-shuteev",
@@ -250,9 +271,10 @@ window.PEOPLE_DATA = {
     lastName: "ШУТЕЕВ",
     name: "АНДРЕЙ ШУТЕЕВ",
     photo: "assets/images/actors/andrey-shuteev.jpg",
-    href: "../people/andrey-shuteev.html",
+    href: "/people/andrey-shuteev.html",
     groups: ["troupe"]
   },
+
 
   "nadezhda-elpis": {
     id: "nadezhda-elpis",
@@ -261,9 +283,10 @@ window.PEOPLE_DATA = {
     lastName: "ЭЛПИС",
     name: "НАДЕЖДА ЭЛПИС",
     photo: "assets/images/actors/nadezhda-elpis.jpg",
-    href: "../nadezhda-elpis.html",
+    href: "/nadezhda-elpis.html",
     groups: ["troupe"]
   },
+
 
   "vitaliy-kalashnikov": {
     id: "vitaliy-kalashnikov",
@@ -276,6 +299,7 @@ window.PEOPLE_DATA = {
     groups: ["guest"]
   },
 
+
   "ksenia-kuznetsova": {
     id: "ksenia-kuznetsova",
     slug: "ksenia-kuznetsova",
@@ -287,6 +311,7 @@ window.PEOPLE_DATA = {
     groups: [""]
   },
 
+
   "elisey-smolin": {
     id: "elisey-smolin",
     slug: "elisey-smolin",
@@ -294,9 +319,10 @@ window.PEOPLE_DATA = {
     lastName: "СМОЛИН",
     name: "ЕЛИСЕЙ СМОЛИН",
     photo: "assets/images/actors/elisey-smolin.jpg",
-    href: "../elisey-smolin.html",
+    href: "/elisey-smolin.html",
     groups: ["guest"]
   },
+
 
   "alexsandr-martynov": {
     id: "alexsandr-martynov",
@@ -305,9 +331,10 @@ window.PEOPLE_DATA = {
     lastName: "МАРТЫНОВ",
     name: "АЛЕКСАНДР МАРТЫНОВ",
     photo: "assets/images/actors/alexsandr-martynov.jpg",
-    href: "../people/alexsandr-martynov.html",
+    href: "/people/alexsandr-martynov.html",
     groups: ["guest"]
   },
+
 
   "anatoliy-chistov": {
     id: "anatoliy-chistov",
@@ -316,9 +343,10 @@ window.PEOPLE_DATA = {
     lastName: "ЧИСТОВ",
     name: "АНАТОЛИЙ ЧИСТОВ",
     photo: "assets/images/actors/anatoliy-chistov.jpg",
-    href: "../people/anatoliy-chistov.html",
+    href: "/people/anatoliy-chistov.html",
     groups: ["guest"]
   },
+
 
   "daniil-borzenko": {
     id: "daniil-borzenko",
@@ -327,10 +355,11 @@ window.PEOPLE_DATA = {
     lastName: "БОРЗЕНКО",
     name: "ДАНИИЛ БОРЗЕНКО",
     photo: "assets/images/actors/daniil-borzenko.jpg",
-    href: "../people/daniil-borzenko-production.html",
+    href: "/people/daniil-borzenko-production.html",
     groups: ["production"],
     jobTitle: "Композитор"
   },
+
 
   "ekaterina-demenina": {
     id: "ekaterina-demenina",
@@ -339,10 +368,11 @@ window.PEOPLE_DATA = {
     lastName: "ДЕМЕНИНА",
     name: "ЕКАТЕРИНА ДЕМЕНИНА",
     photo: "assets/images/actors/ekaterina-demenina.jpg",
-    href: "../people/ekaterina-demenina-production.html",
+    href: "/people/ekaterina-demenina-production.html",
     groups: ["production"],
     jobTitle: "Хореограф-постановщик"
   },
+
 
   "yuliya-zaykina": {
     id: "yuliya-zaykina",
@@ -356,6 +386,7 @@ window.PEOPLE_DATA = {
     jobTitle: "Фотограф"
   },
 
+
   "nyuta-lushnikova": {
     id: "nyuta-lushnikova",
     slug: "nyuta-lushnikova",
@@ -367,6 +398,7 @@ window.PEOPLE_DATA = {
     groups: ["production"],
     jobTitle: "Фотограф"
   },
+
 
   "vasiliy-kostrikov": {
     id: "vasiliy-kostrikov",
@@ -380,6 +412,7 @@ window.PEOPLE_DATA = {
     jobTitle: "Фотограф"
   },
 
+
   "vera-novikova": {
     id: "vera-novikova",
     slug: "vera-novikova",
@@ -387,10 +420,11 @@ window.PEOPLE_DATA = {
     lastName: "НОВИКОВА",
     name: "ВЕРА НОВИКОВА",
     photo: "assets/images/actors/vera-novikova.jpg",
-    href: "../people/vera-novikova-production.html",
+    href: "/people/vera-novikova-production.html",
     groups: ["production"],
     jobTitle: "Звукорежиссёр"
   },
+
 
   "natalia-ralko": {
     id: "natalia-ralko",
@@ -399,10 +433,11 @@ window.PEOPLE_DATA = {
     lastName: "РАЛЬКО",
     name: "НАТАЛИЯ РАЛЬКО",
     photo: "assets/images/actors/natalia-ralko.jpg",
-    href: "../people/natalia-ralko-production.html",
+    href: "/people/natalia-ralko-production.html",
     groups: ["production"],
     jobTitle: "Администратор / логист / специалист по закупкам"
   },
+
 
   "fedor-rutskiy": {
     id: "fedor-rutskiy",
@@ -411,10 +446,11 @@ window.PEOPLE_DATA = {
     lastName: "РУЦКИЙ",
     name: "ФЁДОР РУЦКИЙ",
     photo: "assets/images/actors/fedor-rutskiy.jpg",
-    href: "../people/fedor-rutskiy-production.html",
+    href: "/people/fedor-rutskiy-production.html",
     groups: ["production"],
     jobTitle: "Звукорежиссёр"
   },
+
 
   "maksim-mazykin": {
     id: "maksim-mazykin",
@@ -427,6 +463,7 @@ window.PEOPLE_DATA = {
     groups: []
   },
 
+
   "katerina-semenova-neiman": {
     id: "katerina-semenova-neiman",
     slug: "katerina-semenova-neiman",
@@ -437,6 +474,7 @@ window.PEOPLE_DATA = {
     href: "",
     groups: []
   },
+
 
   "edmon-saadyan": {
     id: "edmon-saadyan",
@@ -449,6 +487,7 @@ window.PEOPLE_DATA = {
     groups: []
   },
 
+
   "boris-barsukov": {
     id: "boris-barsukov",
     slug: "boris-barsukov",
@@ -458,6 +497,7 @@ window.PEOPLE_DATA = {
     href: "",
     groups: ["creator"]
   },
+
 
   "evgeniy-nikonorov": {
     id: "evgeniy-nikonorov",
@@ -469,6 +509,7 @@ window.PEOPLE_DATA = {
     groups: ["creator"]
   },
 
+
   "ilya-sharov": {
     id: "ilya-sharov",
     slug: "ilya-sharov",
@@ -478,6 +519,7 @@ window.PEOPLE_DATA = {
     href: "",
     groups: ["creator"]
   },
+
 
   "yaroslav-stolbov": {
     id: "yaroslav-stolbov",
@@ -489,6 +531,7 @@ window.PEOPLE_DATA = {
     groups: ["creator"]
   },
 
+
   "yuliya-gabriel-kadel": {
     id: "yuliya-gabriel-kadel",
     slug: "yuliya-gabriel-kadel",
@@ -498,6 +541,7 @@ window.PEOPLE_DATA = {
     href: "",
     groups: ["creator"]
   },
+
 
   "natalya-antonicheva": {
     id: "natalya-antonicheva",
@@ -509,6 +553,7 @@ window.PEOPLE_DATA = {
     groups: ["creator"]
   },
 
+
   "kirill-kapustin": {
     id: "kirill-kapustin",
     slug: "kirill-kapustin",
@@ -518,6 +563,7 @@ window.PEOPLE_DATA = {
     href: "",
     groups: ["creator"]
   },
+
 
   "maria-galkina": {
     id: "maria-galkina",
@@ -529,6 +575,7 @@ window.PEOPLE_DATA = {
     groups: ["creator"]
   },
 
+
   "tatyana-makarova": {
     id: "tatyana-makarova",
     slug: "tatyana-makarova",
@@ -538,6 +585,7 @@ window.PEOPLE_DATA = {
     href: "",
     groups: ["creator"]
   },
+
 
   "sergey-migorer": {
     id: "sergey-migorer",
