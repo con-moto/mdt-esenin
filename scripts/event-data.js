@@ -1,5 +1,5 @@
 window.EVENTS_DATA = {
-  "cherry-orchard": {
+  "cherry-orchard": { 
     title: "Вишнёвый сад",
     breadcrumbTitle: "Вишнёвый сад",
     genre: "ИММЕРСИВНАЯ КОМЕДИЯ ЖИЗНИ",
@@ -124,32 +124,27 @@ window.EVENTS_DATA = {
       [
         {
           personId: "yaroslav-shevaldov",
-          role: "Режиссёр-постановщик, художник-постановщик",
-          href: "https://www.mdtesenin.com/shevaldov"
+          role: "Режиссёр-постановщик, художник-постановщик"
         },
         {
           personId: "anna-sardanovskaya",
-          role: "Хореограф-постановщик",
-          href: "https://www.mdtesenin.com/director"
+          role: "Хореограф-постановщик"
         }
       ],
       [
         {
           personId: "olga-goncharova",
-          role: "Музыкальный руководитель",
-          href: "https://www.mdtesenin.com/goncharova2"
+          role: "Музыкальный руководитель"
         },
         {
           personId: "anna-sardanovskaya",
-          role: "Подбор костюмов и реквизита",
-          href: "https://www.mdtesenin.com/director"
+          role: "Подбор костюмов и реквизита"
         }
       ],
       [
         {
           personId: "vera-novikova",
-          role: "Саунд-дизайнер, звукорежиссёр",
-          href: "https://www.mdtesenin.com/novikova"
+          role: "Саунд-дизайнер, звукорежиссёр"
         },
         {
           personId: "boris-barsukov",
@@ -267,8 +262,7 @@ window.EVENTS_DATA = {
       [
         {
           personId: "yaroslav-shevaldov",
-          role: "Режиссёр-постановщик, художник-постановщик, автор инсценировки",
-          href: "https://www.mdtesenin.com/artisticdirector"
+          role: "Режиссёр-постановщик, художник-постановщик, автор инсценировки"
         },
         {
           personId: "evgeniy-nikonorov",
@@ -282,15 +276,13 @@ window.EVENTS_DATA = {
         },
         {
           personId: "vera-novikova",
-          role: "Звукорежиссёр",
-          href: "https://www.mdtesenin.com/novikova"
+          role: "Звукорежиссёр"
         }
       ],
       [
         {
           personId: "fedor-rutskiy",
-          role: "Светооператор и видеооператор",
-          href: "https://www.mdtesenin.com/fedor"
+          role: "Светооператор и видеооператор"
         }
       ]
     ]
@@ -657,11 +649,22 @@ window.EVENTS_DATA = {
       ],
       [
         {
-          personId: "yuliya-gabriel-kadel",
+          personId: "boris-barsukov",
           role: "Светооператор"
         }
       ],
       [
+        {
+          role: "Педагоги по вокалу",
+          people: [
+            {
+              personId: "dmitriy-matsko"
+            },
+            {
+              personId: "olga-goncharova"
+            }
+          ]
+        },
         {
           personId: "anna-sardanovskaya",
           role: "Хореограф"
@@ -738,39 +741,33 @@ window.EVENTS_DATA = {
       [
         {
           personId: "yaroslav-shevaldov",
-          role: "Режиссёр-постановщик, художник-постановщик, автор инсценировки",
-          href: "https://www.mdtesenin.com/artisticdirector"
+          role: "Режиссёр-постановщик, художник-постановщик, автор инсценировки"
         }
       ],
       [
         {
           personId: "ekaterina-demenina",
-          role: "Хореограф-постановщик",
-          href: "https://www.mdtesenin.com/demenina"
+          role: "Хореограф-постановщик"
         }
       ],
       [
         {
           personId: "daniil-borzenko",
-          role: "Композитор",
-          href: "https://www.mdtesenin.com/borzenko"
+          role: "Композитор"
         },
         {
           personId: "olga-goncharova",
-          role: "Художник",
-          href: "https://www.mdtesenin.com/goncharova2"
+          role: "Художник"
         }
       ],
       [
         {
           personId: "fedor-rutskiy",
-          role: "Звукорежиссёр",
-          href: "https://www.mdtesenin.com/fedor"
+          role: "Звукорежиссёр"
         },
         {
           personId: "yuliya-gabriel-kadel",
-          role: "Светооператор",
-          href: "https://www.mdtesenin.com/kadel"
+          role: "Светооператор"
         }
       ]
     ]
@@ -846,10 +843,6 @@ window.EVENTS_DATA = {
         role: "Офелия"
       },
       {
-        actorId: "olga-goncharova",
-        role: "Офелия"
-      },
-      {
         actorId: "irina-krasovskaya",
         role: "Бернардо / Актер 1 / Могильщик 1"
       },
@@ -906,22 +899,19 @@ window.EVENTS_DATA = {
       [
         {
           personId: "ildar-allabirdin",
-          role: "Режиссёр-постановщик",
-          href: "https://www.mdtesenin.com/allabirdin"
+          role: "Режиссёр-постановщик"
         }
       ],
       [
         {
           personId: "yaroslav-shevaldov",
-          role: "Художник по свету",
-          href: "https://www.mdtesenin.com/shevaldov"
+          role: "Художник по свету"
         }
       ],
       [
         {
           personId: "anna-sardanovskaya",
-          role: "Подбор костюмов и реквизита",
-          href: "https://www.mdtesenin.com/anna"
+          role: "Подбор костюмов и реквизита"
         }
       ],
       [
@@ -943,8 +933,7 @@ window.EVENTS_DATA = {
       [
         {
           personId: "vera-novikova",
-          role: "Саунд-дизайнер",
-          href: "https://www.mdtesenin.com/novikova"
+          role: "Саунд-дизайнер"
         }
       ],
       [
@@ -1051,44 +1040,37 @@ window.EVENTS_DATA = {
       [
         {
           personId: "yaroslav-shevaldov",
-          role: "Режиссёр-постановщик, автор инсценировки",
-          href: "https://www.mdtesenin.com/artisticdirector"
+          role: "Режиссёр-постановщик, автор инсценировки"
         }
       ],
       [
         {
           personId: "anna-sardanovskaya",
-          role: "Режиссёр по пластике",
-          href: "https://www.mdtesenin.com/director"
+          role: "Режиссёр по пластике"
         }
       ],
       [
         {
           personId: "olga-goncharova",
-          role: "Музыкальный руководитель",
-          href: "https://www.mdtesenin.com/goncharova2"
+          role: "Музыкальный руководитель"
         },
         {
           personId: "mikhail-vechikul",
-          role: "Консультант по музыкальному подбору",
-          href: "https://www.mdtesenin.com/vechikul"
+          role: "Консультант по музыкальному подбору"
         }
       ],
       [
         {
           personId: "fedor-rutskiy",
-          role: "Звукорежиссёр",
-          href: "https://www.mdtesenin.com/fedor"
+          role: "Звукорежиссёр"
         },
         {
           personId: "andrey-perov",
-          role: "Бутафор",
-          href: "https://www.mdtesenin.com/perov"
+          role: "Бутафор"
         },
         {
           personId: "svetlana-sudomir",
-          role: "Сценограф",
-          href: "https://www.mdtesenin.com/sudomir"
+          role: "Сценограф"
         }
       ]
     ]
@@ -1099,7 +1081,7 @@ window.EVENTS_DATA = {
     breadcrumbTitle: "КараМазовы",
     genre: "ИММЕРСИВНАЯ ДРАМА В ДВУХ ЛИНИЯХ",
     quote: "«...кто ступил на нижнюю ступеньку, тот все равно непременно вступит и на верхнюю...»\nФ. М. Достоевский",
-    duration: "4 часа",
+    duration: "3 часа 50 минут",
     durationNote: "(с одним антрактом)",
     age: "12+",
     source: "По мотивам романа «Братья Карамазовы» Ф.М. Достоевского",
@@ -1154,7 +1136,7 @@ window.EVENTS_DATA = {
       },
       {
         actorId: "mikhail-vechikul",
-        role: "Старец Зосима"
+        role: "Старец Зосима / Прохор / Голос"
       },
       {
         actorId: "sergey-zaitsev",
@@ -1173,10 +1155,6 @@ window.EVENTS_DATA = {
         role: "Странница / Трактирщица / Хохлакова / Цыганка"
       },
       {
-        actorId: "mikhail-vechikul",
-        role: "Прохор / Голос"
-      },
-      {
         actorId: "andrey-lushnikov",
         role: "Ракитин / Григорий / Он / Пан Муссялович"
       }
@@ -1185,22 +1163,48 @@ window.EVENTS_DATA = {
       [
         {
           personId: "yaroslav-shevaldov",
-          role: "Режиссёр-постановщик, художник-постановщик, автор инсценировки",
-          href: "https://www.mdtesenin.com/artisticdirector"
+          role: "Режиссёр-постановщик, художник-постановщик, автор инсценировки"
         }
       ],
       [
         {
           personId: "ekaterina-demenina",
-          role: "Хореограф-постановщик",
-          href: "https://www.mdtesenin.com/demenina"
+          role: "Хореограф-постановщик"
+        },
+        {
+          personId: "olga-goncharova",
+          role: "Музыкальный руководитель"
         }
       ],
       [
         {
-          personId: "olga-goncharova",
-          role: "Музыкальный руководитель",
-          href: "https://www.mdtesenin.com/goncharova2"
+          personId: "fedor-rutskiy",
+          role: "Саунд-дизайнер"
+        },
+        {
+          role: "Звукорежиссёры",
+          people: [
+            {
+              personId: "fedor-rutskiy"
+            },
+            {
+              personId: "vera-novikova"
+            }
+          ]
+        },
+        {
+          role: "Светооператоры",
+          people: [
+            {
+              personId: "boris-barsukov"
+            },
+            {
+              personId: "natalya-karpova"
+            },
+            {
+              personId: "kseniya-mironova"
+            }
+          ]
         }
       ]
     ]
@@ -1281,22 +1285,19 @@ window.EVENTS_DATA = {
       [
         {
           personId: "yaroslav-shevaldov",
-          role: "Режиссёр-постановщик, художник-постановщик, автор инсценировки",
-          href: "https://www.mdtesenin.com/artisticdirector"
+          role: "Режиссёр-постановщик, художник-постановщик, автор инсценировки"
         }
       ],
       [
         {
           personId: "olga-goncharova",
-          role: "Музыкальный руководитель, художник",
-          href: "https://www.mdtesenin.com/goncharova2"
+          role: "Музыкальный руководитель, художник"
         }
       ],
       [
         {
           personId: "fedor-rutskiy",
-          role: "Звукорежиссёр",
-          href: "https://www.mdtesenin.com/fedor"
+          role: "Звукорежиссёр"
         }
       ],
       [
@@ -1304,12 +1305,10 @@ window.EVENTS_DATA = {
           role: "Художник-бутафор",
           people: [
             {
-              personId: "anna-sardanovskaya",
-              href: "https://www.mdtesenin.com/director"
+              personId: "anna-sardanovskaya"
             },
             {
-              personId: "olga-goncharova",
-              href: "https://www.mdtesenin.com/goncharova2"
+              personId: "olga-goncharova"
             }
           ]
         }
@@ -1317,8 +1316,7 @@ window.EVENTS_DATA = {
       [
         {
           personId: "yuliya-gabriel-kadel",
-          role: "Светооператор",
-          href: "https://www.mdtesenin.com/kadel"
+          role: "Светооператор"
         }
       ]
     ]
@@ -1396,22 +1394,19 @@ window.EVENTS_DATA = {
       [
         {
           personId: "yaroslav-shevaldov",
-          role: "Режиссёр-постановщик, художник-постановщик, автор инсценировки",
-          href: "https://www.mdtesenin.com/artisticdirector"
+          role: "Режиссёр-постановщик, художник-постановщик, автор инсценировки"
         }
       ],
       [
         {
           personId: "olga-goncharova",
-          role: "Музыкальный руководитель, художник",
-          href: "https://www.mdtesenin.com/goncharova2"
+          role: "Музыкальный руководитель, художник"
         }
       ],
       [
         {
           personId: "fedor-rutskiy",
-          role: "Звукорежиссёр",
-          href: "https://www.mdtesenin.com/fedor"
+          role: "Звукорежиссёр"
         }
       ],
       [
@@ -1419,12 +1414,10 @@ window.EVENTS_DATA = {
           role: "Художник-бутафор",
           people: [
             {
-              personId: "olga-goncharova",
-              href: "https://www.mdtesenin.com/goncharova2"
+              personId: "olga-goncharova"
             },
             {
-              personId: "anna-sardanovskaya",
-              href: "https://www.mdtesenin.com/director"
+              personId: "anna-sardanovskaya"
             }
           ]
         }
@@ -1432,8 +1425,7 @@ window.EVENTS_DATA = {
       [
         {
           personId: "yuliya-gabriel-kadel",
-          role: "Светооператор",
-          href: "https://www.mdtesenin.com/kadel"
+          role: "Светооператор"
         }
       ]
     ]
@@ -1454,7 +1446,7 @@ window.EVENTS_DATA = {
     hasTrailer: true,
     trailerUrl: "https://video.wixstatic.com/video/0ec44b_87d1c68cc90f43b9bfe872fdfe3d7dd4/1080p/mp4/file.mp4",
     repertoireDescription:
-    "Премьера спектакля состоялась 3 сентября 2018 года. Спектакль поставлен специально для фестиваля «Сердцем Хранимые.",
+    "Премьера спектакля состоялась 3 сентября 2018 года. Спектакль поставлен специально для фестиваля «Сердцем Хранимые». Лев Толстой (г. Калуга).",
     description: `
       <p>
         Из плавного погружения зрителей в атмосферу русской жизни: заунывной песни нищенки, завывания вьюги, звуков деревни, чириканья птиц, созданных с помощью голоса и необычных музыкальных инструментов – вырисовывается тонкая ткань спектакля-полифонии по повести Льва Толстого «Отец Сергий».
@@ -1510,22 +1502,19 @@ window.EVENTS_DATA = {
       [
         {
           personId: "yaroslav-shevaldov",
-          role: "Режиссёр-постановщик, художник-постановщик, автор инсценировки",
-          href: "https://www.mdtesenin.com/artisticdirector"
+          role: "Режиссёр-постановщик, художник-постановщик, автор инсценировки"
         }
       ],
       [
         {
           personId: "ekaterina-demenina",
-          role: "Хореограф-постановщик",
-          href: "https://www.mdtesenin.com/demenina"
+          role: "Хореограф-постановщик"
         }
       ],
       [
         {
           personId: "olga-goncharova",
-          role: "Музыкальный руководитель",
-          href: "https://www.mdtesenin.com/goncharova2"
+          role: "Музыкальный руководитель"
         }
       ]
     ]
@@ -1630,8 +1619,7 @@ window.EVENTS_DATA = {
       [
         {
           personId: "yaroslav-shevaldov",
-          role: "Режиссёр-постановщик, художник-постановщик, автор инсценировки",
-          href: "https://www.mdtesenin.com/artisticdirector"
+          role: "Режиссёр-постановщик, художник-постановщик, автор инсценировки"
         }
       ],
       [
@@ -1653,7 +1641,7 @@ window.EVENTS_DATA = {
     heroCompact: true,
     genre: "ИММЕРСИВНЫЙ ВАНИТАС В ДВУХ ДЕЙСТВИЯХ",
     quote: "«... Все, все, что гибелью грозит,\nДля сердца смертного таит\nНеизъяснимы наслажденья —\nБессмертья, может быть, залог!\nИ счастлив тот, кто средь волненья\nИх обретать и ведать мог...»\nА. С. Пушкин",
-    duration: "3 часа 40 минут",
+    duration: "3 часа 10 минут",
     durationNote: "(с одним антрактом)",
     age: "16+",
     source: "По мотивам драматургического цикла Александра Сергеевича Пушкина «Маленькие трагедии»",
@@ -1710,6 +1698,10 @@ window.EVENTS_DATA = {
         role: "Пушкин"
       },
       {
+        actorId: "yaroslav-shevaldov",
+        role: "Пушкин"
+      },
+      {
         actorId: "ilya-alaev",
         role: "Иван / Монах / Дон Карлос / Скрипач / Молодой человек"
       }
@@ -1718,15 +1710,13 @@ window.EVENTS_DATA = {
       [
         {
           personId: "yaroslav-shevaldov",
-          role: "Режиссёр-постановщик, художник-постановщик, автор инсценировки",
-          href: "https://www.mdtesenin.com/artisticdirector"
+          role: "Режиссёр-постановщик, художник-постановщик, автор инсценировки"
         }
       ],
       [
         {
           personId: "fedor-rutskiy",
-          role: "Звукорежиссёр",
-          href: "https://www.mdtesenin.com/fedor"
+          role: "Звукорежиссёр"
         }
       ]
     ]
@@ -1824,15 +1814,13 @@ window.EVENTS_DATA = {
       [
         {
           personId: "yaroslav-shevaldov",
-          role: "Режиссёр-постановщик, художник-постановщик, автор инсценировки",
-          href: "https://www.mdtesenin.com/artisticdirector"
+          role: "Режиссёр-постановщик, художник-постановщик, автор инсценировки"
         }
       ],
       [
         {
           personId: "anna-sardanovskaya",
-          role: "Хореограф-постановщик",
-          href: "https://www.mdtesenin.com/director"
+          role: "Хореограф-постановщик"
         }
       ],
       [
@@ -1848,15 +1836,13 @@ window.EVENTS_DATA = {
       [
         {
           personId: "anna-sardanovskaya",
-          role: "Художник-бутафор",
-          href: "https://www.mdtesenin.com/director"
+          role: "Художник-бутафор"
         }
       ],
       [
         {
           personId: "yuliya-gabriel-kadel",
-          role: "Светооператор",
-          href: "https://www.mdtesenin.com/kadel"
+          role: "Светооператор"
         }
       ]
     ]
@@ -1933,8 +1919,7 @@ window.EVENTS_DATA = {
       [
         {
           personId: "yaroslav-shevaldov",
-          role: "Режиссёр-постановщик",
-          href: "https://www.mdtesenin.com/artisticdirector"
+          role: "Режиссёр-постановщик"
         }
       ],
       [
@@ -1945,12 +1930,10 @@ window.EVENTS_DATA = {
               personId: "maria-galkina"
             },
             {
-              personId: "anna-sardanovskaya",
-              href: "https://www.mdtesenin.com/director"
+              personId: "anna-sardanovskaya"
             },
             {
-              personId: "yaroslav-shevaldov",
-              href: "https://www.mdtesenin.com/artisticdirector"
+              personId: "yaroslav-shevaldov"
             },
             {
               personId: "vitaliy-kalashnikov"
@@ -1987,8 +1970,7 @@ window.EVENTS_DATA = {
       [
         {
           personId: "vera-novikova",
-          role: "Светооператор",
-          href: "https://www.mdtesenin.com/novikova"
+          role: "Светооператор"
         }
       ]
     ]
@@ -2056,34 +2038,29 @@ window.EVENTS_DATA = {
       [
         {
           personId: "yaroslav-shevaldov",
-          role: "Режиссёр-постановщик",
-          href: "https://www.mdtesenin.com/artisticdirector"
+          role: "Режиссёр-постановщик"
         }
       ],
       [
         {
           personId: "olga-goncharova",
-          role: "Художник",
-          href: "https://www.mdtesenin.com/goncharova2"
+          role: "Художник"
         },
         {
           personId: "olga-goncharova",
-          role: "Музыкальный руководитель",
-          href: "https://www.mdtesenin.com/goncharova2"
+          role: "Музыкальный руководитель"
         }
       ],
       [
         {
           personId: "ekaterina-demenina",
-          role: "Хореограф-постановщик",
-          href: "https://www.mdtesenin.com/demenina"
+          role: "Хореограф-постановщик"
         }
       ],
       [
         {
           personId: "ilya-alaev",
-          role: "Видеограф",
-          href: "https://www.mdtesenin.com/alaev"
+          role: "Видеограф"
         }
       ]
     ]
@@ -2094,7 +2071,7 @@ window.EVENTS_DATA = {
     breadcrumbTitle: "Дети Дон Кихота",
     genre: "МУЗЫКАЛЬНЫЙ СПЕКТАКЛЬ-КАЛЕЙДОСКОП",
     quote: "«Не называй своим ничего, кроме души своей»\nВ. Зельдин",
-    duration: "1 часа 20 минут",
+    duration: "1 часа 30 минут",
     durationNote: "(без антракта)",
     age: "12+",
     source: "Посвящение Владимиру Зельдину",
@@ -2168,8 +2145,7 @@ window.EVENTS_DATA = {
       [
         {
           personId: "yaroslav-shevaldov",
-          role: "Режиссёр-постановщик, художник-постановщик, автор инсценировки",
-          href: "https://www.mdtesenin.com/artisticdirector"
+          role: "Режиссёр-постановщик, художник-постановщик, автор инсценировки"
         }
       ],
       [
@@ -2187,8 +2163,7 @@ window.EVENTS_DATA = {
           role: "Музыканты",
           people: [
             {
-              personId: "vera-novikova",
-              href: "https://www.mdtesenin.com/novikova"
+              personId: "vera-novikova"
             },
             {
               personId: "sergey-migorer"
@@ -2199,22 +2174,19 @@ window.EVENTS_DATA = {
       [
         {
           personId: "yuliya-gabriel-kadel",
-          role: "Светооператор",
-          href: "https://www.mdtesenin.com/kadel"
+          role: "Светооператор"
         }
       ],
       [
         {
           personId: "anna-sardanovskaya",
-          role: "Хореограф-постановщик",
-          href: "https://www.mdtesenin.com/director"
+          role: "Хореограф-постановщик"
         }
       ],
       [
         {
           personId: "fedor-rutskiy",
-          role: "Звукорежиссёр",
-          href: "https://www.mdtesenin.com/fedor"
+          role: "Звукорежиссёр"
         }
       ]
     ]
