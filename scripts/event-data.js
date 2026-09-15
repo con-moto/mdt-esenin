@@ -935,7 +935,7 @@ window.EVENTS_DATA = {
   },
 
   "queens-gambit": {
-    title: "КОРОЛЕВСКИЙ ГАМБИТ\nГЕНРИХ VI vs РИЧАРД III",
+    title: "КОРОЛЕВСКИЙ ГАМБИТ.\nГЕНРИХ VI vs РИЧАРД III",
     breadcrumbTitle: "Королевский Гамбит",
     heroCompact: true,
     genre: "ИСТОРИЧЕСКИЙ ТРИЛЛЕР С ЭЛЕМЕНТАМИ ЧЁРНОЙ КОМЕДИИ",
@@ -1185,7 +1185,7 @@ window.EVENTS_DATA = {
   },
 
   "raskolnikov": {
-    title: "РАСКОЛЬНИКОВ\nМЕЖДУ ТЬМОЙ И СВЕТОМ",
+    title: "РАСКОЛЬНИКОВ.\nМЕЖДУ ТЬМОЙ И СВЕТОМ",
     breadcrumbTitle: "Раскольников",
     heroCompact: true,
     genre: "ПСИХОЛОГИЧЕСКАЯ ДРАМА",
