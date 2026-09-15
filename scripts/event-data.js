@@ -102,8 +102,8 @@ window.EVENTS_DATA = {
         role: "Дуняша, горничная"
       },
       {
-        actorId: "ildar-allabirdin",
-        role: "Фирс, лакей, старик 87 лет"
+        actorId: "yaroslav-shevaldov",
+        role: "Фирс, лакей"
       },
       {
         actorId: "ilya-alaev",
@@ -117,7 +117,7 @@ window.EVENTS_DATA = {
         type: "group",
         role: "Голос сада",
         names: ["Мария Мацко", "Юлия Михайлова"],
-        image: "assets/images/repertoire/cherry-orchard/01.jpg"
+        image: "assets/images/repertoire/cherry-orchard/gallery/10.jpg"
       }
     ],
     creatorsColumns: [
