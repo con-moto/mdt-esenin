@@ -11,7 +11,15 @@ function createElement(tagName, className) {
 function resolveRootPath(path) {
   const root = document.body.dataset.root || "";
 
-  return `${root}${path}`;
+  if (!path) {
+    return "";
+  }
+
+  if (/^(https?:)?\/\//.test(path)) {
+    return path;
+  }
+
+  return `${root}${path.replace(/^\//, "")}`;
 }
 
 function createActorCard(castItem) {
@@ -30,7 +38,7 @@ function createActorCard(castItem) {
   );
 
   if (isLink) {
-    card.href = actor.href;
+  card.href = resolveRootPath(actor.href);
   } else {
     card.classList.add("actor-card--static");
   }
@@ -224,7 +232,7 @@ function createCreatorItem(item) {
     personName.textContent = person.name;
 
     if (personHref) {
-      personName.href = personHref;
+      personName.href = resolveRootPath(personHref);
     }
 
     peopleLine.append(personName);

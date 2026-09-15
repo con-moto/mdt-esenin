@@ -211,10 +211,6 @@ window.EVENTS_DATA = {
         role: "Шерлок Холмс"
       },
       {
-        actorId: "andrey-balakhnin",
-        role: "Шерлок Холмс"
-      },
-      {
         actorId: "sergey-khachaturov",
         role: "Доктор Ватсон"
       },
@@ -244,7 +240,11 @@ window.EVENTS_DATA = {
       },
       {
         actorId: "sergey-zaitsev",
-        role: "Джек Стэплтон"
+        role: "Джек Стэплтон, натуралист"
+      },
+      {
+        actorId: "andrey-shuteev",
+        role: "Джек Стэплтон, натуралист"
       },
       {
         actorId: "timur-burin",
@@ -396,10 +396,6 @@ window.EVENTS_DATA = {
         role: "Мадам Грицацуева / Годлевская"
       },
       {
-        actorId: "vera-klyayn",
-        role: "Мадам Грицацуева / Годлевская"
-      },
-      {
         actorId: "taya-kapitalova",
         role: "Тень Петуховой / Эллочка-Людоедочка"
       },
@@ -428,20 +424,17 @@ window.EVENTS_DATA = {
       [
         {
           personId: "yaroslav-shevaldov",
-          role: "Режиссёр-постановщик, автор инсценировки и текстов песен",
-          href: "https://www.mdtesenin.com/artisticdirector"
+          role: "Режиссёр-постановщик, автор инсценировки и текстов песен"
         },
         {
           personId: "anna-sardanovskaya",
-          role: "Помощник режиссёра",
-          href: "https://www.mdtesenin.com/director"
+          role: "Помощник режиссёра"
         }
       ],
       [
         {
           personId: "ekaterina-demenina",
-          role: "Хореограф-постановщик",
-          href: "https://www.mdtesenin.com/demenina"
+          role: "Хореограф-постановщик"
         },
         {
           role: "Композиторы",
@@ -450,38 +443,53 @@ window.EVENTS_DATA = {
               personId: "yaroslav-stolbov"
             },
             {
-              personId: "daniil-borzenko",
-              href: "https://www.mdtesenin.com/borzenko"
+              personId: "daniil-borzenko"
             }
           ]
+        },
+        {
+          personId: "olga-goncharova",
+          role: "Музыкальный руководитель, художник"
+        },
+        {
+          personId: "fedor-rutskiy",
+          role: "Саунд-дизайнер"
         }
       ],
       [
         {
-          personId: "olga-goncharova",
-          role: "Музыкальный руководитель, художник",
-          href: "https://www.mdtesenin.com/goncharova2"
+          role: "Звукорежиссёры",
+          people: [
+            {
+              personId: "vera-novikova"
+            },
+            {
+              personId: "boris-barsukov"
+            }
+          ]
         },
         {
-          personId: "fedor-rutskiy",
-          role: "Звукорежиссёр",
-          href: "https://www.mdtesenin.com/fedor"
-        },
-        {
-          personId: "yuliya-gabriel-kadel",
-          role: "Светооператор",
-          href: "https://www.mdtesenin.com/kadel"
+          role: "Светооператоры",
+          people: [
+            {
+              personId: "boris-barsukov"
+            },
+            {
+              personId: "natalya-karpova"
+            },
+            {
+              personId: "kseniya-mironova"
+            }
+          ]
         },
         {
           role: "Подбор костюмов и реквизита",
           people: [
             {
-              personId: "vera-klyayn",
-              href: "https://www.mdtesenin.com/vera"
+              personId: "vera-klyayn"
             },
             {
-              personId: "svetlana-sudomir",
-              href: "https://www.mdtesenin.com/sudomir"
+              personId: "svetlana-sudomir"
             }
           ]
         }
@@ -547,14 +555,32 @@ window.EVENTS_DATA = {
           role: "Автор инсценировки",
           people: [
             {
-              personId: "natalya-antonicheva"
-            }
-          ]
-        }
+              personId: "natalya-antonicheva",
+            },
+          ],
+        },
       ],
-      [],
-      []
-    ]
+      [
+        {
+          role: "Саунд-дизайнер, звукорежиссёр, светооператор",
+          people: [
+            {
+              personId: "vera-novikova",
+            },
+          ],
+        },
+      ],
+      [
+        {
+          role: "Художник по свету",
+          people: [
+            {
+              personId: "yaroslav-shevaldov",
+            },
+          ],
+        },
+      ],
+    ],
   },
 
   "notes-of-a-madman": {
@@ -563,7 +589,7 @@ window.EVENTS_DATA = {
     heroCompact: true,
     genre: "СЮРРЕАЛИСТИЧЕСКАЯ ТРАГИКОМЕДИЯ",
     quote: "«Признаюсь, с недавнего времени я начинаю иногда слышать и видеть такие вещи, которых никто еще не видывал и не слыхивал...»\nН. В. Гоголь",
-    duration: "1 час 30 минут",
+    duration: "1 час 45 минут",
     durationNote: "(без антракта)",
     age: "16+",
     source: "Премьера: 30 марта 2025 года",
@@ -622,27 +648,23 @@ window.EVENTS_DATA = {
       [
         {
           personId: "yaroslav-shevaldov",
-          role: "Режиссёр-постановщик, художник-постановщик, автор инсценировки",
-          href: "https://www.mdtesenin.com/artisticdirector"
+          role: "Режиссёр-постановщик, художник-постановщик, автор инсценировки"
         },
         {
           personId: "vera-novikova",
-          role: "Саунд-дизайнер, звукорежиссёр",
-          href: "https://www.mdtesenin.com/novikova"
+          role: "Саунд-дизайнер, звукорежиссёр"
         }
       ],
       [
         {
           personId: "yuliya-gabriel-kadel",
-          role: "Светооператор",
-          href: "https://www.mdtesenin.com/kadel"
+          role: "Светооператор"
         }
       ],
       [
         {
           personId: "anna-sardanovskaya",
-          role: "Хореограф",
-          href: "https://www.mdtesenin.com/anna"
+          role: "Хореограф"
         }
       ]
     ]

@@ -564,6 +564,26 @@ window.PEOPLE_DATA = {
     groups: ["creator"]
   },
 
+  "natalya-karpova": {
+    id: "natalya-karpova",
+    slug: "natalya-karpova",
+    firstName: "НАТАЛЬЯ",
+    lastName: "КАРПОВА",
+    name: "НАТАЛЬЯ КАРПОВА",
+    href: "",
+    groups: ["creator"]
+  },
+
+   "kseniya-mironova": {
+    id: "kseniya-mironova",
+    slug: "kseniya-mironova",
+    firstName: "КСЕНИЯ",
+    lastName: "МИРОНОВА",
+    name: "КСЕНИЯ МИРОНОВА",
+    href: "",
+    groups: ["creator"]
+  },
+
 
   "maria-galkina": {
     id: "maria-galkina",
