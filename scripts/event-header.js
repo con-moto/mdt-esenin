@@ -167,8 +167,16 @@ function initEventHeader() {
 
 
 
-  if (ticket && event.ticketUrl) {
+  if (ticket) {
+  if (event.ticketUrl) {
     ticket.href = event.ticketUrl;
+    ticket.target = "_blank";
+    ticket.rel = "noopener noreferrer";
+    } else {
+      ticket.href = "#";
+      ticket.removeAttribute("target");
+      ticket.removeAttribute("rel");
+    }
   }
 
 
