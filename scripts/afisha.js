@@ -123,7 +123,7 @@ const performancesOctober = [
 
   {
     type: "performance",
-    eventKey: "sherlock-holmes-nizhny-novgorod",
+    eventKey: "sherlock-holmes",
     title: "ШЕРЛОК ХОЛМС. СОБАКА БАСКЕРВИЛЕЙ",
     isTour: true,
     date: "2026-10-14",
@@ -140,7 +140,7 @@ const performancesOctober = [
 
   {
     type: "performance",
-    eventKey: "sherlock-holmes-dzerzhinsk",
+    eventKey: "sherlock-holmes",
     title: "ШЕРЛОК ХОЛМС. СОБАКА БАСКЕРВИЛЕЙ",
     isTour: true,
     date: "2026-10-15",
@@ -172,7 +172,7 @@ const performancesOctober = [
 
   {
     type: "performance",
-    eventKey: "cherry-orchard-october",
+    eventKey: "cherry-orchard",
     title: "ВИШНЁВЫЙ САД",
     isPremiere: true,
     date: "2026-10-22",
@@ -204,8 +204,8 @@ const performancesOctober = [
 
   {
     type: "performance",
-    eventKey: "bankrot-october-29",
-    title: "БАНКРОТЪ.",
+    eventKey: "bankrot",
+    title: "БАНКРОТЪ",
     isPremiere: true,
     date: "2026-10-29",
     time: "19:00",
@@ -220,8 +220,8 @@ const performancesOctober = [
 
   {
     type: "performance",
-    eventKey: "bankrot-october-30",
-    title: "БАНКРОТЪ.",
+    eventKey: "bankrot",
+    title: "БАНКРОТЪ",
     isPremiere: true,
     date: "2026-10-30",
     time: "19:00",

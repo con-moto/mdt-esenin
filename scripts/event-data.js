@@ -951,7 +951,7 @@ window.EVENTS_DATA = {
     heroCompact: true,
     genre: "ИСТОРИЧЕСКИЙ ТРИЛЛЕР С ЭЛЕМЕНТАМИ ЧЁРНОЙ КОМЕДИИ",
     quote: "«...Внутри венца, который окружает\nНам, государям, бренное чело,\nСидит на троне смерть, шутиха злая...»\nУ. Шекспир",
-    duration: "4 часа",
+    duration: "3 часа 55 минут",
     durationNote: "(с двумя антрактами)",
     age: "18+",
     source: "По историческим хроникам Уильяма Шекспира",
@@ -1216,7 +1216,7 @@ window.EVENTS_DATA = {
     heroCompact: true,
     genre: "ПСИХОЛОГИЧЕСКАЯ ДРАМА",
     quote: "«...Всем человекам надобно воздуху, воздуху, воздуху-с...Прежде всего!..»\nФ. М. Достоевский",
-    duration: "2 часа 10 минут",
+    duration: "1 час 55 минут",
     durationNote: "(без антракта)",
     age: "12+",
     source: "Премьера спектакля: 21 января 2021 года",
@@ -1711,12 +1711,45 @@ window.EVENTS_DATA = {
         {
           personId: "yaroslav-shevaldov",
           role: "Режиссёр-постановщик, художник-постановщик, автор инсценировки"
+        },
+        {
+          personId: "anna-sardanovskaya",
+          role: "Режиссёр по пластике"
+        },
+        {
+          personId: "olga-goncharova",
+          role: "Музыкальный руководитель"
         }
       ],
       [
         {
-          personId: "fedor-rutskiy",
+          role: "Светооператоры",
+          people: [
+            {
+              personId: "fedor-rutskiy"
+            },
+            {
+              personId: "vera-novikova"
+            }
+          ]
+        },
+        {
+          personId: "vera-novikova",
           role: "Звукорежиссёр"
+        },
+        {
+          role: "Светооператоры",
+          people: [
+            {
+              personId: "boris-barsukov"
+            },
+            {
+              personId: "natalya-karpova"
+            },
+            {
+              personId: "kseniya-mironova"
+            }
+          ]
         }
       ]
     ]

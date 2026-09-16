@@ -4,7 +4,6 @@ function formatPosterDate(dateString) {
   return `${day}.${month}`;
 }
 
-
 function formatPosterWeekday(dateString) {
   const date = new Date(`${dateString}T12:00:00`);
 
@@ -15,6 +14,19 @@ function formatPosterWeekday(dateString) {
     .replace(".", "");
 }
 
+function resolveRootPath(path) {
+  const root = document.body.dataset.root || "";
+
+  if (!path) {
+    return "";
+  }
+
+  if (/^(https?:)?\/\//.test(path)) {
+    return path;
+  }
+
+  return `${root}${path.replace(/^\//, "")}`;
+}
 
 function initEventContent() {
   const content = document.querySelector("[data-event-content]");
@@ -68,9 +80,19 @@ function initEventContent() {
       );
     })
     .sort((firstShow, secondShow) => {
-      return firstShow.date.localeCompare(secondShow.date);
+      const dateCompare = firstShow.date.localeCompare(
+        secondShow.date
+      );
+
+      if (dateCompare !== 0) {
+        return dateCompare;
+      }
+
+      return (firstShow.time || "").localeCompare(
+        secondShow.time || ""
+      );
     })
-    .slice(0, 2);
+    .slice(0, 3);
 
   if (!shows.length) {
     poster.innerHTML = `
@@ -84,7 +106,7 @@ function initEventContent() {
 
       <a
         class="event-page__poster-button"
-        href="/afisha.html"
+        href="${resolveRootPath("afisha.html")}"
       >
         Посмотреть афишу
       </a>
@@ -93,9 +115,12 @@ function initEventContent() {
     return;
   }
 
-  const hasPremiere = shows.some((show) => show.isPremiere);
-  const firstShow = shows[0];
-  const ticketUrl = firstShow.ticketUrl || event.ticketUrl || "#";
+const hasPremiere = shows.some((show) => show.isPremiere);
+
+const ticketUrl =
+    shows.length === 1 && shows[0].ticketUrl
+      ? shows[0].ticketUrl
+      : resolveRootPath("afisha.html");
 
   poster.innerHTML = `
     <h2 class="event-page__poster-title">
@@ -129,7 +154,7 @@ function initEventContent() {
               </span>
 
               <span class="event-page__poster-time">
-                ${show.time}
+                ${show.time || ""}
               </span>
             </div>
           `;
@@ -140,13 +165,15 @@ function initEventContent() {
     <a
       class="event-page__poster-button"
       href="${ticketUrl}"
-      target="_blank"
-      rel="noopener noreferrer"
+      ${
+        shows.length === 1 && shows[0].ticketUrl
+          ? 'target="_blank" rel="noopener noreferrer"'
+          : ""
+      }
     >
       Купить билеты
     </a>
   `;
 }
-
 
 document.addEventListener("layout:ready", initEventContent);
