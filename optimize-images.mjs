@@ -10,7 +10,7 @@ async function walk(directory) {
     withFileTypes: true
   });
 
-  const nestedFiles = await Promise.all(
+  const nested = await Promise.all(
     entries.map(async (entry) => {
       const fullPath = path.join(directory, entry.name);
 
@@ -18,7 +18,6 @@ async function walk(directory) {
         if (path.resolve(fullPath) === path.resolve(outputRoot)) {
           return [];
         }
-
         return walk(fullPath);
       }
 
@@ -26,33 +25,29 @@ async function walk(directory) {
     })
   );
 
-  return nestedFiles.flat();
+  return nested.flat();
 }
 
-async function fileExists(filePath) {
-  try {
-    await fs.access(filePath);
+const files = await walk(inputRoot);
 
-    return true;
-  } catch {
-    return false;
-  }
-}
+const imageFiles = files.filter((filePath) =>
+  [".jpg", ".jpeg"].includes(
+    path.extname(filePath).toLowerCase()
+  )
+);
 
-async function optimizeFile(filePath) {
+let created = 0;
+let skipped = 0;
+
+for (const filePath of imageFiles) {
   const relativePath = path.relative(inputRoot, filePath);
   const extension = path.extname(relativePath).toLowerCase();
-
-  if (![".jpg", ".jpeg"].includes(extension)) {
-    return false;
-  }
+  const fileName = path.basename(relativePath, extension);
 
   const outputDirectory = path.join(
     outputRoot,
     path.dirname(relativePath)
   );
-
-  const fileName = path.basename(relativePath, extension);
 
   const webpPath = path.join(
     outputDirectory,
@@ -64,72 +59,43 @@ async function optimizeFile(filePath) {
     `${fileName}.avif`
   );
 
-  const hasWebp = await fileExists(webpPath);
-  const hasAvif = await fileExists(avifPath);
+  const webpExists = await fs
+    .access(webpPath)
+    .then(() => true, () => false);
 
-  if (hasWebp && hasAvif) {
-    return false;
+  const avifExists = await fs
+    .access(avifPath)
+    .then(() => true, () => false);
+
+  if (webpExists && avifExists) {
+    skipped += 1;
+    continue;
   }
 
-  /* Создаёт в том числе вложенные директории:
-     assets/images/optimized/diploma/
-     assets/images/optimized/actors/
-     assets/images/optimized/repertoire/[название спектакля]/ */
   await fs.mkdir(outputDirectory, {
     recursive: true
   });
 
   const image = sharp(filePath).rotate();
 
-  if (!hasWebp) {
+  if (!webpExists) {
     await image
       .clone()
-      .webp({
-        quality: 75,
-        effort: 4
-      })
+      .webp({ quality: 75, effort: 4 })
       .toFile(webpPath);
-
-    console.log(`WebP: ${webpPath}`);
   }
 
-  if (!hasAvif) {
+  if (!avifExists) {
     await image
       .clone()
-      .avif({
-        quality: 65,
-        effort: 6
-      })
+      .avif({ quality: 65, effort: 6 })
       .toFile(avifPath);
-
-    console.log(`AVIF: ${avifPath}`);
   }
 
-  return true;
+  console.log(`Готово: ${relativePath}`);
+  created += 1;
 }
 
-const files = await walk(inputRoot);
-
-const imageFiles = files.filter((filePath) => {
-  const extension = path.extname(filePath).toLowerCase();
-
-  return [".jpg", ".jpeg"].includes(extension);
-});
-
-console.log(`Найдено JPG/JPEG файлов: ${imageFiles.length}`);
-
-let processedCount = 0;
-
-for (const filePath of imageFiles) {
-  const wasProcessed = await optimizeFile(filePath);
-
-  if (wasProcessed) {
-    processedCount += 1;
-  }
-}
-
-console.log(
-  `Файлов требовали обработки: ${processedCount} из ${imageFiles.length}`
-);
-
+console.log(`Обработано новых: ${created}`);
+console.log(`Пропущено (уже есть): ${skipped}`);
 console.log("Оптимизация завершена.");

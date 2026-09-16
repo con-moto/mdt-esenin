@@ -28,6 +28,19 @@ function resolveRootPath(path) {
   return `${root}${path.replace(/^\//, "")}`;
 }
 
+function isUpcomingShow(show) {
+  if (!show.date) {
+    return false;
+  }
+
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  const showDate = new Date(`${show.date}T00:00:00`);
+
+  return showDate >= today;
+}
+
 function initEventContent() {
   const content = document.querySelector("[data-event-content]");
   const eventKey = document.body.dataset.event;
@@ -76,7 +89,7 @@ function initEventContent() {
       return (
         performance.type === "performance" &&
         performance.eventKey === eventKey &&
-        performance.date
+        isUpcomingShow(performance)
       );
     })
     .sort((firstShow, secondShow) => {

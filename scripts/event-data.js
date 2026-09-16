@@ -11,7 +11,8 @@ window.EVENTS_DATA = {
     ticketUrl: "https://iframeab-pre6144.intickets.ru/seance/73785445/",
     sliderCount: 10,
     galleryCount: 27,
-    hasTrailer: false,
+    hasTrailer: true,
+    trailerUrl: "https://video.wixstatic.com/video/e0ad15_c3a34ab9e9af489e8be209ce9ac03836/1080p/mp4/file.mp4",
     repertoireDescription:
     "В сегодняшнем мире происходят глобальные перемены, которые мы «физически» ощущаем на себе, сталкиваясь с ними как и чеховские герои. Теряем что-то дорогое, встречаем что-то новое. Жизнь складывается из умения достойно прощаться. Но как всё преодолеть и не забыть о главном? И в чём оно? Через своих героев иронично и остро нам шлёт подсказки Антон Павлович Чехов.",
     description: `
@@ -1648,7 +1649,8 @@ window.EVENTS_DATA = {
     ticketUrl: "https://iframeab-pre6144.intickets.ru/seance/75159801/",
     sliderCount: 4,
     galleryCount: 23,
-    hasTrailer: false,
+    hasTrailer: true,
+    trailerUrl: "https://video.wixstatic.com/video/e0ad15_c81066115ff1425b853a972794c1c968/1080p/mp4/file.mp4",
     repertoireDescription:
     "Центральной новеллой спектакля является «Пир во время чумы». Как лакмусовая бумажка она представляет нам все изъяны общества. Каждый герой борется с вирусом по-своему: кто-то утопает в алкоголе и забытьи, кто-то пытается отсидеться в своих золотых подвалах, а кто-то хочет образумить всех и направить на борьбу с охватившей весь мир и душу каждого героя чумой.",
     description: `

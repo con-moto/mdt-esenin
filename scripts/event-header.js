@@ -168,16 +168,49 @@ function initEventHeader() {
 
 
   if (ticket) {
-  if (event.ticketUrl) {
-    ticket.href = event.ticketUrl;
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  const nearestShow = (window.performances || [])
+    .filter((performance) => {
+      if (
+        performance.type !== "performance" ||
+        performance.eventKey !== eventKey ||
+        !performance.date
+      ) {
+        return false;
+      }
+
+      const showDate = new Date(`${performance.date}T00:00:00`);
+
+      return showDate >= today;
+    })
+    .sort((firstShow, secondShow) => {
+      const dateCompare = firstShow.date.localeCompare(
+        secondShow.date
+      );
+
+      if (dateCompare !== 0) {
+        return dateCompare;
+      }
+
+      return (firstShow.time || "").localeCompare(
+        secondShow.time || ""
+      );
+    })[0];
+
+  const ticketUrl = nearestShow?.ticketUrl;
+
+  if (ticketUrl && ticketUrl !== "#") {
+    ticket.href = ticketUrl;
     ticket.target = "_blank";
     ticket.rel = "noopener noreferrer";
-    } else {
-      ticket.href = "#";
-      ticket.removeAttribute("target");
-      ticket.removeAttribute("rel");
-    }
+  } else {
+    ticket.href = "#";
+    ticket.target = "_self";
+    ticket.removeAttribute("rel");
   }
+}
 
 
 
