@@ -283,7 +283,7 @@ window.PEOPLE_DATA = {
     lastName: "ЭЛПИС",
     name: "НАДЕЖДА ЭЛПИС",
     photo: "assets/images/actors/nadezhda-elpis.jpg",
-    href: "/nadezhda-elpis.html",
+    href: "/people/nadezhda-elpis.html",
     groups: ["troupe"]
   },
 
@@ -319,7 +319,7 @@ window.PEOPLE_DATA = {
     lastName: "СМОЛИН",
     name: "ЕЛИСЕЙ СМОЛИН",
     photo: "assets/images/actors/elisey-smolin.jpg",
-    href: "/elisey-smolin.html",
+    href: "/people/elisey-smolin.html",
     groups: ["guest"]
   },
 

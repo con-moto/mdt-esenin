@@ -1,25 +1,29 @@
 function getRootPath(path) {
   const root = document.body.dataset.root || "";
 
-  return `${root}${path}`;
+  if (!path) {
+    return "";
+  }
+
+  if (/^(https?:)?\/\//.test(path) || path.startsWith("data:")) {
+    return path;
+  }
+
+  return `${root}${path.replace(/^\//, "")}`;
 }
 
 function getCardHref(person, page) {
-  if (
-    page === "people-management" &&
-    person.managementHref
-  ) {
-    return person.managementHref;
+  let raw = "";
+
+  if (page === "people-management" && person.managementHref) {
+    raw = person.managementHref;
+  } else if (page === "people-production" && person.productionHref) {
+    raw = person.productionHref;
+  } else {
+    raw = person.href || "";
   }
 
-  if (
-    page === "people-production" &&
-    person.productionHref
-  ) {
-    return person.productionHref;
-  }
-
-  return person.href || "";
+  return raw ? getRootPath(raw) : "";
 }
 
 function getPersonPhoto(person, page) {
