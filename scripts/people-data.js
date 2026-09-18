@@ -615,5 +615,15 @@ window.PEOPLE_DATA = {
     name: "СЕРГЕЙ МИГОРЕР",
     href: "",
     groups: ["creator"]
+  },
+
+  "reiner-richi": {
+    id: "reiner-richi",
+    slug: "reiner-richi",
+    firstName: "REINER",
+    lastName: "RICHI",
+    name: "REINER RICHI",
+    href: "",
+    groups: ["creator"]
   }
 };

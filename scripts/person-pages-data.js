@@ -32,7 +32,7 @@ window.PERSON_PAGES_DATA = {
           role: "Елизавета Андреевна / Зина"
         },
         {
-          eventKey: "12-chairs",
+          eventKey: "twelve-chairs",
           role: "Эллочка-людоедка / Тень Петуховой"
         },
         {
@@ -79,7 +79,7 @@ window.PERSON_PAGES_DATA = {
           role: "Алексей Фёдорович Карамазов"
         },
         {
-          eventKey: "12-chairs",
+          eventKey: "twelve-chairs",
           role: "Беспризорник / Полесов / Коля / Аукционист"
         }
       ]
@@ -174,7 +174,7 @@ window.PERSON_PAGES_DATA = {
           role: "Доктор Вернер / Казбич"
         },
         {
-          eventKey: "12-chairs",
+          eventKey: "twelve-chairs",
           role: "Остап Бендер"
         },
         {
@@ -276,7 +276,7 @@ window.PERSON_PAGES_DATA = {
           role: "Мери"
         },
         {
-          eventKey: "12-chairs",
+          eventKey: "twelve-chairs",
           role: "Лиза / Владя"
         },
         {
@@ -349,7 +349,7 @@ window.PERSON_PAGES_DATA = {
           role: "Печорин"
         },
         {
-          eventKey: "12-chairs",
+          eventKey: "twelve-chairs",
           role: "Остап Бендер"
         },
         {
@@ -397,7 +397,7 @@ window.PERSON_PAGES_DATA = {
           role: "Офицер / Купец"
         },
         {
-          eventKey: "12-chairs",
+          eventKey: "twelve-chairs",
           role: "Отец Фёдор"
         },
         {
@@ -432,7 +432,7 @@ window.PERSON_PAGES_DATA = {
           role: "Мери"
         },
         {
-          eventKey: "12-chairs",
+          eventKey: "twelve-chairs",
           role: "Эллочка-людоедка / Тень Петуховой"
         },
         {
@@ -492,7 +492,7 @@ window.PERSON_PAGES_DATA = {
           role: "Вера"
         },
         {
-          eventKey: "12-chairs",
+          eventKey: "twelve-chairs",
           role: "Елена Станиславовна Боур / Аукционистка"
         },
         {
@@ -549,7 +549,7 @@ window.PERSON_PAGES_DATA = {
           role: "Аглая Епанчина"
         },
         {
-          eventKey: "12-chairs",
+          eventKey: "twelve-chairs",
           role: "Лиза / Владя"
         }
       ]
@@ -574,7 +574,7 @@ window.PERSON_PAGES_DATA = {
           role: "Иван Карамазов"
         },
         {
-          eventKey: "12-chairs",
+          eventKey: "twelve-chairs",
           role: "Остап Бендер"
         },
         {
@@ -611,7 +611,7 @@ window.PERSON_PAGES_DATA = {
           role: "Михаил Андреевич"
         },
         {
-          eventKey: "12-chairs",
+          eventKey: "twelve-chairs",
           role: "Коробейников / Чарушников / Шафер / Персицкий"
         }
       ]
@@ -676,7 +676,7 @@ window.PERSON_PAGES_DATA = {
           role: "Вакула"
         },
         {
-          eventKey: "12-chairs",
+          eventKey: "twelve-chairs",
           role:
             "Коробейников / Чарушников / Шафер / Персицкий / Тихон / Кислярский / официант / Изнуренков"
         },
@@ -759,7 +759,7 @@ window.PERSON_PAGES_DATA = {
       galleryCount: 9,
       performances: [
         {
-          eventKey: "12-chairs",
+          eventKey: "twelve-chairs",
           role: "Мадам Грицацуева / Годлевская / Актриса"
         },
         {
@@ -788,7 +788,7 @@ window.PERSON_PAGES_DATA = {
           role: "Доктор Мортимер"
         },
         {
-          eventKey: "12-chairs",
+          eventKey: "twelve-chairs",
           role: "Отец Федор Иоаннович Востриков"
         },
         {
@@ -820,7 +820,7 @@ window.PERSON_PAGES_DATA = {
           role: "Парфен Рогожин"
         },
         {
-          eventKey: "12-chairs",
+          eventKey: "twelve-chairs",
           role: "Отец Федор"
         },
         {
@@ -864,7 +864,7 @@ window.PERSON_PAGES_DATA = {
           role: "Бэла"
         },
         {
-          eventKey: "12-chairs",
+          eventKey: "twelve-chairs",
           role: "Мадам Грицацуева / Годлевская"
         },
         {
@@ -928,7 +928,7 @@ window.PERSON_PAGES_DATA = {
       galleryCount: 10,
       performances: [
         {
-          eventKey: "12-chairs",
+          eventKey: "twelve-chairs",
           role: "Киса Воробьянинов"
         },
         {

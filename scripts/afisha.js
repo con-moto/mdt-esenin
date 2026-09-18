@@ -42,7 +42,7 @@ const performances = [
 
   {
     type: "performance",
-    eventKey: "12-chairs",
+    eventKey: "twelve-chairs",
     title: "12 сТуЛьЕв",
     date: "2026-09-21",
     time: "19:00",
@@ -102,7 +102,7 @@ const performancesOctober = [
     mapUrl:
       "https://yandex.ru/maps/org/usadba_vorontsovoy_mukhinoy/198224388711/?ll=37.672063%2C55.772380&z=19.2",
     ticketUrl: "https://iframeab-pre6144.intickets.ru/seance/75148084/",
-    pageUrl: "repertoire/karamazovy.html",
+    pageUrl: "repertoire/karamazovs.html",
   },
 
   {
@@ -157,7 +157,7 @@ const performancesOctober = [
 
   {
     type: "performance",
-    eventKey: "ne-malenkie-tragedii",
+    eventKey: "pushkin-tragedies",
     title: "НеМаленькие трагедии Пушкина",
     date: "2026-10-19",
     time: "19:00",
@@ -215,7 +215,7 @@ const performancesOctober = [
     mapUrl:
       "https://yandex.ru/maps/org/glavny_dom_usadby_tolstogo_borisovskikh/197433904501/?ll=37.658903%2C55.759100&z=15",
     ticketUrl: "https://iframeab-pre6144.intickets.ru/seance/75253543/",
-    pageUrl: "",
+    pageUrl: "repertoire/bankrot.html",
   },
 
   {
@@ -231,7 +231,7 @@ const performancesOctober = [
     mapUrl:
       "https://yandex.ru/maps/org/glavny_dom_usadby_tolstogo_borisovskikh/197433904501/?ll=37.658903%2C55.759100&z=15",
     ticketUrl: "https://iframeab-pre6144.intickets.ru/seance/75253546/",
-    pageUrl: "",
+    pageUrl: "repertoire/bankrot.html",
   }
 ];
 
