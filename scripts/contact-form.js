@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const form = document.querySelector('#contact-form');
   if (!form) return;
 
+  const CONTACT_ENDPOINT = 'https://mdt-esenin-new.vercel.app/api/contact';
+
   // Добавляем honeypot для защиты от спама
   const honeypot = document.createElement('input');
   honeypot.type = 'text';
@@ -19,12 +21,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const formData = new FormData(form);
     const data = Object.fromEntries(formData);
 
-    // Блокируем кнопку
     submitBtn.textContent = 'Отправляется...';
     submitBtn.disabled = true;
 
     try {
-      const response = await fetch('/api/contact', {
+      const response = await fetch(CONTACT_ENDPOINT, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -32,13 +33,24 @@ document.addEventListener('DOMContentLoaded', function() {
         body: JSON.stringify(data),
       });
 
-      const result = await response.json();
+      const raw = await response.text();
 
-      if (!response.ok) {
-        throw new Error(result.message || 'Ошибка отправки');
+      let result = null;
+
+      if (raw) {
+        try {
+          result = JSON.parse(raw);
+        } catch {
+          result = null;
+        }
       }
 
-      // Успех
+      if (!response.ok) {
+        throw new Error(
+          result?.message || `Ошибка отправки (${response.status})`
+        );
+      }
+
       form.reset();
       alert('✅ Сообщение успешно отправлено! Мы свяжемся с вами в ближайшее время.');
     } catch (error) {
