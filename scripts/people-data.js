@@ -125,8 +125,8 @@ window.PEOPLE_DATA = {
     id: "katya-kovalevskaya",
     slug: "katya-kovalevskaya",
     firstName: "КАТЕРИНА",
-    lastName: "КОВАЛЁВСКАЯ",
-    name: "КАТЕРИНА КОВАЛЁВСКАЯ",
+    lastName: "КОВАЛЕВСКАЯ",
+    name: "КАТЕРИНА КОВАЛЕВСКАЯ",
     photo: "assets/images/actors/katya-kovalevskaya.jpg",
     href: "/people/katya-kovalevskaya.html",
     groups: ["troupe"]

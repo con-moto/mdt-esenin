@@ -8,38 +8,7 @@ window.PERSON_PAGES_DATA = {
         "В 2022 году принята в труппу МДТ им. С. Есенина."
       ],
       sliderCount: 5,
-      galleryCount: 20,
-      performances: [
-        {
-          eventKey: "queens-gambit",
-          role:
-            "Маргарита Анжуйская / Вернон / Леди Анна, Кардинал / Леди Грей"
-        },
-        {
-          eventKey: "idiot",
-          role: "Аглая Епанчина"
-        },
-        {
-          eventKey: "lev-tolstoy",
-          role: "Графиня Марья Короткова"
-        },
-        {
-          eventKey: "esenin",
-          role: "Муза"
-        },
-        {
-          eventKey: "reading-room",
-          role: "Елизавета Андреевна / Зина"
-        },
-        {
-          eventKey: "twelve-chairs",
-          role: "Эллочка-людоедка / Тень Петуховой"
-        },
-        {
-          eventKey: "sherlock-holmes",
-          role: "Лора Лайонс"
-        }
-      ]
+      galleryCount: 20
     }
   },
 
@@ -52,37 +21,7 @@ window.PERSON_PAGES_DATA = {
         "В 2019 году принят в труппу МДТ им. С. Есенина."
       ],
       sliderCount: 4,
-      galleryCount: 8,
-      performances: [
-        {
-          eventKey: "esenin",
-          role: "Чарин"
-        },
-        {
-          eventKey: "idiot",
-          role: "Гаврила Ардалионович Иволгин"
-        },
-        {
-          eventKey: "lev-tolstoy",
-          role: "Офицер / Преподобный"
-        },
-        {
-          eventKey: "hero-of-our-time",
-          role: "Грушницкий"
-        },
-        {
-          eventKey: "evenings-dikanka",
-          role: "Вакула"
-        },
-        {
-          eventKey: "karamazovs",
-          role: "Алексей Фёдорович Карамазов"
-        },
-        {
-          eventKey: "twelve-chairs",
-          role: "Беспризорник / Полесов / Коля / Аукционист"
-        }
-      ]
+      galleryCount: 8
     }
   },
 
@@ -96,37 +35,7 @@ window.PERSON_PAGES_DATA = {
         "В 2019 году принят в труппу МДТ им. С. Есенина."
       ],
       sliderCount: 4,
-      galleryCount: 10,
-      performances: [
-        {
-          eventKey: "raskolnikov",
-          role: "Аркадий Свидригайлов"
-        },
-        {
-          eventKey: "idiot",
-          role: "Афанасий Иванович Тоцкий"
-        },
-        {
-          eventKey: "lev-tolstoy",
-          role: "Офицер / Преподобный"
-        },
-        {
-          eventKey: "hero-of-our-time",
-          role: "Максим Максимович"
-        },
-        {
-          eventKey: "evenings-dikanka",
-          role: "Пан Чуб"
-        },
-        {
-          eventKey: "karamazovs",
-          role: "Фёдор Павлович Карамазов / Зосима"
-        },
-        {
-          eventKey: "little-prince",
-          role: "Лётчик"
-        }
-      ]
+      galleryCount: 10
     }
   },
 
@@ -139,62 +48,21 @@ window.PERSON_PAGES_DATA = {
         "Работал в Кстовском театре кукол и Дзержинском театре драмы (спектакли «Ромео и Жанетта», «Алиса в стране чудес»). В 2023 году принят в труппу МДТ им. С. Есенина."
       ],
       sliderCount: 3,
-      galleryCount: 5,
-      performances: [
-        {
-          eventKey: "sherlock-holmes",
-          role: "Шерлок Холмс"
-        },
-        {
-          eventKey: "queens-gambit",
-          role: "Генрих V / Сеффолк / Кларенс"
-        }
-      ]
+      galleryCount: 5
     }
   },
 
   "timur-burin": {
     troupe: {
       education:
-        "Театральный Институт им. Бориса Щукина'10, мастерская Л.С. Ворошилова",
+        "Театральный Институт им. Бориса Щукина'10, мастерская Л.С. Ворошиловой",
       birthday: "01 декабря 1984",
       description: [
         "Мастер спорта по спортивной акробатике. Ведущий актёр московского театра «Кураж» (спектакли «Двенадцатая ночь», «Горе от ума», «Ревизор» и др.). Помимо актёрской деятельности занимается педагогикой: с 2015 года ведет театральную студию для всех возрастов. Активно снимается в рекламе, кино, сериалах.",
         "Избранная фильмография: «Универ», «Клиника счастья», «Время вернуться», «Великолепная пятерка», «Посольство» и др."
       ],
       sliderCount: 4,
-      galleryCount: 10,
-      performances: [
-        {
-          eventKey: "idiot",
-          role: "Евгений Павлович Радомский"
-        },
-        {
-          eventKey: "hero-of-our-time",
-          role: "Доктор Вернер / Казбич"
-        },
-        {
-          eventKey: "twelve-chairs",
-          role: "Остап Бендер"
-        },
-        {
-          eventKey: "karamazovs",
-          role: "Павел Фёдорович Смердяков"
-        },
-        {
-          eventKey: "evenings-dikanka",
-          role: "Панас / Дьяк"
-        },
-        {
-          eventKey: "sherlock-holmes",
-          role: "Джон Бэрримор"
-        },
-        {
-          eventKey: "queens-gambit",
-          role:
-            "Герцог Хемфри Глостер, дядя короля / Эдуард / Дорсет"
-        }
-      ]
+      galleryCount: 10
     }
   },
 
@@ -207,29 +75,7 @@ window.PERSON_PAGES_DATA = {
         "Работал в Содружестве молодых актеров Нижнего Новгорода Art Experience DT и в Центре Театрального Мастерства. Актер Театра-студии Всеволода Шиловского."
       ],
       sliderCount: 2,
-      galleryCount: 5,
-      performances: [
-        {
-          eventKey: "sherlock-holmes",
-          role: "Доктор Мортимер"
-        },
-        {
-          eventKey: "idiot",
-          role: "Гаврила Ардалионович Иволгин"
-        },
-        {
-          eventKey: "lev-tolstoy",
-          role: "Офицер / Преподобие"
-        },
-        {
-          eventKey: "don-quixote",
-          role: "Пастух"
-        },
-        {
-          eventKey: "little-prince",
-          role: "Король / Делец / Лис"
-        }
-      ]
+      galleryCount: 5
     }
   },
 
@@ -241,13 +87,7 @@ window.PERSON_PAGES_DATA = {
         "Работал в Нижегородском Государственном Академическом Театре драмы им. М. Горького (спектакли «Павел I», «Старшая сестра», «На дне»)."
       ],
       sliderCount: 1,
-      galleryCount: 0,
-      performances: [
-        {
-          eventKey: "idiot",
-          role: "Евгений Павлович Радомский"
-        }
-      ]
+      galleryCount: 0
     }
   },
 
@@ -261,37 +101,7 @@ window.PERSON_PAGES_DATA = {
         "В 2017 году зачислена в труппу МДТ им. С. Есенина."
       ],
       sliderCount: 4,
-      galleryCount: 10,
-      performances: [
-        {
-          eventKey: "idiot",
-          role: "Горничная Катя / Груня / Прима / Анна Петровна"
-        },
-        {
-          eventKey: "lev-tolstoy",
-          role: "Графиня Марья Короткова"
-        },
-        {
-          eventKey: "hero-of-our-time",
-          role: "Мери"
-        },
-        {
-          eventKey: "twelve-chairs",
-          role: "Лиза / Владя"
-        },
-        {
-          eventKey: "don-quixote",
-          role: "Певица"
-        },
-        {
-          eventKey: "esenin",
-          role: "Муза"
-        },
-        {
-          eventKey: "sherlock-holmes",
-          role: "Лора Лайонс"
-        }
-      ]
+      galleryCount: 10
     }
   },
 
@@ -305,17 +115,7 @@ window.PERSON_PAGES_DATA = {
         "С 2025 года принят в труппу МДТ им. С. Есенина."
       ],
       sliderCount: 1,
-      galleryCount: 5,
-      performances: [
-        {
-          eventKey: "sherlock-holmes",
-          role: "Джон Бэрримор"
-        },
-        {
-          eventKey: "hamlet-illusions",
-          role: "Полоний / Озрик"
-        }
-      ]
+      galleryCount: 5
     }
   },
 
@@ -330,49 +130,7 @@ window.PERSON_PAGES_DATA = {
         "С 2017 года — художественный руководитель и главный режиссер МДТ им. С. Есенина."
       ],
       sliderCount: 5,
-      galleryCount: 20,
-      performances: [
-        {
-          eventKey: "raskolnikov",
-          role: "Родион Раскольников"
-        },
-        {
-          eventKey: "idiot",
-          role: "Князь Лев Николаевич Мышкин"
-        },
-        {
-          eventKey: "lev-tolstoy",
-          role: "Степан Касатский (Отец Сергий)"
-        },
-        {
-          eventKey: "hero-of-our-time",
-          role: "Печорин"
-        },
-        {
-          eventKey: "twelve-chairs",
-          role: "Остап Бендер"
-        },
-        {
-          eventKey: "evenings-dikanka",
-          role: "Черт"
-        },
-        {
-          eventKey: "don-quixote",
-          role: "Герой"
-        },
-        {
-          eventKey: "little-prince",
-          role: "Король / Делец / Лис"
-        },
-        {
-          eventKey: "esenin",
-          role: "Есенин"
-        },
-        {
-          eventKey: "hamlet-illusions",
-          role: "Клавдий"
-        }
-      ]
+      galleryCount: 20
     }
   },
 
@@ -386,25 +144,7 @@ window.PERSON_PAGES_DATA = {
         "В 2018 году зачислен в труппу МДТ им. С. Есенина."
       ],
       sliderCount: 5,
-      galleryCount: 10,
-      performances: [
-        {
-          eventKey: "idiot",
-          role: "Лукьян Тимофеевич Лебедев"
-        },
-        {
-          eventKey: "lev-tolstoy",
-          role: "Офицер / Купец"
-        },
-        {
-          eventKey: "twelve-chairs",
-          role: "Отец Фёдор"
-        },
-        {
-          eventKey: "sherlock-holmes",
-          role: "Доктор Ватсон"
-        }
-      ]
+      galleryCount: 10
     }
   },
 
@@ -417,55 +157,14 @@ window.PERSON_PAGES_DATA = {
         "В 2020 году принята в труппу МДТ им. С. Есенина."
       ],
       sliderCount: 4,
-      galleryCount: 10,
-      performances: [
-        {
-          eventKey: "idiot",
-          role: "Горничная Катя / Груня / Прима / Анна Петровна"
-        },
-        {
-          eventKey: "lev-tolstoy",
-          role: "Пашенька"
-        },
-        {
-          eventKey: "hero-of-our-time",
-          role: "Мери"
-        },
-        {
-          eventKey: "twelve-chairs",
-          role: "Эллочка-людоедка / Тень Петуховой"
-        },
-        {
-          eventKey: "reading-room",
-          role: "Валя"
-        },
-        {
-          eventKey: "don-quixote",
-          role: "Свинарка"
-        },
-        {
-          eventKey: "esenin",
-          role: "Коммунистка"
-        },
-        {
-          eventKey: "sherlock-holmes",
-          role: "Элиза"
-        },
-        {
-          eventKey: "queens-gambit",
-          role: "Смерть / Сомерсет / Герцогиня Йоркская"
-        },
-        {
-          eventKey: "karamazovs",
-          role: "Катерина Осиповна Хохлакова"
-        }
-      ]
+      galleryCount: 10
     }
   },
 
   "anna-sardanovskaya": {
     troupe: {
-      education: "СПБГУП'15, мастерская М.И. Самочко",
+      education:
+  "СПБГУП'15, мастерская М.И. Самочко,\nФГБОУ «ТИ им. Щукина» — повышение квалификации в качестве хореографа по программе «Принципы и взгляды Вахтанговской актёрско-режиссёрской школы», 2025",
       birthday: "28 ноября 1993",
       description: [
         "Режиссерско-актерская лаборатория Игоря Яцко при театре «Школа Драматического Искусства» (2016–2018). Работала в Молодом Театре Санкт-Петербурга (спектакли «ШОА», «Добрый человек из Сычуани», «Реквием») и в Театре «Киноактера».",
@@ -473,68 +172,14 @@ window.PERSON_PAGES_DATA = {
         "С 2017 года — директор МДТ им. С. Есенина."
       ],
       sliderCount: 4,
-      galleryCount: 20,
-      performances: [
-        {
-          eventKey: "raskolnikov",
-          role: "Соня Мармеладова"
-        },
-        {
-          eventKey: "idiot",
-          role: "Настасья Филипповна Барашкова"
-        },
-        {
-          eventKey: "lev-tolstoy",
-          role: "Маковкина"
-        },
-        {
-          eventKey: "hero-of-our-time",
-          role: "Вера"
-        },
-        {
-          eventKey: "twelve-chairs",
-          role: "Елена Станиславовна Боур / Аукционистка"
-        },
-        {
-          eventKey: "reading-room",
-          role: "Анка / Мария Гартунг"
-        },
-        {
-          eventKey: "hamlet-illusions",
-          role: "Гертруда"
-        },
-        {
-          eventKey: "evenings-dikanka",
-          role: "Оксана"
-        },
-        {
-          eventKey: "don-quixote",
-          role: "Героиня"
-        },
-        {
-          eventKey: "little-prince",
-          role: "Змея"
-        },
-        {
-          eventKey: "esenin",
-          role: "Номах"
-        },
-        {
-          eventKey: "sherlock-holmes",
-          role: "Бэрил Стэплтон"
-        },
-        {
-          eventKey: "queens-gambit",
-          role: "Уорик / Элеонора / Бекингем"
-        }
-      ]
+      galleryCount: 20
     }
   },
 
   "nastya-ryzhynskaya": {
     troupe: {
       education:
-        "ИТИ им. И. Д. Кобзона'21, мастерская А. А. Голобородько",
+      "ИТИ им. И. Д. Кобзона'21, мастерская А. А. Голобородько,\nГИТИС, мастерская М. З. Левитина, 2025–2029",
       birthday: "08 июня 2000",
       description: [
         "Играла в спектаклях на сцене театров Et Cetera, Театр Высоцкого, ЦДРИ, Дом Кино, МТЮЗ. Принимала участие в телевизионных проектах: «Песенка года», «Детская Новая Волна», «Рождественская песенка года», «Детское Евровидение». Была ведущей на «Кинотаврике» в Сочи.",
@@ -542,17 +187,7 @@ window.PERSON_PAGES_DATA = {
         "В 2022 году принята в труппу МДТ им. С. Есенина."
       ],
       sliderCount: 4,
-      galleryCount: 10,
-      performances: [
-        {
-          eventKey: "idiot",
-          role: "Аглая Епанчина"
-        },
-        {
-          eventKey: "twelve-chairs",
-          role: "Лиза / Владя"
-        }
-      ]
+      galleryCount: 10
     }
   },
 
@@ -567,21 +202,7 @@ window.PERSON_PAGES_DATA = {
         "В 2018 году принят в труппу МДТ им. С. Есенина."
       ],
       sliderCount: 5,
-      galleryCount: 10,
-      performances: [
-        {
-          eventKey: "karamazovs",
-          role: "Иван Карамазов"
-        },
-        {
-          eventKey: "twelve-chairs",
-          role: "Остап Бендер"
-        },
-        {
-          eventKey: "sherlock-holmes",
-          role: "Генри Баскервиль"
-        }
-      ]
+      galleryCount: 10
     }
   },
 
@@ -596,25 +217,7 @@ window.PERSON_PAGES_DATA = {
         "В 2021 году принят в МДТ им. С. Есенина."
       ],
       sliderCount: 4,
-      galleryCount: 10,
-      performances: [
-        {
-          eventKey: "queens-gambit",
-          role: "Генрих VI"
-        },
-        {
-          eventKey: "idiot",
-          role: "Евгений Павлович Радомский"
-        },
-        {
-          eventKey: "reading-room",
-          role: "Михаил Андреевич"
-        },
-        {
-          eventKey: "twelve-chairs",
-          role: "Коробейников / Чарушников / Шафер / Персицкий"
-        }
-      ]
+      galleryCount: 10
     }
   },
 
@@ -629,29 +232,7 @@ window.PERSON_PAGES_DATA = {
         "В 2024 году принят в труппу МДТ им. С. Есенина."
       ],
       sliderCount: 1,
-      galleryCount: 15,
-      performances: [
-        {
-          eventKey: "sherlock-holmes",
-          role: "Сэр Генри"
-        },
-        {
-          eventKey: "idiot",
-          role: "Ганя Иволгин"
-        },
-        {
-          eventKey: "hamlet-illusions",
-          role: "Гамлет"
-        },
-        {
-          eventKey: "little-prince",
-          role: "Делец / Король / Лис"
-        },
-        {
-          eventKey: "pushkin-tragedies",
-          role: "Альберт / Дон Гуан / Моцарт / Председатель"
-        }
-      ]
+      galleryCount: 15
     }
   },
 
@@ -665,26 +246,7 @@ window.PERSON_PAGES_DATA = {
         "В 2023 году принят в труппу МДТ им. С. Есенина."
       ],
       sliderCount: 3,
-      galleryCount: 10,
-      performances: [
-        {
-          eventKey: "queens-gambit",
-          role: "Плантагенет / Риверс / Ричмонд"
-        },
-        {
-          eventKey: "evenings-dikanka",
-          role: "Вакула"
-        },
-        {
-          eventKey: "twelve-chairs",
-          role:
-            "Коробейников / Чарушников / Шафер / Персицкий / Тихон / Кислярский / официант / Изнуренков"
-        },
-        {
-          eventKey: "karamazovs",
-          role: "Ракитин / Григорий / Пан Муссялович"
-        }
-      ]
+      galleryCount: 10
     }
   },
 
@@ -699,25 +261,7 @@ window.PERSON_PAGES_DATA = {
         "С 2024 года принята в труппу МДТ им. С. Есенина."
       ],
       sliderCount: 2,
-      galleryCount: 5,
-      performances: [
-        {
-          eventKey: "evenings-dikanka",
-          role: "Хивря"
-        },
-        {
-          eventKey: "hamlet-illusions",
-          role: "Гертруда"
-        },
-        {
-          eventKey: "queens-gambit",
-          role: "Некто"
-        },
-        {
-          eventKey: "hamlet-illusions",
-          role: "Бернардо / Актер 1 / Могильщик 1"
-        }
-      ]
+      galleryCount: 5
     }
   },
 
@@ -732,17 +276,7 @@ window.PERSON_PAGES_DATA = {
         "С 2025 года принята в труппу МДТ им. С. Есенина."
       ],
       sliderCount: 2,
-      galleryCount: 5,
-      performances: [
-        {
-          eventKey: "queens-gambit",
-          role: "Кардинал / Елизавета"
-        },
-        {
-          eventKey: "hamlet-illusions",
-          role: "Офелия"
-        }
-      ]
+      galleryCount: 5
     }
   },
 
@@ -756,17 +290,7 @@ window.PERSON_PAGES_DATA = {
         "В 2021 году принята в труппу МДТ им. Сергея Есенина."
       ],
       sliderCount: 2,
-      galleryCount: 9,
-      performances: [
-        {
-          eventKey: "twelve-chairs",
-          role: "Мадам Грицацуева / Годлевская / Актриса"
-        },
-        {
-          eventKey: "evenings-dikanka",
-          role: "Хивря / Екатерина II"
-        }
-      ]
+      galleryCount: 9
     }
   },
 
@@ -781,25 +305,7 @@ window.PERSON_PAGES_DATA = {
         "С 2024 года принят в труппу МДТ им. С. Есенина."
       ],
       sliderCount: 2,
-      galleryCount: 5,
-      performances: [
-        {
-          eventKey: "sherlock-holmes",
-          role: "Доктор Мортимер"
-        },
-        {
-          eventKey: "twelve-chairs",
-          role: "Отец Федор Иоаннович Востриков"
-        },
-        {
-          eventKey: "lev-tolstoy",
-          role: "Офицер / Игумен"
-        },
-        {
-          eventKey: "hamlet-illusions",
-          role: "Лаэрт / Розенкранц"
-        }
-      ]
+      galleryCount: 5
     }
   },
 
@@ -813,25 +319,7 @@ window.PERSON_PAGES_DATA = {
         "В 2019 году принят в труппу МДТ им. С. Есенина."
       ],
       sliderCount: 4,
-      galleryCount: 10,
-      performances: [
-        {
-          eventKey: "idiot",
-          role: "Парфен Рогожин"
-        },
-        {
-          eventKey: "twelve-chairs",
-          role: "Отец Федор"
-        },
-        {
-          eventKey: "karamazovs",
-          role: "Дмитрий Федорович Карамазов"
-        },
-        {
-          eventKey: "sherlock-holmes",
-          role: "Джек Стэплтон"
-        }
-      ]
+      galleryCount: 10
     }
   },
 
@@ -845,61 +333,7 @@ window.PERSON_PAGES_DATA = {
         "По первому высшему образованию Ольга — специалист по международным отношениям. Работала переводчиком на высшем государственном уровне. В настоящее время является музыкальным руководителем театра и художником-оформителем ряда спектаклей."
       ],
       sliderCount: 5,
-      galleryCount: 20,
-      performances: [
-        {
-          eventKey: "raskolnikov",
-          role: "Соня Мармеладова"
-        },
-        {
-          eventKey: "idiot",
-          role: "Лизавета Прокофьевна Епанчина"
-        },
-        {
-          eventKey: "lev-tolstoy",
-          role: "Мать / Марья"
-        },
-        {
-          eventKey: "hero-of-our-time",
-          role: "Бэла"
-        },
-        {
-          eventKey: "twelve-chairs",
-          role: "Мадам Грицацуева / Годлевская"
-        },
-        {
-          eventKey: "reading-room",
-          role: "Рада / Лидочка"
-        },
-        {
-          eventKey: "karamazovs",
-          role: "Катерина Ивановна Верховцева"
-        },
-        {
-          eventKey: "evenings-dikanka",
-          role: "Солоха / Параска"
-        },
-        {
-          eventKey: "don-quixote",
-          role: "Комедиантка"
-        },
-        {
-          eventKey: "little-prince",
-          role: "Роза"
-        },
-        {
-          eventKey: "esenin",
-          role: "Революционер / Кабатчица"
-        },
-        {
-          eventKey: "sherlock-holmes",
-          role: "Миссис Хадсон"
-        },
-        {
-          eventKey: "queens-gambit",
-          role: "Маргарита Анжуйская / Вернон / Леди Анна"
-        }
-      ]
+      galleryCount: 20
     },
 
     production: {
@@ -925,25 +359,7 @@ window.PERSON_PAGES_DATA = {
         "В марте 2022 года принят в труппу МДТ им. Сергея Есенина."
       ],
       sliderCount: 4,
-      galleryCount: 10,
-      performances: [
-        {
-          eventKey: "twelve-chairs",
-          role: "Киса Воробьянинов"
-        },
-        {
-          eventKey: "karamazovs",
-          role: "Старец Зосима / Прохор / Голос"
-        },
-        {
-          eventKey: "esenin",
-          role: "Рассветов / Черный Человек"
-        },
-        {
-          eventKey: "queens-gambit",
-          role: "Ричард III"
-        }
-      ]
+      galleryCount: 10
     }
   },
 
@@ -1007,13 +423,7 @@ window.PERSON_PAGES_DATA = {
         "С 2026 года сотрудничает с МДТ им. Сергея Есенина."
       ],
       sliderCount: 4,
-      galleryCount: 10,
-      performances: [
-        {
-          eventKey: "king-lear",
-          role: "Король Лир"
-        }
-      ]
+      galleryCount: 10
     }
   },
 
