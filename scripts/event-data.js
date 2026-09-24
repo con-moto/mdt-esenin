@@ -373,6 +373,10 @@ window.EVENTS_DATA = {
         role: "Отец Фёдор Иоаннович Востриков"
       },
       {
+        actorId: "dmitriy-matsko",
+        role: "Отец Фёдор Иоаннович Востриков"
+      },
+      {
         actorId: "anna-sardanovskaya",
         role: "Елена Станиславовна Боур / Аукционистка"
       },
@@ -991,6 +995,12 @@ window.EVENTS_DATA = {
   },
 
   {
+    actorId: "dmitriy-matsko",
+    role:
+      "Герцог Хемфри Глостер, дядя короля / Эдуард"
+  },
+
+  {
     actorId: "andrey-lushnikov",
     role:
       "Ричард Плантагенет, затем герцог Йорк / Риверс / Ричмонд"
@@ -1569,6 +1579,10 @@ window.EVENTS_DATA = {
       },
       {
         actorId: "sergey-zaitsev",
+        role: "Парфён Семёнович Рогожин"
+      },
+      {
+        actorId: "dmitriy-matsko",
         role: "Парфён Семёнович Рогожин"
       },
       {

@@ -7,70 +7,6 @@ const theatreContacts = {
 
 
 const performances = [
-  {
-    type: "performance",
-    eventKey: "cherry-orchard",
-    title: "ВИШНЁВЫЙ САД",
-    isPremiere: true,
-    date: "2026-09-09",
-    time: "19:00",
-    description: "Иммерсивная комедия жизни",
-    address:
-      "Арт-кластер «Творческие Люди» (Особняк В. А. Лемана, м. Курская, пер. Гороховский, 19)",
-    mapUrl:
-      "https://yandex.ru/maps/org/osobnyak_v_a_lemana/206225152580/?filter=alternate_vertical%3ARequestWindow&ll=37.667986%2C55.765837&mode=search&sctx=ZAAAAAgBEAAaKAoSCY9WtaSjUD5AEQgB%2BRIq%2BE1AEhIJDJQUWABT5j8Rixu3mJ8byj8iBgABAgMEBSgKOABAAkgBagJydZ0BzczMPaABAKgBAL0BSBx6QcIBBsS06J%2BABoICXCjQntGB0L7QsdC90Y%2FQuiDQki7QkC4g0JvQtdC80LDQvdCwLCDQvC4g0JrRg9GA0YHQutCw0Y8sINC%2F0LXRgC4g0JPQvtGA0L7RhdC%2B0LLRgdC60LjQuSwgMTkpigIAkgIDMjEzmgIMZGVza3RvcC1tYXBz&sll=37.667986%2C55.765837&sspn=0.021801%2C0.007162&text=%28%D0%9E%D1%81%D0%BE%D0%B1%D0%BD%D1%8F%D0%BA%20%D0%92.%D0%90.%20%D0%9B%D0%B5%D0%BC%D0%B0%D0%BD%D0%B0%2C%20%D0%BC.%20%D0%9A%D1%83%D1%80%D1%81%D0%BA%D0%B0%D1%8F%2C%20%D0%BF%D0%B5%D1%80.%20%D0%93%D0%BE%D1%80%D0%BE%D1%85%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%2C%2019%29&z=16",
-    ticketUrl: "https://iframeab-pre6144.intickets.ru/seance/73785445/",
-    pageUrl: "repertoire/cherry-orchard.html",
-  },
-
-
-  {
-    type: "performance",
-    eventKey: "sherlock-holmes",
-    title: "ШЕРЛОК ХОЛМС. СОБАКА БАСКЕРВИЛЕЙ",
-    date: "2026-09-14",
-    time: "19:00",
-    description: "Иммерсивный детектив",
-    address:
-      "Особняк Мухиных XVIII века (м. Бауманская, ул. Спартаковская, д. 9, стр. 3)",
-    mapUrl:
-      "https://yandex.ru/maps/org/usadba_vorontsovoy_mukhinoy/198224388711/?ll=37.672063%2C55.772380&z=19.2",
-    ticketUrl: "https://iframeab-pre6144.intickets.ru/seance/73785458/",
-    pageUrl: "repertoire/sherlock-holmes.html",
-  },
-
-
-  {
-    type: "performance",
-    eventKey: "twelve-chairs",
-    title: "12 сТуЛьЕв",
-    date: "2026-09-21",
-    time: "19:00",
-    description: "Иммерсивная музыкальная комедия",
-    address:
-      "Особняк Мухиных XVIII века (м. Бауманская, ул. Спартаковская, д. 9, стр. 3)",
-    mapUrl:
-      "https://yandex.ru/maps/org/usadba_vorontsovoy_mukhinoy/198224388711/?ll=37.672063%2C55.772380&z=19.2",
-    ticketUrl: "https://iframeab-pre6144.intickets.ru/seance/73785466/",
-    pageUrl: "repertoire/twelve-chairs.html",
-  },
-
-
-  {
-    type: "performance",
-    eventKey: "mansion",
-    title: "ОСОБНЯК: ОТ МИСТИКИ ДО РЕАЛЬНОСТИ",
-    date: "2026-09-22",
-    time: "19:00",
-    description: "Иммерсивная экскурсия в диалогах с призраком",
-    address:
-      "Особняк Мухиных XVIII века (м. Бауманская, ул. Спартаковская, д. 9, стр. 3)",
-    mapUrl:
-      "https://yandex.ru/maps/org/usadba_vorontsovoy_mukhinoy/198224388711/?ll=37.672063%2C55.772380&z=19.2",
-    ticketUrl: "https://iframeab-pre6144.intickets.ru/seance/73785471/",
-    pageUrl: "repertoire/mansion.html",
-  },
-
 
   {
     type: "performance",
@@ -85,7 +21,7 @@ const performances = [
       "https://yandex.ru/maps/org/glavny_dom_usadby_tolstogo_borisovskikh/197433904501/?ll=37.658903%2C55.759100&z=15",
     ticketUrl: "https://iframeab-pre6144.intickets.ru/seance/73785474/",
     pageUrl: "repertoire/notes-of-a-madman.html",
-  },
+  }
 ];
 
 
