@@ -4,9 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
   <title>Афиша — МДТ имени Сергея Есенина</title>
-
 
   <link
     rel="icon"
@@ -24,54 +22,113 @@
   <link rel="stylesheet" href="./styles/afisha-cards.css">
 </head>
 
-
-<body data-root="./" data-header="header-season" data-page="afisha">
+<body
+  data-root="./"
+  data-header="header-season"
+  data-page="afisha"
+>
   <div id="common-header"></div>
 
-
   <main class="posters">
-    <div class="posters__line"></div>
+    <div
+      class="posters__line"
+      data-month-separator="september"
+    ></div>
 
-
-    <section class="month">
+    <section
+      class="month"
+      data-month-section="september"
+    >
       <h2 class="month__title">Сентябрь</h2>
     </section>
 
+    <div
+      class="posters__line"
+      data-month-separator="september"
+    ></div>
 
-    <div class="posters__line"></div>
-
-
-    <section class="events" aria-label="Спектакли сентября">
-      <div class="events__list" id="events-list"></div>
+    <section
+      class="events"
+      data-events-section="september"
+      aria-label="Спектакли сентября"
+    >
+      <div
+        class="events__list"
+        id="events-list"
+      ></div>
     </section>
 
+    <div
+      class="posters__line"
+      data-month-separator="october"
+    ></div>
 
-    <div class="posters__line"></div>
-
-
-    <section class="month">
+    <section
+      class="month"
+      data-month-section="october"
+    >
       <h2 class="month__title">Октябрь</h2>
     </section>
 
+    <div
+      class="posters__line"
+      data-month-separator="october"
+    ></div>
 
-    <div class="posters__line"></div>
-
-
-    <section class="events" aria-label="Спектакли октября">
-      <div class="events__list" id="events-list-october"></div>
+    <section
+      class="events"
+      data-events-section="october"
+      aria-label="Спектакли октября"
+    >
+      <div
+        class="events__list"
+        id="events-list-october"
+      ></div>
     </section>
 
+    <div
+      class="posters__line"
+      data-month-separator="november"
+    ></div>
+
+    <section
+      class="month"
+      data-month-section="november"
+    >
+      <h2 class="month__title">Ноябрь</h2>
+    </section>
+
+    <div
+      class="posters__line"
+      data-month-separator="november"
+    ></div>
+
+    <section
+      class="events"
+      data-events-section="november"
+      aria-label="Спектакли ноября"
+    >
+      <div
+        class="events__list"
+        id="events-list-november"
+      ></div>
+    </section>
 
     <div class="posters__line"></div>
 
-
-    <section class="events" aria-label="Билет с открытой датой">
-      <div class="events__list" id="events-list-open-date"></div>
+    <section
+      class="events"
+      aria-label="Билет с открытой датой"
+    >
+      <div
+        class="events__list"
+        id="events-list-open-date"
+      ></div>
     </section>
   </main>
 
-
   <div id="common-footer"></div>
+
   <script src="./scripts/layout.js" defer></script>
   <script src="./scripts/afisha.js" defer></script>
 </body>

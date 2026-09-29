@@ -158,6 +158,14 @@
   color: #c90151;
 }
 
+/* Карточка в праздничный выходной день */
+.event-card--day-off .event-card__day,
+.event-card--day-off .event-card__weekday,
+.event-card--day-off .event-card__time,
+.event-card--day-off .event-card__title {
+  color: #c90151;
+}
+
 .event-card__premiere-label {
   margin: 0 0 0.8rem;
   color: #c90151;
