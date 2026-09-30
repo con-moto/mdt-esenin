@@ -239,7 +239,7 @@ const openDateTicket = [
     additionalText:
       "Вы можете воспользоваться им в любой день на любой спектакль нашего театра! (Но по требованию билетного партнёра в Вашем билете будет стоять фиктивная дата).",
     ticketUrl:
-      "https://iframeab-pre6144.intickets.ru/seance/73291370/",
+      "https://iframeab-pre6144.intickets.ru/seance/76506470/",
     pageUrl: "",
   },
 ];
