@@ -59,40 +59,6 @@ const performancesOctober = [
 
   {
     type: "performance",
-    eventKey: "sherlock-holmes",
-    title: "ШЕРЛОК ХОЛМС. СОБАКА БАСКЕРВИЛЕЙ",
-    isTour: true,
-    date: "2026-10-14",
-    time: "19:00",
-    description: "Ироничный детектив",
-    address:
-      "г. Нижний Новгород, ДК «Красное Сормово», Юбилейный бул., 32",
-    mapUrl:
-      "https://yandex.ru/maps/?text=%D0%94%D0%9A%20%C2%AB%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B5%20%D0%A1%D0%BE%D1%80%D0%BC%D0%BE%D0%B2%D0%BE%C2%BB%2C%20%D0%AE%D0%B1%D0%B8%D0%BB%D0%B5%D0%B9%D0%BD%D1%8B%D0%B9%20%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80%2C%2032%2C%20%D0%9D%D0%B8%D0%B6%D0%BD%D0%B8%D0%B9%20%D0%9D%D0%BE%D0%B2%D0%B3%D0%BE%D1%80%D0%BE%D0%B4",
-    ticketUrl:
-      "https://nn.kassir.ru/teatr/sherlok-holms-sobaka-baskerviley#5043120",
-    pageUrl: "repertoire/sherlock-holmes.html",
-  },
-
-  {
-    type: "performance",
-    eventKey: "sherlock-holmes",
-    title: "ШЕРЛОК ХОЛМС. СОБАКА БАСКЕРВИЛЕЙ",
-    isTour: true,
-    date: "2026-10-15",
-    time: "19:00",
-    description: "Ироничный детектив",
-    address:
-      "г. Дзержинск, ДК Химиков, проспект Ленина, 62",
-    mapUrl:
-      "https://yandex.ru/maps/?text=%D0%94%D0%9A%20%C2%AB%D0%A5%D0%B8%D0%BC%D0%B8%D0%BA%D0%BE%D0%B2%C2%BB%2C%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%20%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B0%2C%2062%2C%20%D0%94%D0%B7%D0%B5%D1%80%D0%B6%D0%B8%D0%BD%D1%81%D0%BA",
-    ticketUrl:
-      "https://nn.kassir.ru/teatr/sherlok-holms-sobaka-baskerviley#5043121",
-    pageUrl: "repertoire/sherlock-holmes.html",
-  },
-
-  {
-    type: "performance",
     eventKey: "pushkin-tragedies",
     title: "НеМаленькие трагедии Пушкина",
     date: "2026-10-19",
@@ -209,6 +175,22 @@ const performancesNovember = [
     ticketUrl:
       "https://iframeab-pre6144.intickets.ru/seance/76434848/",
     pageUrl: "repertoire/mansion.html",
+  },
+
+  {
+    type: "performance",
+    eventKey: "raskolnikov",
+    title: "РАСКОЛЬНИКОВ. МЕЖДУ ТЬМОЙ И СВЕТОМ",
+    date: "2026-11-07",
+    time: "19:00",
+    description: "Психологическая драма",
+    address:
+      "Особняк Борисовских-Толстых XVIII века (ДК Гайдаровец, м. Курская, ул. Земляной вал, д.27, стр.3. Код калитки: 213к4833)",
+    mapUrl:
+      "https://yandex.ru/maps/org/glavny_dom_usadby_tolstogo_borisovskikh/197433904501/?ll=37.658903%2C55.759100&z=15",
+    ticketUrl:
+      "https://iframeab-pre6144.intickets.ru/seance/76797302/",
+    pageUrl: "repertoire/raskolnikov.html",
   },
 
   {
