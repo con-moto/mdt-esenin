@@ -197,23 +197,6 @@ const performancesNovember = [
 
   {
     type: "performance",
-    eventKey: "bankrot",
-    title: "БАНКРОТЪ",
-    date: "2026-11-21",
-    time: "19:00",
-    description:
-      "Авантюрная комедия",
-    address:
-      "Особняк Борисовских-Толстых XVIII века (ДК Гайдаровец, м. Курская, ул. Земляной вал, д.27, стр.3. Код калитки: 213к4833)",
-    mapUrl:
-      "https://yandex.ru/maps/org/glavny_dom_usadby_tolstogo_borisovskikh/197433904501/?ll=37.658903%2C55.759100&z=15",
-    ticketUrl:
-      "https://iframeab-pre6144.intickets.ru/seance/77034676/",
-    pageUrl: "repertoire/bankrot.html",
-  },
-
-  {
-    type: "performance",
     eventKey: "idiot",
     title: "ИДИОТ",
     date: "2026-11-23",
@@ -227,6 +210,23 @@ const performancesNovember = [
       "https://iframeab-pre6144.intickets.ru/seance/76435234/",
     pageUrl: "repertoire/idiot.html",
   },
+
+  {
+    type: "performance",
+    eventKey: "bankrot",
+    title: "БАНКРОТЪ",
+    date: "2026-11-29",
+    time: "19:00",
+    description:
+      "Авантюрная комедия",
+    address:
+      "Особняк Борисовских-Толстых XVIII века (ДК Гайдаровец, м. Курская, ул. Земляной вал, д.27, стр.3. Код калитки: 213к4833)",
+    mapUrl:
+      "https://yandex.ru/maps/org/glavny_dom_usadby_tolstogo_borisovskikh/197433904501/?ll=37.658903%2C55.759100&z=15",
+    ticketUrl:
+      "https://iframeab-pre6144.intickets.ru/seance/77034676/",
+    pageUrl: "repertoire/bankrot.html",
+  }
 ];
 
 const openDateTicket = [
