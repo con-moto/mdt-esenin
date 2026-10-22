@@ -2414,7 +2414,7 @@ window.EVENTS_DATA = {
           role: "Композиторы",
           people: [
             {
-              personId: "reiner-richi"
+              personId: "andrey-kerchenreider"
             },
             {
               personId: "vera-novikova"

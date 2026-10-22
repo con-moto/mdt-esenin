@@ -625,5 +625,15 @@ window.PEOPLE_DATA = {
     name: "REINER RICHI",
     href: "",
     groups: ["creator"]
+  },
+
+  "andrey-kerchenreider": {
+    id: "andrey-kerchenreider",
+    slug: "andrey-kerchenreider",
+    firstName: "АНДРЕЙ",
+    lastName: "КЕРХЕНРЕЙДЕР",
+    name: "АНДРЕЙ КЕРХЕНРЕЙДЕР",
+    href: "",
+    groups: ["creator"]
   }
 };
