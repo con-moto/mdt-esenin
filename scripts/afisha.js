@@ -197,6 +197,22 @@ const performancesNovember = [
 
   {
     type: "performance",
+    eventKey: "",
+    title: "ЗА КУЛИСАМИ ИМПЕРИИ. ЦЕНА АПЛОДИСМЕНТОВ",
+    date: "2026-11-22",
+    time: "19:00",
+    description: "Историческое шоу",
+    address:
+      "Камерный театр клоунов \"Высокие Братья\"(м. Трубная, ул. Петровка, д. 26, с 2)",
+    mapUrl:
+      "https://yandex.ru/maps/org/vysokiye_bratya/126526882694/?ll=37.617519%2C55.765722&z=17",
+    ticketUrl:
+      "https://iframeab-pre6144.intickets.ru/event/77336146/",
+    pageUrl: "",
+  },
+
+  {
+    type: "performance",
     eventKey: "idiot",
     title: "ИДИОТ",
     date: "2026-11-23",
