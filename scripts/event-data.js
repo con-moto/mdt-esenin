@@ -2454,7 +2454,7 @@ window.EVENTS_DATA = {
     hasTrailer: false,
     trailerUrl: "",
     repertoireDescription:
-      "Моноспектакль-исповедь по мотивам романа Л. Н. Толстого «Анна Каренина».",
+      "Она выходит на сцену. И все смотрят.",
     description: `
       <p>
         Она выходит на сцену. И все смотрят.
