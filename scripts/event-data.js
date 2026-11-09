@@ -2450,7 +2450,7 @@ window.EVENTS_DATA = {
       "По мотивам романа Л. Н. Толстого «Анна Каренина»",
     ticketUrl: "#",
     sliderCount: 1,
-    galleryCount: 1,
+    galleryCount: 9,
     hasTrailer: false,
     trailerUrl: "",
     repertoireDescription:
