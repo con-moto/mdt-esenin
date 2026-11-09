@@ -143,7 +143,6 @@ const performancesOctober = [
 ];
 
 const performancesNovember = [
-
   {
     type: "performance",
     eventKey: "mansion",
@@ -203,7 +202,7 @@ const performancesNovember = [
     time: "19:00",
     description: "Историческое шоу",
     address:
-      "Камерный театр клоунов \"Высокие Братья\"(м. Трубная, ул. Петровка, д. 26, с 2)",
+      "Камерный театр клоунов «Высокие Братья» (м. Трубная, ул. Петровка, д. 26, стр. 2)",
     mapUrl:
       "https://yandex.ru/maps/org/vysokiye_bratya/126526882694/?ll=37.617519%2C55.765722&z=17",
     ticketUrl:
@@ -227,7 +226,7 @@ const performancesNovember = [
     pageUrl: "repertoire/idiot.html",
   },
 
-    {
+  {
     type: "performance",
     eventKey: "anna-karenina",
     title: "АННА КАРЕНИНА. МОНОЛОГ ДЛИННОЮ В ЖИЗНЬ",
@@ -249,8 +248,7 @@ const performancesNovember = [
     title: "БАНКРОТЪ",
     date: "2026-11-29",
     time: "19:00",
-    description:
-      "Авантюрная комедия",
+    description: "Авантюрная комедия",
     address:
       "Особняк Борисовских-Толстых XVIII века (ДК Гайдаровец, м. Курская, ул. Земляной вал, д.27, стр.3. Код калитки: 213к4833)",
     mapUrl:
@@ -258,7 +256,223 @@ const performancesNovember = [
     ticketUrl:
       "https://iframeab-pre6144.intickets.ru/seance/77034676/",
     pageUrl: "repertoire/bankrot.html",
-  }
+  },
+];
+
+const performancesDecember = [
+  {
+    type: "performance",
+    eventKey: "behind-the-empire",
+    title: "ЗА КУЛИСАМИ ИМПЕРИИ. ЦЕНА АПЛОДИСМЕНТОВ",
+    date: "2026-12-04",
+    time: "19:00",
+    isPremiere: true,
+    description: "Историческое шоу",
+    address:
+      "Камерный театр клоунов «Высокие Братья» (м. Трубная, ул. Петровка, д. 26, стр. 2)",
+    mapUrl:
+      "https://yandex.ru/maps/org/vysokiye_bratya/126526882694/?ll=37.617519%2C55.765722&z=17",
+    ticketUrl:
+      "https://iframeab-pre6144.intickets.ru/event/77336146/",
+    pageUrl: "",
+  },
+
+  {
+    type: "performance",
+    eventKey: "twelve-chairs",
+    title: "12 СТУЛЬЕВ",
+    date: "2026-12-07",
+    time: "19:00",
+    description:
+      "Иммерсивная музыкальная комедия",
+    address:
+      "Особняк Мухиных XVIII века (м. Бауманская, ул. Спартаковская, д. 9, стр. 3)",
+    mapUrl:
+      "https://yandex.ru/maps/org/usadba_vorontsovoy_mukhinoy/198224388711/?ll=37.672063%2C55.772380&z=19.2",
+    ticketUrl:
+      "https://iframeab-pre6144.intickets.ru/seance/77638131/",
+    pageUrl: "repertoire/twelve-chairs.html",
+  },
+
+  {
+    type: "performance",
+    eventKey: "bankrot",
+    title: "БАНКРОТЪ",
+    date: "2026-12-08",
+    time: "19:00",
+    description: "Авантюрная комедия",
+    address:
+      "Особняк Борисовских-Толстых XVIII века (ДК Гайдаровец, м. Курская, ул. Земляной вал, д.27, стр.3. Код калитки: 213к4833)",
+    mapUrl:
+      "https://yandex.ru/maps/org/glavny_dom_usadby_tolstogo_borisovskikh/197433904501/?ll=37.658903%2C55.759100&z=15",
+    ticketUrl:
+      "https://iframeab-pre6144.intickets.ru/seance/77406041/",
+    pageUrl: "repertoire/bankrot.html",
+  },
+
+  {
+    type: "performance",
+    eventKey: "cherry-orchard",
+    title: "ВИШНЁВЫЙ САД",
+    date: "2026-12-12",
+    time: "19:00",
+    description: "Иммерсивная комедия жизни",
+    address:
+      "Арт-кластер «Творческие Люди» (Флигель усадьбы Коншиных, м. Таганская, ул. Станиславского, д. 15)",
+    mapUrl:
+      "https://yandex.ru/maps/?text=%D0%A4%D0%BB%D0%B8%D0%B3%D0%B5%D0%BB%D1%8C%20%D1%83%D1%81%D0%B0%D0%B4%D1%8C%D0%B1%D1%8B%20%D0%9A%D0%BE%D0%BD%D1%88%D0%B8%D0%BD%D1%8B%D1%85%2C%20%D1%83%D0%BB.%20%D0%A1%D1%82%D0%B0%D0%BD%D0%B8%D1%81%D0%BB%D0%B0%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%2C%20%D0%B4.%2015%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0",
+    ticketUrl: "",
+    pageUrl: "repertoire/cherry-orchard.html",
+  },
+
+  {
+    type: "performance",
+    eventKey: "king-lear",
+    title: "КОРОЛЬ ЛИР",
+    date: "2026-12-13",
+    time: "19:00",
+    description: "Моноспектакль-исследование",
+    address:
+      "Особняк Борисовских-Толстых XVIII века (ДК Гайдаровец, м. Курская, ул. Земляной вал, д.27, стр.3. Код калитки: 213к4833)",
+    mapUrl:
+      "https://yandex.ru/maps/org/glavny_dom_usadby_tolstogo_borisovskikh/197433904501/?ll=37.658903%2C55.759100&z=15",
+    ticketUrl:
+      "https://iframeab-pre6144.intickets.ru/seance/77406050/",
+    pageUrl: "repertoire/king-lear.html",
+  },
+
+  {
+    type: "performance",
+    eventKey: "anna-karenina",
+    title: "КАРЕНИНА. МОНОЛОГ ДЛИННОЮ В ЖИЗНЬ",
+    date: "2026-12-19",
+    time: "19:00",
+    description: "Моноспектакль-исповедь",
+    address:
+      "Особняк Борисовских-Толстых XVIII века (ДК Гайдаровец, м. Курская, ул. Земляной вал, д.27, стр.3. Код калитки: 213к4833)",
+    mapUrl:
+      "https://yandex.ru/maps/org/glavny_dom_usadby_tolstogo_borisovskikh/197433904501/?ll=37.658903%2C55.759100&z=15",
+    ticketUrl: "",
+    pageUrl: "repertoire/anna-karenina.html",
+  },
+
+  {
+    type: "performance",
+    eventKey: "mansion",
+    title: "ОСОБНЯК. ОТ МИСТИКИ ДО РЕАЛЬНОСТЕЙ",
+    date: "2026-12-20",
+    time: "19:00",
+    description:
+      "Иммерсивная экскурсия в диалогах с призраком",
+    address:
+      "Особняк Мухиных XVIII века (м. Бауманская, ул. Спартаковская, д. 9, стр. 3)",
+    mapUrl:
+      "https://yandex.ru/maps/org/usadba_vorontsovoy_mukhinoy/198224388711/?ll=37.672063%2C55.772380&z=19.2",
+    ticketUrl:
+      "https://iframeab-pre6144.intickets.ru/event/69529299/",
+    pageUrl: "repertoire/mansion.html",
+  },
+
+  {
+    type: "performance",
+    eventKey: "sherlock-holmes",
+    title: "ШЕРЛОК ХОЛМС. СОБАКА БАСКЕРВИЛЕЙ",
+    date: "2026-12-21",
+    time: "19:00",
+    description: "Иммерсивный детектив",
+    address:
+      "Особняк Мухиных XVIII века (м. Бауманская, ул. Спартаковская, д. 9, стр. 3)",
+    mapUrl:
+      "https://yandex.ru/maps/org/usadba_vorontsovoy_mukhinoy/198224388711/?ll=37.672063%2C55.772380&z=19.2",
+    ticketUrl:
+      "https://iframeab-pre6144.intickets.ru/seance/77638767/",
+    pageUrl: "repertoire/sherlock-holmes.html",
+  },
+
+  {
+    type: "performance",
+    eventKey: "alice-in-wonderland",
+    title: "АЛИСА В СТРАНЕ ЧУДЕС",
+    isTour: true,
+    date: "2026-12-27",
+    time: "11:00",
+    description: "Новогоднее приключение",
+    address:
+      "Муниципальный культурный центр г. Рязань (Первомайский проспект, д. 68/2)",
+    mapUrl:
+      "https://yandex.ru/maps/?text=%D0%9C%D1%83%D0%BD%D0%B8%D1%86%D0%B8%D0%BF%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%BA%D1%83%D0%BB%D1%8C%D1%82%D1%83%D1%80%D0%BD%D1%8B%D0%B9%20%D1%86%D0%B5%D0%BD%D1%82%D1%80%20%D0%B3.%20%D0%A0%D1%8F%D0%B7%D0%B0%D0%BD%D1%8C%2C%20%D0%9F%D0%B5%D1%80%D0%B2%D0%BE%D0%BC%D0%B0%D0%B9%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%2C%2068%2F2",
+    ticketUrl:
+      "https://www.tbank.ru/gorod/afisha/ryazan/theatres/alisa-v-strane-chudes-691102/widget/?slotId=5562213",
+    pageUrl: "",
+  },
+
+  {
+    type: "performance",
+    eventKey: "evenings-dikanka",
+    title: "ВЕЧЕРА НА ХУТОРЕ БЛИЗ ДИКАНЬКИ",
+    isTour: true,
+    date: "2026-12-27",
+    time: "18:30",
+    description: "Комедия-фантасмагория",
+    address:
+      "Муниципальный культурный центр г. Рязань (Первомайский проспект, д. 68/2)",
+    mapUrl:
+      "https://yandex.ru/maps/?text=%D0%9C%D1%83%D0%BD%D0%B8%D1%86%D0%B8%D0%BF%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%BA%D1%83%D0%BB%D1%8C%D1%82%D1%83%D1%80%D0%BD%D1%8B%D0%B9%20%D1%86%D0%B5%D0%BD%D1%82%D1%80%20%D0%B3.%20%D0%A0%D1%8F%D0%B7%D0%B0%D0%BD%D1%8C%2C%20%D0%9F%D0%B5%D1%80%D0%B2%D0%BE%D0%BC%D0%B0%D0%B9%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%2C%2068%2F2",
+    ticketUrl:
+      "https://rzn.kassy.ru/events/detskie/77-2897297/hall/?t=1793869261",
+    pageUrl: "repertoire/evenings-dikanka.html",
+  },
+
+  {
+    type: "performance",
+    eventKey: "evenings-dikanka",
+    title: "ВЕЧЕРА НА ХУТОРЕ БЛИЗ ДИКАНЬКИ",
+    isTour: true,
+    date: "2026-12-28",
+    time: "18:00",
+    description: "Комедия-фантасмагория",
+    address:
+      "ДК им. В. И. Ленина (г. Ковров, ул. Лопатина, д. 4)",
+    mapUrl:
+      "https://yandex.ru/maps/?text=%D0%94%D0%9A%20%D0%B8%D0%BC.%20%D0%92.%20%D0%98.%20%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B0%2C%20%D0%B3.%20%D0%9A%D0%BE%D0%B2%D1%80%D0%BE%D0%B2%2C%20%D1%83%D0%BB.%20%D0%9B%D0%BE%D0%BF%D0%B0%D1%82%D0%B8%D0%BD%D0%B0%2C%204",
+    ticketUrl:
+      "https://vladimirkoncert.ru/shows/event/11868-Spektakl-Vechera-na-khutore-bliz-Dikanki-v-Kovrove?ysclid=mw3c7fkwvv212454104",
+    pageUrl: "repertoire/evenings-dikanka.html",
+  },
+
+  {
+    type: "performance",
+    eventKey: "alice-in-wonderland",
+    title: "АЛИСА В СТРАНЕ ЧУДЕС",
+    isTour: true,
+    date: "2026-12-29",
+    time: "11:00",
+    description: "Новогоднее приключение",
+    address:
+      "ДК ГАЗ (г. Нижний Новгород, ул. Героя Юрия Смирнова, 12)",
+    mapUrl:
+      "https://yandex.ru/maps/?text=%D0%94%D0%9A%20%D0%93%D0%90%D0%97%2C%20%D0%B3.%20%D0%9D%D0%B8%D0%B6%D0%BD%D0%B8%D0%B9%20%D0%9D%D0%BE%D0%B2%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%2C%20%D1%83%D0%BB.%20%D0%93%D0%B5%D1%80%D0%BE%D1%8F%20%D0%AE%D1%80%D0%B8%D1%8F%20%D0%A1%D0%BC%D0%B8%D1%80%D0%BD%D0%BE%D0%B2%D0%B0%2C%2012",
+    ticketUrl:
+      "https://nn.kassir.ru/teatr/alisa-v-strane-chudes-44?ysclid=mw3br5mmxb532596908",
+    pageUrl: "",
+  },
+
+  {
+    type: "performance",
+    eventKey: "evenings-dikanka",
+    title: "ВЕЧЕРА НА ХУТОРЕ БЛИЗ ДИКАНЬКИ",
+    isTour: true,
+    date: "2026-12-29",
+    time: "18:30",
+    description: "Комедия-фантасмагория",
+    address:
+      "ДК ГАЗ (г. Нижний Новгород, ул. Героя Юрия Смирнова, 12)",
+    mapUrl:
+      "https://yandex.ru/maps/?text=%D0%94%D0%9A%20%D0%93%D0%90%D0%97%2C%20%D0%B3.%20%D0%9D%D0%B8%D0%B6%D0%BD%D0%B8%D0%B9%20%D0%9D%D0%BE%D0%B2%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%2C%20%D1%83%D0%BB.%20%D0%93%D0%B5%D1%80%D0%BE%D1%8F%20%D0%AE%D1%80%D0%B8%D1%8F%20%D0%A1%D0%BC%D0%B8%D1%80%D0%BD%D0%BE%D0%B2%D0%B0%2C%2012",
+    ticketUrl:
+      "https://afisha.yandex.ru/nizhny-novgorod/theatre_show/vechera-na-khutore-bliz-dikanki-moskovskii-dramaticheskii-teatr-imeni-sergeia-esenina",
+    pageUrl: "repertoire/evenings-dikanka.html",
+  },
 ];
 
 const openDateTicket = [
@@ -321,10 +535,14 @@ function updateGlobalPerformances() {
   const actualPerformancesNovember =
     getActualPerformances(performancesNovember);
 
+  const actualPerformancesDecember =
+    getActualPerformances(performancesDecember);
+
   window.performances = [
     ...actualPerformances,
     ...actualPerformancesOctober,
     ...actualPerformancesNovember,
+    ...actualPerformancesDecember,
     ...openDateTicket,
   ];
 }
@@ -337,6 +555,10 @@ const eventsListOctober = document.querySelector(
 
 const eventsListNovember = document.querySelector(
   "#events-list-november"
+);
+
+const eventsListDecember = document.querySelector(
+  "#events-list-december"
 );
 
 const eventsListOpenDate = document.querySelector(
@@ -677,6 +899,9 @@ function renderEvents() {
   const actualPerformancesNovember =
     getActualPerformances(performancesNovember);
 
+  const actualPerformancesDecember =
+    getActualPerformances(performancesDecember);
+
   updateGlobalPerformances();
 
   if (eventsList) {
@@ -695,6 +920,13 @@ function renderEvents() {
   if (eventsListNovember) {
     eventsListNovember.innerHTML =
       actualPerformancesNovember
+        .map(createEventCard)
+        .join("");
+  }
+
+  if (eventsListDecember) {
+    eventsListDecember.innerHTML =
+      actualPerformancesDecember
         .map(createEventCard)
         .join("");
   }
@@ -719,6 +951,11 @@ function renderEvents() {
     "november",
     actualPerformancesNovember.length
   );
+
+  updateMonthVisibility(
+    "december",
+    actualPerformancesDecember.length
+  );
 }
 
 let resizeTimer;
@@ -728,6 +965,7 @@ window.addEventListener("resize", () => {
     !eventsList &&
     !eventsListOctober &&
     !eventsListNovember &&
+    !eventsListDecember &&
     !eventsListOpenDate
   ) {
     return;
