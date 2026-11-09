@@ -190,7 +190,7 @@ const performancesNovember = [
     mapUrl:
       "https://yandex.ru/maps/org/usadba_vorontsovoy_mukhinoy/198224388711/?ll=37.672063%2C55.772380&z=19.2",
     ticketUrl:
-      "https://iframeab-pre6144.intickets.ru/seance/76434969/",
+      "https://iframeab-pre6144.intickets.ru/seance/77728296/",
     pageUrl: "repertoire/twelve-chairs.html",
   },
 
@@ -229,7 +229,7 @@ const performancesNovember = [
   {
     type: "performance",
     eventKey: "anna-karenina",
-    title: "АННА КАРЕНИНА. МОНОЛОГ ДЛИННОЮ В ЖИЗНЬ",
+    title: "КАРЕНИНА. МОНОЛОГ ДЛИННОЮ В ЖИЗНЬ",
     date: "2026-11-27",
     time: "19:00",
     description: "Моноспектакль-исповедь",
