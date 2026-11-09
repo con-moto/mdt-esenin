@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Билеты появятся в ближайшее время — МДТ имени Сергея Есенина</title>
+
+  <meta
+    name="description"
+    content="Ссылка для приобретения билетов появится в ближайшее время. Приносим извинения за причинённые неудобства."
+  >
+
+  <link
+    rel="icon"
+    type="image/avif"
+    href="./assets/images/main-logo.avif"
+  >
+
+  <link rel="stylesheet" href="./assets/fonts/fonts.css">
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/root.css">
+  <link rel="stylesheet" href="./styles/navigation.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+
+  <style>
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background-color: var(--dark);
+      color: var(--white);
+      font-family: var(--font-sans);
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .ticket-soon {
+      max-width: 640px;
+      width: 100%;
+    }
+
+    .ticket-soon__title {
+      margin: 0 0 24px;
+      color: var(--off-white);
+      font-family: var(--font-serif);
+      font-size: clamp(1.75rem, 5vw, 2.75rem);
+      font-weight: 700;
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
+
+    .ticket-soon__text {
+      margin: 0;
+      color: var(--white);
+      font-size: clamp(1rem, 3vw, 1.25rem);
+      line-height: 1.5;
+    }
+  </style>
+</head>
+
+<body data-root="./" data-page="ticket-soon">
+  <div id="common-header"></div>
+
+  <main>
+    <section class="ticket-soon">
+      <h1 class="ticket-soon__title">
+        Ссылка для приобретения билетов появится в ближайшее время.
+      </h1>
+
+      <p class="ticket-soon__text">
+        Приносим извинения за причинённые неудобства!
+      </p>
+    </section>
+  </main>
+
+  <div id="common-footer"></div>
+
+  <script src="./scripts/layout.js"></script>
+</body>
+</html>
