@@ -2438,7 +2438,7 @@ window.EVENTS_DATA = {
   },
 
   "anna-karenina": {
-    title: "КАРЕНИНА. Монолог длинною в жизнь",
+    title: "КАРЕНИНА. Монолог длиною в жизнь",
     breadcrumbTitle: "Анна Каренина",
     genre: "МОНОСПЕКТАКЛЬ-ИСПОВЕДЬ",
     heroCompact: true,

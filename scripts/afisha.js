@@ -200,6 +200,7 @@ const performancesNovember = [
     title: "ЗА КУЛИСАМИ ИМПЕРИИ. ЦЕНА АПЛОДИСМЕНТОВ",
     date: "2026-11-22",
     time: "19:00",
+    isPremiere: true,
     description: "Историческое шоу",
     address:
       "Камерный театр клоунов «Высокие Братья» (м. Трубная, ул. Петровка, д. 26, стр. 2)",
@@ -229,7 +230,8 @@ const performancesNovember = [
   {
     type: "performance",
     eventKey: "anna-karenina",
-    title: "КАРЕНИНА. МОНОЛОГ ДЛИННОЮ В ЖИЗНЬ",
+    isPremiere: true,
+    title: "КАРЕНИНА. МОНОЛОГ ДЛИНОЮ В ЖИЗНЬ",
     date: "2026-11-27",
     time: "19:00",
     description: "Моноспектакль-исповедь",
@@ -246,6 +248,7 @@ const performancesNovember = [
     type: "performance",
     eventKey: "bankrot",
     title: "БАНКРОТЪ",
+    isPremiere: true,
     date: "2026-11-29",
     time: "19:00",
     description: "Авантюрная комедия",
@@ -298,6 +301,7 @@ const performancesDecember = [
     type: "performance",
     eventKey: "bankrot",
     title: "БАНКРОТЪ",
+    isPremiere: true,
     date: "2026-12-08",
     time: "19:00",
     description: "Авантюрная комедия",
@@ -329,6 +333,7 @@ const performancesDecember = [
     type: "performance",
     eventKey: "king-lear",
     title: "КОРОЛЬ ЛИР",
+    isPremiere: true,
     date: "2026-12-13",
     time: "19:00",
     description: "Моноспектакль-исследование",
@@ -344,7 +349,8 @@ const performancesDecember = [
   {
     type: "performance",
     eventKey: "anna-karenina",
-    title: "КАРЕНИНА. МОНОЛОГ ДЛИННОЮ В ЖИЗНЬ",
+    title: "КАРЕНИНА. МОНОЛОГ ДЛИНОЮ В ЖИЗНЬ",
+    isPremiere: true,
     date: "2026-12-19",
     time: "19:00",
     description: "Моноспектакль-исповедь",
@@ -359,7 +365,7 @@ const performancesDecember = [
   {
     type: "performance",
     eventKey: "mansion",
-    title: "ОСОБНЯК. ОТ МИСТИКИ ДО РЕАЛЬНОСТЕЙ",
+    title: "ОСОБНЯК. ОТ МИСТИКИ ДО РЕАЛЬНОСТИ",
     date: "2026-12-20",
     time: "19:00",
     description:
