@@ -358,7 +358,7 @@ const performancesDecember = [
       "Особняк Борисовских-Толстых XVIII века (ДК Гайдаровец, м. Курская, ул. Земляной вал, д.27, стр.3. Код калитки: 213к4833)",
     mapUrl:
       "https://yandex.ru/maps/org/glavny_dom_usadby_tolstogo_borisovskikh/197433904501/?ll=37.658903%2C55.759100&z=15",
-    ticketUrl: "",
+    ticketUrl: "https://iframeab-pre6144.intickets.ru/seance/77732266/",
     pageUrl: "repertoire/anna-karenina.html",
   },
 
